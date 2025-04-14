@@ -76,6 +76,43 @@
       font-size: 0.95rem;
       color: #bbbbbb;
     }
+
+    .featured {
+      background-color: #0f0f0f;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .featured a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .featured-tile {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #2c2c2c;
+      transition: transform 0.2s ease;
+    }
+    .featured-tile:hover {
+      transform: scale(1.02);
+    }
+    .featured-tile img {
+      max-width: 160px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .featured-tile h3 {
+      font-size: 1.6rem;
+      color: #00ffc8;
+      margin: 0.5rem 0;
+    }
+    .featured-tile p {
+      font-size: 1rem;
+      color: #cccccc;
+    }
+
     footer {
       padding: 2rem;
       background-color: #000;
@@ -102,10 +139,23 @@
     </p>
   </section>
 
+  <!-- 🔥 Featured Brand Section -->
+  <section class="featured">
+    <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+      <div class="featured-tile">
+        <img src="https://autobookpress.com.au/assets/covers/meth-monkey.jpg" alt="Meth Monkey Origins">
+        <h3>AutoBookPress</h3>
+        <p>
+          Explore unhinged AI fiction, thrillers, satire and more — powered by QUANTUMNOVA. Now live on Gumroad & Amazon KDP.
+        </p>
+      </div>
+    </a>
+  </section>
+
   <section class="brands" id="brands">
     <div class="brand-grid">
       <div class="brand">
-        <h3>AutoBookPress</h3>
+        <h3><a href="https://autobookpress.com.au" target="_blank" style="color:#00ffc8; text-decoration:none;">AutoBookPress</a></h3>
         <p>AI-crafted short stories & illustrated fiction. Available on Gumroad & Amazon KDP.</p>
       </div>
       <div class="brand">
