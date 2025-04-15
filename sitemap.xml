@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://quantumnova.com.au/</loc>
-    <lastmod>2025-04-14</lastmod>
+    <lastmod>2025-04-16</lastmod>
+    <priority>1.0</priority>
   </url>
+
+  <!-- About Section -->
   <url>
-    <loc>https://quantumnova.com.au/brands</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://quantumnova.com.au/#about</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
+
+  <!-- Brands Section -->
   <url>
-    <loc>https://quantumnova.com.au/contact</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://quantumnova.com.au/#brands</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
+
+  <!-- Contact Email -->
   <url>
-    <loc>https://quantumnova.com.au/about</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>mailto:admin@quantumnova.com.au</loc>
   </url>
+
+  <!-- Static Legal Pages -->
   <url>
     <loc>https://quantumnova.com.au/privacy.html</loc>
     <lastmod>2025-04-15</lastmod>
@@ -28,4 +38,5 @@
     <loc>https://quantumnova.com.au/terms.html</loc>
     <lastmod>2025-04-15</lastmod>
   </url>
+
 </urlset>
