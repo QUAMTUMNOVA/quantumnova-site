@@ -123,14 +123,21 @@
       text-decoration: none;
       color: inherit;
     }
+    .featured-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
     .featured-tile {
-      max-width: 600px;
-      margin: 0 auto;
       background-color: #1a1a1a;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 12px;
       border: 1px solid #2c2c2c;
       transition: transform 0.2s ease;
+      width: 280px;
     }
     .featured-tile:hover {
       transform: scale(1.02);
@@ -141,12 +148,12 @@
       margin-bottom: 1rem;
     }
     .featured-tile h3 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: #00ffc8;
       margin: 0.5rem 0;
     }
     .featured-tile p {
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #cccccc;
     }
     .socials {
@@ -200,13 +207,29 @@
   </section>
 
   <section class="featured">
-    <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
-      <div class="featured-tile">
-        <img src="https://autobookpress.com.au/assets/covers/meth-monkey.jpg" alt="Meth Monkey Origins">
-        <h3>AutoBookPress</h3>
-        <p>Explore unhinged AI fiction, thrillers, satire and more — powered by QUANTUMNOVA. Now live on Gumroad & Amazon KDP.</p>
-      </div>
-    </a>
+    <div class="featured-grid">
+      <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+        <div class="featured-tile">
+          <img src="/assets/covers/meth-monkey.jpg" alt="Meth Monkey Origins">
+          <h3>Meth Monkey</h3>
+          <p>Outrageous AI fiction following an unhinged monkey on a meth-fueled rampage. Available on Amazon & Gumroad.</p>
+        </div>
+      </a>
+      <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+        <div class="featured-tile">
+          <img src="/assets/covers/flush-harder.jpg" alt="Septic Steve">
+          <h3>Septic Steve</h3>
+          <p>A disgusting yet lovable turd emerges from the pipes to save suburbia. Dark, dumb, and brilliant.</p>
+        </div>
+      </a>
+      <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+        <div class="featured-tile">
+          <img src="/assets/covers/macaw-dive.jpg" alt="Macaw Legends">
+          <h3>Macaw Legends</h3>
+          <p>An epic treasure-hunting pirate saga starring a diving macaw and two aging parrots. Kids & adults alike will love it.</p>
+        </div>
+      </a>
+    </div>
   </section>
 
   <section class="brands" id="brands">
