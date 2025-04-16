@@ -2,95 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Puppet Prompts | AI Puppet Script Generator</title>
-  <meta name="description" content="AI-generated puppet scripts for creators, classrooms, and comedy shows. Download prompt packs or generate your own. Built by QUANTUMNOVA." />
-  <link rel="icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="QUANTUMNOVA is an AI-powered business empire forging the future of tech, fiction, and automation." />
+  <title>QUANTUMNOVA | The AI Empire</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="https://quantumnova.com.au" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="QUANTUMNOVA PTY LTD" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="QUANTUMNOVA | The AI Empire" />
+  <meta property="og:description" content="Explore viral fiction, tech tools, SaaS, and crypto-powered brands built by AI. Powered by QUANTUMNOVA." />
+  <meta property="og:url" content="https://quantumnova.com.au" />
+  <meta property="og:image" content="https://quantumnova.com.au/og-banner.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="QUANTUMNOVA | The AI Empire" />
+  <meta name="twitter:description" content="Explore viral fiction, tech tools, SaaS, and crypto-powered brands built by AI." />
+  <meta name="twitter:image" content="https://quantumnova.com.au/og-banner.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/qn-favicon.png" type="image/png" />
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #fff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+    }
+    header {
+      background: #121212;
+      padding: 2rem 1rem;
       text-align: center;
-      padding: 2rem;
+      border-bottom: 2px solid #00ffc8;
     }
-    .socials {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .socials a {
-      color: #4ade80;
+    header h1 a {
+      font-size: 2.5rem;
+      color: #00ffc8;
       text-decoration: none;
-      margin: 0 10px;
       font-weight: bold;
-      font-size: 1rem;
     }
-    .socials a:hover {
-      color: #fff;
-    }
-    h1 {
-      font-size: 2.8rem;
-      color: #facc15;
-      margin-bottom: 0.5rem;
-    }
-    h1 a {
-      color: #facc15;
-      text-decoration: none;
-    }
-    h1 a:hover {
-      text-decoration: underline;
-    }
-    .subtitle {
-      color: #bbbbbb;
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .cta {
-      background-color: #facc15;
-      color: #000;
-      font-weight: bold;
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
+    nav {
       margin-top: 1rem;
     }
-    .cta:hover {
-      background-color: #ffe475;
+    nav a {
+      margin: 0 1.2rem;
+      color: #cccccc;
+      text-decoration: none;
+      font-weight: 600;
     }
-    .section {
-      margin-top: 4rem;
-      padding-top: 1rem;
-      border-top: 1px solid #333;
+    nav a:hover {
+      color: #ffffff;
     }
-    .section h2 {
-      color: #4ade80;
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #bbbbbb;
+      max-width: 800px;
+      margin: 1.5rem auto;
+    }
+    .brands {
+      background-color: #111111;
+      padding: 3rem 2rem;
+    }
+    .brand-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .brand {
+      background-color: #1d1d1d;
+      border: 1px solid #2a2a2a;
+      padding: 1.5rem;
+      width: 250px;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+    }
+    .brand h3 {
+      color: #00ffc8;
+      margin-bottom: 0.5rem;
+    }
+    .brand h3 a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+    .brand h3 a:hover {
+      text-decoration: underline;
+    }
+    .brand p {
+      font-size: 0.95rem;
+      color: #bbbbbb;
+    }
+    .brand.coming-soon::after {
+      content: "Coming Soon";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #facc15;
+      color: #000;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .featured {
+      background-color: #0f0f0f;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .featured a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .featured-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .featured-tile {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #2c2c2c;
+      transition: transform 0.2s ease;
+      width: 280px;
+    }
+    .featured-tile:hover {
+      transform: scale(1.02);
+    }
+    .featured-tile img {
+      max-width: 160px;
+      border-radius: 10px;
       margin-bottom: 1rem;
     }
-    .examples {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      max-width: 1000px;
-      margin: 2rem auto;
+    .featured-tile h3 {
+      font-size: 1.4rem;
+      color: #00ffc8;
+      margin: 0.5rem 0;
     }
-    .example {
-      background: #1a1a1a;
-      padding: 1.5rem;
-      border-radius: 10px;
-      border: 1px solid #333;
+    .featured-tile p {
+      font-size: 0.95rem;
+      color: #cccccc;
     }
-    .example h3 {
-      color: #facc15;
+    .socials {
+      margin: 2rem auto 1rem;
+    }
+    .socials a {
+      margin: 0 0.6rem;
+      color: #00ffc8;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .socials a:hover {
+      color: #ffffff;
     }
     footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #333;
-      font-size: 0.9rem;
+      padding: 2rem;
+      background-color: #000;
+      text-align: center;
+      font-size: 0.85rem;
       color: #888;
     }
     footer a {
@@ -104,45 +186,86 @@
   </style>
 </head>
 <body>
-  <div class="socials">
-    <a href="https://facebook.com/quantumnovaHQ" target="_blank">Facebook</a>
-    <a href="https://instagram.com/quantumnova_hq" target="_blank">Instagram</a>
-  </div>
+  <header>
+    <h1><a href="/">QUANTUMNOVA</a></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#brands">Brands</a>
+      <a href="mailto:admin@quantumnova.com.au">Contact</a>
+    </nav>
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=61575115747716" target="_blank">Facebook</a>
+      <a href="https://instagram.com/quantumnova_hq" target="_blank">Instagram</a>
+    </div>
+  </header>
 
-  <h1><a href="/">🧵 Puppet Prompts</a></h1>
-  <p class="subtitle">AI-generated puppet scripts for creators, classrooms, and comedy lovers</p>
+  <section class="hero" id="about">
+    <h2>Powering the Future of AI Business & Storytelling</h2>
+    <p>
+      QUANTUMNOVA is a next-gen AI empire built on automation, content generation, and viral storytelling. From illustrated fiction to high-tech crypto tools, we craft scalable ventures designed to dominate their niche and expand globally.
+    </p>
+  </section>
 
-  <a href="https://puppetprompts.gumroad.com" target="_blank" class="cta">🎭 Download Prompt Packs</a>
+  <section class="featured">
+    <div class="featured-grid">
+      <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+        <div class="featured-tile">
+          <img src="/assets/meth-monkey.jpg" alt="Meth Monkey Origins">
+          <h3>Meth Monkey</h3>
+          <p>Outrageous AI fiction following an unhinged monkey on a meth-fueled rampage. Available on Amazon & Gumroad.</p>
+        </div>
+      </a>
+      <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+        <div class="featured-tile">
+          <img src="/assets/flush-harder.jpg" alt="Septic Steve">
+          <h3>Septic Steve</h3>
+          <p>A disgusting yet lovable turd emerges from the pipes to save suburbia. Dark, dumb, and brilliant.</p>
+        </div>
+      </a>
+      <a href="https://autobookpress.com.au" target="_blank" rel="noopener noreferrer">
+        <div class="featured-tile">
+          <img src="/assets/macaw-dive.jpg" alt="Macaw Legends">
+          <h3>Macaw Legends</h3>
+          <p>An epic treasure-hunting pirate saga starring a diving macaw and two aging parrots. Kids & adults alike will love it.</p>
+        </div>
+      </a>
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>🎬 What’s Inside</h2>
-    <div class="examples">
-      <div class="example">
-        <h3>Prompt #12 – “The Pizza Protest”</h3>
-        <p>A group of puppets go on strike after discovering anchovies in the school lunch program.</p>
+  <section class="brands" id="brands">
+    <div class="brand-grid">
+      <div class="brand">
+        <h3><a href="https://autobookpress.com.au" target="_blank">AutoBookPress</a></h3>
+        <p>AI-crafted short stories & illustrated fiction. Available on Gumroad & Amazon KDP.</p>
       </div>
-      <div class="example">
-        <h3>Prompt #21 – “Toilet Time Trials”</h3>
-        <p>Barry the Bathroom Brush holds a race down the pipes to retrieve a lost ring.</p>
+      <div class="brand">
+        <h3><a href="https://keywordkode.com.au" target="_blank">KeywordKode</a></h3>
+        <p>SEO-optimized affiliate content built autonomously by AI.</p>
       </div>
-      <div class="example">
-        <h3>Prompt #35 – “Mayor Meow”</h3>
-        <p>A talking cat puppet runs for mayor — and wins. Chaos follows.</p>
+      <div class="brand">
+        <h3><a href="https://puppetprompts.com.au" target="_blank">PuppetPrompts</a></h3>
+        <p>AI-generated puppet scripts ready for viral content creators.</p>
+      </div>
+      <div class="brand coming-soon">
+        <h3>GENR8</h3>
+        <p>Meme & trend engine. Designed to break the internet.</p>
+      </div>
+      <div class="brand coming-soon">
+        <h3>STRAINGENIX</h3>
+        <p>Cannabis strain generation, branding, and NFT integration by AI.</p>
+      </div>
+      <div class="brand coming-soon">
+        <h3>Resoniq</h3>
+        <p>AI music generation, audio NFTs, and branded sound design.</p>
       </div>
     </div>
-  </div>
-
-  <div class="section">
-    <h2>💡 Why Puppet Prompts?</h2>
-    <p>Because puppets are the future of storytelling. And we let AI do the weird, funny, and wildly creative work for you.</p>
-    <p>Made by <strong>QUANTUMNOVA</strong>. Powered by chaos. Fueled by AI.</p>
-  </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Puppet Prompts · A division of <a href="https://quantumnova.com.au" target="_blank">QUANTUMNOVA</a></p>
-    <p>Registered in Australia | ABN 43686016526</p>
-    <p><a href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a></p>
-    <p style="margin-top: 1rem;">
+    &copy; 2025 QUANTUMNOVA PTY LTD — All rights reserved.<br />
+    Registered in Australia | ABN 43686016526<br />
+    <a href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a>
+    <p class="pt-2 text-gray-500">
       <a href="/privacy.html">Privacy Policy</a> |
       <a href="/refund.html">Refund Policy</a> |
       <a href="/terms.html">Terms & Conditions</a>
