@@ -1,264 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QUANTUMNOVA | AI Publishing, Tech & Automation</title>
-  <meta name="description" content="Scaling the Future of AI Publishing, Storytelling, Automation, and Tech Innovation.">
-  <meta name="keywords" content="AI publishing, fiction books, productivity books, storytelling, SEO automation, passive income, QUANTUMNOVA">
-  <meta name="author" content="QUANTUMNOVA PTY LTD">
-  <link rel="canonical" href="https://quantumnova.com.au" />
-  <meta name="robots" content="index, follow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QUANTUMNOVA | Entertainment & Records</title>
+  <meta name="description" content="QUANTUMNOVA is a modern entertainment company — home of Quantumnova Records and Pixionyx. Music, culture and creative tech." />
   <link rel="icon" href="/assets/qn-favicon.png" type="image/png" />
 
   <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: #ffffff;
+    :root{
+      --bg:#070809; --panel:#0e1013; --ink:#e8f7f1; --muted:#a9b5b0;
+      --accent:#00ffc8; --accent-2:#7a5cff; --line:#1b1f25;
     }
-    header {
-      background: #121212;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-bottom: 2px solid #00ffc8;
-    }
-    header h1 a {
-      font-size: 2.5rem;
-      color: #00ffc8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      margin: 0 1.2rem;
-      color: #cccccc;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      color: #ffffff;
-    }
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 1.8rem;
-      color: #ffffff;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      color: #bbbbbb;
-      max-width: 800px;
-      margin: 1.5rem auto;
-    }
-    .brands {
-      background-color: #111111;
-      padding: 3rem 2rem;
-    }
-    .brand-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .brand {
-      background-color: #1d1d1d;
-      border: 1px solid #2a2a2a;
-      padding: 1.5rem;
-      width: 250px;
-      border-radius: 8px;
-      text-align: center;
-      position: relative;
-    }
-    .brand h3 a {
-      color: #00ffc8;
-      text-decoration: none;
-    }
-    .brand h3 a:hover {
-      text-decoration: underline;
-    }
-    .brand p {
-      font-size: 0.95rem;
-      color: #bbbbbb;
-    }
-    .brand.coming-soon::after {
-      content: "Coming Soon";
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: #facc15;
-      color: #000;
-      font-size: 0.75rem;
-      padding: 0.3rem 0.5rem;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-    footer {
-      padding: 2rem;
-      background-color: #000;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #888;
-    }
-    footer a {
-      color: #4ade80;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-   .socials {
-      margin-top: 1rem;
-    }
-   .socials a {
-      margin: 0 0.8rem;
-      color: #00ffc8;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    .socials a:hover {
-      color: #ffffff;
-    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(7,8,9,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+    .brand-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+    .nav a{opacity:.9;text-decoration:none;margin-left:18px;font-weight:600}
+    .nav a:hover{opacity:1}
+    .cta{padding:8px 14px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#000;font-weight:800}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero img{width:100%;height:56vw;max-height:560px;object-fit:cover;filter:contrast(1.05) saturate(1.1) brightness(.85)}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,9,.35),rgba(7,8,9,.9) 70%);display:grid;place-items:end start}
+    .hero-copy{padding:38px}
+    .eyebrow{color:var(--accent);font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .h1{font-size:clamp(28px,4.6vw,54px);line-height:1.02;margin:.35em 0 .2em}
+    .sub{color:var(--muted);max-width:760px}
+
+    /* Records section */
+    .section{padding:64px 0;border-top:1px solid var(--line)}
+    .section h2{font-size:clamp(24px,3.4vw,38px);margin:0 0 8px}
+    .section p.lead{color:var(--muted);margin:0 0 26px}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-right:8px}
+
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+    @media (max-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .18s, box-shadow .18s}
+    .card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.35)}
+    .art{aspect-ratio:1/1;width:100%;object-fit:cover;background:#0b0d10}
+    .card .meta{padding:12px 12px 16px}
+    .t{font-weight:700}
+    .a{color:var(--muted);font-size:14px;margin-top:2px}
+
+    /* Brands */
+    .brands{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+    @media (max-width:960px){.brands{grid-template-columns:1fr;}}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .panel h3{margin:0 0 8px;font-size:22px}
+    .panel p{color:var(--muted);margin:8px 0 16px}
+    .panel .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;background:rgba(0,255,200,.12);border:1px solid rgba(0,255,200,.35);text-decoration:none;font-weight:700}
+
+    /* Footer */
+    footer{padding:40px 0;border-top:1px solid var(--line);color:#93a29b;font-size:14px}
+    footer a{color:var(--accent)}
   </style>
 </head>
 <body>
 
-<header>
-  <h1><a href="/">QUANTUMNOVA</a></h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#brands">Brands</a>
-    <a href="mailto:admin@quantumnova.com.au">Contact</a>
-  </nav>
-  <div class="socials">
-    <a href="https://facebook.com/quantumnovaHQ" target="_blank">Facebook</a>
-    <a href="https://instagram.com/quantumnova_hq" target="_blank">Instagram</a>
-    <a href="https://x.com/quantumnovaHQ" target="_blank">X</a>
-    <a href="https://www.tiktok.com/@quantumnovahq" target=_blank">TikTok</a>
-    <a href="https://www.youtube.com/@QUANTUMNOVAHQ" target=_blank">Youtube</a>
-  </div>
-</header>
-
-
-<!-- Hero Banner -->
-<section style="position: relative; overflow: hidden; width: 100%;">
-  <img 
-    src="/assets/qnova-hero.jpg" 
-    alt="QUANTUMNOVA Futuristic Banner"
-    style="display: block; width: 100%; height: auto; max-width: 100%; object-fit: cover;"
-  >
-
-  <div style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-    color: #a0f0c0;
-  ">
-    <p style="font-size: clamp(1.3rem, 3.5vw, 2rem); font-weight: bold; color: #4ade80; text-shadow: 0 0 12px #4ade80; margin-bottom: 0.6rem; line-height: 1.1;">
-      Scaling the future of AI publishing, automation, storytelling & innovation.
-    </p>
-
-    <p style="font-size: clamp(0.95rem, 2.5vw, 1.1rem); max-width: 680px; line-height: 1.2; text-shadow: 0 0 8px #000; margin-bottom: 0.4rem;">
-      QUANTUMNOVA is an AI-driven empire powering global brands across fiction, SaaS, crypto, and entertainment.
-    </p>
-
-    <p style="font-size: clamp(0.95rem, 2.5vw, 1.1rem); max-width: 680px; line-height: 1.2; text-shadow: 0 0 8px #000;">
-      From book publishing to blockchain tools and autonomous content, our mission is digital dominance with creative soul.
-    </p>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="brands" id="brands">
-  <div class="brand-grid">
-
-    <div class="brand">
-      <h3><a href="https://pixionyx.com.au/" target="_blank">
-        <span style="color: #e03a3a; font-family: cursive; font-weight: bold;">Pixi</span><span style="color: #ffffff; font-family: serif; font-weight: bold;">Onyx</span></a></h3>
-      <p>Next-level AI art printed on clothing, puzzles, drinkware & more.</p>
+  <!-- Header -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        QUANTUMNOVA
+      </div>
+      <nav>
+        <a href="#records">Records</a>
+        <a href="#brands">Pixionyx</a>
+        <a href="mailto:admin@quantumnova.com.au" class="cta">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="brand">
-      <h3><a href="https://airbit.com/Resoniq" target="_blank" style="color: #e6e6e6; font-weight: 600;">RESONIQ</a></h3>
-      <p>AI-driven music, sound design, and audio NFTs.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="/assets/qnova-hero.jpg" alt="QUANTUMNOVA banner" />
+    <div class="overlay">
+      <div class="hero-copy wrap">
+        <div class="eyebrow">Modern Entertainment Company</div>
+        <h1 class="h1">Music, culture & creative tech — made for the now.</h1>
+        <p class="sub">We build and amplify art-first brands. Quantumnova Records leads our sound.
+          Pixionyx powers the look. AutoBookPress rounds out our publishing heritage.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="brand">
-      <h3><a href="https://greetingcardgenius.com.au" target="_blank" style="color: #3660f3; font-weight: 600;">Greeting Card Genius</a></h3>
-      <p>AI-designed greeting cards for all occasions.</p>
+  <!-- Quantumnova Records -->
+  <section id="records" class="section">
+    <div class="wrap">
+      <h2>Quantumnova Records</h2>
+      <p class="lead">A label for boundary-pushing artists. Explore current releases from the QN catalog.</p>
+
+      <!-- optional label tags -->
+      <div style="margin-bottom:18px">
+        <span class="tag">Electronic</span>
+        <span class="tag">Alt / Rock</span>
+        <span class="tag">Pop</span>
+        <span class="tag">Experimental</span>
+      </div>
+
+      <!-- Cover grid: use the filenames you added to /assets -->
+      <div class="grid">
+        <!-- The Quiet Violence — I Burn Different -->
+        <article class="card">
+          <img class="art" src="/assets/tqv-ibd.png" alt="The Quiet Violence — I Burn Different cover" />
+          <div class="meta">
+            <div class="t">I Burn Different</div>
+            <div class="a">The Quiet Violence</div>
+          </div>
+        </article>
+
+        <!-- Nico Lume — Midnight Switch -->
+        <article class="card">
+          <img class="art" src="/assets/nl-midnightswitch.png" alt="Nico Lume — Midnight Switch cover" />
+          <div class="meta">
+            <div class="t">Midnight Switch</div>
+            <div class="a">Nico Lume</div>
+          </div>
+        </article>
+
+        <!-- Resoniq — Signal -->
+        <article class="card">
+          <img class="art" src="/assets/resoniq-signal.png" alt="Resoniq — Signal cover" />
+          <div class="meta">
+            <div class="t">Signal</div>
+            <div class="a">Resoniq</div>
+          </div>
+        </article>
+
+        <!-- Trey Vorn — No Chains -->
+        <article class="card">
+          <img class="art" src="/assets/tv-nochains.png" alt="Trey Vorn — No Chains cover" />
+          <div class="meta">
+            <div class="t">No Chains</div>
+            <div class="a">Trey Vorn</div>
+          </div>
+        </article>
+
+        <!-- Gravenyx — Dying Young -->
+        <article class="card">
+          <img class="art" src="/assets/gravenyx-dyingyoung.png" alt="Gravenyx — Dying Young cover" />
+          <div class="meta">
+            <div class="t">Dying Young</div>
+            <div class="a">Gravenyx</div>
+          </div>
+        </article>
+
+        <!-- Sylvie Knox — Sweet Disaster -->
+        <article class="card">
+          <img class="art" src="/assets/sk-sd.png" alt="Sylvie Knox — Sweet Disaster cover" />
+          <div class="meta">
+            <div class="t">Sweet Disaster</div>
+            <div class="a">Sylvie Knox</div>
+          </div>
+        </article>
+
+        <!-- Darius Creed — Get It Any Way -->
+        <article class="card">
+          <img class="art" src="/assets/dc-getitanyway.png" alt="Darius Creed — Get It Any Way cover" />
+          <div class="meta">
+            <div class="t">Get It Any Way</div>
+            <div class="a">Darius Creed</div>
+          </div>
+        </article>
+
+        <!-- Sanguira — Pentagram Lights -->
+        <article class="card">
+          <img class="art" src="/assets/sanguira-pl.png" alt="Sanguira — Pentagram Lights cover" />
+          <div class="meta">
+            <div class="t">Pentagram Lights</div>
+            <div class="a">Sanguira</div>
+          </div>
+        </article>
+
+        <!-- Soul Carnival — Soul in Motion -->
+        <article class="card">
+          <img class="art" src="/assets/sc-sol.png" alt="Soul Carnival — Soul in Motion cover" />
+          <div class="meta">
+            <div class="t">Soul in Motion</div>
+            <div class="a">Soul Carnival</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Streaming CTA row (add links when ready) -->
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+        <a class="cta" style="text-decoration:none" href="#" title="Add Spotify link">Listen on Spotify</a>
+        <a class="cta" style="text-decoration:none" href="#" title="Add YouTube link">Watch on YouTube</a>
+        <a class="cta" style="text-decoration:none" href="#" title="Add TikTok link">Follow on TikTok</a>
+      </div>
     </div>
+  </section>
 
-    <div class="brand">
-      <h3><a href="https://autobookpress.com.au" target="_blank" style="color: #7ce081; font-weight: 600;">AutoBook<span style="color: #f5d96c;">Press</span></a></h3>
-      <p>AI-crafted fiction, productivity, and puzzle books.</p>
+  <!-- Brands focus -->
+  <section id="brands" class="section">
+    <div class="wrap brands">
+      <!-- Pixionyx — Primary brand -->
+      <div class="panel">
+        <h3>Pixionyx</h3>
+        <p>Our flagship merch imprint — AI-led art on apparel, posters, puzzles, drinkware and more.</p>
+        <a class="btn" href="https://pixionyx.com.au/" target="_blank" rel="noopener">Shop Pixionyx</a>
+      </div>
+
+      <!-- AutoBookPress — heritage/secondary -->
+      <div class="panel">
+        <h3>AutoBookPress <span style="font-weight:600;color:var(--muted)">(heritage)</span></h3>
+        <p>Selected titles across fiction and concepts — a smaller focus while Records takes the lead.</p>
+        <a class="btn" href="https://autobookpress.com.au" target="_blank" rel="noopener">Visit AutoBookPress</a>
+      </div>
     </div>
+  </section>
 
-    <div class="brand">
-      <h3><a href="https://puppetprompts.com.au" target="_blank" style="color: #f5d96c; font-weight: 600;">Puppet Prompts</a></h3>
-      <p>AI-generated puppet scripts — expanded updates coming soon.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      © 2025 QUANTUMNOVA PTY LTD · ABN 43686016526 · <a href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a><br/>
+      <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a>
     </div>
-
-    <div class="brand">
-      <h3><a href="https://keywordkode.com.au" target="_blank" style="color: #5cd6cd; font-weight: 600;">Keyword<span style="color: #f5d96c;">Kode</span></a></h3>
-      <p>AI-powered SEO content and affiliate marketing automation.</p>
-    </div>
-
-    <div class="brand coming-soon">
-      <h3 style="color: #ff56b5; font-weight: 600; letter-spacing: 1px;">GENR8</h3>
-      <p>AI-powered meme and trend acceleration engine.</p>
-    </div>
-
-    <div class="brand coming-soon">
-      <h3 style="color: #f75ca4; font-weight: 600; letter-spacing: 0.5px;">WARPINK</h3>
-      <p>Next-gen social storytelling and brand virality platform.</p>
-    </div>
-
-    <div class="brand coming-soon">
-      <h3 style="color: #6fd1ff; font-weight: 600;">MediMind</h3>
-      <p>AI health companion for medication tracking, therapy, and wellness tools.</p>
-    </div>
-
-  </div>
-</section>
-
-
-<footer>
-  &copy; 2025 QUANTUMNOVA PTY LTD — All rights reserved.<br />
-  Registered in Australia | ABN 43686016526<br />
-  <a href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a>
-  <p>
-    <a href="/privacy.html">Privacy Policy</a> |
-    <a href="/refund.html">Refund Policy</a> |
-    <a href="/terms.html">Terms & Conditions</a>
-  </p>
-</footer>
-
+  </footer>
 </body>
 </html>
