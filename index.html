@@ -188,7 +188,7 @@
   <div class="wrap brands">
     
     <!-- PixiOnyx — Primary brand -->
-    <div class="panel brand-card" style="text-align:center">
+    <div class="panel brand-card pixionyx" style="text-align:center">
       <a href="https://pixionyx.com.au/" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
         <img src="/assets/PixiOnyx-logo-redwhite.png" alt="PixiOnyx Logo" class="brand-logo" />
         <h3 style="margin:0;color:#fff">PixiOnyx</h3>
@@ -198,7 +198,7 @@
     </div>
 
     <!-- AutoBookPress -->
-    <div class="panel brand-card" style="text-align:center">
+    <div class="panel brand-card autobookpress" style="text-align:center">
       <a href="https://autobookpress.com.au" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
         <img src="/assets/abp.png" alt="AutoBookPress Logo" class="brand-logo" />
         <h3 style="margin:0;color:#fff">AutoBookPress</h3>
@@ -211,6 +211,15 @@
 </section>
 
 <style>
+  /* Ensure consistent height for alignment */
+  .brands {
+    align-items: stretch;
+  }
+  .brand-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .brand-logo {
     max-width:180px;
     width:100%;
@@ -220,11 +229,19 @@
     filter: drop-shadow(0 0 0px transparent);
   }
 
-  .brand-card:hover .brand-logo {
+  /* PixiOnyx hover glow */
+  .pixionyx:hover .brand-logo {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 12px var(--accent));
+    filter: drop-shadow(0 0 14px #e63946);
+  }
+
+  /* AutoBookPress hover glow */
+  .autobookpress:hover .brand-logo {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 14px #00ffc8);
   }
 </style>
+
 
 
 
