@@ -188,9 +188,9 @@
   <div class="wrap brands">
     
     <!-- PixiOnyx — Primary brand -->
-    <div class="panel" style="text-align:center">
+    <div class="panel brand-card" style="text-align:center">
       <a href="https://pixionyx.com.au/" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
-        <img src="/assets/PixiOnyx-logo-redwhite.png" alt="PixiOnyx Logo" style="max-width:180px;width:100%;height:auto;margin-bottom:14px" />
+        <img src="/assets/PixiOnyx-logo-redwhite.png" alt="PixiOnyx Logo" class="brand-logo" />
         <h3 style="margin:0;color:#fff">PixiOnyx</h3>
       </a>
       <p>Our flagship clothing & wall-art imprint — AI-led designs across apparel, posters, puzzles, drinkware and more.</p>
@@ -198,9 +198,9 @@
     </div>
 
     <!-- AutoBookPress -->
-    <div class="panel" style="text-align:center">
+    <div class="panel brand-card" style="text-align:center">
       <a href="https://autobookpress.com.au" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
-        <img src="/assets/abp.png" alt="AutoBookPress Logo" style="max-width:180px;width:100%;height:auto;margin-bottom:14px" />
+        <img src="/assets/abp.png" alt="AutoBookPress Logo" class="brand-logo" />
         <h3 style="margin:0;color:#fff">AutoBookPress</h3>
       </a>
       <p>Original fiction, concept books, and experimental titles from the Quantumnova publishing arm.</p>
@@ -209,6 +209,23 @@
 
   </div>
 </section>
+
+<style>
+  .brand-logo {
+    max-width:180px;
+    width:100%;
+    height:auto;
+    margin-bottom:14px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 0px transparent);
+  }
+
+  .brand-card:hover .brand-logo {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px var(--accent));
+  }
+</style>
+
 
 
   <footer>
