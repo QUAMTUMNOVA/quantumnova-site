@@ -3,74 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>QUANTUMNOVA | Entertainment & Records</title>
-  <meta name="description" content="QUANTUMNOVA is a modern entertainment company — home of Quantumnova Records and PixiOnyx. Music, culture and creative tech." />
+  <title>QUANTUMNOVA | Records, PixiOnyx & Publishing</title>
+  <meta name="description" content="QUANTUMNOVA is a modern creative company spanning music, fashion and publishing — home of Quantumnova Records, PixiOnyx and AutoBookPress." />
   <link rel="icon" href="/assets/qn-favicon.png" type="image/png" />
 
   <style>
     :root{
       --bg:#070809; --panel:#0e1013; --ink:#e8f7f1; --muted:#a9b5b0;
-      --accent:#00ffc8; --accent-2:#7a5cff; --line:#1b1f25;
+      --accent:#00ffc8; --accent-2:#7a5cff; --pixi:#e63946; --line:#1b1f25;
     }
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     a{color:inherit}
     .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
 
-    header{position:sticky;top:0;z-index:50;background:rgba(7,8,9,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    header{position:sticky;top:0;z-index:50;background:rgba(7,8,9,.84);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
     .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
     .brand-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+    .nav nav{display:flex;align-items:center}
     .nav a{opacity:.9;text-decoration:none;margin-left:18px;font-weight:600}
     .nav a:hover{opacity:1}
-    .cta{padding:8px 14px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#000;font-weight:800}
+    .cta{display:inline-block;padding:10px 15px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#000!important;font-weight:800;text-decoration:none}
+    .cta-pixi{background:linear-gradient(90deg,#ff5262,var(--pixi));color:#fff!important}
 
     .hero{position:relative;isolation:isolate}
-    .hero img{width:100%;height:56vw;max-height:560px;object-fit:cover;filter:contrast(1.05) saturate(1.1) brightness(.85)}
-    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,9,.35),rgba(7,8,9,.9) 70%);display:grid;place-items:end start}
-    .hero-copy{padding:38px}
+    .hero img{width:100%;height:56vw;max-height:560px;object-fit:cover;filter:contrast(1.05) saturate(1.1) brightness(.75)}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,9,.22),rgba(7,8,9,.92) 78%);display:grid;place-items:end start}
+    .hero-copy{padding:42px 20px}
     .eyebrow{color:var(--accent);font-weight:800;letter-spacing:.1em;text-transform:uppercase}
-    .h1{font-size:clamp(28px,4.6vw,54px);line-height:1.02;margin:.35em 0 .2em}
-    .sub{color:var(--muted);max-width:760px}
+    .h1{font-size:clamp(32px,5vw,58px);line-height:1.02;margin:.3em 0 .22em;max-width:900px}
+    .sub{color:var(--muted);max-width:760px;font-size:clamp(16px,1.7vw,19px);line-height:1.55}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 
     .section{padding:64px 0;border-top:1px solid var(--line)}
-    .section h2{font-size:clamp(24px,3.4vw,38px);margin:0 0 8px}
-    .section p.lead{color:var(--muted);margin:0 0 26px}
-    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-right:8px}
+    .section h2{font-size:clamp(26px,3.4vw,40px);margin:0 0 8px}
+    .section p.lead{color:var(--muted);margin:0 0 26px;max-width:820px;line-height:1.55}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:26px}
+    .section-head .lead{margin-bottom:0!important}
 
+    /* PixiOnyx */
+    .pixi-section{background:radial-gradient(circle at 88% 0%,rgba(230,57,70,.12),transparent 34%)}
+    .pixi-brandline{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+    .pixi-logo{width:150px;max-height:82px;object-fit:contain;filter:drop-shadow(0 0 14px rgba(230,57,70,.25))}
+    .product-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:18px}
+    .product-tile{position:relative;min-height:390px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#111;text-decoration:none;isolation:isolate}
+    .product-tile:first-child{min-height:520px}
+    .product-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s ease;z-index:-2}
+    .product-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04) 34%,rgba(0,0,0,.86) 100%);z-index:-1}
+    .product-tile:hover img{transform:scale(1.035)}
+    .product-copy{position:absolute;left:0;right:0;bottom:0;padding:22px}
+    .product-kicker{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#ff6d79;margin-bottom:5px}
+    .product-name{font-weight:800;font-size:clamp(20px,2.1vw,28px);line-height:1.1}
+    .product-price{margin-top:7px;color:#d7dcda;font-size:14px}
+    .pixi-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+    /* Placeholder styling until local product images are added */
+    .product-tile.no-image{background:linear-gradient(145deg,#17191d,#0b0c0e)}
+    .product-tile.no-image:before{content:"PIXIONYX";position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(34px,5vw,72px);font-weight:900;letter-spacing:.08em;color:rgba(255,255,255,.04);transform:rotate(-12deg)}
+
+    /* Records */
+    .spotify-wrap{background:linear-gradient(135deg,rgba(29,185,84,.08),rgba(122,92,255,.08));border:1px solid var(--line);border-radius:18px;padding:18px;margin:18px 0 30px}
+    .spotify-wrap iframe{display:block;width:100%;border:0;border-radius:12px}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-right:8px;margin-bottom:8px}
     .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
-    @media (max-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
-    @media (max-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
-
-    .card, .card-link{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .18s, box-shadow .18s;text-decoration:none}
-    .card:hover, .card-link:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.35)}
+    .card-link{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .18s,box-shadow .18s;text-decoration:none}
+    .card-link:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.35)}
     .art{aspect-ratio:1/1;width:100%;object-fit:cover;background:#0b0d10}
     .meta{padding:12px 12px 16px}
     .t{font-weight:700}
     .a{color:var(--muted);font-size:14px;margin-top:2px}
+    .streaming-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
 
-    .brands{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
-    @media (max-width:960px){.brands{grid-template-columns:1fr;}}
-    .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
-    .panel h3{margin:0 0 8px;font-size:22px}
-    .panel p{color:var(--muted);margin:8px 0 16px}
-    .panel .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;background:rgba(0,255,200,.12);border:1px solid rgba(0,255,200,.35);text-decoration:none;font-weight:700}
+    /* AutoBookPress compact footer-area section */
+    .publishing-strip{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .abp-logo{width:105px;max-height:74px;object-fit:contain}
+    .publishing-strip h3{margin:0 0 5px;font-size:20px}
+    .publishing-strip p{color:var(--muted);margin:0;line-height:1.5}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:rgba(0,255,200,.1);border:1px solid rgba(0,255,200,.32);text-decoration:none;font-weight:700;white-space:nowrap}
 
     footer{padding:40px 0;border-top:1px solid var(--line);color:#93a29b;font-size:14px}
     footer a{color:var(--accent)}
+
+    @media(max-width:1024px){
+      .grid{grid-template-columns:repeat(3,1fr)}
+      .product-grid{grid-template-columns:1fr 1fr}
+      .product-tile:first-child{grid-column:1/-1;min-height:460px}
+    }
+    @media(max-width:720px){
+      .nav nav a:not(.cta){display:none}
+      .hero-copy{padding-bottom:30px}
+      .section{padding:48px 0}
+      .section-head{display:block}
+      .section-head .cta{margin-top:16px}
+      .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+      .product-grid{grid-template-columns:1fr}
+      .product-tile,.product-tile:first-child{grid-column:auto;min-height:390px}
+      .publishing-strip{grid-template-columns:1fr;text-align:center}
+      .abp-logo{margin:0 auto}
+      .publishing-strip .btn{justify-self:center}
+      .pixi-brandline{display:block}
+      .pixi-logo{margin-bottom:12px}
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="wrap nav">
-      <div class="brand">
-        <span class="brand-dot"></span>
-        QUANTUMNOVA
-      </div>
+      <div class="brand"><span class="brand-dot"></span>QUANTUMNOVA</div>
       <nav>
+        <a href="#pixionyx">PixiOnyx</a>
         <a href="#records">Records</a>
-        <a href="#brands">PixiOnyx</a>
+        <a href="#publishing">Publishing</a>
         <a href="mailto:admin@quantumnova.com.au" class="cta">Contact</a>
       </nav>
     </div>
@@ -80,178 +126,174 @@
     <img src="/assets/qnova-hero.jpg" alt="QUANTUMNOVA banner" />
     <div class="overlay">
       <div class="hero-copy wrap">
-        <div class="eyebrow">Modern Entertainment Company</div>
-        <h1 class="h1">Music, culture & creative tech — made for the now.</h1>
-        <p class="sub">We build and amplify art-first brands. Quantumnova Records leads our sound.
-          PixiOnyx powers the look. AutoBookPress rounds out our publishing heritage.</p>
+        <div class="eyebrow">Independent creative company</div>
+        <h1 class="h1">Sound. Style. Ideas.</h1>
+        <p class="sub">QUANTUMNOVA builds independent creative brands across music, fashion and publishing — from Quantumnova Records to PixiOnyx and AutoBookPress.</p>
+        <div class="hero-actions">
+          <a class="cta cta-pixi" href="https://www.pixionyx.store/collections/clothing" target="_blank" rel="noopener">Shop PixiOnyx Clothing</a>
+          <a class="cta" href="#records">Explore Quantumnova Records</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Quantumnova Records -->
+  <!-- PIXIONYX: primary commercial feature -->
+  <section id="pixionyx" class="section pixi-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="pixi-brandline">
+            <img src="/assets/PixiOnyx-logo-redwhite.png" alt="PixiOnyx" class="pixi-logo" />
+            <div>
+              <h2>Wear something different.</h2>
+              <p class="lead">Independent apparel, artist merch and statement designs from PixiOnyx.</p>
+            </div>
+          </div>
+        </div>
+        <a class="cta cta-pixi" href="https://www.pixionyx.store/collections/clothing" target="_blank" rel="noopener">Shop all clothing</a>
+      </div>
+
+      <!--
+        Add these three product images to /assets/ to activate the image tiles:
+        pixionyx-destroy-them-all-hoodie.jpg
+        pixionyx-lotus-shirt.jpg
+        pixionyx-sweatpants.jpg
+      -->
+      <div class="product-grid">
+        <a class="product-tile" href="https://www.pixionyx.store/products/the-quiet-violence-destroy-them-all-hoodie-official-merch" target="_blank" rel="noopener">
+          <img src="/assets/pixionyx-destroy-them-all-hoodie.jpg" alt="The Quiet Violence Destroy Them All official hoodie" onerror="this.style.display='none';this.parentElement.classList.add('no-image')" />
+          <div class="product-copy">
+            <div class="product-kicker">Official The Quiet Violence merch</div>
+            <div class="product-name">Destroy Them All Hoodie</div>
+            <div class="product-price">From $65.99 AUD</div>
+          </div>
+        </a>
+
+        <a class="product-tile" href="https://www.pixionyx.store/products/lotus-blossom-unisex-t-shirt-softstyle-tee-yoga-apparel-mindfulness-gift-meditation-shirt-spiritual-wear-lotus-design" target="_blank" rel="noopener">
+          <img src="/assets/pixionyx-lotus-shirt.jpg" alt="PixiOnyx Lotus Blossom unisex T-shirt" onerror="this.style.display='none';this.parentElement.classList.add('no-image')" />
+          <div class="product-copy">
+            <div class="product-kicker">PixiOnyx apparel</div>
+            <div class="product-name">Lotus Blossom Tee</div>
+            <div class="product-price">From $27.99 AUD</div>
+          </div>
+        </a>
+
+        <a class="product-tile" href="https://www.pixionyx.store/products/pixionyx-cozy-unisex-fleece-sweatpants-embroidered-design-casual-loungewear-perfect-gift-for-relaxation-home-travel-outdoor-activities" target="_blank" rel="noopener">
+          <img src="/assets/pixionyx-sweatpants.jpg" alt="PixiOnyx embroidered fleece sweatpants" onerror="this.style.display='none';this.parentElement.classList.add('no-image')" />
+          <div class="product-copy">
+            <div class="product-kicker">PixiOnyx essentials</div>
+            <div class="product-name">Embroidered Fleece Sweatpants</div>
+            <div class="product-price">$79.99 AUD</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="pixi-actions">
+        <a class="btn" href="https://www.pixionyx.store/collections/hoodies" target="_blank" rel="noopener">Hoodies</a>
+        <a class="btn" href="https://www.pixionyx.store/collections/shirts" target="_blank" rel="noopener">Shirts</a>
+        <a class="btn" href="https://www.pixionyx.store/collections/clothing" target="_blank" rel="noopener">All clothing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUANTUMNOVA RECORDS -->
   <section id="records" class="section">
     <div class="wrap">
-      <h2>Quantumnova Records</h2>
-      <p class="lead">A label for boundary-pushing artists. Explore current releases from the QN catalog.</p>
+      <div class="section-head">
+        <div>
+          <h2>Quantumnova Records</h2>
+          <p class="lead">Independent music without a single lane. Stream the Quantumnova catalogue or explore releases by artist below.</p>
+        </div>
+      </div>
+
+      <div class="spotify-wrap">
+        <iframe
+          data-testid="embed-iframe"
+          src="https://open.spotify.com/embed/playlist/77amCwJSWddkeG3VYB1S0Q?utm_source=generator&si=fc7b93a2ef0c4155"
+          height="352"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          title="Quantumnova Records Spotify playlist">
+        </iframe>
+      </div>
 
       <div style="margin-bottom:18px">
-        <span class="tag">Electronic</span>
-        <span class="tag">Alt / Rock</span>
-        <span class="tag">Pop</span>
-        <span class="tag">Experimental</span>
+        <span class="tag">Electronic</span><span class="tag">Alt / Rock</span><span class="tag">Hip-Hop / R&B</span><span class="tag">Pop</span><span class="tag">Experimental</span>
       </div>
 
       <div class="grid">
-        <!-- The Quiet Violence — I Burn Different -->
         <a class="card-link" href="https://open.spotify.com/album/4cOrTo8gwutx6AfpM3SBsD" target="_blank" rel="noopener">
           <img class="art" src="/assets/tqv-ibd.png" alt="The Quiet Violence — I Burn Different cover" />
           <div class="meta"><div class="t">I Burn Different</div><div class="a">The Quiet Violence</div></div>
         </a>
-
-        <!-- Nico Lume — Midnight Switch -->
         <a class="card-link" href="https://open.spotify.com/album/3QH6f7VZD2VwVCuvmqMxQg" target="_blank" rel="noopener">
           <img class="art" src="/assets/nl-midnightswitch.png" alt="Nico Lume — Midnight Switch cover" />
           <div class="meta"><div class="t">Midnight Switch</div><div class="a">Nico Lume</div></div>
         </a>
-
-        <!-- Resoniq — Signal -->
         <a class="card-link" href="https://open.spotify.com/album/626RxR6RqHlBVEvJNHTAlL" target="_blank" rel="noopener">
           <img class="art" src="/assets/resoniq-signal.png" alt="Resoniq — Signal cover" />
-          <div class="meta">
-          <div class="t">Signal</div>
-          <div class="a">Resoniq</div>
-         </div>
+          <div class="meta"><div class="t">Signal</div><div class="a">Resoniq</div></div>
         </a>
-
-
-
-        <!-- Resoniq — Room 122  -->
         <a class="card-link" href="https://open.spotify.com/album/1iCZUm7yzPGRXLjDGHiHxb" target="_blank" rel="noopener">
           <img class="art" src="/assets/resoniq-122.jpg" alt="Resoniq — Room 122 EP cover" />
           <div class="meta"><div class="t">Room 122</div><div class="a">Resoniq</div></div>
         </a>
-
-        <!-- Trey Vorn — No Chains -->
         <a class="card-link" href="https://open.spotify.com/album/191s83q3iFzFHi7sq3WuuT" target="_blank" rel="noopener">
           <img class="art" src="/assets/tv-nochains.png" alt="Trey Vorn — No Chains cover" />
           <div class="meta"><div class="t">No Chains</div><div class="a">Trey Vorn</div></div>
         </a>
-
-        <!-- Gravenyx — Dying Young -->
         <a class="card-link" href="https://open.spotify.com/album/1IF1gGTgKsEHOkWSsulTfz" target="_blank" rel="noopener">
           <img class="art" src="/assets/gravenyx-dyingyoung.png" alt="Gravenyx — Dying Young cover" />
           <div class="meta"><div class="t">Dying Young</div><div class="a">Gravenyx</div></div>
         </a>
-
-        <!-- Sylvie Knox — Sweet Disaster -->
         <a class="card-link" href="https://open.spotify.com/album/6Tk4lZJy5pntWTb7BQo19s" target="_blank" rel="noopener">
           <img class="art" src="/assets/sk-sd.png" alt="Sylvie Knox — Sweet Disaster cover" />
           <div class="meta"><div class="t">Sweet Disaster</div><div class="a">Sylvie Knox</div></div>
         </a>
-
-        <!-- Darius Creed — Get It Anyway -->
         <a class="card-link" href="https://open.spotify.com/album/2QItYMTco7yWvgDlBVU39O" target="_blank" rel="noopener">
-          <img class="art" src="/assets/dc-getitanyway.png" alt="Darius Creed — Get It Any Way cover" />
+          <img class="art" src="/assets/dc-getitanyway.png" alt="Darius Creed — Get It Anyway cover" />
           <div class="meta"><div class="t">Get It Anyway</div><div class="a">Darius Creed</div></div>
         </a>
-
-        <!-- Sanguira — Pentagram Lights -->
         <a class="card-link" href="https://open.spotify.com/album/03yk3xLT8I3zezwc0LthLw" target="_blank" rel="noopener">
           <img class="art" src="/assets/sanguira-pl.png" alt="Sanguira — Pentagram Lights cover" />
           <div class="meta"><div class="t">Pentagram Lights</div><div class="a">Sanguira</div></div>
         </a>
-
-        <!-- Soul Carnival — Soul in Motion -->
         <a class="card-link" href="https://open.spotify.com/album/2sH1BGZ0KwpmlAuHdNEi84" target="_blank" rel="noopener">
           <img class="art" src="/assets/sc-sol.png" alt="Soul Carnival — Soul in Motion cover" />
-          <div class="meta">
-          <div class="t">Soul in Motion</div>
-          <div class="a">Soul Carnival</div>
-  </div>
-</a>
-
-
-        <!-- Bury The Cure — Teeth First -->
+          <div class="meta"><div class="t">Soul in Motion</div><div class="a">Soul Carnival</div></div>
+        </a>
         <a class="card-link" href="https://open.spotify.com/album/3NMapmHACEDbnIN5yk0bmC" target="_blank" rel="noopener">
           <img class="art" src="/assets/btc-teethfirst.png" alt="Bury The Cure — Teeth First cover" />
           <div class="meta"><div class="t">Teeth First</div><div class="a">Bury The Cure</div></div>
         </a>
       </div>
 
-      <!-- Streaming CTA row -->
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
-        <a class="cta" style="text-decoration:none" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener" title="Quantumnova Presents on Spotify">Listen on Spotify</a>
-        <a class="cta" style="text-decoration:none" href="https://www.youtube.com/playlist?list=PLUIIegQ6zH1z9BSqj8B86p3cMwXihgbnD" target="_blank" rel="noopener" title="Quantumnova Records playlist on YouTube">Watch on YouTube</a>
-        <a class="cta" style="text-decoration:none" href="https://www.tiktok.com/@quantumnovahq" target="_blank" rel="noopener" title="Quantumnova on TikTok">Follow on TikTok</a>
+      <div class="streaming-actions">
+        <a class="cta" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener">Open in Spotify</a>
+        <a class="cta" href="https://www.youtube.com/playlist?list=PLUIIegQ6zH1z9BSqj8B86p3cMwXihgbnD" target="_blank" rel="noopener">Watch on YouTube</a>
+        <a class="cta" href="https://www.tiktok.com/@quantumnovahq" target="_blank" rel="noopener">Follow on TikTok</a>
       </div>
     </div>
   </section>
 
-  <!-- Brands focus -->
-<section id="brands" class="section">
-  <div class="wrap brands">
-    
-    <!-- PixiOnyx — Primary brand -->
-    <div class="panel brand-card pixionyx" style="text-align:center">
-      <a href="https://www.pixionyx.store/" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
-        <img src="/assets/PixiOnyx-logo-redwhite.png" alt="PixiOnyx Logo" class="brand-logo" />
-        <h3 style="margin:0;color:#fff">PixiOnyx</h3>
-      </a>
-      <p>Our flagship clothing & wall-art imprint — AI-led designs across apparel, posters, puzzles, drinkware and more.</p>
-      <a class="btn" href="https://www.pixionyx.store/" target="_blank" rel="noopener">Shop PixiOnyx</a>
+  <!-- AUTObookpress: deliberately compact -->
+  <section id="publishing" class="section">
+    <div class="wrap">
+      <div class="publishing-strip">
+        <img src="/assets/abp.png" alt="AutoBookPress" class="abp-logo" />
+        <div>
+          <h3>AutoBookPress</h3>
+          <p>Books and publishing from QUANTUMNOVA — spanning non-fiction, fiction and puzzle titles.</p>
+        </div>
+        <a class="btn" href="https://www.amazon.com.au/stores/AutoBook-Press/author/B0F4WNZPRG?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noopener">Browse books</a>
+      </div>
     </div>
-
-    <!-- AutoBookPress -->
-    <div class="panel brand-card autobookpress" style="text-align:center">
-      <a href="https://www.amazon.com.au/stores/AutoBook-Press/author/B0F4WNZPRG?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
-        <img src="/assets/abp.png" alt="AutoBookPress Logo" class="brand-logo" />
-        <h3 style="margin:0;color:#fff">AutoBookPress</h3>
-      </a>
-      <p>Original fiction, concept books, and experimental titles from the Quantumnova publishing arm.</p>
-      <a class="btn" href="https://www.amazon.com.au/stores/AutoBook-Press/author/B0F4WNZPRG?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noopener">Visit AutoBookPress</a>
-    </div>
-
-  </div>
-</section>
-
-<style>
-  /* Ensure consistent height for alignment */
-  .brands {
-    align-items: stretch;
-  }
-  .brand-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .brand-logo {
-    max-width:180px;
-    width:100%;
-    height:auto;
-    margin-bottom:14px;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 0 0px transparent);
-  }
-
-  /* PixiOnyx hover glow */
-  .pixionyx:hover .brand-logo {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 14px #e63946);
-  }
-
-  /* AutoBookPress hover glow */
-  .autobookpress:hover .brand-logo {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 14px #00ffc8);
-  }
-</style>
-
-
-
+  </section>
 
   <footer>
     <div class="wrap">
-      © 2025 QUANTUMNOVA PTY LTD · ABN 43686016526 · <a href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a><br/>
+      © 2026 QUANTUMNOVA PTY LTD · ABN 43686016526 · <a href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a><br/>
       <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a>
     </div>
   </footer>
