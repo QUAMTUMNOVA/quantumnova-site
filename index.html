@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>QUANTUMNOVA | Records, PixiOnyx & Publishing</title>
-  <meta name="description" content="QUANTUMNOVA is a modern creative company spanning music, fashion and publishing - home of Quantumnova Records, PixiOnyx and AutoBookPress." />
+  <meta name="description" content="QUANTUMNOVA is a modern creative company spanning music, fashion and publishing — home of Quantumnova Records, PixiOnyx and AutoBookPress." />
   <link rel="icon" href="/assets/qn-favicon.png" type="image/png" />
 
   <style>
@@ -63,6 +63,27 @@
     .product-tile.no-image{background:linear-gradient(145deg,#17191d,#0b0c0e)}
     .product-tile.no-image:before{content:"PIXIONYX";position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(34px,5vw,72px);font-weight:900;letter-spacing:.08em;color:rgba(255,255,255,.04);transform:rotate(-12deg)}
 
+
+    /* Featured releases carousel */
+    .release-showcase{margin:8px 0 30px}
+    .release-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:16px}
+    .release-head h3{margin:0;font-size:clamp(21px,2.6vw,30px)}
+    .release-head p{margin:5px 0 0;color:var(--muted);font-size:14px}
+    .carousel-shell{position:relative}
+    .release-carousel{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 54px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px 2px 10px}
+    .release-carousel::-webkit-scrollbar{display:none}
+    .release-slide{scroll-snap-align:start;display:block;position:relative;aspect-ratio:1/1;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#0b0d10;text-decoration:none}
+    .release-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .28s ease,filter .28s ease}
+    .release-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(0,0,0,.62));opacity:.75;transition:opacity .25s}
+    .release-slide:hover img{transform:scale(1.04)}
+    .release-slide:hover:after{opacity:.45}
+    .carousel-controls{display:flex;gap:9px}
+    .carousel-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:22px;cursor:pointer;display:grid;place-items:center}
+    .carousel-btn:hover{border-color:rgba(0,255,200,.45);background:#12161a}
+    .carousel-dots{display:flex;justify-content:center;gap:7px;margin-top:11px}
+    .carousel-dot{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:#394047;cursor:pointer;transition:transform .2s,background .2s}
+    .carousel-dot.active{background:var(--accent);transform:scale(1.35)}
+
     /* Records */
     .spotify-wrap{background:linear-gradient(135deg,rgba(29,185,84,.08),rgba(122,92,255,.08));border:1px solid var(--line);border-radius:18px;padding:18px;margin:18px 0 30px}
     .spotify-wrap iframe{display:block;width:100%;border:0;border-radius:12px}
@@ -88,6 +109,7 @@
 
     @media(max-width:1024px){
       .grid{grid-template-columns:repeat(3,1fr)}
+      .release-carousel{grid-auto-columns:calc((100% - 36px)/3)}
       .product-grid{grid-template-columns:1fr 1fr}
       .product-tile:first-child{grid-column:1/-1;min-height:460px}
     }
@@ -98,6 +120,8 @@
       .section-head{display:block}
       .section-head .cta{margin-top:16px}
       .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+      .release-carousel{grid-auto-columns:72%}
+      .release-head{align-items:center}
       .product-grid{grid-template-columns:1fr}
       .product-tile,.product-tile:first-child{grid-column:auto;min-height:390px}
       .publishing-strip{grid-template-columns:1fr;text-align:center}
@@ -128,7 +152,7 @@
       <div class="hero-copy wrap">
         <div class="eyebrow">Independent creative company</div>
         <h1 class="h1">Sound. Style. Ideas.</h1>
-        <p class="sub">QUANTUMNOVA builds independent creative brands across music, fashion and publishing - from Quantumnova Records to PixiOnyx and AutoBookPress.</p>
+        <p class="sub">QUANTUMNOVA builds independent creative brands across music, fashion and publishing — from Quantumnova Records to PixiOnyx and AutoBookPress.</p>
         <div class="hero-actions">
           <a class="cta cta-pixi" href="https://www.pixionyx.store/collections/clothing" target="_blank" rel="noopener">Shop PixiOnyx Clothing</a>
           <a class="cta" href="#records">Explore Quantumnova Records</a>
@@ -203,6 +227,35 @@
         <div>
           <h2>Quantumnova Records</h2>
           <p class="lead">Independent music without a single lane. Stream the Quantumnova catalogue or explore releases by artist below.</p>
+        </div>
+      </div>
+
+      <div class="release-showcase">
+        <div class="release-head">
+          <div>
+            <h3>Featured releases</h3>
+            <p>A rotating selection from across Quantumnova Records.</p>
+          </div>
+          <div class="carousel-controls" aria-label="Featured release controls">
+            <button class="carousel-btn" id="releasePrev" type="button" aria-label="Previous releases">&#8249;</button>
+            <button class="carousel-btn" id="releaseNext" type="button" aria-label="Next releases">&#8250;</button>
+          </div>
+        </div>
+
+        <div class="carousel-shell">
+          <div class="release-carousel" id="releaseCarousel">
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/light-it-up.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/jingle.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/ans.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/afters.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/thunder.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/destroy.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/ab.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/ah.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/queen.png" alt="Quantumnova Records featured release cover" /></a>
+            <a class="release-slide" href="https://open.spotify.com/playlist/77amCwJSWddkeG3VYB1S0Q" target="_blank" rel="noopener"><img src="/assets/fire.png" alt="Quantumnova Records featured release cover" /></a>
+          </div>
+          <div class="carousel-dots" id="releaseDots" aria-label="Featured release pages"></div>
         </div>
       </div>
 
@@ -297,5 +350,72 @@
       <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const carousel = document.getElementById('releaseCarousel');
+      const prev = document.getElementById('releasePrev');
+      const next = document.getElementById('releaseNext');
+      const dotsWrap = document.getElementById('releaseDots');
+      if (!carousel || !prev || !next || !dotsWrap) return;
+
+      const slides = [...carousel.querySelectorAll('.release-slide')];
+      let timer;
+
+      const visibleCount = () => {
+        if (window.innerWidth <= 720) return 1;
+        if (window.innerWidth <= 1024) return 3;
+        return 4;
+      };
+
+      const pageCount = () => Math.max(1, Math.ceil(slides.length / visibleCount()));
+      const pageWidth = () => carousel.clientWidth;
+
+      function renderDots(){
+        dotsWrap.innerHTML = '';
+        for(let i=0;i<pageCount();i++){
+          const dot=document.createElement('button');
+          dot.className='carousel-dot';
+          dot.type='button';
+          dot.setAttribute('aria-label',`Go to featured releases page ${i+1}`);
+          dot.addEventListener('click',()=>{carousel.scrollTo({left:i*pageWidth(),behavior:'smooth'}); restart();});
+          dotsWrap.appendChild(dot);
+        }
+        updateDots();
+      }
+
+      function updateDots(){
+        const dots=[...dotsWrap.children];
+        const page=Math.min(dots.length-1,Math.round(carousel.scrollLeft/pageWidth()));
+        dots.forEach((d,i)=>d.classList.toggle('active',i===page));
+      }
+
+      function move(direction){
+        const max=carousel.scrollWidth-carousel.clientWidth;
+        let target=carousel.scrollLeft+(direction*pageWidth());
+        if(direction>0 && carousel.scrollLeft>=max-10) target=0;
+        if(direction<0 && carousel.scrollLeft<=10) target=max;
+        carousel.scrollTo({left:target,behavior:'smooth'});
+      }
+
+      function restart(){
+        clearInterval(timer);
+        timer=setInterval(()=>move(1),5500);
+      }
+
+      prev.addEventListener('click',()=>{move(-1);restart();});
+      next.addEventListener('click',()=>{move(1);restart();});
+      carousel.addEventListener('scroll',()=>requestAnimationFrame(updateDots));
+      carousel.addEventListener('mouseenter',()=>clearInterval(timer));
+      carousel.addEventListener('mouseleave',restart);
+      carousel.addEventListener('touchstart',()=>clearInterval(timer),{passive:true});
+      carousel.addEventListener('touchend',restart,{passive:true});
+      window.addEventListener('resize',renderDots);
+
+      renderDots();
+      restart();
+    })();
+  </script>
+
 </body>
 </html>
