@@ -1348,12 +1348,16 @@
 }
 
 .studio-delivery {
-  min-height: 214px;
+  min-height: 270px;
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 130px minmax(260px, 0.72fr);
+  gap: 24px;
   margin-top: 14px;
-  padding: 20px 24px;
+  padding: 24px 26px;
+}
+
+.studio-process {
+  grid-column: 1;
 }
 
 .studio-delivery-label {
@@ -1372,8 +1376,8 @@
 
 .studio-process ol {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px 0;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1383,6 +1387,17 @@
   min-width: 0;
   padding: 2px 14px 0;
   border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.studio-process li:nth-child(3) {
+  padding: 14px 14px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 0;
+}
+
+.studio-process li:nth-child(4) {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .studio-process li:first-child {
@@ -1406,11 +1421,12 @@
 .studio-outcomes > p {
   margin: 7px 0 0;
   color: rgba(255, 255, 255, 0.38);
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.55;
 }
 
 .studio-outcomes {
+  grid-column: 3;
   padding-left: 26px;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -2455,19 +2471,19 @@
   }
 
   .studio-delivery {
-    min-height: 184px;
+    min-height: 250px;
     gap: 20px;
-    padding: 14px 18px;
+    padding: 18px 20px;
   }
 
   .studio-delivery h3 {
     margin: 8px 0 11px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .studio-process li p,
   .studio-outcomes > p {
-    font-size: 7px;
+    font-size: 9px;
   }
 
   .product-portal {
@@ -3165,6 +3181,11 @@
     padding: 18px;
   }
 
+  .studio-process,
+  .studio-outcomes {
+    grid-column: auto;
+  }
+
   .studio-delivery h3 {
     font-size: 22px;
   }
@@ -3175,7 +3196,7 @@
   }
 
   .studio-process li:nth-child(3) {
-    padding-left: 0;
+    padding: 14px 14px 0 0;
     border-left: 0;
   }
 
