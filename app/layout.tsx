@@ -13,9 +13,12 @@ export const metadata: Metadata = {
   applicationName: "QUANTUMNOVA",
   authors: [{ name: "QUANTUMNOVA PTY LTD" }],
   creator: "QUANTUMNOVA PTY LTD",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   openGraph: {
     type: "website",

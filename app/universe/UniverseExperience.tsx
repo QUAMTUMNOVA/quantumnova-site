@@ -90,6 +90,50 @@ export default function UniverseExperience() {
   }, []);
 
   useEffect(() => {
+    let sceneFrame = 0;
+    const updateActiveScene = () => {
+      window.cancelAnimationFrame(sceneFrame);
+      sceneFrame = window.requestAnimationFrame(() => {
+        const chapters = Array.from(document.querySelectorAll<HTMLElement>("[data-universe-scene]"));
+        if (!chapters.length) return;
+        const focusLine = window.scrollY + window.innerHeight * 0.5;
+        let nearestScene = 0;
+        let nearestDistance = Number.POSITIVE_INFINITY;
+        chapters.forEach((chapter, index) => {
+          const center = chapter.offsetTop + chapter.offsetHeight * 0.5;
+          const distance = Math.abs(center - focusLine);
+          if (distance < nearestDistance) {
+            nearestDistance = distance;
+            nearestScene = index;
+          }
+        });
+        setActiveScene(nearestScene);
+      });
+    };
+
+    const resolveHash = () => {
+      const hash = window.location.hash.slice(1);
+      if (!universeScenes.some((scene) => scene.id === hash)) return;
+      window.requestAnimationFrame(() => {
+        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    };
+
+    const initialHashTimer = window.setTimeout(resolveHash, 160);
+    updateActiveScene();
+    window.addEventListener("scroll", updateActiveScene, { passive: true });
+    window.addEventListener("resize", updateActiveScene);
+    window.addEventListener("hashchange", resolveHash);
+    return () => {
+      window.clearTimeout(initialHashTimer);
+      window.cancelAnimationFrame(sceneFrame);
+      window.removeEventListener("scroll", updateActiveScene);
+      window.removeEventListener("resize", updateActiveScene);
+      window.removeEventListener("hashchange", resolveHash);
+    };
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
     void fetch("/api/pixionyx")
       .then((response) => {
@@ -160,6 +204,12 @@ export default function UniverseExperience() {
     <div className="universe-experience">
       <a className="universe-skip-link" href="#universe-content">Skip to content</a>
       <UniverseCanvas onSceneChange={handleSceneChange} />
+      <div className="universe-fallback-field" aria-hidden="true">
+        <span className="fallback-sphere" />
+        <span className="fallback-ring ring-a" />
+        <span className="fallback-ring ring-b" />
+        <span className="fallback-ring ring-c" />
+      </div>
       <div className="universe-nebula" aria-hidden="true" />
       <div className="universe-grid" aria-hidden="true" />
       <div className="universe-noise" aria-hidden="true" />
