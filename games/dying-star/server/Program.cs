@@ -8,14 +8,16 @@ using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureHttpJsonOptions(options =>
-    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddDbContext<GameDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Game")));
 builder.Services.AddSingleton<IConnectionMultiplexer>(_ =>
     ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379"));
 builder.Services.AddScoped<GameService>();
+builder.Services.ConfigureHttpJsonOptions(options =>
+{
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -63,6 +65,21 @@ app.MapPost("/api/v1/ark/buildings/{buildingType}/upgrade", async (
 
     var token = request.Headers["X-Player-Token"].FirstOrDefault();
     var (response, error) = await game.UpgradeBuildingAsync(token, parsedBuilding, requestBody, ct);
+
+    if (error is null) return Results.Ok(response);
+    return error.Code == "UNAUTHENTICATED"
+        ? Results.Unauthorized()
+        : Results.BadRequest(error);
+});
+
+app.MapPost("/api/v1/ark/economy/collect", async (
+    CollectProductionRequest requestBody,
+    HttpRequest request,
+    GameService game,
+    CancellationToken ct) =>
+{
+    var token = request.Headers["X-Player-Token"].FirstOrDefault();
+    var (response, error) = await game.CollectProductionAsync(token, requestBody, ct);
 
     if (error is null) return Results.Ok(response);
     return error.Code == "UNAUTHENTICATED"
