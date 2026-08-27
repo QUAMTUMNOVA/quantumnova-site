@@ -15,7 +15,17 @@ public sealed record ArkSnapshot(
     long Data,
     long Nova,
     DateTime ServerTimeUtc,
+    EconomySnapshot Economy,
     IReadOnlyList<BuildingSnapshot> Buildings);
+
+public sealed record EconomySnapshot(
+    long AlloyStored,
+    long Helium3Stored,
+    double AlloyPerHour,
+    double Helium3PerHour,
+    long AlloyStorageCapacity,
+    long Helium3StorageCapacity,
+    DateTime LastSettledAtUtc);
 
 public sealed record BuildingSnapshot(
     BuildingType Type,
@@ -31,5 +41,12 @@ public sealed record UpgradeBuildingResponse(
     int TargetLevel,
     DateTime UpgradeCompletesAtUtc,
     long AlloySpent);
+
+public sealed record CollectProductionRequest(string ActionId);
+
+public sealed record CollectProductionResponse(
+    ArkSnapshot Ark,
+    long AlloyCollected,
+    long Helium3Collected);
 
 public sealed record ErrorResponse(string Code, string Message);
