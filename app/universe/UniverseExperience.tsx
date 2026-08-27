@@ -72,6 +72,7 @@ export default function UniverseExperience() {
   const [playlistIndex, setPlaylistIndex] = useState(0);
   const [artistIndex, setArtistIndex] = useState(0);
   const [bookIndex, setBookIndex] = useState(0);
+  const [worldsMenuOpen, setWorldsMenuOpen] = useState(false);
   const prefetchedImages = useRef(new Set<string>());
 
   const handleSceneChange = useCallback((scene: number) => {
@@ -146,8 +147,6 @@ export default function UniverseExperience() {
             : transitionPhase * (compactMotion ? 0.45 : 2.4) + Math.cos(driftAngle) * 0.32 * driftStrength;
           const orbitScale = reduceMotion ? 1 : 1 - phaseMagnitude * (compactMotion ? 0.025 : 0.1);
           const orbitOpacity = reduceMotion ? 1 : 1 - phaseMagnitude * (compactMotion ? 0.18 : 0.72);
-          const orbitBlur = reduceMotion || compactMotion ? 0 : phaseMagnitude * 2.4;
-
           chapterViewport.style.setProperty("--chapter-orbit-x", `${orbitX.toFixed(3)}vw`);
           chapterViewport.style.setProperty("--chapter-orbit-y", `${orbitY.toFixed(3)}vh`);
           chapterViewport.style.setProperty("--chapter-orbit-z", `${orbitZ.toFixed(1)}px`);
@@ -155,7 +154,6 @@ export default function UniverseExperience() {
           chapterViewport.style.setProperty("--chapter-orbit-rz", `${orbitRotateZ.toFixed(3)}deg`);
           chapterViewport.style.setProperty("--chapter-orbit-scale", orbitScale.toFixed(4));
           chapterViewport.style.setProperty("--chapter-orbit-opacity", orbitOpacity.toFixed(4));
-          chapterViewport.style.setProperty("--chapter-orbit-blur", `${orbitBlur.toFixed(2)}px`);
           chapterViewport.style.zIndex = String(30 - Math.round(phaseMagnitude * 10));
         });
         setActiveScene(nearestScene);
@@ -228,8 +226,8 @@ export default function UniverseExperience() {
   }, []);
 
   useEffect(() => {
-    if (!looks.length) return;
-    for (let offset = -4; offset <= 4; offset += 1) {
+    if (activeScene !== 2 || !looks.length) return;
+    for (let offset = -2; offset <= 2; offset += 1) {
       const look = looks[wrapIndex(lookIndex + offset, looks.length)];
       [look.frontImage, look.backImage].forEach((url) => {
         if (!url || prefetchedImages.current.has(url)) return;
@@ -239,7 +237,7 @@ export default function UniverseExperience() {
         image.src = url;
       });
     }
-  }, [lookIndex, looks]);
+  }, [activeScene, lookIndex, looks]);
 
   const activeLook = looks[lookIndex] ?? looks[0] ?? pixionyxFallback[0];
   const activePlaylist = playlists[playlistIndex];
@@ -288,8 +286,43 @@ export default function UniverseExperience() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#studio">Studio</a>
-          <a href="#pixionyx">Our worlds</a>
-          <a href="#records">Records</a>
+          <div
+            className={worldsMenuOpen ? "universe-worlds-menu open" : "universe-worlds-menu"}
+            onPointerEnter={(event) => {
+              if (event.pointerType === "mouse") setWorldsMenuOpen(true);
+            }}
+            onPointerLeave={(event) => {
+              if (event.pointerType === "mouse") setWorldsMenuOpen(false);
+            }}
+            onFocus={() => setWorldsMenuOpen(true)}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node)) setWorldsMenuOpen(false);
+            }}
+          >
+            <button
+              type="button"
+              className="universe-worlds-trigger"
+              aria-expanded={worldsMenuOpen}
+              aria-controls="universe-worlds-dropdown"
+              onClick={() => setWorldsMenuOpen((open) => !open)}
+            >
+              Our worlds <span aria-hidden="true">⌄</span>
+            </button>
+            <div id="universe-worlds-dropdown" className="universe-worlds-dropdown" aria-label="QUANTUMNOVA worlds">
+              <a href="#records" onClick={() => setWorldsMenuOpen(false)}>
+                <small>03 / MUSIC</small>
+                <span>QUANTUMNOVA Records</span>
+              </a>
+              <a href="#pixionyx" onClick={() => setWorldsMenuOpen(false)}>
+                <small>02 / APPAREL</small>
+                <span>PixiOnyx</span>
+              </a>
+              <a href="#books" onClick={() => setWorldsMenuOpen(false)}>
+                <small>04 / PUBLISHING</small>
+                <span>AutoBookPress</span>
+              </a>
+            </div>
+          </div>
           <a className="universe-header-cta" href="/start-project">Scope a project</a>
         </nav>
       </header>
@@ -480,11 +513,17 @@ export default function UniverseExperience() {
                 <div className={`product-pair showing-${productSide}`}>
                   <figure className="product-face product-front">
                     <span>FRONT</span>
-                    <img src={activeLook.frontImage} alt={`Front of ${activeLook.title}`} decoding="async" fetchPriority="high" />
+                    <img
+                      src={activeLook.frontImage}
+                      alt={`Front of ${activeLook.title}`}
+                      loading={activeScene === 2 ? "eager" : "lazy"}
+                      decoding="async"
+                      fetchPriority={activeScene === 2 ? "high" : "auto"}
+                    />
                   </figure>
                   <figure className="product-face product-back">
                     <span>BACK</span>
-                    <img src={activeLook.backImage} alt={`Back of ${activeLook.title}`} decoding="async" />
+                    <img src={activeLook.backImage} alt={`Back of ${activeLook.title}`} loading="lazy" decoding="async" />
                   </figure>
                   <div className="product-gravity-ring" aria-hidden="true" />
                 </div>
@@ -515,9 +554,9 @@ export default function UniverseExperience() {
                       <img
                         src={look.frontImage}
                         alt=""
-                        loading={nearby ? "eager" : "lazy"}
+                        loading={activeScene === 2 && nearby ? "eager" : "lazy"}
                         decoding="async"
-                        fetchPriority={active ? "high" : "auto"}
+                        fetchPriority={activeScene === 2 && active ? "high" : "auto"}
                       />
                       <i>{String(itemIndex + 1).padStart(2, "0")}</i>
                     </span>
