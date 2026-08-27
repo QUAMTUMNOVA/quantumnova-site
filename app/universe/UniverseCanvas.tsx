@@ -47,7 +47,7 @@ const pointVertexShader = `
     transformed += normalize(position) * (wave + breath) * (1.0 - uReducedMotion);
     vec4 mvPosition = modelViewMatrix * vec4(transformed, 1.0);
     float perspective = 58.0 / max(1.0, -mvPosition.z);
-    gl_PointSize = (1.25 + aSeed * 2.2) * perspective * uPixelRatio;
+    gl_PointSize = (0.82 + aSeed * 1.65) * perspective * uPixelRatio;
     gl_Position = projectionMatrix * mvPosition;
     vStrength = 0.34 + aSeed * 0.66;
   }
@@ -63,7 +63,7 @@ const pointFragmentShader = `
     float distanceToCenter = length(centered);
     float alpha = smoothstep(0.5, 0.02, distanceToCenter);
     vec3 colour = mix(uColourA, uColourB, vStrength);
-    gl_FragColor = vec4(colour, alpha * (0.28 + vStrength * 0.66));
+    gl_FragColor = vec4(colour, alpha * (0.22 + vStrength * 0.58));
   }
 `;
 
@@ -76,7 +76,8 @@ function createSphereData(count: number, radius: number) {
     const y = 1 - (index / Math.max(1, count - 1)) * 2;
     const radial = Math.sqrt(Math.max(0, 1 - y * y));
     const theta = goldenAngle * index;
-    const shell = radius * (0.78 + Math.random() * 0.28);
+    const spread = Math.pow(Math.random(), 0.42);
+    const shell = radius * (0.46 + spread * 1.68);
     positions[index * 3] = Math.cos(theta) * radial * shell;
     positions[index * 3 + 1] = y * shell;
     positions[index * 3 + 2] = Math.sin(theta) * radial * shell;
@@ -128,7 +129,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       const compact = window.matchMedia("(max-width: 760px)").matches;
       const scene = new THREE.Scene();
-      scene.fog = new THREE.FogExp2("#020509", compact ? 0.022 : 0.014);
+      scene.fog = new THREE.FogExp2("#020509", compact ? 0.018 : 0.011);
 
       const camera = new THREE.PerspectiveCamera(
         compact ? 56 : 46,
@@ -158,7 +159,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         return;
       }
 
-      const maxPixelRatio = compact ? 1.2 : 1.6;
+      const maxPixelRatio = compact ? 1.05 : 1.35;
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
       renderer.setSize(window.innerWidth, window.innerHeight, false);
       renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -172,7 +173,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const universeGroup = new THREE.Group();
       scene.add(universeGroup);
 
-      const sphereData = createSphereData(compact ? 3200 : 8400, compact ? 3.65 : 4.35);
+      const sphereData = createSphereData(compact ? 2200 : 5600, compact ? 4.1 : 4.85);
       const sphereGeometry = new THREE.BufferGeometry();
       sphereGeometry.setAttribute("position", new THREE.BufferAttribute(sphereData.positions, 3));
       sphereGeometry.setAttribute("aSeed", new THREE.BufferAttribute(sphereData.seeds, 1));
@@ -209,12 +210,12 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const core = new THREE.Mesh(coreGeometry, coreMaterial);
       universeGroup.add(core);
 
-      const starData = createStarData(compact ? 2200 : 6200);
+      const starData = createStarData(compact ? 1700 : 4300);
       const starGeometry = new THREE.BufferGeometry();
       starGeometry.setAttribute("position", new THREE.BufferAttribute(starData.positions, 3));
       starGeometry.setAttribute("color", new THREE.BufferAttribute(starData.colours, 3));
       const starMaterial = new THREE.PointsMaterial({
-        size: compact ? 0.035 : 0.052,
+        size: compact ? 0.03 : 0.044,
         vertexColors: true,
         transparent: true,
         opacity: 0.72,
@@ -231,7 +232,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         opacity: 0.15,
       });
       const orbitalLines: import("three").Line[] = [];
-      for (let index = 0; index < 7; index += 1) {
+      for (let index = 0; index < 6; index += 1) {
         const curve = new THREE.EllipseCurve(
           0,
           0,
@@ -240,7 +241,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           0,
           Math.PI * 2,
         );
-        const points = curve.getPoints(160).map((point) => new THREE.Vector3(point.x, point.y, 0));
+        const points = curve.getPoints(96).map((point) => new THREE.Vector3(point.x, point.y, 0));
         const geometry = new THREE.BufferGeometry().setFromPoints(points);
         const line = new THREE.Line(geometry, orbitalMaterial.clone());
         line.rotation.x = 0.86 + index * 0.08;
@@ -268,7 +269,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           depthWrite: false,
         });
         const portal = new THREE.Mesh(
-          new THREE.TorusGeometry(0.82, 0.018, 6, 120),
+          new THREE.TorusGeometry(0.82, 0.018, 6, 72),
           portalMaterial,
         );
         portal.rotation.x = Math.PI / 2;
@@ -300,7 +301,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
             depthWrite: false,
           });
           const ring = new THREE.Mesh(
-            new THREE.TorusGeometry(1.25 + ringIndex * 0.5, 0.008, 5, 100),
+            new THREE.TorusGeometry(1.25 + ringIndex * 0.5, 0.008, 5, 64),
             ringMaterial,
           );
           ring.rotation.x = 0.7 + ringIndex * 0.42;
@@ -322,6 +323,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       let smoothJourney = 0;
       let activeScene = 0;
       let frame = 0;
+      let journeyFrame = 0;
       let pageVisible = true;
 
       const calculateJourney = () => {
@@ -372,7 +374,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         camera.updateProjectionMatrix();
         const pixelRatio = Math.min(
           window.devicePixelRatio,
-          window.innerWidth <= 760 ? 1.2 : 1.6,
+          window.innerWidth <= 760 ? 1.05 : 1.35,
         );
         renderer.setPixelRatio(pixelRatio);
         sphereUniforms.uPixelRatio.value = pixelRatio;
@@ -451,8 +453,17 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         }
       };
 
+      const scheduleJourney = () => {
+        if (journeyFrame) return;
+        journeyFrame = window.requestAnimationFrame(() => {
+          journeyFrame = 0;
+          calculateJourney();
+          if (!frame) frame = window.requestAnimationFrame(render);
+        });
+      };
+
       calculateJourney();
-      window.addEventListener("scroll", calculateJourney, { passive: true });
+      window.addEventListener("scroll", scheduleJourney, { passive: true });
       window.addEventListener("pointermove", handlePointer, { passive: true });
       window.addEventListener("resize", handleResize);
       document.addEventListener("visibilitychange", handleVisibility);
@@ -460,7 +471,8 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
 
       teardown = () => {
         if (frame) window.cancelAnimationFrame(frame);
-        window.removeEventListener("scroll", calculateJourney);
+        if (journeyFrame) window.cancelAnimationFrame(journeyFrame);
+        window.removeEventListener("scroll", scheduleJourney);
         window.removeEventListener("pointermove", handlePointer);
         window.removeEventListener("resize", handleResize);
         document.removeEventListener("visibilitychange", handleVisibility);
@@ -487,9 +499,12 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       };
     };
 
-    void startUniverse();
+    const startFrame = window.requestAnimationFrame(() => {
+      void startUniverse();
+    });
     return () => {
       disposed = true;
+      window.cancelAnimationFrame(startFrame);
       teardown();
     };
   }, []);
