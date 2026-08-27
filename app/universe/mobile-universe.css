@@ -6,6 +6,7 @@
   .universe-mode body {
     position: relative;
     isolation: isolate;
+    background: #010204;
   }
 
   .universe-mobile-webgl {
@@ -17,32 +18,40 @@
     display: block;
     pointer-events: none;
     opacity: 1;
+    filter: contrast(1.16) saturate(1.08);
   }
 
   .universe-mobile-webgl.unavailable {
     display: none;
   }
 
+  /* Keep space genuinely dark. Atmospheric colour should come from the
+     WebGL stars and galaxy rather than lifting the entire background. */
   .universe-nebula {
     background:
-      radial-gradient(circle at 68% 31%, rgba(103, 78, 255, 0.2), transparent 36rem),
-      radial-gradient(circle at 27% 64%, rgba(39, 235, 207, 0.11), transparent 34rem),
-      radial-gradient(circle at 74% 76%, rgba(255, 92, 143, 0.075), transparent 29rem),
+      radial-gradient(circle at 67% 29%, rgba(103, 78, 255, 0.045), transparent 27rem),
+      radial-gradient(circle at 28% 68%, rgba(39, 235, 207, 0.026), transparent 30rem),
+      radial-gradient(circle at 76% 78%, rgba(255, 92, 143, 0.018), transparent 24rem),
       #010204;
   }
 
+  /* The CSS field is now only an emergency depth layer beneath WebGL. */
   .universe-mobile-lite .universe-fallback-field {
-    opacity: 0.28;
+    opacity: 0.075;
   }
 
   .universe-mobile-lite .universe-fallback-field::before,
   .universe-mobile-lite .universe-fallback-field::after {
-    opacity: 0.14;
+    opacity: 0.035;
     animation: none !important;
   }
 
+  .universe-mobile-lite .fallback-sphere {
+    opacity: 0.18;
+  }
+
   .universe-mobile-lite .fallback-ring {
-    opacity: 0.28;
+    opacity: 0.12;
   }
 
   .mobile-brand-portals a[href="#records"] span {
