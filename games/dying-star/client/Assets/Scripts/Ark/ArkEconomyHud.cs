@@ -66,11 +66,13 @@ namespace DyingStar.Client.Ark
                 : Math.Min(
                     economy.helium3StorageCapacity,
                     economy.helium3Stored + economy.helium3PerHour * elapsedHours);
+            var alloyCapacity = economy?.alloyStorageCapacity ?? 0L;
+            var heliumCapacity = economy?.helium3StorageCapacity ?? 0L;
 
             if (alloyText != null)
-                alloyText.text = $"ALLOY      {ark.alloy:N0}   |   READY {Math.Floor(alloyStored):N0}/{economy?.alloyStorageCapacity ?? 0:N0}";
+                alloyText.text = $"ALLOY      {ark.alloy:N0}   |   READY {Math.Floor(alloyStored):N0}/{alloyCapacity:N0}";
             if (heliumText != null)
-                heliumText.text = $"HELIUM-3   {ark.helium3:N0}   |   READY {Math.Floor(heliumStored):N0}/{economy?.helium3StorageCapacity ?? 0:N0}";
+                heliumText.text = $"HELIUM-3   {ark.helium3:N0}   |   READY {Math.Floor(heliumStored):N0}/{heliumCapacity:N0}";
             if (dataText != null)
                 dataText.text = $"DATA       {ark.data:N0}";
             if (productionText != null)
