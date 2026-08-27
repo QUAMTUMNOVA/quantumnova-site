@@ -45,6 +45,22 @@ namespace DyingStar.Client.Networking
                 onError);
         }
 
+        public IEnumerator CollectProduction(
+            string guestToken,
+            string actionId,
+            Action<CollectProductionResponse> onSuccess,
+            Action<string> onError)
+        {
+            var payload = JsonUtility.ToJson(new CollectProductionRequest { actionId = actionId });
+            yield return SendJson(
+                "POST",
+                "/api/v1/ark/economy/collect",
+                payload,
+                guestToken,
+                json => onSuccess?.Invoke(JsonUtility.FromJson<CollectProductionResponse>(json)),
+                onError);
+        }
+
         private IEnumerator SendJson(
             string method,
             string path,
