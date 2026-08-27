@@ -266,6 +266,18 @@ export default function UniverseExperience() {
       <div className="universe-noise" aria-hidden="true" />
       <div className="journey-progress" aria-hidden="true"><span /></div>
 
+      <a
+        className={activeScene === 0 ? "universe-nova-home" : "universe-nova-home visible"}
+        href="#home"
+        aria-label="Return to the top of the QUANTUMNOVA universe"
+        aria-hidden={activeScene === 0}
+        tabIndex={activeScene === 0 ? -1 : 0}
+        title="Return to origin"
+      >
+        <span>Q</span>
+        <small>ORIGIN</small>
+      </a>
+
       <header className="universe-header">
         <a className="universe-wordmark" href="#home" aria-label="QUANTUMNOVA home">
           <span className="universe-mark">Q</span>
