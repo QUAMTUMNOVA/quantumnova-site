@@ -24,10 +24,10 @@ function createStars(count: number, innerRadius = 15, outerRadius = 57) {
     positions[index * 3 + 2] = radius * Math.sin(phi) * Math.sin(theta);
 
     const warmth = Math.random();
-    const intensity = 0.92 + Math.random() * 0.22;
-    colours[index * 3] = Math.min(1, (0.62 + warmth * 0.38) * intensity);
-    colours[index * 3 + 1] = Math.min(1, (0.76 + warmth * 0.24) * intensity);
-    colours[index * 3 + 2] = Math.min(1, (0.94 + Math.random() * 0.06) * intensity);
+    const intensity = 0.96 + Math.random() * 0.16;
+    colours[index * 3] = Math.min(1, (0.68 + warmth * 0.32) * intensity);
+    colours[index * 3 + 1] = Math.min(1, (0.8 + warmth * 0.2) * intensity);
+    colours[index * 3 + 2] = Math.min(1, (0.96 + Math.random() * 0.04) * intensity);
   }
 
   return { positions, colours };
@@ -51,6 +51,37 @@ function createGalaxyCloud(count: number) {
 
   return { positions, seeds };
 }
+
+const starVertexShader = `
+  uniform float uSize;
+  uniform float uPixelRatio;
+  varying vec3 vColour;
+
+  void main() {
+    vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+    float depthScale = clamp(34.0 / max(14.0, -mvPosition.z), 0.82, 1.2);
+    gl_PointSize = max(1.15, uSize * uPixelRatio * depthScale);
+    gl_Position = projectionMatrix * mvPosition;
+    vColour = color;
+  }
+`;
+
+const starFragmentShader = `
+  uniform float uOpacity;
+  uniform float uCoreStrength;
+  varying vec3 vColour;
+
+  void main() {
+    vec2 p = gl_PointCoord - vec2(0.5);
+    float d = length(p);
+    if (d > 0.5) discard;
+    float halo = smoothstep(0.5, 0.08, d);
+    float core = smoothstep(0.18, 0.0, d);
+    float alpha = min(1.0, halo * 0.78 + core * 0.48) * uOpacity;
+    vec3 colour = vColour * (1.0 + core * uCoreStrength);
+    gl_FragColor = vec4(colour, alpha);
+  }
+`;
 
 const galaxyVertexShader = `
   attribute float aSeed;
@@ -135,7 +166,7 @@ export default function MobileUniverseCanvas() {
       renderer.setSize(window.innerWidth, window.innerHeight, false);
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.34;
+      renderer.toneMappingExposure = 1.22;
 
       const colourPairs = palettes.map(
         ([a, b]) => [new THREE.Color(a), new THREE.Color(b)] as const,
@@ -145,14 +176,21 @@ export default function MobileUniverseCanvas() {
       const starGeometry = new THREE.BufferGeometry();
       starGeometry.setAttribute("position", new THREE.BufferAttribute(starData.positions, 3));
       starGeometry.setAttribute("color", new THREE.BufferAttribute(starData.colours, 3));
-      const starMaterial = new THREE.PointsMaterial({
-        size: 0.046,
+      const starMaterial = new THREE.ShaderMaterial({
+        uniforms: {
+          uSize: { value: highTier ? 2.15 : 2.0 },
+          uPixelRatio: { value: pixelRatio },
+          uOpacity: { value: 0.94 },
+          uCoreStrength: { value: 0.58 },
+        },
+        vertexShader: starVertexShader,
+        fragmentShader: starFragmentShader,
         vertexColors: true,
         transparent: true,
-        opacity: 0.94,
         depthWrite: false,
         blending: THREE.AdditiveBlending,
-        sizeAttenuation: true,
+        toneMapped: false,
+        fog: false,
       });
       const stars = new THREE.Points(starGeometry, starMaterial);
       scene.add(stars);
@@ -161,14 +199,21 @@ export default function MobileUniverseCanvas() {
       const brightStarGeometry = new THREE.BufferGeometry();
       brightStarGeometry.setAttribute("position", new THREE.BufferAttribute(brightStarData.positions, 3));
       brightStarGeometry.setAttribute("color", new THREE.BufferAttribute(brightStarData.colours, 3));
-      const brightStarMaterial = new THREE.PointsMaterial({
-        size: 0.105,
+      const brightStarMaterial = new THREE.ShaderMaterial({
+        uniforms: {
+          uSize: { value: highTier ? 4.4 : 4.0 },
+          uPixelRatio: { value: pixelRatio },
+          uOpacity: { value: 0.92 },
+          uCoreStrength: { value: 1.05 },
+        },
+        vertexShader: starVertexShader,
+        fragmentShader: starFragmentShader,
         vertexColors: true,
         transparent: true,
-        opacity: 0.72,
         depthWrite: false,
         blending: THREE.AdditiveBlending,
-        sizeAttenuation: true,
+        toneMapped: false,
+        fog: false,
       });
       const brightStars = new THREE.Points(brightStarGeometry, brightStarMaterial);
       scene.add(brightStars);
@@ -302,6 +347,8 @@ export default function MobileUniverseCanvas() {
         camera.updateProjectionMatrix();
         const nextRatio = Math.min(window.devicePixelRatio, pixelRatioCap);
         renderer.setPixelRatio(nextRatio);
+        starMaterial.uniforms.uPixelRatio.value = nextRatio;
+        brightStarMaterial.uniforms.uPixelRatio.value = nextRatio;
         cloudUniforms.uPixelRatio.value = nextRatio;
         galaxyCoreMaterial.uniforms.uPixelRatio.value = nextRatio;
         renderer.setSize(window.innerWidth, window.innerHeight, false);
