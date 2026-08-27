@@ -10,6 +10,9 @@ namespace DyingStar.Client.Core
 
         [SerializeField] private DyingStarApiClient apiClient;
 
+        private bool refreshInFlight;
+        private float nextUpgradeRefreshAt;
+
         public ArkSnapshot CurrentArk { get; private set; }
         public bool Ready { get; private set; }
         public string GuestToken { get; private set; }
@@ -40,9 +43,19 @@ namespace DyingStar.Client.Core
             }));
         }
 
+        private void Update()
+        {
+            if (!Ready || refreshInFlight || Time.unscaledTime < nextUpgradeRefreshAt) return;
+            if (!HasActiveUpgrade(CurrentArk)) return;
+
+            nextUpgradeRefreshAt = Time.unscaledTime + 1f;
+            RefreshArk();
+        }
+
         public void RefreshArk()
         {
-            if (string.IsNullOrWhiteSpace(GuestToken)) return;
+            if (refreshInFlight || string.IsNullOrWhiteSpace(GuestToken)) return;
+            refreshInFlight = true;
             StartCoroutine(apiClient.GetArk(GuestToken, HandleArk, HandleError));
         }
 
@@ -79,6 +92,7 @@ namespace DyingStar.Client.Core
 
         private void HandleArk(ArkSnapshot ark)
         {
+            refreshInFlight = false;
             CurrentArk = ark;
             Ready = true;
             ArkUpdated?.Invoke(ark);
@@ -86,8 +100,17 @@ namespace DyingStar.Client.Core
 
         private void HandleError(string message)
         {
+            refreshInFlight = false;
             Debug.LogError($"Dying Star API error: {message}");
             SessionError?.Invoke(message);
+        }
+
+        private static bool HasActiveUpgrade(ArkSnapshot ark)
+        {
+            if (ark?.buildings == null) return false;
+            foreach (var building in ark.buildings)
+                if (!string.IsNullOrWhiteSpace(building.upgradeCompletesAtUtc)) return true;
+            return false;
         }
     }
 }
