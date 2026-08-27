@@ -2,21 +2,29 @@
 .label-studio {
   --galaxy-tone: #8b6cff;
   --galaxy-secondary: #c6a7ff;
+  top: 10%;
+  left: 44%;
 }
 
 .label-pixi {
   --galaxy-tone: #ff718c;
   --galaxy-secondary: #9d4cff;
+  top: 43%;
+  right: 0;
 }
 
 .label-records {
   --galaxy-tone: #35e7ff;
   --galaxy-secondary: #3567ff;
+  right: 36%;
+  bottom: 10%;
 }
 
 .label-books {
   --galaxy-tone: #ffc86b;
   --galaxy-secondary: #ff6a45;
+  top: 55%;
+  left: 0;
 }
 
 .origin-galaxy-system {
