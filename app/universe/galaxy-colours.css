@@ -69,28 +69,27 @@
 }
 
 /* Keep the persistent return control out of the content focal area. It sits
-   beside the navigation at the lower-left and stays intentionally ghosted
-   until the user interacts with it. */
+   beside the navigation at the lower-left and stays translucent at rest. */
 .universe-nova-home {
   top: auto;
   right: auto;
   bottom: 42px;
   left: clamp(26px, 2.6vw, 46px);
-  border-color: rgba(136, 255, 228, 0.22);
-  background: radial-gradient(circle, rgba(136, 255, 228, 0.09), rgba(3, 8, 13, 0.36) 56%, rgba(3, 8, 13, 0.1) 72%);
-  box-shadow: 0 0 28px rgba(136, 255, 228, 0.055), inset 0 0 18px rgba(136, 255, 228, 0.045);
+  border-color: rgba(136, 255, 228, 0.28);
+  background: radial-gradient(circle, rgba(136, 255, 228, 0.12), rgba(3, 8, 13, 0.42) 56%, rgba(3, 8, 13, 0.12) 72%);
+  box-shadow: 0 0 30px rgba(136, 255, 228, 0.075), inset 0 0 20px rgba(136, 255, 228, 0.055);
   backdrop-filter: blur(6px);
   transform: scale(0.84);
 }
 
 .universe-nova-home.visible {
-  opacity: 0.27;
+  opacity: 0.46;
   transform: scale(1);
 }
 
 .universe-nova-home:hover,
 .universe-nova-home:focus-visible {
-  opacity: 0.92;
+  opacity: 0.94;
   transform: scale(1.08);
 }
 
@@ -99,7 +98,7 @@
 }
 
 .universe-nova-home small {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.42);
 }
 
 @media (max-width: 760px) {
@@ -109,17 +108,17 @@
     width: 44px;
     height: 44px;
     font-size: 12px;
-    background: radial-gradient(circle, rgba(136, 255, 228, 0.08), rgba(3, 8, 13, 0.3) 56%, rgba(3, 8, 13, 0.08) 72%);
+    background: radial-gradient(circle, rgba(136, 255, 228, 0.11), rgba(3, 8, 13, 0.38) 56%, rgba(3, 8, 13, 0.1) 72%);
     backdrop-filter: none;
   }
 
   .universe-nova-home.visible {
-    opacity: 0.23;
+    opacity: 0.42;
   }
 
   .universe-nova-home:focus-visible,
   .universe-nova-home:active {
-    opacity: 0.88;
+    opacity: 0.9;
   }
 
   .universe-nova-home small {
