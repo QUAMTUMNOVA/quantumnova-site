@@ -22,6 +22,7 @@ public sealed class PlayerEntity
     public DateTime CreatedAtUtc { get; set; }
     public DateTime LastSeenAtUtc { get; set; }
     public ArkEntity Ark { get; set; } = null!;
+    public List<ActionReceiptEntity> ActionReceipts { get; set; } = [];
 }
 
 public sealed class ArkEntity
@@ -59,5 +60,16 @@ public sealed class ResourceLedgerEntity
     public long Delta { get; set; }
     public required string Reason { get; set; }
     public required string ActionId { get; set; }
+    public DateTime CreatedAtUtc { get; set; }
+}
+
+public sealed class ActionReceiptEntity
+{
+    public long Id { get; set; }
+    public Guid PlayerId { get; set; }
+    public PlayerEntity Player { get; set; } = null!;
+    public required string ActionId { get; set; }
+    public required string ActionType { get; set; }
+    public required string ResponseJson { get; set; }
     public DateTime CreatedAtUtc { get; set; }
 }
