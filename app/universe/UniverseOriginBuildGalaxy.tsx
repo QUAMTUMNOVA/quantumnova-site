@@ -10,6 +10,42 @@ export default function UniverseOriginBuildGalaxy() {
     setTarget(document.querySelector<HTMLElement>(".origin-orbit-labels"));
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    let frame = 0;
+
+    const updateMobileReturnState = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        if (!window.matchMedia("(max-width: 760px)").matches) {
+          delete root.dataset.mobilePastOriginNav;
+          return;
+        }
+
+        const orbit = document.querySelector<HTMLElement>(".origin-orbit-labels");
+        if (!orbit) {
+          root.dataset.mobilePastOriginNav = "false";
+          return;
+        }
+
+        const orbitTop = window.scrollY + orbit.getBoundingClientRect().top;
+        const revealThreshold = Math.max(0, orbitTop - window.innerHeight * 0.55);
+        root.dataset.mobilePastOriginNav = window.scrollY >= revealThreshold ? "true" : "false";
+      });
+    };
+
+    updateMobileReturnState();
+    window.addEventListener("scroll", updateMobileReturnState, { passive: true });
+    window.addEventListener("resize", updateMobileReturnState, { passive: true });
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", updateMobileReturnState);
+      window.removeEventListener("resize", updateMobileReturnState);
+      delete root.dataset.mobilePastOriginNav;
+    };
+  }, []);
+
   if (!target) return null;
 
   return createPortal(
