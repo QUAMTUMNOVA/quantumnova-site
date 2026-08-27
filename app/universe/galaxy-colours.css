@@ -69,28 +69,38 @@
 }
 
 /* Keep the persistent return control out of the content focal area. It sits
-   beside the navigation at the lower-left and stays translucent at rest. */
+   beside the navigation at the lower-left and carries the same mint-green
+   identity as the QUANTUMNOVA mark while remaining translucent at rest. */
 .universe-nova-home {
   top: auto;
   right: auto;
   bottom: 42px;
   left: clamp(26px, 2.6vw, 46px);
-  border-color: rgba(136, 255, 228, 0.28);
-  background: radial-gradient(circle, rgba(136, 255, 228, 0.12), rgba(3, 8, 13, 0.42) 56%, rgba(3, 8, 13, 0.12) 72%);
-  box-shadow: 0 0 30px rgba(136, 255, 228, 0.075), inset 0 0 20px rgba(136, 255, 228, 0.055);
+  border-color: rgba(136, 255, 228, 0.48);
+  background: radial-gradient(circle, rgba(136, 255, 228, 0.28), rgba(7, 27, 23, 0.52) 52%, rgba(3, 12, 11, 0.16) 74%);
+  color: #aaffea;
+  box-shadow: 0 0 34px rgba(136, 255, 228, 0.16), inset 0 0 22px rgba(136, 255, 228, 0.11);
   backdrop-filter: blur(6px);
   transform: scale(0.84);
 }
 
+.universe-nova-home::before {
+  border-color: rgba(136, 255, 228, 0.24);
+  border-right-color: rgba(136, 255, 228, 0.72);
+}
+
 .universe-nova-home.visible {
-  opacity: 0.46;
+  opacity: 0.58;
   transform: scale(1);
 }
 
 .universe-nova-home:hover,
 .universe-nova-home:focus-visible {
-  opacity: 0.94;
+  border-color: rgba(136, 255, 228, 0.88);
+  background: radial-gradient(circle, rgba(136, 255, 228, 0.4), rgba(7, 31, 26, 0.66) 54%, rgba(3, 12, 11, 0.2) 74%);
+  opacity: 0.96;
   transform: scale(1.08);
+  box-shadow: 0 0 48px rgba(136, 255, 228, 0.26), inset 0 0 24px rgba(136, 255, 228, 0.16);
 }
 
 .universe-nova-home:active {
@@ -98,7 +108,7 @@
 }
 
 .universe-nova-home small {
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(170, 255, 234, 0.62);
 }
 
 @media (max-width: 760px) {
@@ -108,17 +118,19 @@
     width: 44px;
     height: 44px;
     font-size: 12px;
-    background: radial-gradient(circle, rgba(136, 255, 228, 0.11), rgba(3, 8, 13, 0.38) 56%, rgba(3, 8, 13, 0.1) 72%);
+    border-color: rgba(136, 255, 228, 0.46);
+    background: radial-gradient(circle, rgba(136, 255, 228, 0.26), rgba(7, 27, 23, 0.5) 54%, rgba(3, 12, 11, 0.14) 74%);
+    box-shadow: 0 0 28px rgba(136, 255, 228, 0.14), inset 0 0 18px rgba(136, 255, 228, 0.1);
     backdrop-filter: none;
   }
 
   .universe-nova-home.visible {
-    opacity: 0.42;
+    opacity: 0.54;
   }
 
   .universe-nova-home:focus-visible,
   .universe-nova-home:active {
-    opacity: 0.9;
+    opacity: 0.92;
   }
 
   .universe-nova-home small {
