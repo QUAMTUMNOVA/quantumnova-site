@@ -73,6 +73,7 @@ export default function SpatialCarousel<T>({
     startY: 0,
     lastX: 0,
     travel: 0,
+    axis: "pending" as "pending" | "horizontal" | "vertical",
     changed: false,
   });
   const blockClickUntil = useRef(0);
@@ -89,23 +90,46 @@ export default function SpatialCarousel<T>({
       startY: event.clientY,
       lastX: event.clientX,
       travel: 0,
+      axis: "pending",
       changed: false,
     };
-    event.currentTarget.setPointerCapture(event.pointerId);
   };
 
   const onPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
     const current = gesture.current;
     if (current.pointerId !== event.pointerId) return;
-    const deltaX = event.clientX - current.lastX;
+
     const totalX = event.clientX - current.startX;
     const totalY = event.clientY - current.startY;
+
+    if (current.axis === "pending") {
+      const intentThreshold = event.pointerType === "touch" ? 10 : 6;
+      if (Math.abs(totalX) < intentThreshold && Math.abs(totalY) < intentThreshold) return;
+
+      if (Math.abs(totalY) >= Math.abs(totalX) * 1.08) {
+        current.axis = "vertical";
+        return;
+      }
+
+      if (Math.abs(totalX) > Math.abs(totalY) * 1.08) {
+        current.axis = "horizontal";
+        current.lastX = event.clientX;
+        if (!event.currentTarget.hasPointerCapture(event.pointerId)) {
+          event.currentTarget.setPointerCapture(event.pointerId);
+        }
+      } else {
+        return;
+      }
+    }
+
+    if (current.axis === "vertical") return;
+
+    const deltaX = event.clientX - current.lastX;
     current.lastX = event.clientX;
     current.travel += deltaX;
-
-    if (Math.abs(totalX) < 8 || Math.abs(totalX) <= Math.abs(totalY)) return;
     current.changed = true;
     event.preventDefault();
+
     const threshold = window.innerWidth <= 700 ? 46 : 72;
     if (Math.abs(current.travel) >= threshold) {
       changeBy(current.travel < 0 ? 1 : -1);
@@ -116,11 +140,17 @@ export default function SpatialCarousel<T>({
   const finishPointer = (event: ReactPointerEvent<HTMLDivElement>) => {
     const current = gesture.current;
     if (current.pointerId !== event.pointerId) return;
-    if (current.changed) blockClickUntil.current = performance.now() + 220;
+
+    if (current.axis === "horizontal" && current.changed) {
+      blockClickUntil.current = performance.now() + 220;
+    }
+
     if (event.currentTarget.hasPointerCapture(event.pointerId)) {
       event.currentTarget.releasePointerCapture(event.pointerId);
     }
+
     current.pointerId = -1;
+    current.axis = "pending";
   };
 
   if (!items.length) return null;
