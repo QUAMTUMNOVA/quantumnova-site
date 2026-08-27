@@ -36,4 +36,14 @@
   .universe-mobile-lite .fallback-ring {
     opacity: 0.32;
   }
+
+  .mobile-brand-portals a[href="#records"] span {
+    display: none;
+  }
+
+  .mobile-brand-portals a[href="#records"]::after {
+    content: "QUANTUMNOVA Records";
+    font: inherit;
+    color: inherit;
+  }
 }
