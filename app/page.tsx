@@ -1,4 +1,5 @@
 import UniverseExperience from "./universe/UniverseExperience";
+import MobileUniverseCanvas from "./universe/MobileUniverseCanvas";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -56,6 +57,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <MobileUniverseCanvas />
       <UniverseExperience />
     </>
   );
