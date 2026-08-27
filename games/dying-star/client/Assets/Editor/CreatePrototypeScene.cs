@@ -3,6 +3,7 @@ using DyingStar.Client.Ark;
 using DyingStar.Client.Core;
 using DyingStar.Client.Networking;
 using UnityEditor;
+using UnityEditor.Events;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -127,7 +128,7 @@ namespace DyingStar.Client.EditorTools
             image.color = new Color(0.03f, 0.08f, 0.12f, 0.9f);
             var button = buttonObject.AddComponent<Button>();
             button.targetGraphic = image;
-            button.onClick.AddListener(onClick);
+            UnityEventTools.AddPersistentListener(button.onClick, onClick);
             var rect = buttonObject.GetComponent<RectTransform>();
             rect.anchorMin = new Vector2(0f, 0f);
             rect.anchorMax = new Vector2(0f, 0f);
