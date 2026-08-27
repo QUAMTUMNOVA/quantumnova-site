@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./universe/universe.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://quantumnova.com.au"),
