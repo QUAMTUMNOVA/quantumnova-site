@@ -9,6 +9,7 @@ public sealed class GameDbContext(DbContextOptions<GameDbContext> options) : DbC
     public DbSet<ArkEntity> Arks => Set<ArkEntity>();
     public DbSet<BuildingEntity> Buildings => Set<BuildingEntity>();
     public DbSet<ResourceLedgerEntity> ResourceLedger => Set<ResourceLedgerEntity>();
+    public DbSet<ActionReceiptEntity> ActionReceipts => Set<ActionReceiptEntity>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -50,6 +51,18 @@ public sealed class GameDbContext(DbContextOptions<GameDbContext> options) : DbC
             entity.HasOne(x => x.Ark)
                 .WithMany(x => x.ResourceLedger)
                 .HasForeignKey(x => x.ArkId)
+                .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<ActionReceiptEntity>(entity =>
+        {
+            entity.HasKey(x => x.Id);
+            entity.Property(x => x.ActionId).HasMaxLength(128);
+            entity.Property(x => x.ActionType).HasMaxLength(64);
+            entity.HasIndex(x => new { x.PlayerId, x.ActionId }).IsUnique();
+            entity.HasOne(x => x.Player)
+                .WithMany(x => x.ActionReceipts)
+                .HasForeignKey(x => x.PlayerId)
                 .OnDelete(DeleteBehavior.Cascade);
         });
     }
