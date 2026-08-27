@@ -85,13 +85,20 @@ public sealed class GameService(GameDbContext db, TimeProvider timeProvider)
         if (player is null)
             return (null, new ErrorResponse("UNAUTHENTICATED", "Guest token is invalid or missing."));
 
+        var priorReceipt = await db.ActionReceipts.AsNoTracking()
+            .FirstOrDefaultAsync(
+                x => x.PlayerId == player.Id && x.ActionId == request.ActionId,
+                cancellationToken);
+        if (priorReceipt is not null)
+        {
+            var priorResponse = JsonSerializer.Deserialize<UpgradeBuildingResponse>(priorReceipt.ResponseJson);
+            return priorResponse is null
+                ? (null, new ErrorResponse("RECEIPT_CORRUPT", "The prior action receipt could not be read."))
+                : (priorResponse, null);
+        }
+
         var now = timeProvider.GetUtcNow().UtcDateTime;
         ResolveCompletedUpgrades(player.Ark, now);
-
-        var duplicateLedgerEntry = await db.ResourceLedger.AsNoTracking()
-            .FirstOrDefaultAsync(x => x.ArkId == player.Ark.Id && x.ActionId == request.ActionId, cancellationToken);
-        if (duplicateLedgerEntry is not null)
-            return (null, new ErrorResponse("ACTION_ALREADY_PROCESSED", "This actionId has already been processed."));
 
         var activeUpgrade = player.Ark.Buildings.FirstOrDefault(x => x.UpgradeCompletesAtUtc > now);
         if (activeUpgrade is not null)
@@ -126,16 +133,24 @@ public sealed class GameService(GameDbContext db, TimeProvider timeProvider)
             CreatedAtUtc = now,
         });
 
-        await db.SaveChangesAsync(cancellationToken);
+        var response = new UpgradeBuildingResponse(
+            ToSnapshot(player.Ark, now),
+            buildingType,
+            targetLevel,
+            building.UpgradeCompletesAtUtc.Value,
+            alloyCost);
 
-        return (
-            new UpgradeBuildingResponse(
-                ToSnapshot(player.Ark, now),
-                buildingType,
-                targetLevel,
-                building.UpgradeCompletesAtUtc.Value,
-                alloyCost),
-            null);
+        db.ActionReceipts.Add(new ActionReceiptEntity
+        {
+            PlayerId = player.Id,
+            ActionId = request.ActionId,
+            ActionType = $"upgrade:{buildingType}",
+            ResponseJson = JsonSerializer.Serialize(response),
+            CreatedAtUtc = now,
+        });
+
+        await db.SaveChangesAsync(cancellationToken);
+        return (response, null);
     }
 
     private async Task<PlayerEntity?> LoadPlayerAsync(string? rawToken, CancellationToken cancellationToken)
