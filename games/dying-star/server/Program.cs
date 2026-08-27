@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using DyingStar.Server.Contracts;
 using DyingStar.Server.Data;
 using DyingStar.Server.Domain;
@@ -7,6 +8,8 @@ using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.ConfigureHttpJsonOptions(options =>
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddDbContext<GameDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Game")));
