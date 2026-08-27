@@ -13,7 +13,14 @@ import { autobookpressCatalog, type AutoBookPressTitle } from "@/app/data/autobo
 import { pixionyxFallback, type PixiLook } from "@/app/data/pixionyx";
 import UniverseCanvas from "./UniverseCanvas";
 import SpatialCarousel, { wrapIndex } from "./SpatialCarousel";
-import { artists, capabilities, playlists, universeScenes } from "./content";
+import {
+  artists,
+  capabilities,
+  playlists,
+  studioOutcomeTargets,
+  studioProcess,
+  universeScenes,
+} from "./content";
 
 type RecordView = "playlists" | "artists";
 
@@ -93,15 +100,15 @@ export default function UniverseExperience() {
 
   useEffect(() => {
     let sceneFrame = 0;
+    const chapters = Array.from(document.querySelectorAll<HTMLElement>("[data-universe-scene]"));
+    const compactMotion = window.matchMedia("(max-width: 760px)").matches;
+
     const updateActiveScene = () => {
       window.cancelAnimationFrame(sceneFrame);
       sceneFrame = window.requestAnimationFrame(() => {
-        const chapters = Array.from(document.querySelectorAll<HTMLElement>("[data-universe-scene]"));
         if (!chapters.length) return;
         const viewportHeight = Math.max(window.innerHeight, 1);
-        const viewportWidth = Math.max(window.innerWidth, 1);
         const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        const compactMotion = viewportWidth <= 760;
         const focusLine = window.scrollY + window.innerHeight * 0.5;
         let nearestScene = 0;
         let nearestDistance = Number.POSITIVE_INFINITY;
@@ -117,13 +124,6 @@ export default function UniverseExperience() {
           if (!chapterViewport) return;
 
           const rect = chapter.getBoundingClientRect();
-          if (
-            compactMotion &&
-            (rect.bottom < -viewportHeight * 0.25 || rect.top > viewportHeight * 1.25)
-          ) {
-            return;
-          }
-
           let transitionPhase = 0;
           if (rect.top >= viewportHeight) {
             transitionPhase = 1;
@@ -139,22 +139,22 @@ export default function UniverseExperience() {
           const chapterProgress = Math.min(1, Math.max(0, -rect.top / scrollableDistance));
           const driftAngle = chapterProgress * Math.PI * 1.35 + index * 0.7;
           const phaseMagnitude = Math.abs(transitionPhase);
-          const driftStrength = reduceMotion ? 0 : compactMotion ? 0.28 : 1;
+          const driftStrength = reduceMotion ? 0 : 1;
           const orbitX = reduceMotion
             ? 0
-            : transitionPhase * (compactMotion ? 2.6 : 16) + Math.cos(driftAngle) * 1.05 * driftStrength;
+            : transitionPhase * 16 + Math.cos(driftAngle) * 1.05 * driftStrength;
           const orbitY = reduceMotion
             ? 0
-            : phaseMagnitude * (compactMotion ? 1.2 : 3.4) + Math.sin(driftAngle) * 0.72 * driftStrength;
-          const orbitZ = reduceMotion ? 0 : -phaseMagnitude * (compactMotion ? 38 : 290);
+            : phaseMagnitude * 3.4 + Math.sin(driftAngle) * 0.72 * driftStrength;
+          const orbitZ = reduceMotion ? 0 : -phaseMagnitude * 290;
           const orbitRotateY = reduceMotion
             ? 0
-            : transitionPhase * (compactMotion ? -4 : -17) + Math.sin(driftAngle) * 1.35 * driftStrength;
+            : transitionPhase * -17 + Math.sin(driftAngle) * 1.35 * driftStrength;
           const orbitRotateZ = reduceMotion
             ? 0
-            : transitionPhase * (compactMotion ? 0.45 : 2.4) + Math.cos(driftAngle) * 0.32 * driftStrength;
-          const orbitScale = reduceMotion ? 1 : 1 - phaseMagnitude * (compactMotion ? 0.025 : 0.1);
-          const orbitOpacity = reduceMotion ? 1 : 1 - phaseMagnitude * (compactMotion ? 0.18 : 0.72);
+            : transitionPhase * 2.4 + Math.cos(driftAngle) * 0.32 * driftStrength;
+          const orbitScale = reduceMotion ? 1 : 1 - phaseMagnitude * 0.1;
+          const orbitOpacity = reduceMotion ? 1 : 1 - phaseMagnitude * 0.72;
           chapterViewport.style.setProperty("--chapter-orbit-x", `${orbitX.toFixed(3)}vw`);
           chapterViewport.style.setProperty("--chapter-orbit-y", `${orbitY.toFixed(3)}vh`);
           chapterViewport.style.setProperty("--chapter-orbit-z", `${orbitZ.toFixed(1)}px`);
@@ -168,6 +168,21 @@ export default function UniverseExperience() {
       });
     };
 
+    const updateCompactScene = () => {
+      const focus = window.innerHeight * 0.5;
+      let nearestScene = 0;
+      let nearestDistance = Number.POSITIVE_INFINITY;
+      chapters.forEach((chapter, index) => {
+        const rect = chapter.getBoundingClientRect();
+        const distance = Math.abs(rect.top + rect.height * 0.5 - focus);
+        if (distance < nearestDistance) {
+          nearestDistance = distance;
+          nearestScene = index;
+        }
+      });
+      setActiveScene(nearestScene);
+    };
+
     const resolveHash = () => {
       const hash = window.location.hash.slice(1);
       if (!universeScenes.some((scene) => scene.id === hash)) return;
@@ -177,22 +192,35 @@ export default function UniverseExperience() {
     };
 
     const initialHashTimer = window.setTimeout(resolveHash, 160);
-    updateActiveScene();
-    window.addEventListener("scroll", updateActiveScene, { passive: true });
-    window.addEventListener("resize", updateActiveScene);
+    let compactObserver: IntersectionObserver | undefined;
+    if (compactMotion) {
+      compactObserver = new IntersectionObserver(updateCompactScene, {
+        rootMargin: "-48% 0px -48% 0px",
+        threshold: 0,
+      });
+      chapters.forEach((chapter) => compactObserver?.observe(chapter));
+      updateCompactScene();
+    } else {
+      updateActiveScene();
+      window.addEventListener("scroll", updateActiveScene, { passive: true });
+      window.addEventListener("resize", updateActiveScene);
+    }
     window.addEventListener("hashchange", resolveHash);
     return () => {
       window.clearTimeout(initialHashTimer);
       window.cancelAnimationFrame(sceneFrame);
-      window.removeEventListener("scroll", updateActiveScene);
-      window.removeEventListener("resize", updateActiveScene);
+      compactObserver?.disconnect();
+      if (!compactMotion) {
+        window.removeEventListener("scroll", updateActiveScene);
+        window.removeEventListener("resize", updateActiveScene);
+      }
       window.removeEventListener("hashchange", resolveHash);
     };
   }, []);
 
   useEffect(() => {
     let cancelled = false;
-    void fetch("/api/pixionyx")
+    void fetch("/api/pixionyx?market=AU")
       .then((response) => {
         if (!response.ok) throw new Error("Catalogue unavailable");
         return response.json() as Promise<{ products?: PixiLook[] }>;
@@ -257,7 +285,7 @@ export default function UniverseExperience() {
       if (document.hidden || Date.now() - lastProductInteraction.current < 8000) return;
       setLookIndex((current) => wrapIndex(current + 1, looks.length));
       setProductSide("front");
-    }, 5200);
+    }, 2100);
 
     return () => window.clearInterval(interval);
   }, [activeScene, looks.length]);
@@ -517,6 +545,29 @@ export default function UniverseExperience() {
               <span>Ecommerce integrations</span>
               <span>Technical SEO and analytics</span>
             </div>
+            <div className="studio-delivery glass-observatory">
+              <section className="studio-process" aria-labelledby="studio-process-title">
+                <p className="studio-delivery-label">CLIENT DELIVERY / PROCESS</p>
+                <h3 id="studio-process-title">A clear path from brief to launch.</h3>
+                <ol>
+                  {studioProcess.map((step) => (
+                    <li key={step.number}>
+                      <small>{step.number}</small>
+                      <strong>{step.title}</strong>
+                      <p>{step.copy}</p>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+              <section className="studio-outcomes" aria-labelledby="studio-outcomes-title">
+                <p className="studio-delivery-label">DESIGN TARGETS / OUTCOMES</p>
+                <h3 id="studio-outcomes-title">Results defined before the build.</h3>
+                <p>Every engagement begins with outcome targets that can guide creative decisions and be measured after launch.</p>
+                <ul>
+                  {studioOutcomeTargets.map((outcome) => <li key={outcome}>{outcome}</li>)}
+                </ul>
+              </section>
+            </div>
           </div>
         </section>
 
@@ -541,6 +592,7 @@ export default function UniverseExperience() {
                   <span className="live-catalogue-signal"><i /> {looks.length} PRODUCTS SYNCED</span>
                 </div>
                 <a
+                  key={`pair-${activeLook.url}`}
                   className={`product-pair showing-${productSide}`}
                   href={activeLook.url}
                   target="_blank"
@@ -568,7 +620,7 @@ export default function UniverseExperience() {
                   <button type="button" className={productSide === "front" ? "active" : ""} onClick={() => { lastProductInteraction.current = Date.now(); setProductSide("front"); }}>Front</button>
                   <button type="button" className={productSide === "back" ? "active" : ""} onClick={() => { lastProductInteraction.current = Date.now(); setProductSide("back"); }}>Back</button>
                 </div>
-                <div className="product-readout">
+                <div key={`readout-${activeLook.url}`} className="product-readout">
                   <div><small>{activeLook.format}</small><strong>{activeLook.shortTitle}</strong></div>
                   <div><span>{activeLook.price}</span><PortalLink href={activeLook.url} quiet>View product</PortalLink></div>
                 </div>

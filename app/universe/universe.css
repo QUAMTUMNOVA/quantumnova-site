@@ -86,21 +86,15 @@
 
 .fallback-sphere {
   position: absolute;
-  top: 50%;
-  left: 57%;
-  width: min(96vw, 1320px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(136, 255, 228, 0.13);
-  border-radius: 50%;
+  inset: -15%;
+  border: 0;
   background:
     radial-gradient(circle at 42% 35%, rgba(136, 255, 228, 0.18), transparent 2px),
     radial-gradient(circle at 61% 68%, rgba(120, 98, 255, 0.27), transparent 2px),
     radial-gradient(circle at 72% 42%, rgba(255, 118, 142, 0.2), transparent 1.5px),
     radial-gradient(circle at 35% 75%, rgba(255, 200, 107, 0.2), transparent 1.5px),
-    radial-gradient(circle, rgba(75, 42, 154, 0.17), rgba(4, 9, 14, 0.03) 54%, transparent 71%);
+    radial-gradient(circle at 52% 48%, rgba(75, 42, 154, 0.14), rgba(4, 9, 14, 0.02) 40%, transparent 68%);
   background-size: 41px 41px, 53px 53px, 31px 31px, 47px 47px, 100% 100%;
-  transform: translate(-50%, -50%);
-  box-shadow: inset 0 0 120px rgba(120, 98, 255, 0.09), 0 0 100px rgba(136, 255, 228, 0.03);
 }
 
 .fallback-ring {
@@ -169,6 +163,26 @@
 @keyframes universe-nebula-drift {
   from { transform: scale(1.12) translate3d(-1.5%, -1%, 0); }
   to { transform: scale(1.18) translate3d(1.5%, 1.5%, 0); }
+}
+
+@keyframes mobile-star-travel-a {
+  from { transform: translate3d(-2%, -1%, 0) rotate(-2deg) scale(1.08); }
+  to { transform: translate3d(3%, 4%, 0) rotate(10deg) scale(1.18); }
+}
+
+@keyframes mobile-star-travel-b {
+  from { transform: translate3d(2%, 3%, 0) rotate(5deg) scale(1.14); }
+  to { transform: translate3d(-4%, -3%, 0) rotate(-8deg) scale(1.24); }
+}
+
+@keyframes product-pair-arrival {
+  from { opacity: 0; transform: translateY(9px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes product-readout-arrival {
+  from { opacity: 0; transform: translateX(8px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 .journey-progress {
@@ -607,7 +621,7 @@
 }
 
 .origin-chapter { min-height: 135vh; }
-.studio-chapter { min-height: 175vh; }
+.studio-chapter { min-height: 205vh; }
 .pixionyx-chapter { min-height: 220vh; }
 .records-chapter { min-height: 215vh; }
 .books-chapter { min-height: 205vh; }
@@ -1333,6 +1347,92 @@
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.studio-delivery {
+  min-height: 214px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 28px;
+  margin-top: 14px;
+  padding: 20px 24px;
+}
+
+.studio-delivery-label {
+  margin: 0;
+  color: rgba(141, 249, 255, 0.58);
+  font: 650 6px/1 var(--universe-mono);
+  letter-spacing: 0.14em;
+}
+
+.studio-delivery h3 {
+  margin: 10px 0 14px;
+  font-size: clamp(18px, 1.65vw, 25px);
+  font-weight: 610;
+  letter-spacing: -0.035em;
+}
+
+.studio-process ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.studio-process li {
+  min-width: 0;
+  padding: 2px 14px 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.studio-process li:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.studio-process small {
+  color: rgba(141, 249, 255, 0.42);
+  font: 650 6px/1 var(--universe-mono);
+}
+
+.studio-process strong {
+  display: block;
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10px;
+}
+
+.studio-process li p,
+.studio-outcomes > p {
+  margin: 7px 0 0;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 8px;
+  line-height: 1.55;
+}
+
+.studio-outcomes {
+  padding-left: 26px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.studio-outcomes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 13px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.studio-outcomes li {
+  padding: 7px 8px;
+  border: 1px solid rgba(141, 249, 255, 0.1);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.48);
+  font: 600 6px/1 var(--universe-mono);
+  letter-spacing: 0.04em;
+}
+
 .product-galaxy {
   display: grid;
   grid-template-columns: minmax(420px, 0.78fr) minmax(500px, 1.22fr);
@@ -1379,6 +1479,7 @@
   perspective: 1300px;
   cursor: pointer;
   outline: none;
+  animation: product-pair-arrival 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .product-pair:focus-visible {
@@ -1524,6 +1625,7 @@
   gap: 22px;
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  animation: product-readout-arrival 520ms ease both;
 }
 
 .product-readout > div {
@@ -1615,6 +1717,15 @@
 
 .spatial-orbit-item.active {
   filter: saturate(1) brightness(1.05);
+}
+
+@media (min-width: 761px) {
+  .product-carousel .spatial-orbit-item {
+    transition:
+      transform 1250ms cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 820ms ease,
+      filter 820ms ease;
+  }
 }
 
 .spatial-carousel-controls {
@@ -2343,6 +2454,22 @@
     min-height: 220px;
   }
 
+  .studio-delivery {
+    min-height: 184px;
+    gap: 20px;
+    padding: 14px 18px;
+  }
+
+  .studio-delivery h3 {
+    margin: 8px 0 11px;
+    font-size: 18px;
+  }
+
+  .studio-process li p,
+  .studio-outcomes > p {
+    font-size: 7px;
+  }
+
   .product-portal {
     min-height: 455px;
   }
@@ -2594,6 +2721,81 @@
 
   .universe-noise {
     display: none;
+  }
+
+  .universe-mobile-lite .universe-canvas,
+  .universe-mobile-lite .universe-grid {
+    display: none;
+  }
+
+  .universe-mobile-lite .universe-fallback-field {
+    z-index: -5;
+    opacity: 0.92;
+    contain: strict;
+    background:
+      radial-gradient(circle at 50% 48%, rgba(0, 0, 0, 0.94) 0 7%, transparent 25%),
+      radial-gradient(circle at 50% 46%, rgba(120, 98, 255, 0.13), transparent 42%),
+      #010204;
+  }
+
+  .universe-mobile-lite .universe-fallback-field::before,
+  .universe-mobile-lite .universe-fallback-field::after {
+    position: absolute;
+    inset: -22%;
+    content: "";
+    will-change: transform;
+  }
+
+  .universe-mobile-lite .universe-fallback-field::before {
+    opacity: 0.82;
+    background-image:
+      radial-gradient(circle, rgba(136, 255, 228, 0.92) 0 0.7px, transparent 1.2px),
+      radial-gradient(circle, rgba(120, 98, 255, 0.88) 0 1px, transparent 1.7px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.7) 0 0.55px, transparent 1px);
+    background-position: 7px 11px, 23px 31px, 51px 17px;
+    background-size: 37px 43px, 73px 67px, 101px 89px;
+    animation: mobile-star-travel-a 24s linear infinite alternate;
+  }
+
+  .universe-mobile-lite .universe-fallback-field::after {
+    opacity: 0.56;
+    background-image:
+      radial-gradient(circle, rgba(88, 217, 255, 0.92) 0 1.1px, transparent 1.9px),
+      radial-gradient(circle, rgba(255, 118, 142, 0.64) 0 0.75px, transparent 1.25px),
+      radial-gradient(circle, rgba(255, 200, 107, 0.62) 0 0.6px, transparent 1.1px);
+    background-position: 19px 7px, 61px 43px, 29px 73px;
+    background-size: 113px 107px, 151px 137px, 197px 179px;
+    animation: mobile-star-travel-b 32s linear infinite alternate;
+  }
+
+  .universe-mobile-lite .fallback-sphere {
+    inset: -12%;
+    width: auto;
+    aspect-ratio: auto;
+    border: 0;
+    border-radius: 0;
+    background: radial-gradient(circle at 50% 48%, transparent 0 9%, rgba(53, 103, 255, 0.07) 20%, transparent 48%);
+    box-shadow: none;
+    transform: none;
+  }
+
+  .universe-mobile-lite .fallback-ring {
+    opacity: 0.58;
+    will-change: transform;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .universe-mobile-lite .universe-fallback-field::before {
+      animation: mobile-star-travel-a linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0% 100%;
+    }
+
+    .universe-mobile-lite .universe-fallback-field::after {
+      animation: mobile-star-travel-b linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0% 100%;
+    }
   }
 
   .universe-nebula {
@@ -2953,6 +3155,39 @@
 
   .seo-signal-row span:nth-child(n + 3) {
     border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .studio-delivery {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 14px;
+    padding: 18px;
+  }
+
+  .studio-delivery h3 {
+    font-size: 22px;
+  }
+
+  .studio-process ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 18px;
+  }
+
+  .studio-process li:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .studio-process li p,
+  .studio-outcomes > p {
+    font-size: 9px;
+  }
+
+  .studio-outcomes {
+    padding: 22px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 0;
   }
 
   .product-galaxy {

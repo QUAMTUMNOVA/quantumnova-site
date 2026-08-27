@@ -99,7 +99,7 @@ const verifiedImageViews: Record<string, VerifiedImageViews> = {
 };
 
 const catalogueUrl =
-  "https://www.pixionyx.com/collections/clothing/products.json?limit=40";
+  "https://www.pixionyx.com/collections/clothing/products.json?limit=40&country=AU&currency=AUD";
 
 function tidyTitle(title: string) {
   return title
@@ -184,7 +184,10 @@ function imagesForDisplay(product: ShopifyProduct) {
 export async function GET() {
   try {
     const response = await fetch(catalogueUrl, {
-      headers: { Accept: "application/json" },
+      headers: {
+        Accept: "application/json",
+        "Accept-Language": "en-AU,en;q=0.9",
+      },
     });
     if (!response.ok) throw new Error(`PixiOnyx returned ${response.status}`);
 
@@ -220,7 +223,7 @@ export async function GET() {
       {
         headers: {
           "Cache-Control":
-            "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400",
+            "public, max-age=120, s-maxage=300, stale-while-revalidate=900",
         },
       },
     );
