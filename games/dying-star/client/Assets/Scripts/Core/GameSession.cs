@@ -58,6 +58,17 @@ namespace DyingStar.Client.Core
                 HandleError));
         }
 
+        public void CollectProduction()
+        {
+            if (!Ready || string.IsNullOrWhiteSpace(GuestToken)) return;
+            var actionId = Guid.NewGuid().ToString("N");
+            StartCoroutine(apiClient.CollectProduction(
+                GuestToken,
+                actionId,
+                response => HandleArk(response.ark),
+                HandleError));
+        }
+
         private void HandleGuestCreated(GuestSessionResponse response)
         {
             GuestToken = response.guestToken;
