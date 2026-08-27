@@ -31,6 +31,36 @@ type VerifiedImageViews = {
   back: ImageViewSource;
 };
 
+type VerifiedImageUrls = {
+  front: string;
+  back: string;
+};
+
+// Some older Shopify products have irregular image groups that cannot be
+// resolved safely by position. Keep their clean, product-only sides explicit
+// so catalogue changes cannot turn a model or lifestyle image into a garment
+// view.
+const verifiedImageUrls: Record<string, VerifiedImageUrls> = {
+  "aurora-mountain-unisex-softstyle-t-shirt-adventure-tee-nature-shirt-gift-for-hikers-travel-apparel-outdoor-enthusiast-clothing": {
+    front:
+      "https://cdn.shopify.com/s/files/1/0678/8582/6108/files/aurora-mountain-unisex-softstyle-t-shirt-adventure-tee-nature-gift-623.webp?v=1756058301",
+    back:
+      "https://cdn.shopify.com/s/files/1/0678/8582/6108/files/aurora-mountain-unisex-softstyle-t-shirt-adventure-tee-nature-gift-748.webp?v=1756058399",
+  },
+  "mountain-inspired-unisex-t-shirt-ascend-adventure-tee-outdoor-apparel-gift-for-hikers-travel-shirt-asciend-graphic-design": {
+    front:
+      "https://cdn.shopify.com/s/files/1/0678/8582/6108/files/mountain-inspired-unisex-t-shirt-ascend-adventure-tee-outdoor-776.webp?v=1757501275",
+    back:
+      "https://cdn.shopify.com/s/files/1/0678/8582/6108/files/mountain-inspired-unisex-t-shirt-ascend-adventure-tee-outdoor-370.webp?v=1757501275",
+  },
+  "mountain-vibes-fleece-unisex-hoodie-cozy-outdoor-apparel": {
+    front:
+      "https://cdn.shopify.com/s/files/1/0678/8582/6108/files/mountain-vibes-fleece-unisex-hoodie-cozy-outdoor-apparel-xs-heather-239.webp?v=1756043785",
+    back:
+      "https://cdn.shopify.com/s/files/1/0678/8582/6108/files/mountain-vibes-fleece-unisex-hoodie-cozy-outdoor-apparel-120.webp?v=1756043861",
+  },
+};
+
 // Shopify does not expose front/back labels in the public catalogue feed. These
 // positions were visually verified against the current PixiOnyx catalogue. A
 // numeric position refers to an image inside the selected colour's supporting
@@ -40,11 +70,8 @@ const verifiedImageViews: Record<string, VerifiedImageViews> = {
   "unisex-hoodie-wildlife-warning-poorly-socialised-graphic-hoodie-do-not-approach": { front: "primary", back: 0 },
   "unisex-allegedly-do-i-look-guilty-do-not-answer-that-graphic-hoodie": { front: "primary", back: 0 },
   "lotus-blossom-unisex-t-shirt-softstyle-tee-yoga-apparel-mindfulness-gift-meditation-shirt-spiritual-wear-lotus-design": { front: "primary", back: 0 },
-  "aurora-mountain-unisex-softstyle-t-shirt-adventure-tee-nature-shirt-gift-for-hikers-travel-apparel-outdoor-enthusiast-clothing": { front: "primary", back: 3 },
   "mountain-themed-unisex-t-shirt-cozy-graphic-tee-silent-peaks-shirt-outdoor-lover-gift-camping-apparel-nature-inspired-top": { front: "primary", back: 0 },
-  "mountain-inspired-unisex-t-shirt-ascend-adventure-tee-outdoor-apparel-gift-for-hikers-travel-shirt-asciend-graphic-design": { front: "primary", back: 4 },
   "mountain-scene-fleece-unisex-hoodie-ascend-cozy-outdoor-sweatshirt-for-nature-lovers-gifts-for-hikers-adventure-apparel-cool-weather-gear": { front: "primary", back: 1 },
-  "mountain-vibes-fleece-unisex-hoodie-cozy-outdoor-apparel": { front: 0, back: 1 },
   "keep-going-unisex-hoodie-retro-motivational-graphic-sweatshirt": { front: "primary", back: 0 },
   "keep-going-unisex-t-shirt-motivational-retro-graphic-tee": { front: 1, back: 2 },
   "allegedly-graphic-unisex-hoodie-retro-comic-logo-hooded-sweatshirt": { front: "primary", back: 0 },
@@ -99,6 +126,14 @@ function preferredColour(product: ShopifyProduct) {
 }
 
 function imagesForDisplay(product: ShopifyProduct) {
+  const verifiedUrls = verifiedImageUrls[product.handle];
+  if (verifiedUrls) {
+    return {
+      frontImage: verifiedUrls.front,
+      backImage: verifiedUrls.back,
+    };
+  }
+
   const frontImages = product.images.filter((image) => image.variant_ids.length > 0);
   if (!frontImages.length) {
     return {
