@@ -16,6 +16,7 @@ type SpatialCarouselProps<T> = {
   visibleSlots?: number;
   renderItem: (item: T, itemIndex: number, active: boolean, nearby: boolean) => ReactNode;
   getKey: (item: T, itemIndex: number) => string;
+  onActiveItemClick?: (item: T, itemIndex: number) => void;
 };
 
 export function wrapIndex(index: number, length: number) {
@@ -64,6 +65,7 @@ export default function SpatialCarousel<T>({
   visibleSlots = 9,
   renderItem,
   getKey,
+  onActiveItemClick,
 }: SpatialCarouselProps<T>) {
   const gesture = useRef({
     pointerId: -1,
@@ -156,6 +158,10 @@ export default function SpatialCarousel<T>({
               style={itemStyle(itemIndex, index, items.length, visibleSlots)}
               onClick={() => {
                 if (performance.now() < blockClickUntil.current) return;
+                if (itemIndex === index && onActiveItemClick) {
+                  onActiveItemClick(item, itemIndex);
+                  return;
+                }
                 onChange(itemIndex);
               }}
               aria-label={`Select item ${itemIndex + 1} of ${items.length}`}
