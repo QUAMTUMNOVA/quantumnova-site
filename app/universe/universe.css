@@ -626,6 +626,7 @@
 
 .origin-orbit-core {
   position: absolute;
+  z-index: 3;
   top: 50%;
   left: 50%;
   width: 116px;
@@ -636,9 +637,32 @@
   border-radius: 50%;
   background: radial-gradient(circle, rgba(136, 255, 228, 0.13), rgba(8, 12, 22, 0.38) 56%, transparent 70%);
   color: rgba(225, 255, 250, 0.92);
+  text-decoration: none;
   font: 700 31px/1 var(--universe-mono);
   transform: translate(-50%, -50%);
   box-shadow: 0 0 60px rgba(136, 255, 228, 0.09), inset 0 0 32px rgba(136, 255, 228, 0.07);
+  cursor: pointer;
+  pointer-events: auto;
+  outline: none;
+  transition: border-color 260ms ease, background 260ms ease, box-shadow 260ms ease, color 260ms ease, transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.origin-orbit-core:hover,
+.origin-orbit-core:focus-visible {
+  border-color: rgba(136, 255, 228, 0.72);
+  background: radial-gradient(circle, rgba(136, 255, 228, 0.25), rgba(8, 12, 22, 0.58) 56%, transparent 72%);
+  color: #ffffff;
+  transform: translate(-50%, -50%) scale(1.06);
+  box-shadow: 0 0 82px rgba(136, 255, 228, 0.24), inset 0 0 38px rgba(136, 255, 228, 0.13);
+}
+
+.origin-orbit-core:focus-visible {
+  outline: 1px solid rgba(136, 255, 228, 0.9);
+  outline-offset: 10px;
+}
+
+.origin-orbit-core:active {
+  transform: translate(-50%, -50%) scale(0.98);
 }
 
 .origin-orbit-core::before,
@@ -678,6 +702,8 @@
   color: rgba(255, 255, 255, 0.35);
   font: 600 5px/1 var(--universe-mono);
   letter-spacing: 0.16em;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .origin-galaxy {

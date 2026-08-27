@@ -340,11 +340,16 @@ export default function UniverseExperience() {
                 </div>
               </div>
               <div className="origin-orbit-labels" aria-label="QUANTUMNOVA worlds">
-                <span className="origin-orbit-core" aria-hidden="true">
+                <a
+                  className="origin-orbit-core"
+                  href="#home"
+                  aria-label="Return to the top of the QUANTUMNOVA universe"
+                  title="Return to the top"
+                >
                   <i />
                   Q
-                  <small>QUANTUMNOVA</small>
-                </span>
+                  <small>RETURN TO ORIGIN</small>
+                </a>
                 <a className="origin-galaxy label-studio" href="#studio" aria-label="Travel to QUANTUMNOVA Studio">
                   <span className="origin-galaxy-system studio-system-mini" aria-hidden="true">
                     <i className="origin-galaxy-core" />
