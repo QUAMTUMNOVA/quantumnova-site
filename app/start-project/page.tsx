@@ -3,8 +3,27 @@ import Link from "next/link";
 import ProjectForm from "./project-form";
 
 export const metadata: Metadata = {
-  title: "Start a Project",
-  description: "Scope an immersive website, 3D product world or motion-led digital experience with QUANTUMNOVA Studio.",
+  title: "Start an Immersive Website Project",
+  description: "Scope an immersive website, WebGL experience, 3D product world or motion-led digital system with QUANTUMNOVA Studio.",
+  alternates: {
+    canonical: "/start-project",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_AU",
+    siteName: "QUANTUMNOVA",
+    url: "/start-project",
+    title: "Start an Immersive Website Project | QUANTUMNOVA",
+    description: "Tell QUANTUMNOVA what you want to build and receive a considered scope for your immersive digital project.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "QUANTUMNOVA, We Build Digital Universes",
+      },
+    ],
+  },
 };
 
 export default function StartProjectPage() {

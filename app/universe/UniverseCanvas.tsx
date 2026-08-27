@@ -152,6 +152,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           canvas,
           alpha: true,
           antialias: !compact,
+          precision: compact ? "mediump" : "highp",
           powerPreference: "high-performance",
         });
       } catch {
@@ -159,7 +160,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         return;
       }
 
-      const maxPixelRatio = compact ? 1.05 : 1.35;
+      const maxPixelRatio = compact ? 0.85 : 1.35;
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
       renderer.setSize(window.innerWidth, window.innerHeight, false);
       renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -173,7 +174,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const universeGroup = new THREE.Group();
       scene.add(universeGroup);
 
-      const sphereData = createSphereData(compact ? 2200 : 5600, compact ? 4.1 : 4.85);
+      const sphereData = createSphereData(compact ? 1200 : 5600, compact ? 4.1 : 4.85);
       const sphereGeometry = new THREE.BufferGeometry();
       sphereGeometry.setAttribute("position", new THREE.BufferAttribute(sphereData.positions, 3));
       sphereGeometry.setAttribute("aSeed", new THREE.BufferAttribute(sphereData.seeds, 1));
@@ -195,7 +196,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const particleSphere = new THREE.Points(sphereGeometry, sphereMaterial);
       universeGroup.add(particleSphere);
 
-      const coreGeometry = new THREE.IcosahedronGeometry(compact ? 1.26 : 1.55, 2);
+      const coreGeometry = new THREE.IcosahedronGeometry(compact ? 1.26 : 1.55, compact ? 1 : 2);
       const coreMaterial = new THREE.MeshPhysicalMaterial({
         color: "#061520",
         emissive: palettes[0][0].clone(),
@@ -210,7 +211,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const core = new THREE.Mesh(coreGeometry, coreMaterial);
       universeGroup.add(core);
 
-      const starData = createStarData(compact ? 1700 : 4300);
+      const starData = createStarData(compact ? 900 : 4300);
       const starGeometry = new THREE.BufferGeometry();
       starGeometry.setAttribute("position", new THREE.BufferAttribute(starData.positions, 3));
       starGeometry.setAttribute("color", new THREE.BufferAttribute(starData.colours, 3));
@@ -232,7 +233,8 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         opacity: 0.15,
       });
       const orbitalLines: import("three").Line[] = [];
-      for (let index = 0; index < 6; index += 1) {
+      const orbitalLineCount = compact ? 4 : 6;
+      for (let index = 0; index < orbitalLineCount; index += 1) {
         const curve = new THREE.EllipseCurve(
           0,
           0,
@@ -241,7 +243,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           0,
           Math.PI * 2,
         );
-        const points = curve.getPoints(96).map((point) => new THREE.Vector3(point.x, point.y, 0));
+        const points = curve.getPoints(compact ? 56 : 96).map((point) => new THREE.Vector3(point.x, point.y, 0));
         const geometry = new THREE.BufferGeometry().setFromPoints(points);
         const line = new THREE.Line(geometry, orbitalMaterial.clone());
         line.rotation.x = 0.86 + index * 0.08;
@@ -269,7 +271,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           depthWrite: false,
         });
         const portal = new THREE.Mesh(
-          new THREE.TorusGeometry(0.82, 0.018, 6, 72),
+          new THREE.TorusGeometry(0.82, 0.018, 6, compact ? 40 : 72),
           portalMaterial,
         );
         portal.rotation.x = Math.PI / 2;
@@ -292,7 +294,8 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         group.add(node);
         materials.push(nodeMaterial);
 
-        for (let ringIndex = 0; ringIndex < 3; ringIndex += 1) {
+        const galaxyRingCount = compact ? 2 : 3;
+        for (let ringIndex = 0; ringIndex < galaxyRingCount; ringIndex += 1) {
           const ringMaterial = new THREE.MeshBasicMaterial({
             color: ringIndex % 2 ? palette[1] : palette[0],
             transparent: true,
@@ -301,7 +304,7 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
             depthWrite: false,
           });
           const ring = new THREE.Mesh(
-            new THREE.TorusGeometry(1.25 + ringIndex * 0.5, 0.008, 5, 64),
+            new THREE.TorusGeometry(1.25 + ringIndex * 0.5, 0.008, 5, compact ? 40 : 64),
             ringMaterial,
           );
           ring.rotation.x = 0.7 + ringIndex * 0.42;
@@ -318,12 +321,18 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       const pointerTarget = new THREE.Vector2();
       const smoothCameraPosition = new THREE.Vector3().copy(cameraAnchors[0]);
       const smoothLookTarget = new THREE.Vector3();
+      const desiredCamera = new THREE.Vector3();
+      const desiredTarget = new THREE.Vector3();
       const clock = new THREE.Clock();
       let targetJourney = 0;
       let smoothJourney = 0;
       let activeScene = 0;
       let frame = 0;
       let journeyFrame = 0;
+      let resizeFrame = 0;
+      let lastRenderedAt = 0;
+      let renderWidth = window.innerWidth;
+      let renderHeight = window.innerHeight;
       let pageVisible = true;
 
       const calculateJourney = () => {
@@ -369,17 +378,39 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       };
 
       const handleResize = () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.fov = window.innerWidth <= 760 ? 56 : 46;
+        const nextWidth = window.innerWidth;
+        const nextHeight = window.innerHeight;
+        camera.aspect = nextWidth / nextHeight;
+        camera.fov = nextWidth <= 760 ? 56 : 46;
         camera.updateProjectionMatrix();
         const pixelRatio = Math.min(
           window.devicePixelRatio,
-          window.innerWidth <= 760 ? 1.05 : 1.35,
+          nextWidth <= 760 ? 0.85 : 1.35,
         );
-        renderer.setPixelRatio(pixelRatio);
-        sphereUniforms.uPixelRatio.value = pixelRatio;
-        renderer.setSize(window.innerWidth, window.innerHeight, false);
+
+        // Mobile browser chrome changes the viewport height while scrolling.
+        // Reallocating the WebGL buffer for each of those height-only changes
+        // stalls the background, so compact screens resize it only when the
+        // width changes, such as during an orientation change.
+        const needsBufferResize = !compact || nextWidth !== renderWidth;
+        if (needsBufferResize) {
+          renderer.setPixelRatio(pixelRatio);
+          sphereUniforms.uPixelRatio.value = pixelRatio;
+          renderer.setSize(nextWidth, nextHeight, false);
+          renderWidth = nextWidth;
+          renderHeight = nextHeight;
+        } else if (nextHeight !== renderHeight) {
+          renderHeight = nextHeight;
+        }
         calculateJourney();
+      };
+
+      const scheduleResize = () => {
+        if (resizeFrame) return;
+        resizeFrame = window.requestAnimationFrame(() => {
+          resizeFrame = 0;
+          handleResize();
+        });
       };
 
       const handleVisibility = () => {
@@ -387,27 +418,53 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         if (pageVisible && !frame) frame = window.requestAnimationFrame(render);
       };
 
-      const render = () => {
+      const render = (timestamp = 0) => {
         frame = 0;
         if (!pageVisible || disposed) return;
+
+        // A stable 30 fps mobile render is visibly smoother than an attempted
+        // 60 fps loop that repeatedly misses frames under fast touch scrolling.
+        if (compact && lastRenderedAt && timestamp - lastRenderedAt < 1000 / 30) {
+          frame = window.requestAnimationFrame(render);
+          return;
+        }
+
+        const deltaSeconds = lastRenderedAt
+          ? Math.min(0.12, Math.max(0.001, (timestamp - lastRenderedAt) / 1000))
+          : 1 / 60;
+        lastRenderedAt = timestamp;
         const elapsed = clock.getElapsedTime();
-        const damping = reducedMotion ? 0.16 : 0.045;
+        const damping = reducedMotion
+          ? 0.16
+          : compact
+            ? 1 - Math.exp(-8.5 * deltaSeconds)
+            : 0.045;
         smoothJourney = THREE.MathUtils.lerp(smoothJourney, targetJourney, damping);
         const pathProgress = smoothJourney / Math.max(1, galaxyTargets.length - 1);
-        const desiredCamera = cameraPath.getPoint(THREE.MathUtils.clamp(pathProgress, 0, 1));
+        cameraPath.getPoint(THREE.MathUtils.clamp(pathProgress, 0, 1), desiredCamera);
 
         const lowerScene = Math.min(galaxyTargets.length - 1, Math.floor(smoothJourney));
         const upperScene = Math.min(galaxyTargets.length - 1, lowerScene + 1);
         const sceneMix = smoothJourney - lowerScene;
-        const desiredTarget = galaxyTargets[lowerScene]
-          .clone()
+        desiredTarget
+          .copy(galaxyTargets[lowerScene])
           .lerp(galaxyTargets[upperScene], sceneMix);
 
         pointer.lerp(pointerTarget, reducedMotion ? 0.1 : 0.035);
         desiredCamera.x += pointer.x * (compact ? 0.35 : 0.72);
         desiredCamera.y += pointer.y * (compact ? 0.2 : 0.46);
-        smoothCameraPosition.lerp(desiredCamera, reducedMotion ? 0.18 : 0.07);
-        smoothLookTarget.lerp(desiredTarget, reducedMotion ? 0.2 : 0.075);
+        const cameraDamping = reducedMotion
+          ? 0.18
+          : compact
+            ? 1 - Math.exp(-10 * deltaSeconds)
+            : 0.07;
+        const targetDamping = reducedMotion
+          ? 0.2
+          : compact
+            ? 1 - Math.exp(-11 * deltaSeconds)
+            : 0.075;
+        smoothCameraPosition.lerp(desiredCamera, cameraDamping);
+        smoothLookTarget.lerp(desiredTarget, targetDamping);
         camera.position.copy(smoothCameraPosition);
         camera.lookAt(smoothLookTarget);
         if (!reducedMotion) camera.rotateZ(Math.sin(pathProgress * Math.PI * 3) * 0.012);
@@ -465,16 +522,17 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       calculateJourney();
       window.addEventListener("scroll", scheduleJourney, { passive: true });
       window.addEventListener("pointermove", handlePointer, { passive: true });
-      window.addEventListener("resize", handleResize);
+      window.addEventListener("resize", scheduleResize);
       document.addEventListener("visibilitychange", handleVisibility);
       frame = window.requestAnimationFrame(render);
 
       teardown = () => {
         if (frame) window.cancelAnimationFrame(frame);
         if (journeyFrame) window.cancelAnimationFrame(journeyFrame);
+        if (resizeFrame) window.cancelAnimationFrame(resizeFrame);
         window.removeEventListener("scroll", scheduleJourney);
         window.removeEventListener("pointermove", handlePointer);
-        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("resize", scheduleResize);
         document.removeEventListener("visibilitychange", handleVisibility);
         sphereGeometry.dispose();
         sphereMaterial.dispose();

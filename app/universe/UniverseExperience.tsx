@@ -74,6 +74,7 @@ export default function UniverseExperience() {
   const [bookIndex, setBookIndex] = useState(0);
   const [worldsMenuOpen, setWorldsMenuOpen] = useState(false);
   const prefetchedImages = useRef(new Set<string>());
+  const lastProductInteraction = useRef(0);
 
   const handleSceneChange = useCallback((scene: number) => {
     setActiveScene(scene);
@@ -116,6 +117,13 @@ export default function UniverseExperience() {
           if (!chapterViewport) return;
 
           const rect = chapter.getBoundingClientRect();
+          if (
+            compactMotion &&
+            (rect.bottom < -viewportHeight * 0.25 || rect.top > viewportHeight * 1.25)
+          ) {
+            return;
+          }
+
           let transitionPhase = 0;
           if (rect.top >= viewportHeight) {
             transitionPhase = 1;
@@ -238,6 +246,21 @@ export default function UniverseExperience() {
       });
     }
   }, [activeScene, lookIndex, looks]);
+
+  useEffect(() => {
+    if (activeScene !== 2 || looks.length < 2) return;
+    const desktop = window.matchMedia("(min-width: 761px)").matches;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!desktop || reducedMotion) return;
+
+    const interval = window.setInterval(() => {
+      if (document.hidden || Date.now() - lastProductInteraction.current < 8000) return;
+      setLookIndex((current) => wrapIndex(current + 1, looks.length));
+      setProductSide("front");
+    }, 5200);
+
+    return () => window.clearInterval(interval);
+  }, [activeScene, looks.length]);
 
   const activeLook = looks[lookIndex] ?? looks[0] ?? pixionyxFallback[0];
   const activePlaylist = playlists[playlistIndex];
@@ -378,11 +401,16 @@ export default function UniverseExperience() {
                   <span>digital</span>
                   <span>universes.</span>
                 </h1>
-                <p>QUANTUMNOVA designs immersive websites, 3D product worlds and motion systems, then puts that technology to work across our own music, fashion and publishing brands.</p>
+                <p>QUANTUMNOVA is an Australian creative technology studio designing immersive websites, 3D product worlds and motion systems, then proving that technology across our own music, fashion and publishing brands.</p>
                 <div className="origin-actions">
                   <PortalLink href="/start-project">Enter the project portal</PortalLink>
                   <PortalLink href="#studio" quiet>Begin the journey</PortalLink>
                 </div>
+                <nav className="mobile-brand-portals" aria-label="Explore QUANTUMNOVA brands">
+                  <a href="#pixionyx"><i aria-hidden="true" /><span>PixiOnyx</span></a>
+                  <a href="#records"><i aria-hidden="true" /><span>Records</span></a>
+                  <a href="#books"><i aria-hidden="true" /><span>AutoBookPress</span></a>
+                </nav>
               </div>
               <div className="origin-orbit-labels" aria-label="QUANTUMNOVA worlds">
                 <a
@@ -453,7 +481,7 @@ export default function UniverseExperience() {
                 <SceneEyebrow number="GALAXY / 01" accent="#8df9ff">QUANTUMNOVA Studio</SceneEyebrow>
                 <h2>Technology<br />people can enter.</h2>
               </div>
-              <p>We create custom websites for brands that need more than a template. Strategy, spatial design, WebGL, motion and production engineering become one memorable digital system.</p>
+              <p>We design and develop custom interactive websites for Australian and international brands that need more than a template. Strategy, content architecture, WebGL, motion, ecommerce integration and production engineering become one memorable digital system.</p>
             </div>
 
             <div className="studio-system glass-observatory">
@@ -485,7 +513,9 @@ export default function UniverseExperience() {
               <span>Custom 3D website design</span>
               <span>Interactive WebGL development</span>
               <span>Immersive product experiences</span>
-              <span>Creative technology studio</span>
+              <span>Next.js website development</span>
+              <span>Ecommerce integrations</span>
+              <span>Technical SEO and analytics</span>
             </div>
           </div>
         </section>
@@ -510,7 +540,13 @@ export default function UniverseExperience() {
                   <span>LIVE PRODUCT / {String(lookIndex + 1).padStart(2, "0")}</span>
                   <span className="live-catalogue-signal"><i /> {looks.length} PRODUCTS SYNCED</span>
                 </div>
-                <div className={`product-pair showing-${productSide}`}>
+                <a
+                  className={`product-pair showing-${productSide}`}
+                  href={activeLook.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Shop ${activeLook.title} at PixiOnyx`}
+                >
                   <figure className="product-face product-front">
                     <span>FRONT</span>
                     <img
@@ -526,10 +562,11 @@ export default function UniverseExperience() {
                     <img src={activeLook.backImage} alt={`Back of ${activeLook.title}`} loading="lazy" decoding="async" />
                   </figure>
                   <div className="product-gravity-ring" aria-hidden="true" />
-                </div>
+                  <span className="product-open-cue">SHOP PRODUCT ↗</span>
+                </a>
                 <div className="product-side-controls" aria-label="Product side">
-                  <button type="button" className={productSide === "front" ? "active" : ""} onClick={() => setProductSide("front")}>Front</button>
-                  <button type="button" className={productSide === "back" ? "active" : ""} onClick={() => setProductSide("back")}>Back</button>
+                  <button type="button" className={productSide === "front" ? "active" : ""} onClick={() => { lastProductInteraction.current = Date.now(); setProductSide("front"); }}>Front</button>
+                  <button type="button" className={productSide === "back" ? "active" : ""} onClick={() => { lastProductInteraction.current = Date.now(); setProductSide("back"); }}>Back</button>
                 </div>
                 <div className="product-readout">
                   <div><small>{activeLook.format}</small><strong>{activeLook.shortTitle}</strong></div>
@@ -541,6 +578,7 @@ export default function UniverseExperience() {
                 items={looks}
                 index={lookIndex}
                 onChange={(nextIndex) => {
+                  lastProductInteraction.current = Date.now();
                   setLookIndex(nextIndex);
                   setProductSide("front");
                 }}
@@ -548,6 +586,11 @@ export default function UniverseExperience() {
                 className="product-carousel"
                 visibleSlots={9}
                 getKey={(look) => look.url}
+                onActiveItemClick={(look) => {
+                  lastProductInteraction.current = Date.now();
+                  const productWindow = window.open(look.url, "_blank", "noopener,noreferrer");
+                  if (productWindow) productWindow.opener = null;
+                }}
                 renderItem={(look, itemIndex, active, nearby) => (
                   <span className="product-orbit-card">
                     <span className="product-card-image">
@@ -714,13 +757,15 @@ export default function UniverseExperience() {
               <div className="contact-copy glass-observatory">
                 <SceneEyebrow number="PORTAL / 05" accent="#b08cff">Build with QUANTUMNOVA</SceneEyebrow>
                 <h2>Your brand could be<br />its own destination.</h2>
-                <p>Tell us what you are building, what it needs to achieve and the level of immersion you have in mind. Our project portal gathers the detail required for an accurate, considered quote.</p>
+                <p>From strategy and content architecture through 3D design, WebGL development, ecommerce integration, technical SEO and launch, we can shape the complete digital experience. Tell us what you are building and our project portal will gather the detail required for an accurate, considered quote.</p>
                 <PortalLink href="/start-project">Scope your project</PortalLink>
                 <div className="contact-capabilities">
                   <span>Immersive websites</span>
                   <span>3D product worlds</span>
-                  <span>Motion systems</span>
-                  <span>Technical delivery</span>
+                  <span>Ecommerce integrations</span>
+                  <span>Motion and interaction systems</span>
+                  <span>Technical SEO and analytics</span>
+                  <span>Accessible responsive delivery</span>
                 </div>
               </div>
             </div>

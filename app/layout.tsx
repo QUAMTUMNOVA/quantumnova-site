@@ -5,16 +5,34 @@ import "./universe/universe.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://quantumnova.com.au"),
   title: {
-    default: "QUANTUMNOVA | Creative Technology and Immersive 3D Websites",
+    default: "QUANTUMNOVA | Immersive Websites and 3D Web Design",
     template: "%s | QUANTUMNOVA",
   },
   description:
-    "QUANTUMNOVA is an Australian creative technology company building immersive websites, 3D product worlds and motion systems across music, fashion and publishing.",
+    "QUANTUMNOVA is an Australian creative technology studio designing immersive websites, 3D product experiences, WebGL interfaces and motion-led digital systems.",
   applicationName: "QUANTUMNOVA",
   authors: [{ name: "QUANTUMNOVA PTY LTD" }],
   creator: "QUANTUMNOVA PTY LTD",
+  publisher: "QUANTUMNOVA PTY LTD",
+  category: "Creative technology and web development",
+  keywords: [
+    "immersive website design",
+    "3D website design",
+    "WebGL development",
+    "interactive website development",
+    "creative technology studio",
+    "3D product experience",
+    "motion design",
+    "Next.js development",
+    "Australian web design",
+    "technical SEO",
+  ],
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: [{ url: "/quantumnova-starfield-icon.svg", type: "image/svg+xml" }],
+    shortcut: "/quantumnova-starfield-icon.svg",
   },
   robots: {
     index: true,
@@ -23,25 +41,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_AU",
+    url: "/",
     siteName: "QUANTUMNOVA",
-    title: "QUANTUMNOVA | Creative Technology and Immersive 3D Websites",
+    title: "QUANTUMNOVA | We Build Digital Universes",
     description:
-      "Immersive websites, 3D product worlds and motion systems, proven through QUANTUMNOVA's own music, fashion and publishing brands.",
+      "Immersive websites, 3D product worlds, WebGL experiences and motion systems from an Australian creative technology studio.",
     images: [
       {
-        url: "https://quantumnova.com.au/assets/og-banner.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "QUANTUMNOVA",
+        alt: "QUANTUMNOVA, We Build Digital Universes",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QUANTUMNOVA | Creative Technology and Immersive 3D Websites",
+    title: "QUANTUMNOVA | We Build Digital Universes",
     description:
-      "Immersive websites, 3D product worlds and motion systems from an Australian creative technology company.",
-    images: ["https://quantumnova.com.au/assets/og-banner.png"],
+      "Immersive websites, 3D product worlds, WebGL experiences and motion systems from an Australian creative technology studio.",
+    images: ["/opengraph-image"],
   },
 };
 

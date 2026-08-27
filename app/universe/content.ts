@@ -74,22 +74,22 @@ export const artists = [
 export const capabilities = [
   {
     title: "Immersive UI",
-    copy: "A cinematic interface shaped around the brand, its audience and the action the experience needs to create.",
-    signal: "Experience design",
+    copy: "Brand strategy, content architecture and conversion paths shaped into a cinematic interface that remains clear, accessible and easy to use.",
+    signal: "Strategy and experience design",
   },
   {
     title: "3D Product Worlds",
-    copy: "Interactive objects, product storytelling and spatial systems that make offers tangible before purchase.",
-    signal: "Spatial commerce",
+    copy: "WebGL product viewers, interactive showrooms and spatial ecommerce experiences that make an offer tangible before a customer purchases.",
+    signal: "WebGL and spatial commerce",
   },
   {
     title: "Motion Systems",
-    copy: "Purposeful movement, transitions and scroll choreography that turn a site into one coherent world.",
-    signal: "Choreographed motion",
+    copy: "Scroll-linked storytelling, responsive transitions and interaction systems designed to guide attention and make the complete site feel coherent.",
+    signal: "Motion and interaction design",
   },
   {
     title: "Technical Delivery",
-    copy: "Production engineering, accessibility, responsive behaviour, analytics, technical SEO and performance control.",
-    signal: "Production engineering",
+    copy: "Responsive Next.js development, accessibility, ecommerce integrations, analytics, schema, technical SEO, performance testing and production launch.",
+    signal: "Engineering and optimisation",
   },
 ] as const;
