@@ -27,6 +27,11 @@
   left: 0;
 }
 
+/* The origin Q is already at the top, so only the floating down-page Q carries the return label. */
+.origin-orbit-core small {
+  display: none;
+}
+
 .origin-galaxy-system {
   background:
     radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--galaxy-tone) 18%, transparent), transparent 62%),
