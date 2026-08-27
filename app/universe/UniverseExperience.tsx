@@ -96,6 +96,10 @@ export default function UniverseExperience() {
       sceneFrame = window.requestAnimationFrame(() => {
         const chapters = Array.from(document.querySelectorAll<HTMLElement>("[data-universe-scene]"));
         if (!chapters.length) return;
+        const viewportHeight = Math.max(window.innerHeight, 1);
+        const viewportWidth = Math.max(window.innerWidth, 1);
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const compactMotion = viewportWidth <= 760;
         const focusLine = window.scrollY + window.innerHeight * 0.5;
         let nearestScene = 0;
         let nearestDistance = Number.POSITIVE_INFINITY;
@@ -106,6 +110,53 @@ export default function UniverseExperience() {
             nearestDistance = distance;
             nearestScene = index;
           }
+
+          const chapterViewport = chapter.querySelector<HTMLElement>(".universe-chapter-viewport");
+          if (!chapterViewport) return;
+
+          const rect = chapter.getBoundingClientRect();
+          let transitionPhase = 0;
+          if (rect.top >= viewportHeight) {
+            transitionPhase = 1;
+          } else if (rect.top > 0) {
+            transitionPhase = rect.top / viewportHeight;
+          } else if (rect.bottom <= 0) {
+            transitionPhase = -1;
+          } else if (rect.bottom < viewportHeight) {
+            transitionPhase = -(1 - rect.bottom / viewportHeight);
+          }
+
+          const scrollableDistance = Math.max(rect.height - viewportHeight, 1);
+          const chapterProgress = Math.min(1, Math.max(0, -rect.top / scrollableDistance));
+          const driftAngle = chapterProgress * Math.PI * 1.35 + index * 0.7;
+          const phaseMagnitude = Math.abs(transitionPhase);
+          const driftStrength = reduceMotion ? 0 : compactMotion ? 0.28 : 1;
+          const orbitX = reduceMotion
+            ? 0
+            : transitionPhase * (compactMotion ? 2.6 : 16) + Math.cos(driftAngle) * 1.05 * driftStrength;
+          const orbitY = reduceMotion
+            ? 0
+            : phaseMagnitude * (compactMotion ? 1.2 : 3.4) + Math.sin(driftAngle) * 0.72 * driftStrength;
+          const orbitZ = reduceMotion ? 0 : -phaseMagnitude * (compactMotion ? 38 : 290);
+          const orbitRotateY = reduceMotion
+            ? 0
+            : transitionPhase * (compactMotion ? -4 : -17) + Math.sin(driftAngle) * 1.35 * driftStrength;
+          const orbitRotateZ = reduceMotion
+            ? 0
+            : transitionPhase * (compactMotion ? 0.45 : 2.4) + Math.cos(driftAngle) * 0.32 * driftStrength;
+          const orbitScale = reduceMotion ? 1 : 1 - phaseMagnitude * (compactMotion ? 0.025 : 0.1);
+          const orbitOpacity = reduceMotion ? 1 : 1 - phaseMagnitude * (compactMotion ? 0.18 : 0.72);
+          const orbitBlur = reduceMotion || compactMotion ? 0 : phaseMagnitude * 2.4;
+
+          chapterViewport.style.setProperty("--chapter-orbit-x", `${orbitX.toFixed(3)}vw`);
+          chapterViewport.style.setProperty("--chapter-orbit-y", `${orbitY.toFixed(3)}vh`);
+          chapterViewport.style.setProperty("--chapter-orbit-z", `${orbitZ.toFixed(1)}px`);
+          chapterViewport.style.setProperty("--chapter-orbit-ry", `${orbitRotateY.toFixed(3)}deg`);
+          chapterViewport.style.setProperty("--chapter-orbit-rz", `${orbitRotateZ.toFixed(3)}deg`);
+          chapterViewport.style.setProperty("--chapter-orbit-scale", orbitScale.toFixed(4));
+          chapterViewport.style.setProperty("--chapter-orbit-opacity", orbitOpacity.toFixed(4));
+          chapterViewport.style.setProperty("--chapter-orbit-blur", `${orbitBlur.toFixed(2)}px`);
+          chapterViewport.style.zIndex = String(30 - Math.round(phaseMagnitude * 10));
         });
         setActiveScene(nearestScene);
       });
@@ -289,11 +340,55 @@ export default function UniverseExperience() {
                 </div>
               </div>
               <div className="origin-orbit-labels" aria-label="QUANTUMNOVA worlds">
-                <span className="origin-orbit-core">Q<small>QUANTUMNOVA</small></span>
-                <span className="origin-label label-studio">IMMERSIVE WEB</span>
-                <span className="origin-label label-pixi">PIXIONYX</span>
-                <span className="origin-label label-records">RECORDS</span>
-                <span className="origin-label label-books">AUTOBOOKPRESS</span>
+                <span className="origin-orbit-core" aria-hidden="true">
+                  <i />
+                  Q
+                  <small>QUANTUMNOVA</small>
+                </span>
+                <a className="origin-galaxy label-studio" href="#studio" aria-label="Travel to QUANTUMNOVA Studio">
+                  <span className="origin-galaxy-system studio-system-mini" aria-hidden="true">
+                    <i className="origin-galaxy-core" />
+                    <i className="origin-galaxy-ring ring-one" />
+                    <i className="origin-galaxy-ring ring-two" />
+                    <i className="origin-galaxy-star star-one" />
+                    <i className="origin-galaxy-star star-two" />
+                    <i className="origin-galaxy-star star-three" />
+                  </span>
+                  <span className="origin-galaxy-copy"><small>01 / IMMERSIVE WEB</small><strong>QUANTUMNOVA Studio</strong></span>
+                </a>
+                <a className="origin-galaxy label-pixi" href="#pixionyx" aria-label="Travel to the PixiOnyx galaxy">
+                  <span className="origin-galaxy-system pixi-system-mini" aria-hidden="true">
+                    <i className="origin-galaxy-core" />
+                    <i className="origin-galaxy-ring ring-one" />
+                    <i className="origin-galaxy-ring ring-two" />
+                    <i className="origin-galaxy-star star-one" />
+                    <i className="origin-galaxy-star star-two" />
+                    <i className="origin-galaxy-star star-three" />
+                  </span>
+                  <span className="origin-galaxy-copy"><small>02 / APPAREL</small><strong>PixiOnyx</strong></span>
+                </a>
+                <a className="origin-galaxy label-records" href="#records" aria-label="Travel to the QUANTUMNOVA Records galaxy">
+                  <span className="origin-galaxy-system records-system-mini" aria-hidden="true">
+                    <i className="origin-galaxy-core" />
+                    <i className="origin-galaxy-ring ring-one" />
+                    <i className="origin-galaxy-ring ring-two" />
+                    <i className="origin-galaxy-star star-one" />
+                    <i className="origin-galaxy-star star-two" />
+                    <i className="origin-galaxy-star star-three" />
+                  </span>
+                  <span className="origin-galaxy-copy"><small>03 / MUSIC</small><strong>QUANTUMNOVA Records</strong></span>
+                </a>
+                <a className="origin-galaxy label-books" href="#books" aria-label="Travel to the AutoBookPress galaxy">
+                  <span className="origin-galaxy-system books-system-mini" aria-hidden="true">
+                    <i className="origin-galaxy-core" />
+                    <i className="origin-galaxy-ring ring-one" />
+                    <i className="origin-galaxy-ring ring-two" />
+                    <i className="origin-galaxy-star star-one" />
+                    <i className="origin-galaxy-star star-two" />
+                    <i className="origin-galaxy-star star-three" />
+                  </span>
+                  <span className="origin-galaxy-copy"><small>04 / PUBLISHING</small><strong>AutoBookPress</strong></span>
+                </a>
               </div>
             </div>
             <p className="scene-instruction"><span /> Scroll to travel. Move your pointer to influence the field.</p>
