@@ -2,7 +2,7 @@ export const universeScenes = [
   { id: "home", label: "Origin", shortLabel: "Q", tone: "#88ffe4" },
   { id: "studio", label: "Studio", shortLabel: "01", tone: "#8df9ff" },
   { id: "pixionyx", label: "PixiOnyx", shortLabel: "02", tone: "#ff768e" },
-  { id: "records", label: "Records", shortLabel: "03", tone: "#58d9ff" },
+  { id: "records", label: "QUANTUMNOVA Records", shortLabel: "03", tone: "#58d9ff" },
   { id: "books", label: "AutoBookPress", shortLabel: "04", tone: "#ffc86b" },
   { id: "contact", label: "Build with us", shortLabel: "05", tone: "#b08cff" },
 ] as const;
