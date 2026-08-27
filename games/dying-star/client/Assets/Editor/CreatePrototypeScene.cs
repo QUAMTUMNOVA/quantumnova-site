@@ -13,7 +13,7 @@ namespace DyingStar.Client.EditorTools
 {
     public static class CreatePrototypeScene
     {
-        [MenuItem("Dying Star/Create M1 Ark Prototype Scene")]
+        [MenuItem("Dying Star/Create M2 Ark Economy Prototype Scene")]
         public static void Create()
         {
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
@@ -73,15 +73,15 @@ namespace DyingStar.Client.EditorTools
             SetSerializedObjectReference(view, "foundry", foundry);
             SetSerializedObjectReference(view, "arkLight", light);
 
-            CreatePrototypeHud(view);
+            CreatePrototypeHud(view, session);
 
-            const string scenePath = "Assets/Scenes/M1_ArkPrototype.unity";
+            const string scenePath = "Assets/Scenes/M2_ArkEconomyPrototype.unity";
             System.IO.Directory.CreateDirectory("Assets/Scenes");
             EditorSceneManager.SaveScene(scene, scenePath);
             EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(scenePath, true) };
             AssetDatabase.SaveAssets();
             Selection.activeGameObject = arkRoot;
-            Debug.Log("Dying Star M1 Ark prototype scene created and added to Build Settings.");
+            Debug.Log("Dying Star M2 Ark economy prototype scene created and added to Build Settings.");
         }
 
         private static Transform CreateModule(string name, PrimitiveType primitive, Vector3 position, Vector3 scale)
@@ -103,24 +103,39 @@ namespace DyingStar.Client.EditorTools
             return ring;
         }
 
-        private static void CreatePrototypeHud(ArkPrototypeView view)
+        private static void CreatePrototypeHud(ArkPrototypeView view, GameSession session)
         {
             var canvasObject = new GameObject("Prototype HUD");
             var canvas = canvasObject.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-            canvasObject.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            var scaler = canvasObject.AddComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1920f, 1080f);
             canvasObject.AddComponent<GraphicRaycaster>();
 
-            var title = CreateText(canvasObject.transform, "PROJECT DYING STAR  |  M1 ARK", new Vector2(30f, -30f), 23, TextAnchor.UpperLeft);
-            title.rectTransform.anchorMin = new Vector2(0f, 1f);
-            title.rectTransform.anchorMax = new Vector2(0f, 1f);
+            CreateTopLeftText(canvasObject.transform, "PROJECT DYING STAR  |  M2 ARK ECONOMY", new Vector2(30f, -28f), 23);
+            var alloyText = CreateTopLeftText(canvasObject.transform, "ALLOY", new Vector2(30f, -72f), 18);
+            var heliumText = CreateTopLeftText(canvasObject.transform, "HELIUM-3", new Vector2(30f, -104f), 18);
+            var dataText = CreateTopLeftText(canvasObject.transform, "DATA", new Vector2(30f, -136f), 18);
+            var productionText = CreateTopLeftText(canvasObject.transform, "PRODUCTION OFFLINE", new Vector2(30f, -178f), 16);
+            var powerText = CreateTopLeftText(canvasObject.transform, "ARK POWER: OFFLINE", new Vector2(30f, -210f), 16);
+
+            var economyHud = canvasObject.AddComponent<ArkEconomyHud>();
+            SetSerializedObjectReference(economyHud, "session", session);
+            SetSerializedObjectReference(economyHud, "alloyText", alloyText);
+            SetSerializedObjectReference(economyHud, "heliumText", heliumText);
+            SetSerializedObjectReference(economyHud, "dataText", dataText);
+            SetSerializedObjectReference(economyHud, "productionText", productionText);
+            SetSerializedObjectReference(economyHud, "powerText", powerText);
 
             CreateButton(canvasObject.transform, "RESTORE / UPGRADE REACTOR", new Vector2(30f, 110f), view.UpgradeReactor);
             CreateButton(canvasObject.transform, "RESTORE / UPGRADE FOUNDRY", new Vector2(30f, 62f), view.UpgradeFoundry);
             CreateButton(canvasObject.transform, "UPGRADE NEXUS", new Vector2(30f, 14f), view.UpgradeNexus);
+            var collectButton = CreateButton(canvasObject.transform, "COLLECT PRODUCTION", new Vector2(360f, 110f), economyHud.CollectProduction);
+            SetSerializedObjectReference(economyHud, "collectButton", collectButton);
         }
 
-        private static void CreateButton(Transform parent, string label, Vector2 position, UnityEngine.Events.UnityAction onClick)
+        private static Button CreateButton(Transform parent, string label, Vector2 position, UnityEngine.Events.UnityAction onClick)
         {
             var buttonObject = new GameObject(label);
             buttonObject.transform.SetParent(parent, false);
@@ -141,6 +156,16 @@ namespace DyingStar.Client.EditorTools
             text.rectTransform.anchorMax = Vector2.one;
             text.rectTransform.offsetMin = Vector2.zero;
             text.rectTransform.offsetMax = Vector2.zero;
+            return button;
+        }
+
+        private static Text CreateTopLeftText(Transform parent, string value, Vector2 position, int size)
+        {
+            var text = CreateText(parent, value, position, size, TextAnchor.UpperLeft);
+            text.rectTransform.anchorMin = new Vector2(0f, 1f);
+            text.rectTransform.anchorMax = new Vector2(0f, 1f);
+            text.rectTransform.pivot = new Vector2(0f, 1f);
+            return text;
         }
 
         private static Text CreateText(Transform parent, string value, Vector2 position, int size, TextAnchor anchor)
@@ -154,7 +179,7 @@ namespace DyingStar.Client.EditorTools
             text.alignment = anchor;
             text.color = new Color(0.78f, 0.95f, 1f);
             text.rectTransform.anchoredPosition = position;
-            text.rectTransform.sizeDelta = new Vector2(520f, 40f);
+            text.rectTransform.sizeDelta = new Vector2(660f, 34f);
             return text;
         }
 
