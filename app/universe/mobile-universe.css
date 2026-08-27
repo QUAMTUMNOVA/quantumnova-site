@@ -16,25 +16,33 @@
     height: 100%;
     display: block;
     pointer-events: none;
-    opacity: 0.96;
+    opacity: 1;
   }
 
   .universe-mobile-webgl.unavailable {
     display: none;
   }
 
+  .universe-nebula {
+    background:
+      radial-gradient(circle at 68% 31%, rgba(103, 78, 255, 0.2), transparent 36rem),
+      radial-gradient(circle at 27% 64%, rgba(39, 235, 207, 0.11), transparent 34rem),
+      radial-gradient(circle at 74% 76%, rgba(255, 92, 143, 0.075), transparent 29rem),
+      #010204;
+  }
+
   .universe-mobile-lite .universe-fallback-field {
-    opacity: 0.34;
+    opacity: 0.28;
   }
 
   .universe-mobile-lite .universe-fallback-field::before,
   .universe-mobile-lite .universe-fallback-field::after {
-    opacity: 0.18;
+    opacity: 0.14;
     animation: none !important;
   }
 
   .universe-mobile-lite .fallback-ring {
-    opacity: 0.32;
+    opacity: 0.28;
   }
 
   .mobile-brand-portals a[href="#records"] span {
