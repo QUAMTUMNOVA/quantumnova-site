@@ -35,6 +35,9 @@ public sealed class ArkEntity
     public long Helium3 { get; set; } = 500;
     public long Data { get; set; } = 100;
     public long Nova { get; set; }
+    public double AlloyProductionStored { get; set; }
+    public double Helium3ProductionStored { get; set; }
+    public DateTime LastEconomySettledAtUtc { get; set; }
     public DateTime UpdatedAtUtc { get; set; }
     public List<BuildingEntity> Buildings { get; set; } = [];
     public List<ResourceLedgerEntity> ResourceLedger { get; set; } = [];
