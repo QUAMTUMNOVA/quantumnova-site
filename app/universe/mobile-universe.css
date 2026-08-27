@@ -9,49 +9,41 @@
     background: #010204;
   }
 
+  /* The compact renderer sits above the page background and below the
+     complete QUANTUMNOVA interface. */
   .universe-mobile-webgl {
     position: fixed;
-    z-index: -4;
+    z-index: 0;
     inset: 0;
     width: 100%;
     height: 100%;
     display: block;
     pointer-events: none;
     opacity: 1;
-    filter: contrast(1.16) saturate(1.08);
   }
 
   .universe-mobile-webgl.unavailable {
     display: none;
   }
 
-  /* Keep space genuinely dark. Atmospheric colour should come from the
-     WebGL stars and galaxy rather than lifting the entire background. */
+  .universe-experience {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+  }
+
+  /* The desktop-style WebGL renderer now owns the mobile background.
+     Do not place an opaque CSS nebula or fallback field over it. */
   .universe-nebula {
-    background:
-      radial-gradient(circle at 67% 29%, rgba(103, 78, 255, 0.045), transparent 27rem),
-      radial-gradient(circle at 28% 68%, rgba(39, 235, 207, 0.026), transparent 30rem),
-      radial-gradient(circle at 76% 78%, rgba(255, 92, 143, 0.018), transparent 24rem),
-      #010204;
+    background: none !important;
   }
 
-  /* The CSS field is now only an emergency depth layer beneath WebGL. */
-  .universe-mobile-lite .universe-fallback-field {
-    opacity: 0.075;
-  }
-
+  .universe-mobile-lite .universe-fallback-field,
   .universe-mobile-lite .universe-fallback-field::before,
-  .universe-mobile-lite .universe-fallback-field::after {
-    opacity: 0.035;
-    animation: none !important;
-  }
-
-  .universe-mobile-lite .fallback-sphere {
-    opacity: 0.18;
-  }
-
+  .universe-mobile-lite .universe-fallback-field::after,
+  .universe-mobile-lite .fallback-sphere,
   .universe-mobile-lite .fallback-ring {
-    opacity: 0.12;
+    opacity: 0 !important;
   }
 
   .mobile-brand-portals a[href="#records"] span {
