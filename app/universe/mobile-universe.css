@@ -1,0 +1,39 @@
+.universe-mobile-webgl {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .universe-mode body {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .universe-mobile-webgl {
+    position: fixed;
+    z-index: -4;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    opacity: 0.96;
+  }
+
+  .universe-mobile-webgl.unavailable {
+    display: none;
+  }
+
+  .universe-mobile-lite .universe-fallback-field {
+    opacity: 0.34;
+  }
+
+  .universe-mobile-lite .universe-fallback-field::before,
+  .universe-mobile-lite .universe-fallback-field::after {
+    opacity: 0.18;
+    animation: none !important;
+  }
+
+  .universe-mobile-lite .fallback-ring {
+    opacity: 0.32;
+  }
+}
