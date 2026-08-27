@@ -46,6 +46,15 @@
     opacity: 0 !important;
   }
 
+  /* The floating return control only belongs below the origin galaxy map.
+     This also prevents a stale active-scene state from leaving it visible
+     after the user taps Q to return to the top. */
+  .universe-mode[data-mobile-past-origin-nav="false"] .universe-nova-home {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translate(-50%, -50%) scale(0.72) !important;
+  }
+
   /* The compact three-card shortcut is replaced by the same galaxy map
      treatment used on desktop, including Studio and Build With Us. */
   .mobile-brand-portals {
