@@ -12,7 +12,7 @@ const sceneColours = [
   ["#ff718c", "#9d4cff"],
   ["#35e7ff", "#3567ff"],
   ["#ffc86b", "#ff6a45"],
-  ["#ac87ff", "#6fffdc"],
+  ["#a8ff5b", "#42d67b"],
 ] as const;
 
 const galaxyCoordinates = [

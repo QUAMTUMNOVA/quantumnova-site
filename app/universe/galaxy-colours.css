@@ -27,6 +27,14 @@
   left: 0;
 }
 
+.label-contact {
+  --galaxy-tone: #a8ff5b;
+  --galaxy-secondary: #42d67b;
+  top: 22%;
+  left: 10%;
+  animation-delay: -6.3s;
+}
+
 /* The origin Q is already at the top, so only the floating down-page Q carries the return label. */
 .origin-orbit-core small {
   display: none;
@@ -60,7 +68,7 @@
     drop-shadow(0 0 30px color-mix(in srgb, var(--galaxy-secondary) 26%, transparent));
 }
 
-/* Scene accents follow the same identity colours so Studio no longer reads cyan. */
+/* Scene accents follow the same identity colours so every destination reads differently. */
 .studio-chapter .universe-eyebrow {
   --scene-accent: #8b6cff !important;
 }
@@ -75,4 +83,28 @@
 
 .books-chapter .universe-eyebrow {
   --scene-accent: #ffc86b !important;
+}
+
+.contact-chapter .universe-eyebrow {
+  --scene-accent: #a8ff5b !important;
+}
+
+.contact-chapter .contact-signal {
+  filter: drop-shadow(0 0 30px color-mix(in srgb, #a8ff5b 18%, transparent));
+}
+
+.contact-chapter .contact-core {
+  border-color: color-mix(in srgb, #a8ff5b 54%, transparent);
+  color: #efffe1;
+  box-shadow:
+    0 0 34px color-mix(in srgb, #a8ff5b 20%, transparent),
+    inset 0 0 24px color-mix(in srgb, #42d67b 12%, transparent);
+}
+
+.contact-chapter .contact-ring {
+  border-color: color-mix(in srgb, #a8ff5b 28%, transparent);
+}
+
+.contact-chapter .contact-ring.ring-two {
+  border-color: color-mix(in srgb, #42d67b 34%, transparent);
 }

@@ -4,7 +4,7 @@ export const universeScenes = [
   { id: "pixionyx", label: "PixiOnyx", shortLabel: "02", tone: "#ff718c" },
   { id: "records", label: "QUANTUMNOVA Records", shortLabel: "03", tone: "#35e7ff" },
   { id: "books", label: "AutoBookPress", shortLabel: "04", tone: "#ffc86b" },
-  { id: "contact", label: "Build with us", shortLabel: "05", tone: "#b08cff" },
+  { id: "contact", label: "Build with us", shortLabel: "05", tone: "#a8ff5b" },
 ] as const;
 
 export const playlists = [

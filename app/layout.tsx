@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import UniverseOriginBuildGalaxy from "./universe/UniverseOriginBuildGalaxy";
 import "./globals.css";
 import "./universe/universe.css";
 import "./universe/mobile-universe.css";
@@ -73,7 +74,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-AU">
-      <body>{children}</body>
+      <body>
+        <UniverseOriginBuildGalaxy />
+        {children}
+      </body>
     </html>
   );
 }
