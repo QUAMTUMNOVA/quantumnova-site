@@ -119,6 +119,14 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    const compact = window.matchMedia("(max-width: 760px)").matches;
+    if (compact) {
+      document.documentElement.classList.add("universe-mobile-lite");
+      return () => {
+        document.documentElement.classList.remove("universe-mobile-lite");
+      };
+    }
+
     let disposed = false;
     let teardown = () => {};
 
@@ -127,7 +135,6 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       if (disposed) return;
 
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const compact = window.matchMedia("(max-width: 760px)").matches;
       const scene = new THREE.Scene();
       scene.fog = new THREE.FogExp2("#020509", compact ? 0.018 : 0.011);
 
@@ -195,21 +202,6 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
       });
       const particleSphere = new THREE.Points(sphereGeometry, sphereMaterial);
       universeGroup.add(particleSphere);
-
-      const coreGeometry = new THREE.IcosahedronGeometry(compact ? 1.26 : 1.55, compact ? 1 : 2);
-      const coreMaterial = new THREE.MeshPhysicalMaterial({
-        color: "#061520",
-        emissive: palettes[0][0].clone(),
-        emissiveIntensity: 0.55,
-        roughness: 0.18,
-        metalness: 0.75,
-        transmission: 0.35,
-        transparent: true,
-        opacity: 0.34,
-        wireframe: true,
-      });
-      const core = new THREE.Mesh(coreGeometry, coreMaterial);
-      universeGroup.add(core);
 
       const starData = createStarData(compact ? 900 : 4300);
       const starGeometry = new THREE.BufferGeometry();
@@ -476,13 +468,9 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         sphereUniforms.uColourB.value
           .copy(palettes[lowerScene][1])
           .lerp(palettes[upperScene][1], sceneMix);
-        coreMaterial.emissive.copy(sphereUniforms.uColourA.value);
-        coreMaterial.opacity = 0.18 + Math.sin(smoothJourney * Math.PI) * 0.08;
         universeGroup.rotation.y = reducedMotion ? 0.1 : elapsed * 0.012;
         universeGroup.rotation.x = Math.sin(elapsed * 0.08) * 0.025;
         particleSphere.rotation.y = reducedMotion ? 0 : elapsed * 0.018;
-        core.rotation.x = reducedMotion ? 0.4 : elapsed * 0.11;
-        core.rotation.y = reducedMotion ? 0.2 : -elapsed * 0.16;
         stars.rotation.y = reducedMotion ? 0 : elapsed * 0.0018;
 
         orbitalLines.forEach((line, index) => {
@@ -536,8 +524,6 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         document.removeEventListener("visibilitychange", handleVisibility);
         sphereGeometry.dispose();
         sphereMaterial.dispose();
-        coreGeometry.dispose();
-        coreMaterial.dispose();
         starGeometry.dispose();
         starMaterial.dispose();
         orbitalLines.forEach((line) => {

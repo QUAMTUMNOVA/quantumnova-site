@@ -93,3 +93,34 @@ export const capabilities = [
     signal: "Engineering and optimisation",
   },
 ] as const;
+
+export const studioProcess = [
+  {
+    number: "01",
+    title: "Define",
+    copy: "Clarify the audience, offer, commercial goal and measures of success before design begins.",
+  },
+  {
+    number: "02",
+    title: "Architect",
+    copy: "Shape the customer journey, content hierarchy, interaction model and technical foundation.",
+  },
+  {
+    number: "03",
+    title: "Prototype",
+    copy: "Prove the highest-risk motion, 3D and conversion moments before committing to the full build.",
+  },
+  {
+    number: "04",
+    title: "Build and launch",
+    copy: "Develop, integrate, test and deploy the complete system with a measured launch plan.",
+  },
+] as const;
+
+export const studioOutcomeTargets = [
+  "More distinctive positioning",
+  "Clearer paths to action",
+  "Stronger product discovery",
+  "Responsive performance",
+  "A scalable technical foundation",
+] as const;
