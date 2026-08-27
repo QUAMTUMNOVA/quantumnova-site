@@ -8,7 +8,7 @@ type UniverseCanvasProps = {
 
 const sceneColours = [
   ["#72ffe0", "#6b57ff"],
-  ["#75f7ff", "#7567ff"],
+  ["#8b6cff", "#c6a7ff"],
   ["#ff718c", "#9d4cff"],
   ["#35e7ff", "#3567ff"],
   ["#ffc86b", "#ff6a45"],
