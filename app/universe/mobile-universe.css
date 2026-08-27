@@ -167,29 +167,32 @@
     white-space: normal;
   }
 
-  /* Five destinations form a compact pentagon around the central Q. */
-  .label-studio {
+  /* Five destinations form a compact pentagon around the central Q.
+     The extra .origin-orbit-labels specificity keeps these mobile positions
+     ahead of the later desktop palette overrides. */
+  .origin-orbit-labels .label-studio {
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .label-pixi {
+  .origin-orbit-labels .label-pixi {
     top: 25%;
     right: -1%;
   }
 
-  .label-records {
+  .origin-orbit-labels .label-records {
     right: 6%;
     bottom: 3%;
   }
 
-  .label-books {
+  .origin-orbit-labels .label-books {
+    top: auto;
     left: 6%;
     bottom: 3%;
   }
 
-  .label-contact {
+  .origin-orbit-labels .label-contact {
     top: 25%;
     left: -1%;
   }
@@ -221,13 +224,13 @@
       font-size: 21px;
     }
 
-    .label-pixi,
-    .label-contact {
+    .origin-orbit-labels .label-pixi,
+    .origin-orbit-labels .label-contact {
       top: 27%;
     }
 
-    .label-records,
-    .label-books {
+    .origin-orbit-labels .label-records,
+    .origin-orbit-labels .label-books {
       bottom: 2%;
     }
   }
