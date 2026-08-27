@@ -257,6 +257,7 @@
   color: rgba(255, 255, 255, 0.48);
   font: 600 5px/1 var(--universe-mono);
   letter-spacing: 0.16em;
+  white-space: nowrap;
   pointer-events: none;
 }
 

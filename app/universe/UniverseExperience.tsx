@@ -272,10 +272,10 @@ export default function UniverseExperience() {
         aria-label="Return to the top of the QUANTUMNOVA universe"
         aria-hidden={activeScene === 0}
         tabIndex={activeScene === 0 ? -1 : 0}
-        title="Return to origin"
+        title="Return to top"
       >
         <span>Q</span>
-        <small>ORIGIN</small>
+        <small>RETURN TO TOP</small>
       </a>
 
       <header className="universe-header">
@@ -360,7 +360,7 @@ export default function UniverseExperience() {
                 >
                   <i />
                   Q
-                  <small>RETURN TO ORIGIN</small>
+                  <small>RETURN TO TOP</small>
                 </a>
                 <a className="origin-galaxy label-studio" href="#studio" aria-label="Travel to QUANTUMNOVA Studio">
                   <span className="origin-galaxy-system studio-system-mini" aria-hidden="true">
