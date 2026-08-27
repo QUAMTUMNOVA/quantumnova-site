@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./universe/universe.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://quantumnova.com.au"),
@@ -12,9 +13,12 @@ export const metadata: Metadata = {
   applicationName: "QUANTUMNOVA",
   authors: [{ name: "QUANTUMNOVA PTY LTD" }],
   creator: "QUANTUMNOVA PTY LTD",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   openGraph: {
     type: "website",

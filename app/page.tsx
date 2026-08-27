@@ -1,4 +1,4 @@
-import QnovaExperience from "./experience";
+import UniverseExperience from "./universe/UniverseExperience";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -32,7 +32,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <QnovaExperience />
+      <UniverseExperience />
     </>
   );
 }
