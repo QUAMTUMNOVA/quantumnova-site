@@ -9,7 +9,7 @@ type UniverseCanvasProps = {
 const sceneColours = [
   ["#72ffe0", "#6b57ff"],
   ["#8b6cff", "#c6a7ff"],
-  ["#ff718c", "#9d4cff"],
+  ["#ff718c", "#ffb0c1"],
   ["#35e7ff", "#79efff"],
   ["#ffc86b", "#ff6a45"],
   ["#a8ff5b", "#42d67b"],
@@ -380,10 +380,6 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           nextWidth <= 760 ? 0.85 : 1.35,
         );
 
-        // Mobile browser chrome changes the viewport height while scrolling.
-        // Reallocating the WebGL buffer for each of those height-only changes
-        // stalls the background, so compact screens resize it only when the
-        // width changes, such as during an orientation change.
         const needsBufferResize = !compact || nextWidth !== renderWidth;
         if (needsBufferResize) {
           renderer.setPixelRatio(pixelRatio);
@@ -414,8 +410,6 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
         frame = 0;
         if (!pageVisible || disposed) return;
 
-        // A stable 30 fps mobile render is visibly smoother than an attempted
-        // 60 fps loop that repeatedly misses frames under fast touch scrolling.
         if (compact && lastRenderedAt && timestamp - lastRenderedAt < 1000 / 30) {
           frame = window.requestAnimationFrame(render);
           return;
