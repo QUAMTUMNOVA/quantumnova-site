@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const sceneColours = [
   ["#72ffe0", "#6b57ff"],
   ["#8b6cff", "#c6a7ff"],
-  ["#ff718c", "#9d4cff"],
+  ["#ff718c", "#ffb0c1"],
   ["#35e7ff", "#79efff"],
   ["#ffc86b", "#ff6a45"],
   ["#a8ff5b", "#42d67b"],
