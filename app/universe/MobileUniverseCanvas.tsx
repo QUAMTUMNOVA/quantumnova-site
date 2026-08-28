@@ -6,7 +6,7 @@ const sceneColours = [
   ["#72ffe0", "#6b57ff"],
   ["#8b6cff", "#c6a7ff"],
   ["#ff718c", "#9d4cff"],
-  ["#35e7ff", "#3567ff"],
+  ["#35e7ff", "#79efff"],
   ["#ffc86b", "#ff6a45"],
   ["#a8ff5b", "#42d67b"],
 ] as const;
