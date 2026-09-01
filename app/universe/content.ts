@@ -7,54 +7,58 @@ export const universeScenes = [
   { id: "contact", label: "Build with us", shortLabel: "05", tone: "#a8ff5b" },
 ] as const;
 
+const spotifyPlaylistCover = (id: string) =>
+  `/api/spotify-playlist-cover?id=${encodeURIComponent(id)}`;
+
 export const playlists = [
   {
     id: "77amCwJSWddkeG3VYB1S0Q",
     title: "QUANTUMNOVA Records MasterMix",
     eyebrow: "Official label catalogue",
     detail: "The complete QUANTUMNOVA Records listening portal",
-    cover:
-      "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8486f6a4711158880e56f40047",
+    cover: spotifyPlaylistCover("77amCwJSWddkeG3VYB1S0Q"),
   },
   {
     id: "3xHkUQgr5dyGHTAhTxU9fZ",
     title: "Funk/Soul",
     eyebrow: "Curated by QUANTUMNOVA",
     detail: "Groove, warmth and movement",
-    cover:
-      "https://mosaic.scdn.co/300/ab67616d00001e0203ff3966f03b4d929e30a54aab67616d00001e024db839d32ee987e5b49a1272ab67616d00001e02a14b08b9a6616e121df5e8b0ab67616d00001e02bb165e8b821025425e9dabef",
+    cover: spotifyPlaylistCover("3xHkUQgr5dyGHTAhTxU9fZ"),
   },
   {
     id: "4kzGOC1AxOATwBW0v7KeN0",
     title: "Electronic",
     eyebrow: "Curated by QUANTUMNOVA",
     detail: "Signals, circuits and after-hours energy",
-    cover:
-      "https://mosaic.scdn.co/300/ab67616d00001e02128c4a8f4206647330e130b4ab67616d00001e021c8eb7bf34c1123a6de45470ab67616d00001e026e6b4e89ee5fb22a3c11c114ab67616d00001e02c1b47997d8cb0bfd1ec946a8",
+    cover: spotifyPlaylistCover("4kzGOC1AxOATwBW0v7KeN0"),
   },
   {
     id: "3KhHEwNcG0sCeWHZaRSMHv",
     title: "Pop",
     eyebrow: "Curated by QUANTUMNOVA",
     detail: "Hooks, colour and widescreen feeling",
-    cover:
-      "https://mosaic.scdn.co/300/ab67616d00001e0205029be1f928f2ea9902f0a5ab67616d00001e022c70242c80b76e7017b2f40fab67616d00001e022d47d820f90edde0737b93f4ab67616d00001e024db839d32ee987e5b49a1272",
+    cover: spotifyPlaylistCover("3KhHEwNcG0sCeWHZaRSMHv"),
   },
   {
     id: "11p4UbOKhsGP8mAltS4UOb",
     title: "Rock/Metal",
     eyebrow: "Curated by QUANTUMNOVA",
     detail: "Weight, texture and catharsis",
-    cover:
-      "https://mosaic.scdn.co/300/ab67616d00001e0205029be1f928f2ea9902f0a5ab67616d00001e021a911e2b352e33756c5ac486ab67616d00001e0276992aff19f6bb74be776974ab67616d00001e02c1b47997d8cb0bfd1ec946a8",
+    cover: spotifyPlaylistCover("11p4UbOKhsGP8mAltS4UOb"),
+  },
+  {
+    id: "3vmtac65nfvYxC5ijzEZdZ",
+    title: "Alternative Rock",
+    eyebrow: "Curated by QUANTUMNOVA",
+    detail: "Alternative guitars, left-field hooks and modern rock energy",
+    cover: spotifyPlaylistCover("3vmtac65nfvYxC5ijzEZdZ"),
   },
   {
     id: "73VBuSYjOf8tcEG4Bqv7Qq",
     title: "Rap/Hip-Hop",
     eyebrow: "Curated by QUANTUMNOVA",
     detail: "Voice, rhythm and forward pressure",
-    cover:
-      "https://mosaic.scdn.co/300/ab67616d00001e0260f68ed22ec416583eef5076ab67616d00001e02b68239b8cba1057ff92621dfab67616d00001e02d4eca2c8295d769b9cea859aab67616d00001e02fb8f48a20f9670f9d35690b6",
+    cover: spotifyPlaylistCover("73VBuSYjOf8tcEG4Bqv7Qq"),
   },
 ] as const;
 
