@@ -471,17 +471,19 @@ export default function UniverseCanvas({ onSceneChange }: UniverseCanvasProps) {
           line.rotation.z = (reducedMotion ? 0 : elapsed * (0.003 + index * 0.0005)) + index * 0.24;
         });
 
+        const destinationVisibility = THREE.MathUtils.smoothstep(smoothJourney, 0.45, 0.95);
         galaxyGroups.forEach(({ group, materials }, arrayIndex) => {
           const sceneIndex = arrayIndex + 1;
           const focus = Math.max(0, 1 - Math.abs(smoothJourney - sceneIndex) / 1.35);
           const scale = 0.8 + focus * 0.52;
+          group.visible = destinationVisibility > 0.01;
           group.scale.setScalar(scale);
           group.rotation.y = reducedMotion ? sceneIndex * 0.2 : elapsed * (0.045 + sceneIndex * 0.006);
           group.rotation.z = reducedMotion ? 0 : Math.sin(elapsed * 0.18 + sceneIndex) * 0.08;
           materials.forEach((material) => {
             if ("opacity" in material) {
               const base = material instanceof THREE.MeshPhysicalMaterial ? 0.36 : 0.08;
-              material.opacity = base + focus * (material instanceof THREE.MeshPhysicalMaterial ? 0.42 : 0.24);
+              material.opacity = (base + focus * (material instanceof THREE.MeshPhysicalMaterial ? 0.42 : 0.24)) * destinationVisibility;
             }
           });
         });
