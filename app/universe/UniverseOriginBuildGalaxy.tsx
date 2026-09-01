@@ -3,12 +3,63 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
+const originStarPoints = [
+  [".label-studio", -90],
+  [".label-pixi", -18],
+  [".label-records", 54],
+  [".label-books", 126],
+  [".label-contact", 198],
+] as const;
+
 export default function UniverseOriginBuildGalaxy() {
   const [target, setTarget] = useState<HTMLElement | null>(null);
 
   useEffect(() => {
     setTarget(document.querySelector<HTMLElement>(".origin-orbit-labels"));
   }, []);
+
+  useEffect(() => {
+    if (!target) return;
+
+    let frame = 0;
+    const positionOriginStar = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        const orbit = target;
+        const core = orbit.querySelector<HTMLElement>(".origin-orbit-core");
+        if (!core) return;
+
+        const orbitRect = orbit.getBoundingClientRect();
+        const coreRect = core.getBoundingClientRect();
+        const centreX = coreRect.left - orbitRect.left + coreRect.width * 0.5;
+        const centreY = coreRect.top - orbitRect.top + coreRect.height * 0.5;
+        const radius = Math.min(orbitRect.width, orbitRect.height) * 0.36;
+
+        originStarPoints.forEach(([selector, angleDegrees]) => {
+          const point = orbit.querySelector<HTMLElement>(selector);
+          if (!point) return;
+          const angle = (angleDegrees * Math.PI) / 180;
+          point.style.left = `${centreX + Math.cos(angle) * radius}px`;
+          point.style.top = `${centreY + Math.sin(angle) * radius}px`;
+          point.style.right = "auto";
+          point.style.bottom = "auto";
+        });
+      });
+    };
+
+    positionOriginStar();
+    const resizeObserver = new ResizeObserver(positionOriginStar);
+    resizeObserver.observe(target);
+    const core = target.querySelector<HTMLElement>(".origin-orbit-core");
+    if (core) resizeObserver.observe(core);
+    window.addEventListener("resize", positionOriginStar, { passive: true });
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", positionOriginStar);
+    };
+  }, [target]);
 
   useEffect(() => {
     const root = document.documentElement;
