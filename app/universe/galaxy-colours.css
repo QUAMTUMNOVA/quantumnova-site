@@ -1,58 +1,95 @@
 /* Keep the origin brand galaxies visually synced with their destination identities. */
-/* Five destinations use equal 72-degree spacing around the central Q. The
-   individual translate property anchors the galaxy icon without fighting the
-   existing transform-based drift animation. */
+/* Each brand link is reduced to the exact size of its miniature galaxy. That
+   makes left/top represent the galaxy centre itself instead of the variable
+   label/card bounding box. Five points on one radius, 72 degrees apart, now
+   form a mathematically regular pentagon around Q on every viewport. */
+.origin-orbit-labels .origin-galaxy {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  display: block;
+  align-items: initial;
+  gap: 0;
+  translate: -50% -50%;
+}
+
+.origin-orbit-labels .origin-galaxy-system {
+  position: absolute;
+  inset: 0;
+  width: 64px;
+  height: 64px;
+  flex: none;
+}
+
+.origin-orbit-labels .origin-galaxy-copy {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translateY(-50%);
+}
+
+/* Keep labels facing into the available orbit space instead of letting their
+   different text widths change the apparent spacing of the galaxies. */
+.origin-orbit-labels .label-studio .origin-galaxy-copy {
+  top: calc(100% + 7px);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.origin-orbit-labels .label-pixi .origin-galaxy-copy,
+.origin-orbit-labels .label-records .origin-galaxy-copy {
+  left: auto;
+  right: calc(100% + 10px);
+  text-align: right;
+}
+
 .label-studio {
   --galaxy-tone: #8b6cff;
   --galaxy-secondary: #c6a7ff;
-  top: 12%;
+  top: 14%;
   left: 50%;
   right: auto;
   bottom: auto;
-  translate: -32px -50%;
 }
 
 .label-pixi {
   --galaxy-tone: #ff718c;
   --galaxy-secondary: #ffb0c1;
-  top: 38.3%;
-  left: 86.1%;
+  top: 38.9%;
+  left: 84.2%;
   right: auto;
   bottom: auto;
-  translate: -32px -50%;
   animation-delay: -1.7s;
 }
 
 .label-records {
   --galaxy-tone: #35e7ff;
   --galaxy-secondary: #79efff;
-  top: 80.7%;
-  left: 72.3%;
+  top: 79.1%;
+  left: 71.2%;
   right: auto;
   bottom: auto;
-  translate: -32px -50%;
   animation-delay: -3.4s;
 }
 
 .label-books {
   --galaxy-tone: #ffc86b;
   --galaxy-secondary: #ff6a45;
-  top: 80.7%;
-  left: 27.7%;
+  top: 79.1%;
+  left: 28.8%;
   right: auto;
   bottom: auto;
-  translate: -32px -50%;
   animation-delay: -5.1s;
 }
 
 .label-contact {
   --galaxy-tone: #a8ff5b;
   --galaxy-secondary: #42d67b;
-  top: 38.3%;
-  left: 13.9%;
+  top: 38.9%;
+  left: 15.8%;
   right: auto;
   bottom: auto;
-  translate: -32px -50%;
   animation-delay: -6.3s;
 }
 
@@ -159,46 +196,87 @@
     font-size: 4.5px;
   }
 
-  /* Mobile uses the same equal-angle pentagon, with a slightly larger orbit
-     radius so the labels stay clear of the central Q. */
+  /* On mobile the link itself is exactly the 48px miniature galaxy and every
+     card is independently centred below it. Label height can no longer pull a
+     point closer to or farther from Q. */
+  .origin-orbit-labels .origin-galaxy {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    flex-direction: initial;
+  }
+
+  .origin-orbit-labels .origin-galaxy-system {
+    width: 48px;
+    height: 48px;
+    flex-basis: auto;
+  }
+
+  .origin-orbit-labels .origin-galaxy-copy,
+  .origin-orbit-labels .label-studio .origin-galaxy-copy,
+  .origin-orbit-labels .label-pixi .origin-galaxy-copy,
+  .origin-orbit-labels .label-records .origin-galaxy-copy {
+    top: calc(100% + 5px);
+    left: 50%;
+    right: auto;
+    width: 104px;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
   .origin-orbit-labels .label-studio {
-    top: 11%;
+    top: 14%;
     left: 50%;
     right: auto;
     bottom: auto;
-    translate: -50% -50%;
   }
 
   .origin-orbit-labels .label-pixi {
-    top: 38%;
-    left: 87.1%;
+    top: 38.9%;
+    left: 84.2%;
     right: auto;
     bottom: auto;
-    translate: -50% -50%;
   }
 
   .origin-orbit-labels .label-records {
-    top: 81.6%;
-    left: 72.9%;
+    top: 79.1%;
+    left: 71.2%;
     right: auto;
     bottom: auto;
-    translate: -50% -50%;
   }
 
   .origin-orbit-labels .label-books {
-    top: 81.6%;
-    left: 27.1%;
+    top: 79.1%;
+    left: 28.8%;
     right: auto;
     bottom: auto;
-    translate: -50% -50%;
   }
 
   .origin-orbit-labels .label-contact {
-    top: 38%;
-    left: 12.9%;
+    top: 38.9%;
+    left: 15.8%;
     right: auto;
     bottom: auto;
-    translate: -50% -50%;
+  }
+
+  @media (max-width: 390px) {
+    .origin-orbit-labels .origin-galaxy {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+    }
+
+    .origin-orbit-labels .origin-galaxy-system {
+      width: 44px;
+      height: 44px;
+    }
+
+    .origin-orbit-labels .origin-galaxy-copy,
+    .origin-orbit-labels .label-studio .origin-galaxy-copy,
+    .origin-orbit-labels .label-pixi .origin-galaxy-copy,
+    .origin-orbit-labels .label-records .origin-galaxy-copy {
+      width: 94px;
+    }
   }
 }
 
