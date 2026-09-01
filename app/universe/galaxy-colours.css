@@ -1,37 +1,58 @@
 /* Keep the origin brand galaxies visually synced with their destination identities. */
+/* Five destinations use equal 72-degree spacing around the central Q. The
+   individual translate property anchors the galaxy icon without fighting the
+   existing transform-based drift animation. */
 .label-studio {
   --galaxy-tone: #8b6cff;
   --galaxy-secondary: #c6a7ff;
-  top: 10%;
-  left: 44%;
+  top: 12%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  translate: -32px -50%;
 }
 
 .label-pixi {
   --galaxy-tone: #ff718c;
   --galaxy-secondary: #ffb0c1;
-  top: 43%;
-  right: 0;
+  top: 38.3%;
+  left: 86.1%;
+  right: auto;
+  bottom: auto;
+  translate: -32px -50%;
+  animation-delay: -1.7s;
 }
 
 .label-records {
   --galaxy-tone: #35e7ff;
   --galaxy-secondary: #79efff;
-  right: 36%;
-  bottom: 10%;
+  top: 80.7%;
+  left: 72.3%;
+  right: auto;
+  bottom: auto;
+  translate: -32px -50%;
+  animation-delay: -3.4s;
 }
 
 .label-books {
   --galaxy-tone: #ffc86b;
   --galaxy-secondary: #ff6a45;
-  top: 55%;
-  left: 0;
+  top: 80.7%;
+  left: 27.7%;
+  right: auto;
+  bottom: auto;
+  translate: -32px -50%;
+  animation-delay: -5.1s;
 }
 
 .label-contact {
   --galaxy-tone: #a8ff5b;
   --galaxy-secondary: #42d67b;
-  top: 22%;
-  left: 10%;
+  top: 38.3%;
+  left: 13.9%;
+  right: auto;
+  bottom: auto;
+  translate: -32px -50%;
   animation-delay: -6.3s;
 }
 
@@ -136,6 +157,48 @@
   .universe-nova-home small {
     bottom: -14px;
     font-size: 4.5px;
+  }
+
+  /* Mobile uses the same equal-angle pentagon, with a slightly larger orbit
+     radius so the labels stay clear of the central Q. */
+  .origin-orbit-labels .label-studio {
+    top: 11%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    translate: -50% -50%;
+  }
+
+  .origin-orbit-labels .label-pixi {
+    top: 38%;
+    left: 87.1%;
+    right: auto;
+    bottom: auto;
+    translate: -50% -50%;
+  }
+
+  .origin-orbit-labels .label-records {
+    top: 81.6%;
+    left: 72.9%;
+    right: auto;
+    bottom: auto;
+    translate: -50% -50%;
+  }
+
+  .origin-orbit-labels .label-books {
+    top: 81.6%;
+    left: 27.1%;
+    right: auto;
+    bottom: auto;
+    translate: -50% -50%;
+  }
+
+  .origin-orbit-labels .label-contact {
+    top: 38%;
+    left: 12.9%;
+    right: auto;
+    bottom: auto;
+    translate: -50% -50%;
   }
 }
 
