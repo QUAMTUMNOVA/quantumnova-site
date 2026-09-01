@@ -2,7 +2,7 @@
 /* Each brand link is reduced to the exact size of its miniature galaxy. That
    makes left/top represent the galaxy centre itself instead of the variable
    label/card bounding box. Five points on one radius, 72 degrees apart, now
-   form a mathematically regular pentagon around Q on every viewport. */
+   form a mathematically regular five-point star around Q on every viewport. */
 .origin-orbit-labels .origin-galaxy {
   width: 64px;
   height: 64px;
@@ -11,6 +11,8 @@
   align-items: initial;
   gap: 0;
   translate: -50% -50%;
+  transform: none;
+  animation: none;
 }
 
 .origin-orbit-labels .origin-galaxy-system {
