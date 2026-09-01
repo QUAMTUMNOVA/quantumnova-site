@@ -1,8 +1,7 @@
 /* Keep the origin brand galaxies visually synced with their destination identities. */
-/* Each brand link is reduced to the exact size of its miniature galaxy. That
-   makes left/top represent the galaxy centre itself instead of the variable
-   label/card bounding box. Five points on one radius, 72 degrees apart, now
-   form a mathematically regular five-point star around Q on every viewport. */
+/* The percentage positions below are only a no-JS fallback. At runtime the
+   origin controller measures the rendered Q and places every mini galaxy at
+   one exact pixel radius from that real centre, 72 degrees apart. */
 .origin-orbit-labels .origin-galaxy {
   width: 64px;
   height: 64px;
@@ -26,23 +25,37 @@
 .origin-orbit-labels .origin-galaxy-copy {
   position: absolute;
   top: 50%;
-  left: calc(100% + 10px);
+  left: calc(100% + 12px);
   transform: translateY(-50%);
 }
 
-/* Keep labels facing into the available orbit space instead of letting their
-   different text widths change the apparent spacing of the galaxies. */
+/* Desktop labels radiate away from Q. This keeps the lower Records and
+   AutoBookPress cards on opposite sides of the star instead of crowding the
+   centre or overlapping one another. */
 .origin-orbit-labels .label-studio .origin-galaxy-copy {
-  top: calc(100% + 7px);
+  top: auto;
+  bottom: calc(100% + 12px);
   left: 50%;
+  right: auto;
   transform: translateX(-50%);
   text-align: center;
 }
 
 .origin-orbit-labels .label-pixi .origin-galaxy-copy,
 .origin-orbit-labels .label-records .origin-galaxy-copy {
+  top: 50%;
+  left: calc(100% + 12px);
+  right: auto;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.origin-orbit-labels .label-books .origin-galaxy-copy,
+.origin-orbit-labels .label-contact .origin-galaxy-copy {
+  top: 50%;
   left: auto;
-  right: calc(100% + 10px);
+  right: calc(100% + 12px);
+  transform: translateY(-50%);
   text-align: right;
 }
 
@@ -198,9 +211,7 @@
     font-size: 4.5px;
   }
 
-  /* On mobile the link itself is exactly the 48px miniature galaxy and every
-     card is independently centred below it. Label height can no longer pull a
-     point closer to or farther from Q. */
+  /* Mobile keeps compact cards beneath each exact star point. */
   .origin-orbit-labels .origin-galaxy {
     width: 48px;
     height: 48px;
@@ -217,8 +228,11 @@
   .origin-orbit-labels .origin-galaxy-copy,
   .origin-orbit-labels .label-studio .origin-galaxy-copy,
   .origin-orbit-labels .label-pixi .origin-galaxy-copy,
-  .origin-orbit-labels .label-records .origin-galaxy-copy {
+  .origin-orbit-labels .label-records .origin-galaxy-copy,
+  .origin-orbit-labels .label-books .origin-galaxy-copy,
+  .origin-orbit-labels .label-contact .origin-galaxy-copy {
     top: calc(100% + 5px);
+    bottom: auto;
     left: 50%;
     right: auto;
     width: 104px;
@@ -276,7 +290,9 @@
     .origin-orbit-labels .origin-galaxy-copy,
     .origin-orbit-labels .label-studio .origin-galaxy-copy,
     .origin-orbit-labels .label-pixi .origin-galaxy-copy,
-    .origin-orbit-labels .label-records .origin-galaxy-copy {
+    .origin-orbit-labels .label-records .origin-galaxy-copy,
+    .origin-orbit-labels .label-books .origin-galaxy-copy,
+    .origin-orbit-labels .label-contact .origin-galaxy-copy {
       width: 94px;
     }
   }
