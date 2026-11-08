@@ -19,7 +19,12 @@ export default async (req)=>{
        stored_asset:key,stored_exists:key?!!(await assets.getMetadata(key)):false};
   }));
   const pilot=await Promise.all(['001','003','006'].map(async id=>{const r=await jobs.get('jobs/EP001/'+id,{type:'json'});return {id,kind:r?.kind,state:r?.state,result_url:r?.result_url||null,stored_asset:r?.stored_asset||null,stored_exists:false};}));
-  return Response.json({episode:'EP001',items:[...items,...pilot]},
+  const v2store=getStore('btk-production-ep001-v2');
+  const v2=await Promise.all(['110','111','112','113','114','115'].map(async id=>{
+    const r=await v2store.get('jobs/'+id,{type:'json'});
+    return {id,kind:'video',state:r?.state||'queued',result_url:r?.result_url||null,request_id:r?.request_id||null};
+  }));
+  return Response.json({episode:'EP001',items:[...items,...pilot,...v2]},
     {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}});
 };
 export const config={rateLimit:{action:'rate_limit',aggregateBy:'ip',windowSize:60,windowLimit:10}};
