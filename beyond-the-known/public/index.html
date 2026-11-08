@@ -41,7 +41,7 @@ footer{margin-top:54px;color:#778493;font-size:12px}.muted{color:#8793a3}
 <div class="panel"><h3>02 / Generation</h3><div class="cardtitle pending">Not started</div><div class="small">Higgsfield images and video to be generated after verified API access and price limits.</div></div>
 <div class="panel"><h3>03 / Post-production</h3><div class="cardtitle pending">Not started</div><div class="small">Narration, automated FFmpeg assembly, quality review and owner sign-off.</div></div>
 </section>
-<h2>First production batch</h2><section class="panel"><ol>
+<h2>Live production progress</h2><section class="panel"><p class="small">Read-only status from QNova's production backend. Public generation and publication controls are disabled.</p><div id="live-state" class="pill">Loading status...</div><div class="small" id="live-shots"></div></section><h2>First production batch</h2><section class="panel"><ol>
 <li><strong>Wan 3.0:</strong> deserted Manhattan (5-second video)</li>
 <li><strong>Marketing Studio Image:</strong> aircraft above clouds (still frame)</li>
 <li><strong>Kling 3.0:</strong> abandoned grid control room (5-second video)</li>
@@ -54,4 +54,15 @@ fetch('/.netlify/functions/health',{cache:'no-store'}).then(async r=>{if(!r.ok)t
  document.getElementById('infra').className=s.service_ready?'good':'pending';
  document.getElementById('auth').textContent=s.higgsfield_key_configured?'HF_KEY is configured in the server environment. Higgsfield API authentication has not yet been tested.':'HF_KEY not detected in server environment. No generation is enabled.';
 }).catch(()=>{document.getElementById('infra').textContent='Backend not deployed or not responding';});
+</script><script>
+async function updateProduction(){
+ try{
+  const r=await fetch('/.netlify/functions/public-status',{cache:'no-store'});
+  if(!r.ok) throw Error('unavailable');
+  const s=await r.json();
+  document.getElementById('live-state').textContent='Test batch: '+s.stage.replaceAll('_',' ');
+  document.getElementById('live-shots').textContent=s.shots.map(x=>x.id+' · '+x.label+' — '+x.state.replaceAll('_',' ')).join(' | ');
+ }catch(e){document.getElementById('live-state').textContent='Status temporarily unavailable';}
+}
+updateProduction();
 </script></body></html>
