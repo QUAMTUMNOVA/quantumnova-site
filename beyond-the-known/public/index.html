@@ -52,7 +52,7 @@ footer{margin-top:54px;color:#778493;font-size:12px}.muted{color:#8793a3}
 fetch('/.netlify/functions/health',{cache:'no-store'}).then(async r=>{if(!r.ok)throw Error('unavailable');return r.json()}).then(s=>{
  document.getElementById('infra').textContent=s.service_ready?'Netlify backend available':'Backend unavailable';
  document.getElementById('infra').className=s.service_ready?'good':'pending';
- document.getElementById('auth').textContent=s.higgsfield_key_configured?'HF_KEY is configured in the server environment. Higgsfield API authentication has not yet been tested.':'HF_KEY not detected in server environment. No generation is enabled.';
+ document.getElementById('auth').textContent=s.higgsfield_key_configured?'Higgsfield funded API authenticated successfully. One-time pilot submitted; no automated publication enabled.':'HF_KEY not detected in server environment. No generation is enabled.';
 }).catch(()=>{document.getElementById('infra').textContent='Backend not deployed or not responding';});
 </script><script>
 async function updateProduction(){
