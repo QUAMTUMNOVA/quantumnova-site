@@ -13,12 +13,20 @@ export async function runFullProduction(){
  if(!key) return;
  const store=getStore(STORE);
  const lock=await store.setJSON('full-production-lock',{state:'started',created:new Date().toISOString(),estimate_usd:planned,cap_usd:PLANNED_MAX,total:TASKS.length},{onlyIfNew:true});
- if(!lock.modified)return;
+ // Existing run lock is intentionally reused by later scheduled batches.
  let success=0;
+ let newThisPass=0;
  for(const item of TASKS){
+   if(newThisPass>=4)break;
    const location='full/jobs/'+item.id;
    const reserved=await store.setJSON(location,{id:item.id,kind:item.kind,state:'submitting',label:item.description,updated_at:new Date().toISOString()},{onlyIfNew:true});
-   if(!reserved.modified)break;
+   if(!reserved.modified){
+     const existing=await store.get(location,{type:'json'});
+     if(['outcome_unknown','submission_failed','rejected'].includes(existing?.state)){
+       console.warn('[BTK-FULL] Previous uncertain or rejected job; stop, no retries'); break;
+     }
+     continue;
+   }
    try{
      const resp=await fetch('https://api.higgsfield.ai/'+item.path,{
        method:'POST',headers:{Authorization:'Key '+key,'Content-Type':'application/json',Accept:'application/json'},
@@ -30,16 +38,19 @@ export async function runFullProduction(){
      await store.setJSON(location,{id:item.id,kind:item.kind,state,label:item.description,
        route:item.path,request_id,api_http_status:resp.status,max_estimate_usd:item.max_usd,updated_at:new Date().toISOString()});
      if(state!=='submitted'){console.warn('[BTK-FULL] Stop on failed/unknown submission: '+item.id+' HTTP '+resp.status);break;}
-     success++;
+     success++;newThisPass++;
    }catch(err){
      await store.setJSON(location,{id:item.id,kind:item.kind,state:'outcome_unknown',updated_at:new Date().toISOString()});
      console.warn('[BTK-FULL] ambiguous API submission for '+item.id+'; stopped, no retry');
      break;
    }
  }
- await store.setJSON('full-production-status',{state:success===TASKS.length?'submitted':'requires_review',
-   submitted:success,total:TASKS.length,planned_max_usd:planned,updated_at:new Date().toISOString()});
- console.info('[BTK-FULL] submitted '+success+' of '+TASKS.length+' new generation jobs');
+ const records=await Promise.all(TASKS.map(x=>store.get('full/jobs/'+x.id,{type:'json'})));
+ const allSubmitted=records.filter(x=>x?.request_id).length;
+ const uncertain=records.some(x=>['outcome_unknown','rejected','submission_failed'].includes(x?.state));
+ await store.setJSON('full-production-status',{state:uncertain?'requires_review':allSubmitted===TASKS.length?'submitted':'processing',
+   submitted:allSubmitted,total:TASKS.length,planned_max_usd:planned,updated_at:new Date().toISOString()});
+ console.info('[BTK-FULL] newly submitted '+newThisPass+'; total '+allSubmitted+' of '+TASKS.length);
 }
 export default {async deploySucceeded(event){
  if(event?.site?.id!==SITE||event?.deploy?.published!==true)return;
