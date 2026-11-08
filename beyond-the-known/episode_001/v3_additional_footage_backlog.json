@@ -1,0 +1,278 @@
+{
+  "episode": "EP001",
+  "version": "V3",
+  "planned_only": true,
+  "do_not_submit_until_budget_and_quality_checked": true,
+  "scenes": [
+    {
+      "id": "213",
+      "beat": "B036",
+      "description": "A power grid generator trips safely, close realistic mechanical protection sequence",
+      "section": "first-hours systems",
+      "priority": "critical",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "214",
+      "beat": "B041",
+      "description": "Backlit water-pressure gauge falls while pump slows in empty waterworks",
+      "section": "first-day water",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "215",
+      "beat": "B047",
+      "description": "Wastewater pumping station overflow following power failure, no excessive spectacle",
+      "section": "first-day systems",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "216",
+      "beat": "B053",
+      "description": "Domestic cat nudges empty food bowl next to unanswered home door",
+      "section": "animals",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "217",
+      "beat": "B055",
+      "description": "Milk cattle graze outdoors while unattended barn gate hangs open",
+      "section": "animals",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "218",
+      "beat": "B058",
+      "description": "Fox walks across empty urban road at blue hour with wildlife realism",
+      "section": "animals",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "219",
+      "beat": "B062",
+      "description": "Rain penetrates roof flashing and drips onto home interior plaster",
+      "section": "one year",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "220",
+      "beat": "B063",
+      "description": "Detail of ceiling mould in abandoned house after seasonal water damage",
+      "section": "one year",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "221",
+      "beat": "B064",
+      "description": "Freeze-thaw cracks open roadside concrete joint in cold winter",
+      "section": "one year",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "222",
+      "beat": "B067",
+      "description": "Moss and grasses sprout from blocked gutter on an unused suburban house",
+      "section": "one year",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "223",
+      "beat": "B069",
+      "description": "Water begins filling abandoned subway platform after pump shutdown",
+      "section": "one year",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "224",
+      "beat": "B072",
+      "description": "Tree root lifts cracked suburban asphalt over years, gentle observational dolly",
+      "section": "one year",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "225",
+      "beat": "B074",
+      "description": "Decade-old abandoned parking lot overtaken by 2m saplings, warm wet climate",
+      "section": "ten years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "226",
+      "beat": "B076",
+      "description": "Vines spread over shopfronts through the seasons, grounded time-lapse",
+      "section": "ten years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "227",
+      "beat": "B079",
+      "description": "Dry desert town remains dusty with sparse vegetation despite ten years",
+      "section": "ten years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "228",
+      "beat": "B081",
+      "description": "Empty industrial waterfront with silent smokestacks and no active ships",
+      "section": "ten years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "229",
+      "beat": "B086",
+      "description": "Sandy beach sediments with small persistent synthetic fragments, science documentary",
+      "section": "ten years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "230",
+      "beat": "B089",
+      "description": "Century-old timber building collapses into overgrown yard while stone neighbour stands",
+      "section": "hundred years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "231",
+      "beat": "B090",
+      "description": "Coastal bridge cable rust damage and slow wave movement, realistic corrosion",
+      "section": "hundred years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "232",
+      "beat": "B093",
+      "description": "Forest regrows between abandoned apartment blocks a century later, aerial",
+      "section": "hundred years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "233",
+      "beat": "B096",
+      "description": "Old mining pit remains as enormous geographic scar after a century",
+      "section": "hundred years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "234",
+      "beat": "B100",
+      "description": "Desert partially buries surviving ancient stone structures after millennium",
+      "section": "thousand years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "235",
+      "beat": "B102",
+      "description": "Humid subtropical forest with rusting steel remnants nearly consumed",
+      "section": "thousand years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "236",
+      "beat": "B105",
+      "description": "Archaeological close-up revealing buried plastic and ceramic industrial layers",
+      "section": "thousand years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "237",
+      "beat": "B108",
+      "description": "Aerial of thousand-year-old forest with linear buried highway geometry",
+      "section": "thousand years",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "238",
+      "beat": "B112",
+      "description": "Macro on corrosion-resistant glass and metal artefacts beneath leaf litter",
+      "section": "closing",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    },
+    {
+      "id": "239",
+      "beat": "B114",
+      "description": "Slow cinematic sunrise over quiet urban ruins, 1000 years later, restrained",
+      "section": "closing",
+      "priority": "high",
+      "estimated_max_usd": 1.5,
+      "status": "planned_only",
+      "automatic_submission_enabled": false
+    }
+  ]
+}
