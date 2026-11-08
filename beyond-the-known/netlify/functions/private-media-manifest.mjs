@@ -18,7 +18,8 @@ export default async (req)=>{
     return {id,kind:record?.kind,state:record?.state,result_url:record?.result_url||null,
        stored_asset:key,stored_exists:key?!!(await assets.getMetadata(key)):false};
   }));
-  return Response.json({episode:'EP001',items},
+  const pilot=await Promise.all(['001','003','006'].map(async id=>{const r=await jobs.get('jobs/EP001/'+id,{type:'json'});return {id,kind:r?.kind,state:r?.state,result_url:r?.result_url||null,stored_asset:r?.stored_asset||null,stored_exists:false};}));
+  return Response.json({episode:'EP001',items:[...items,...pilot]},
     {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}});
 };
 export const config={rateLimit:{action:'rate_limit',aggregateBy:'ip',windowSize:60,windowLimit:10}};
