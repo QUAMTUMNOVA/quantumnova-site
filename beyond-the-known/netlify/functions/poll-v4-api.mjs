@@ -1,11 +1,11 @@
 import {getStore} from '@netlify/blobs';
-const IDS=Array.from({length:20},(_,i)=>String(301+i));
+const IDS=Array.from({length:46},(_,i)=>String(301+i));
 export default async function(){
  const key=Netlify.env.get('HF_KEY');if(!key)return;
  const store=getStore('btk-ep001-v4');
  let n=0;
  for(const id of IDS){
-  if(n>=6)break;
+  if(n>=20)break;
   const path='shot/'+id;
   const old=await store.get(path,{type:'json'});
   if(!old?.request_id||['completed','failed','canceled','rejected','outcome_unknown'].includes(old.state))continue;
@@ -24,6 +24,6 @@ export default async function(){
  }
  const all=await Promise.all(IDS.map(id=>store.get('shot/'+id,{type:'json'})));
  const counts=all.reduce((x,r)=>{const s=r?.state||'planned';x[s]=(x[s]||0)+1;return x},{});
- await store.setJSON('status',{counts,updated_at:new Date().toISOString(),target:20,estimated_planned_usd:30});
+ await store.setJSON('status',{counts,updated_at:new Date().toISOString(),target:46,estimated_planned_usd:69});
 }
 export const config={schedule:'1,6,11,16,21,26,31,36,41,46,51,56 * * * *'};
