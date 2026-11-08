@@ -25,7 +25,7 @@ export default async (req)=>{
     return {id,kind:'video',state:r?.state||'queued',result_url:r?.result_url||null,request_id:r?.request_id||null};
   }));
   const v3store=getStore('btk-ep001-v3');
-  const v3=await Promise.all(Array.from({length:12},(_,i)=>String(201+i)).map(async id=>{
+  const v3=await Promise.all(Array.from({length:24},(_,i)=>String(201+i)).map(async id=>{
    const r=await v3store.get('shot/'+id,{type:'json'});
    return {id,beat:r?.beat||null,kind:'video',state:r?.state||'planned',result_url:r?.result_url||null,request_id:r?.request_id||null};
   }));
