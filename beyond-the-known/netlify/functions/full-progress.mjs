@@ -13,7 +13,7 @@ export default async function(req){
  return Response.json({episode:'EP001',production:run?.state||lock?.state||'not_started',
     completed:counts.completed||0,total:ids.length,counts,shots,
     additional_estimated_max_usd:29.25,approved_for_youtube:false,
-    narration:'not_started',rough_cut:'not_started',publication:'disabled'},
+    narration:'completed_9_sections',rough_cut:'ready_for_review',review_url:'https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/ec3acdb0-847b-4681-ac18-df266e4f856c.mp4',runtime_seconds:677.513,publication:'approval_required'},
     {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}});
 }
 export const config={rateLimit:{action:'rate_limit',aggregateBy:'ip',windowSize:60,windowLimit:20}};
