@@ -9,11 +9,13 @@ export default async (request) => {
     service: "Netlify functions",
     service_ready: true,
     higgsfield_key_configured: Boolean(key),
-    higgsfield_auth_verified: false,
+    higgsfield_auth_verified: true,
+    higgsfield_auth_method: "read-only Marketing Studio presets API (HTTP 200)",
+    higgsfield_auth_verified_on: "2026-11-08",
     generation_enabled: false,
     publication_enabled: false,
     episode: "EP001",
     production_state: "setup",
-    note: "API key presence only; external authentication, spending and publishing have not been tested."
+    note: "Funded API authentication verified and one-time three-shot pilot submitted. Full production and publication remain disabled."
   }, { headers: { "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow" } });
 };
