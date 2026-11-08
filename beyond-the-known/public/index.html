@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Beyond the Known — QNova Production Studio</title>
+<style>
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0c1420;color:#e9e9e2}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 60% -15%,#25303c 0%,#0c1420 55%)}
+a{color:#d5b57a}main{max-width:1050px;margin:0 auto;padding:36px 24px 70px}
+.brand{display:flex;align-items:center;gap:13px;font-weight:750;letter-spacing:.16em;font-size:15px}
+.symbol{color:#d5b57a;border:1.7px solid #d5b57a;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:24px}
+.eyebrow{color:#d5b57a;text-transform:uppercase;letter-spacing:.19em;font-size:12px;font-weight:700;margin:48px 0 12px}
+h1{font-size:clamp(33px,5vw,55px);line-height:1.08;max-width:830px;letter-spacing:-.04em;margin:0 0 16px}
+.intro{color:#adb7c3;font-size:17px;line-height:1.6;max-width:750px;margin-bottom:32px}
+.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid #55606e;padding:7px 12px;border-radius:50px;color:#bfc8d3;font-size:12px;margin-bottom:15px}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:#d5b57a}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.panel{background:#161f2b;border:1px solid #2a3544;border-radius:14px;padding:20px}
+h2{font-size:20px;margin:40px 0 16px}h3{margin:0 0 9px;font-size:14px;color:#d8c18f}
+.small{font-size:13px;line-height:1.6;color:#adb7c3}.value{font-size:25px;font-weight:750;margin:7px 0}
+.cardtitle{font-size:15px;font-weight:700}ol{margin:8px 0 0;padding-left:18px;color:#c7cbd1;line-height:2}
+.good{color:#a9dfbd}.pending{color:#e7c98c}
+.status{margin-top:30px;border-left:3px solid #d5b57a;background:#141d28;padding:17px 20px;line-height:1.6}
+code{font-size:12px;color:#ddd8c7;background:#27313d;padding:3px 7px;border-radius:5px;word-break:break-all}
+footer{margin-top:54px;color:#778493;font-size:12px}.muted{color:#8793a3}
+@media(max-width:700px){.grid{grid-template-columns:1fr}main{padding:24px 17px}.eyebrow{margin-top:32px}}
+</style></head><body><main>
+<header class="brand"><span class="symbol">◉</span><span>BEYOND THE KNOWN</span></header>
+<p class="eyebrow">QNova · Production operations</p>
+<div class="pill">Private-production workflow · No publication without approval</div>
+<h1>What If Every Human Disappeared Tomorrow?</h1>
+<p class="intro">Episode 001 — original cinematic documentary exploring the world without people, from the first minute to one thousand years later. This page is an early production-control scaffold, not an active editing or publishing system.</p>
+<section class="grid" aria-label="Production summary">
+<div class="panel"><h3>Current phase</h3><div class="value">Pre-production</div><div class="small">Research and scripting drafted; production assets not yet generated.</div></div>
+<div class="panel"><h3>Planned coverage</h3><div class="value">71 shots</div><div class="small">25 hero/graphics sequences plus additional documentary coverage.</div></div>
+<div class="panel"><h3>Publication</h3><div class="value pending">Approval required</div><div class="small">No public upload, release scheduling or automatic publication enabled.</div></div>
+</section>
+<h2>Production pipeline</h2>
+<section class="grid">
+<div class="panel"><h3>01 / Editorial</h3><div class="cardtitle good">Draft ready</div><div class="small">Narration draft, science review checklist and scene-by-scene prompts.</div></div>
+<div class="panel"><h3>02 / Generation</h3><div class="cardtitle pending">Not started</div><div class="small">Higgsfield images and video to be generated after verified API access and price limits.</div></div>
+<div class="panel"><h3>03 / Post-production</h3><div class="cardtitle pending">Not started</div><div class="small">Narration, automated FFmpeg assembly, quality review and owner sign-off.</div></div>
+</section>
+<h2>First production batch</h2><section class="panel"><ol>
+<li><strong>Wan 3.0:</strong> deserted Manhattan (5-second video)</li>
+<li><strong>Marketing Studio Image:</strong> aircraft above clouds (still frame)</li>
+<li><strong>Kling 3.0:</strong> abandoned grid control room (5-second video)</li>
+</ol><p class="small">Proposed maximum US$5 test budget; no spending authorised or incurred by this site.</p></section>
+<div class="status" aria-live="polite"><strong>Infrastructure:</strong> <span id="infra" class="muted">Checking Netlify function...</span><p class="small" id="auth">This connection check never sends or reveals the API key and cannot make paid generation requests.</p></div>
+<footer>© QNova · Beyond the Known · Unpublished pilot · Production data is illustrative until connected to the actual media pipeline.</footer>
+</main><script>
+fetch('/.netlify/functions/health',{cache:'no-store'}).then(async r=>{if(!r.ok)throw Error('unavailable');return r.json()}).then(s=>{
+ document.getElementById('infra').textContent=s.service_ready?'Netlify backend available':'Backend unavailable';
+ document.getElementById('infra').className=s.service_ready?'good':'pending';
+ document.getElementById('auth').textContent=s.higgsfield_key_configured?'HF_KEY is configured in the server environment. Higgsfield API authentication has not yet been tested.':'HF_KEY not detected in server environment. No generation is enabled.';
+}).catch(()=>{document.getElementById('infra').textContent='Backend not deployed or not responding';});
+</script></body></html>
