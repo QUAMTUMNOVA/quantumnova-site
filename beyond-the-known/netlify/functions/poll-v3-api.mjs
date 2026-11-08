@@ -1,5 +1,5 @@
 import {getStore} from '@netlify/blobs';
-const ids=Array.from({length:24},(_,i)=>String(201+i));
+const ids=Array.from({length:28},(_,i)=>String(201+i));
 export default async function(){
  const key=Netlify.env.get('HF_KEY'); if(!key)return;
  const store=getStore('btk-ep001-v3');
