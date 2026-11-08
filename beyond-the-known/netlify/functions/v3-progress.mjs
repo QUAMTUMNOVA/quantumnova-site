@@ -1,5 +1,5 @@
 import {getStore} from '@netlify/blobs';
-const ids=Array.from({length:24},(_,i)=>String(201+i));
+const ids=Array.from({length:28},(_,i)=>String(201+i));
 export default async function(req){
  if(req.method!=='GET')return new Response('method not allowed',{status:405});
  const store=getStore('btk-ep001-v3');
@@ -8,8 +8,8 @@ export default async function(req){
    return {id,beat:row?.beat||null,state:row?.state||'planned'};
  }));
  const counts=items.reduce((o,x)=>({...o,[x.state]:(o[x.state]||0)+1}),{});
- return Response.json({episode:'EP001',version:'V3',visual_beat_count:115,new_video_generation_target:24,
-  counts,items,planned_cost_max_usd:36,model:'Wan 3.0, 5 seconds, 720p',
+ return Response.json({episode:'EP001',version:'V3',visual_beat_count:115,new_video_generation_target:28,
+  counts,items,planned_cost_max_usd:42,model:'Wan 3.0, 5 seconds, 720p',
   narration:'locked',soundtrack:'locked',edit_stage:'narration-first beat sheet and alignment',
   ready_for_publication:false},
   {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex,nofollow'}});
