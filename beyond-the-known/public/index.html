@@ -41,6 +41,7 @@ footer{margin-top:54px;color:#778493;font-size:12px}.muted{color:#8793a3}
 <div class="panel"><h3>02 / Generation</h3><div class="cardtitle pending" id="generation-state">In production</div><div class="small">New scenes generated through the QNova-funded Higgsfield API; status refreshes below.</div></div>
 <div class="panel"><h3>03 / Post-production</h3><div class="cardtitle pending">Not started</div><div class="small">Narration, automated FFmpeg assembly, quality review and owner sign-off.</div></div>
 </section>
+<h2>Episode 001 — V4 visual rebuild</h2><section class="panel"><h3>No-repeat cinematic documentary · full episode</h3><p class="small">This edit is being rebuilt with 101 individually selected source visuals, each used no more than once. 20 original Higgsfield V4 videos are included in the scene map, with word-synchronised opening cuts, wider documentary footage, and Fraser's existing audio.</p><p class="small" id="v4-api-progress">Checking current V4 new-video generation…</p><p class="small">The full V4 master is not yet ready for review. V3 remains available below for comparison. YouTube publication is disabled until creator approval.</p></section>
 <h2>Episode 001 — V3 complete review</h2><section class="panel"><h3>Full V3 cinematic documentary · 11 minutes 04 seconds · 720p</h3><p class="small">Complete narration-led rebuild. 140 timed narration cues, 185 edited scene segments, 70 distinct selected visuals including all 28 V3 video generations, original score and disaster sound design.</p><p><a href="https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/53730d4d-8f04-4b7f-9a53-9ab2dad082e1.mp4" target="_blank" rel="noopener noreferrer">Watch the full V3 documentary</a></p><p class="small">Owner review only. Not published to YouTube. Final release is disabled pending approval.</p></section>
 <h2>V3 opening-sequence proof</h2><section class="panel"><h3>70-second cinematic opening · owner review only</h3><p class="small">A narration-synchronised 70-second opening development proof. The full V3 documentary is now available above.</p><p><a href="https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/c49672ad-da96-4b62-a0ac-2ead387e546d.mp4" target="_blank" rel="noopener noreferrer">Watch V3 opening proof</a></p><p class="small">The full V3 episode has rendered for owner review; YouTube publication remains disabled.</p></section>
 <h2>Episode 001 — V3 cinematic rebuild</h2><section class="panel"><h3>Narration-first visual production</h3><p class="small">115-beat planning document and 140 timed editorial cues completed. All 28 V3 generation jobs finished; the full V3 review cut has been rendered and uploaded. Older versions remain below for comparison.</p><p class="small" id="v3-api-progress">Checking V3 original footage queue…</p><p class="small">New footage spending uses the existing QNova developer API. No YouTube publication without approval.</p></section>
@@ -97,4 +98,16 @@ async function updateV3(){
 }
 updateV3();
 setInterval(updateV3,60000);
+async function updateV4(){
+ try{
+  const res=await fetch('/.netlify/functions/v4-progress',{cache:'no-store'});
+  if(!res.ok)return;
+  const j=await res.json();
+  const c=j.counts||{};
+  const el=document.getElementById('v4-api-progress');
+  if(el)el.textContent='V4 Higgsfield: '+(c.completed||0)+' / '+j.target_new_videos+' new footage scenes completed. '+((c.in_progress||0)+(c.submitted||0))+' still processing. No duplicate video source is permitted in the V4 timeline.';
+ }catch(e){}
+}
+updateV4();
+setInterval(updateV4,60000);
 </script></body></html>
