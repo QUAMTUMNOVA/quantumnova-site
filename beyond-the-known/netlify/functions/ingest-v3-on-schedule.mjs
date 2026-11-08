@@ -1,5 +1,5 @@
 import {getStore} from '@netlify/blobs';
-const ids=Array.from({length:12},(_,i)=>String(201+i));
+const ids=Array.from({length:24},(_,i)=>String(201+i));
 export default async function(){
  const jobs=getStore('btk-ep001-v3');
  const media=getStore('btk-ep001-v3-media');
