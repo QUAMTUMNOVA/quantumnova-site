@@ -29,23 +29,23 @@ footer{margin-top:54px;color:#778493;font-size:12px}.muted{color:#8793a3}
 <p class="eyebrow">QNova · Production operations</p>
 <div class="pill">Private-production workflow · No publication without approval</div>
 <h1>What If Every Human Disappeared Tomorrow?</h1>
-<p class="intro">Episode 001 — original cinematic documentary exploring the world without people, from the first minute to one thousand years later. This page is an early production-control scaffold, not an active editing or publishing system.</p>
+<p class="intro">Episode 001 — original cinematic documentary exploring the world without people, from the first minute to one thousand years later. The production pipeline now submits original cinematic scenes through QNova's funded Higgsfield API. Footage will be checked and edited before your approval.</p>
 <section class="grid" aria-label="Production summary">
-<div class="panel"><h3>Current phase</h3><div class="value">Pre-production</div><div class="small">Research and scripting drafted; production assets not yet generated.</div></div>
-<div class="panel"><h3>Planned coverage</h3><div class="value">71 shots</div><div class="small">25 hero/graphics sequences plus additional documentary coverage.</div></div>
+<div class="panel"><h3>Current phase</h3><div class="value" id="current-phase">AI production</div><div class="small" id="phase-caption">Scene batches are queued and being submitted.</div></div>
+<div class="panel"><h3>Planned coverage</h3><div class="value" id="shot-count">34 assets</div><div class="small">3 completed test assets + 31 new generation slots, with additional editorial graphics planned.</div></div>
 <div class="panel"><h3>Publication</h3><div class="value pending">Approval required</div><div class="small">No public upload, release scheduling or automatic publication enabled.</div></div>
 </section>
 <h2>Production pipeline</h2>
 <section class="grid">
 <div class="panel"><h3>01 / Editorial</h3><div class="cardtitle good">Draft ready</div><div class="small">Narration draft, science review checklist and scene-by-scene prompts.</div></div>
-<div class="panel"><h3>02 / Generation</h3><div class="cardtitle pending">Not started</div><div class="small">Higgsfield images and video to be generated after verified API access and price limits.</div></div>
+<div class="panel"><h3>02 / Generation</h3><div class="cardtitle pending" id="generation-state">In production</div><div class="small">New scenes generated through the QNova-funded Higgsfield API; status refreshes below.</div></div>
 <div class="panel"><h3>03 / Post-production</h3><div class="cardtitle pending">Not started</div><div class="small">Narration, automated FFmpeg assembly, quality review and owner sign-off.</div></div>
 </section>
-<h2>Live production progress</h2><section class="panel"><p class="small">Read-only status from QNova's production backend. Public generation and publication controls are disabled.</p><div id="live-state" class="pill">Loading status...</div><div class="small" id="live-shots"></div></section><h2>First production batch</h2><section class="panel"><ol>
+<h2>Live production progress</h2><section class="panel"><p class="small">Read-only status from QNova's production backend. Public generation and publication controls are disabled.</p><div id="live-state" class="pill">Loading status...</div><div class="small" id="live-shots"></div></section><h2>Episode 001 full-production batch</h2><section class="panel"><ol>
 <li><strong>Wan 3.0:</strong> deserted Manhattan (5-second video)</li>
 <li><strong>Marketing Studio Image:</strong> aircraft above clouds (still frame)</li>
 <li><strong>Kling 3.0:</strong> abandoned grid control room (5-second video)</li>
-</ol><p class="small">Proposed maximum US$5 test budget; no spending authorised or incurred by this site.</p></section>
+</ol><p class="small">The original three-shot test is complete. The additional 31-scene batch has a US$29.25 conservative planning estimate. Costs are not a guaranteed provider-side cap.</p></section>
 <div class="status" aria-live="polite"><strong>Infrastructure:</strong> <span id="infra" class="muted">Checking Netlify function...</span><p class="small" id="auth">This connection check never sends or reveals the API key and cannot make paid generation requests.</p></div>
 <footer>© QNova · Beyond the Known · Unpublished pilot · Production data is illustrative until connected to the actual media pipeline.</footer>
 </main><script>
@@ -65,4 +65,19 @@ async function updateProduction(){
  }catch(e){document.getElementById('live-state').textContent='Status temporarily unavailable';}
 }
 updateProduction();
+async function updateFullProduction(){
+ try {
+  const r=await fetch('/.netlify/functions/full-progress',{cache:'no-store'});
+  if(!r.ok)throw Error('unavailable');
+  const j=await r.json();
+  const submitted=(j.counts.submitted||0)+(j.counts.processing||0)+(j.counts.completed||0);
+  document.getElementById('shot-count').textContent=(3+submitted)+' / 34 assets';
+  document.getElementById('live-state').textContent='Full episode: '+submitted+' of '+j.total+' new scenes submitted · '+j.completed+' complete';
+  document.getElementById('live-shots').textContent='Full production: '+j.production.replaceAll('_',' ')+' | '+Object.entries(j.counts).map(([k,v])=>v+' '+k.replaceAll('_',' ')).join(', ');
+  document.getElementById('generation-state').textContent=submitted ? 'Generating original scenes' : 'Awaiting first batch';
+  document.getElementById('phase-caption').textContent='The system submits controlled batches and checks their status automatically.';
+ } catch(e){ /* Retain pilot status when full episode endpoint is unavailable. */ }
+}
+updateFullProduction();
+setInterval(()=>{updateProduction().then(updateFullProduction)},60000);
 </script></body></html>
