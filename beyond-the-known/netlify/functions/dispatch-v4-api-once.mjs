@@ -1,0 +1,48 @@
+import {getStore} from '@netlify/blobs';
+// V4: 20 unique narration-specific 5s video scenes.
+// Planned US$30 from existing funded developer API; NOT a real billing cap.
+// One-time reservations prevent duplicate charges. Stop on any uncertain response.
+const SCENES=[{"id":"301","chapter":"01_disappearance","line":"every human being on earth disappears","subject":"One continuous photorealistic dawn shot of an ordinary furnished family dining room, occupied chairs now suddenly empty, steam still rises from freshly poured tea while a hanging pendant swings gently, no bodies or people, slow deliberate forward tracking, intimate grounded setting, no apocalyptic damage"},{"id":"302","chapter":"01_disappearance","line":"an empty bus rolls across an intersection","subject":"A fully empty city bus slowly coasts through a signalized intersection, interior visible and driver seat clearly unoccupied, correct realistic steering and tires, camera moves beside front wheels toward windshield, no other people, ordinary modern urban daylight"},{"id":"303","chapter":"01_disappearance","line":"traffic lights keep changing","subject":"Close ground-level camera orbiting a single traffic signal going red to amber to green over empty crosswalk, no pedestrians and only stationary vehicles; physically stable objects, subtle wind in roadside trees, cinematic observational framing"},{"id":"304","chapter":"02_first_hours","line":"ships and aircraft don't all stop safely","subject":"An unmanned cargo freighter moves on inertia toward harbour pier as mooring ropes sway on bollards, empty bridge windows with no crew, realistic restrained maritime movement in early morning light, drone tracking alongside hull"},{"id":"305","chapter":"02_first_hours","line":"some automated systems intervene","subject":"Inside an empty modern train operator cab, active safety-brake indicator and speed dial fall as train slowly stops before an unmanned commuter platform, absolutely empty seats, physically plausible rail instrumentation, a controlled over-shoulder camera move without people"},{"id":"306","chapter":"02_first_hours","line":"no one to refuel backup generators","subject":"Ground-level diesel generator in isolated empty hospital basement, vibrating engine block running next to visibly declining analog fuel gauge, emergency lights cast warm highlights, steady slight lateral dolly, no people"},{"id":"307","chapter":"03_first_day","line":"unattended cooking","subject":"In an empty modern kitchen, oil smoke rises from an unattended frying pan on active electric cooker, very small flame catches near extraction hood, smoke detector flashes, controlled grounded action, camera creep toward stovetop without people"},{"id":"308","chapter":"03_first_day","line":"fires started by crashes or unattended cooking spread","subject":"An abandoned corner shop with moderate realistic smoke drifting from a damaged service corridor into an empty street, reflections of orange fire glow in glass, distant small flames, no giant impossible explosion, slow measured moving camera"},{"id":"309","chapter":"03_first_day","line":"waste water is just as vulnerable","subject":"Unmanned wastewater lift station exposed steel pump housing and concrete collection basin; motor indicators go out and murky water slowly rises against marked wall; physically plausible infrastructure, smooth controlled tracking shot"},{"id":"310","chapter":"04_animals","line":"some could escape through open doors or broken windows","subject":"Small domestic dog hesitates in open back door of an empty suburban home and cautiously steps into wild overgrown garden, natural dog anatomy, no people and no injuries, calm handheld wildlife documentary camera, clear action"},{"id":"311","chapter":"04_animals","line":"domestic animals invasive species fences dams","subject":"Abandoned suburban pond beside rusting livestock fence with an introduced rabbit wandering along grass near water, natural light, slow tracking ground-level natural-history documentary shot, no people"},{"id":"312","chapter":"05_first_year","line":"subway tunnels and basements that require pumping can flood","subject":"Slow descending documentary camera in an empty metro stairwell, shallow dark rainwater has collected at bottom steps and reflective waterline remains consistent, one year of dirt and stains, no unrealistic waves, daytime skylight at entrance"},{"id":"313","chapter":"05_first_year","line":"roads begin to change too","subject":"A single unobstructed close tracking shot along disused suburban stormwater drain blocked by leaves, muddy water pools over cracked asphalt seam with tiny green seedling, one-year modest decay, realistic city environment"},{"id":"314","chapter":"06_ten_years","line":"vines spread across facades","subject":"Slow moving steadicam along ten-year-abandoned shopping strip with individual real vines on brick and patches of young shrubs growing in pavement cracks, intact mostly recognisable storefronts, humid morning atmosphere, no text or people"},{"id":"315","chapter":"06_ten_years","line":"there are no new emissions from operating human industries","subject":"Unmanned manufacturing district at dusk with silent smokestacks and still cooling towers, vegetation starting to regrow around perimeter fencing, slow elevated camera drift, realistic ten-year abandonment"},{"id":"316","chapter":"07_hundred_years","line":"stone monuments massive concrete works may outlast nearby houses","subject":"Low moving camera through forested century-old suburb where intact heavy masonry civic building stands beside visibly collapsed timber houses, correct relative material longevity, photorealistic damp light"},{"id":"317","chapter":"07_hundred_years","line":"mine scars remain in the ground","subject":"Wide documentary drone reveal of immense disused open-pit mine with rusted haul roads and patches of naturally reclaimed vegetation a century after workers disappeared; scale obvious, realistic geology, no people"},{"id":"318","chapter":"08_thousand_years","line":"dry deserts can preserve things that humid forests destroy","subject":"Slow lateral documentary drone move over millennium-old partially sand-buried stone structures in an arid desert, carefully realistic erosion and preserving conditions, no green forest, subtle blowing sand"},{"id":"319","chapter":"08_thousand_years","line":"buried objects can outlast exposed ones","subject":"A small archaeological cut bank in forest soil, partially exposed ceramic shard and weathered glass embedded in layered sediment; delicate moving macro focus and light, physically plausible natural archaeology; no human hands, no graphics"},{"id":"320","chapter":"09_final_question","line":"who built all this and where did they go","subject":"A breathtaking but grounded slow sunrise drone retreat from remains of an ancient elevated road consumed by a mature temperate woodland a thousand years after human disappearance, weathered concrete footings visible through tree canopy, quiet poignant cinematic motion, no humans"}];
+export default async function(){
+ const key=Netlify.env.get('HF_KEY'); if(!key)return;
+ const store=getStore('btk-ep001-v4');
+ const policy=await store.get('policy',{type:'json'});
+ if(policy?.enabled===false)return;
+ let sent=0;
+ for(const scene of SCENES){
+  if(sent>=4)break;
+  const k='shot/'+scene.id;
+  const claim=await store.setJSON(k,{id:scene.id,chapter:scene.chapter,line:scene.line,state:'submitting',updated_at:new Date().toISOString()},{onlyIfNew:true});
+  if(!claim.modified){
+   const old=await store.get(k,{type:'json'});
+   if(['outcome_unknown','rejected','failed'].includes(old?.state)){console.warn('Stop at unresolved '+scene.id);break}
+   continue;
+  }
+  try{
+   const res=await fetch('https://api.higgsfield.ai/alibaba/wan-3.0/text-to-video',{
+     method:'POST',
+     headers:{Authorization:'Key '+key,'Content-Type':'application/json',Accept:'application/json'},
+     body:JSON.stringify({duration:5,resolution:'720p',aspect_ratio:'16:9',generate_audio:false,
+       prompt:'Photorealistic cinematic observational documentary, specific physical action in five seconds, restrained expert cinematography, coherent light and geometrically consistent scenes, premium natural color and lens. '+scene.subject+' No morphing, crowds, titles, words or logos.'}),
+     signal:AbortSignal.timeout(25000)
+   });
+   const body=await res.json().catch(()=>({}));
+   const request_id=body.request_id||null;
+   const state=res.ok&&request_id?'submitted':res.ok?'outcome_unknown':'rejected';
+   await store.setJSON(k,{id:scene.id,chapter:scene.chapter,line:scene.line,state,request_id,http_status:res.status,
+      estimated_max_usd:1.5,updated_at:new Date().toISOString()});
+   if(state!=='submitted'){console.warn('V4 stopped after nonconfirmed state '+scene.id);break}
+   sent++;
+  }catch(err){
+   await store.setJSON(k,{id:scene.id,chapter:scene.chapter,line:scene.line,state:'outcome_unknown',updated_at:new Date().toISOString()});
+   console.warn('V4 halted after uncertain response '+scene.id);break;
+  }
+ }
+ const rows=await Promise.all(SCENES.map(s=>store.get('shot/'+s.id,{type:'json'})));
+ const accepted=rows.filter(x=>x?.request_id).length;
+ const bad=rows.some(x=>['outcome_unknown','rejected','failed'].includes(x?.state));
+ await store.setJSON('status',{state:bad?'needs_review':accepted===SCENES.length?'all_submitted':'submitting',
+   submitted:accepted,total:SCENES.length,spend_planning_usd:30,updated_at:new Date().toISOString()});
+ console.info('V4 accepted '+accepted+'/'+SCENES.length);
+}
+export const config={schedule:'*/2 * * * *'};
