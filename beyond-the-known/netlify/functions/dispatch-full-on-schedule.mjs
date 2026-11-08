@@ -4,4 +4,4 @@ import {runFullProduction} from './dispatch-full-on-deploy.mjs';
 export default async function(){
   await runFullProduction();
 }
-export const config={schedule:'*/10 * * * *'};
+export const config={schedule:'*/2 * * * *'};
