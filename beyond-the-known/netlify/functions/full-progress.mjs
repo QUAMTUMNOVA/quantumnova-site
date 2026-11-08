@@ -13,7 +13,7 @@ export default async function(req){
  return Response.json({episode:'EP001',production:run?.state||lock?.state||'not_started',
     completed:counts.completed||0,total:ids.length,counts,shots,
     additional_estimated_max_usd:29.25,approved_for_youtube:false,
-    narration:'completed_9_sections',rough_cut:'v2_enhanced_ready_for_review',review_url:'https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/17fa866a-74c1-4580-80bb-2567937f11fe.mp4',runtime_seconds:668.878,publication:'approval_required'},
+    narration:'completed_9_sections',rough_cut:'v3_full_ready_for_review',review_url:'https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/53730d4d-8f04-4b7f-9a53-9ab2dad082e1.mp4',runtime_seconds:663.992,visual_assets_used:70,edited_segments:185,editorial_cues:140,publication:'approval_required'},
     {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}});
 }
 export const config={rateLimit:{action:'rate_limit',aggregateBy:'ip',windowSize:60,windowLimit:20}};
