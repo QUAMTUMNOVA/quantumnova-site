@@ -26,4 +26,4 @@ export default async function(){
  const counts=all.reduce((x,r)=>{const s=r?.state||'planned';x[s]=(x[s]||0)+1;return x},{});
  await store.setJSON('status',{counts,updated_at:new Date().toISOString(),target:46,estimated_planned_usd:69});
 }
-export const config={schedule:'1,6,11,16,21,26,31,36,41,46,51,56 * * * *'};
+export const config={schedule:'* * * * *'};
