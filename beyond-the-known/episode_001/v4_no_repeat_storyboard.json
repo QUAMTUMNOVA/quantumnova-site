@@ -1,0 +1,166 @@
+{
+  "episode": "BTK EP001",
+  "version": "V4",
+  "goal": "No source visual appears twice across full episode",
+  "audio": "Fraser preserved",
+  "music": "Original score preserved",
+  "approval": "Creator must review; no YouTube publication",
+  "chapters": [
+    {
+      "index": 1,
+      "title": "THE DISAPPEARANCE",
+      "source_ids": [
+        "001",
+        "301",
+        "008",
+        "100",
+        "201",
+        "302",
+        "101",
+        "225",
+        "202",
+        "203",
+        "102",
+        "303",
+        "002",
+        "106"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "THE FIRST HOURS",
+      "source_ids": [
+        "204",
+        "103",
+        "005",
+        "205",
+        "305",
+        "304",
+        "006",
+        "206",
+        "227",
+        "112",
+        "306",
+        "207",
+        "208",
+        "228",
+        "003",
+        "030",
+        "114",
+        "S08"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "THE FIRST DAY",
+      "source_ids": [
+        "009",
+        "107",
+        "108",
+        "226",
+        "307",
+        "308",
+        "109",
+        "209",
+        "309",
+        "113",
+        "012",
+        "105",
+        "013"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "ANIMALS LEFT BEHIND",
+      "source_ids": [
+        "010",
+        "210",
+        "213",
+        "310",
+        "214",
+        "215",
+        "216",
+        "311",
+        "011"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "ONE YEAR LATER",
+      "source_ids": [
+        "016",
+        "211",
+        "217",
+        "218",
+        "219",
+        "115",
+        "312",
+        "014",
+        "313",
+        "220",
+        "015",
+        "033",
+        "004"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "TEN YEARS LATER",
+      "source_ids": [
+        "017",
+        "221",
+        "222",
+        "314",
+        "315",
+        "032",
+        "021",
+        "S05"
+      ]
+    },
+    {
+      "index": 7,
+      "title": "A CENTURY LATER",
+      "source_ids": [
+        "019",
+        "020",
+        "212",
+        "223",
+        "316",
+        "317",
+        "022",
+        "031",
+        "S01"
+      ]
+    },
+    {
+      "index": 8,
+      "title": "ONE THOUSAND YEARS LATER",
+      "source_ids": [
+        "023",
+        "318",
+        "319",
+        "224",
+        "024",
+        "025",
+        "034"
+      ]
+    },
+    {
+      "index": 9,
+      "title": "WHAT REMAINS?",
+      "source_ids": [
+        "029",
+        "104",
+        "110",
+        "027",
+        "018",
+        "S04",
+        "028",
+        "026",
+        "320"
+      ]
+    }
+  ],
+  "clip_reuse_limit": 1,
+  "source_attribution_required": true
+}
