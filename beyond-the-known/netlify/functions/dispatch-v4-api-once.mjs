@@ -10,7 +10,7 @@ export default async function(){
  if(policy?.enabled===false)return;
  let sent=0;
  for(const scene of SCENES){
-  if(sent>=4)break;
+  if(sent>=7)break;
   const k='shot/'+scene.id;
   const claim=await store.setJSON(k,{id:scene.id,chapter:scene.chapter,line:scene.line,state:'submitting',updated_at:new Date().toISOString()},{onlyIfNew:true});
   if(!claim.modified){
