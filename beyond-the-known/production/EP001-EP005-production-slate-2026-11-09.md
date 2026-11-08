@@ -2,7 +2,7 @@
 
 ## Release status and approval gate
 - **EP001:** What If Every Human Disappeared Tomorrow? — user reports **Public** on 2026-11-09. Do not change.
-- **EP002:** You Wouldn't Survive a Week in Ancient Rome — Rome circa AD 110 under Trajan. Script draft and 99-shot unique visual storyboard exist; **not rendered or uploaded**. Narration draft is about 2,085 words and must be tightened for the previously approved 125–140 words/minute pace (11–12 min ≈ 1,375–1,680 words, excluding pauses).
+- **EP002:** You Wouldn't Survive a Week in Ancient Rome — Rome circa AD 110 under Trajan. Script draft and 99-shot unique visual storyboard exist; **not rendered or uploaded**. Narration draft is 1,776 spoken words (the source Markdown file has about 2,085 words including non-narration notes) and must be tightened for the previously approved 125–140 words/minute pace (11–12 min ≈ 1,375–1,680 words, excluding pauses).
 - **EP003 (proposed):** What If the Moon Disappeared Tonight? — tidal changes, night sky, ecology, long-term axial stability. Separate immediate effects from long-term possibilities; avoid exaggerated instant disasters.
 - **EP004 (proposed):** The Last Day of Pompeii — AD 79, eruption sequence, archaeological evidence and uncertainty; original Roman reconstruction distinct from EP002.
 - **EP005 (proposed):** What If Earth Stopped Rotating? — carefully specify a *gradual* slowdown scenario; a sudden stop is physically catastrophic and must be treated separately.
