@@ -8,7 +8,7 @@ const TASKS=[{"id":"002","kind":"wan","description":"Empty Manhattan intersectio
 const PLANNED_MAX=30;
 const planned=TASKS.reduce((s,t)=>s+t.max_usd,0);
 if(planned>PLANNED_MAX)throw Error('Budget planning threshold exceeded');
-async function run(){
+export async function runFullProduction(){
  const key=Netlify.env.get('HF_KEY');
  if(!key) return;
  const store=getStore(STORE);
@@ -43,5 +43,5 @@ async function run(){
 }
 export default {async deploySucceeded(event){
  if(event?.site?.id!==SITE||event?.deploy?.published!==true)return;
- try{await run();}catch(err){console.error('[BTK-FULL] stopped without retry:',String(err?.message||err));}
+ try{await runFullProduction();}catch(err){console.error('[BTK-FULL] stopped without retry:',String(err?.message||err));}
 }};
