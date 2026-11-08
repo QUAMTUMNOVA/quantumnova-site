@@ -1,0 +1,97 @@
+{
+  "episode": "EP001",
+  "version": "V3",
+  "type": "sound_design",
+  "voiceover_locked": true,
+  "score_existing": true,
+  "design_principle": "Dramatic event SFX only after the spoken event begins and only if the footage makes it believable. 'No explosion' remains genuinely quiet. Mix effects beneath Fraser; prevent masking speech; fade music temporarily around major impact.",
+  "all_times_are_raw_voiceover_approximate": true,
+  "chapter_gap_adjustment_required": true,
+  "explosion_placement_rule": "Do not add a visible initial disappearance explosion. Put small believable ignition after motorway collision; later fires and isolated electrical faults are separate.",
+  "cues": [
+    {
+      "id": "SFX001",
+      "at_sec": 18.85,
+      "type": "ceramic_shatter",
+      "gain_db": -17,
+      "description": "Coffee mug breaking on floor, narration 'A coffee cup falls'"
+    },
+    {
+      "id": "SFX002",
+      "at_sec": 22.8,
+      "type": "low_traffic_whoosh",
+      "gain_db": -22,
+      "description": "Driverless city bus coasting through empty intersection"
+    },
+    {
+      "id": "SFX003",
+      "at_sec": 25.45,
+      "type": "collision_impact",
+      "gain_db": -14,
+      "description": "Motorway vehicles collide, metallic impact and realistic low-end crash"
+    },
+    {
+      "id": "SFX004",
+      "at_sec": 26.45,
+      "type": "short_fuel_ignition",
+      "gain_db": -21,
+      "description": "Optional localized ignition only if chosen accident video visibly shows a fire"
+    },
+    {
+      "id": "SFX005",
+      "at_sec": 31.2,
+      "type": "airplane_cabin_rumble",
+      "gain_db": -29,
+      "description": "Subtle engine drone as empty cockpit footage begins"
+    },
+    {
+      "id": "SFX006",
+      "at_sec": 97.5,
+      "type": "electrical_arc",
+      "gain_db": -19,
+      "description": "Short substation isolator arc if matching footage passes QA"
+    },
+    {
+      "id": "SFX007",
+      "at_sec": 123.4,
+      "type": "power_failure_hum_down",
+      "gain_db": -26,
+      "description": "Hospital power dropout and backup return"
+    },
+    {
+      "id": "SFX008",
+      "at_sec": 179,
+      "type": "distant_sirens_and_alarm",
+      "gain_db": -29,
+      "description": "Unattended city alarms under first-day soundscape"
+    },
+    {
+      "id": "SFX009",
+      "at_sec": 188,
+      "type": "fire_crackle",
+      "gain_db": -28,
+      "description": "Unattended fire under paragraph on fire spread"
+    },
+    {
+      "id": "SFX010",
+      "at_sec": 209.4,
+      "type": "water_pump_winddown",
+      "gain_db": -26,
+      "description": "Water pumps fail, pressure drops"
+    },
+    {
+      "id": "SFX011",
+      "at_sec": 245,
+      "type": "near_silence_roomtone",
+      "gain_db": -32,
+      "description": "Subtle transition to animals section"
+    },
+    {
+      "id": "SFX012",
+      "at_sec": 499,
+      "type": "distant_wind_ruins",
+      "gain_db": -31,
+      "description": "Century-old urban ruins, restrained atmosphere"
+    }
+  ]
+}
