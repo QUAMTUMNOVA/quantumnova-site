@@ -1,0 +1,271 @@
+{
+  "episode": "EP001",
+  "matched_clips": [
+    {
+      "id": "201",
+      "chapter": "01_disappearance",
+      "expected_narration_phrase": "a coffee cup falls to the floor",
+      "transcript_match_text": "A coffee cup falls to the floor,",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 18.8,
+      "end_from_global_voiceover_sec": 20.56,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "202",
+      "chapter": "01_disappearance",
+      "expected_narration_phrase": "on a motorway vehicles collide",
+      "transcript_match_text": "On a motorway, vehicles collide",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 24.58,
+      "end_from_global_voiceover_sec": 27.4,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "203",
+      "chapter": "01_disappearance",
+      "expected_narration_phrase": "high above the clouds passenger aircraft continue",
+      "transcript_match_text": "High above the clouds, passenger aircraft continue",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 30.48,
+      "end_from_global_voiceover_sec": 33.58,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "204",
+      "chapter": "02_first_hours",
+      "expected_narration_phrase": "cars trucks trains ships and aircraft",
+      "transcript_match_text": "Cars, trucks, trains, ships, and aircraft",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 72.7,
+      "end_from_global_voiceover_sec": 76.26,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "205",
+      "chapter": "02_first_hours",
+      "expected_narration_phrase": "some automated systems intervene",
+      "transcript_match_text": "Some automated systems intervene.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 80.08,
+      "end_from_global_voiceover_sec": 81.76,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "206",
+      "chapter": "02_first_hours",
+      "expected_narration_phrase": "protective equipment can disconnect generators",
+      "transcript_match_text": "Protective equipment can disconnect generators",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 96.98,
+      "end_from_global_voiceover_sec": 99.8,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "207",
+      "chapter": "02_first_hours",
+      "expected_narration_phrase": "the lights in a hospital might stay on",
+      "transcript_match_text": "The lights in a hospital might stay on",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 122.14,
+      "end_from_global_voiceover_sec": 124.14,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "208",
+      "chapter": "02_first_hours",
+      "expected_narration_phrase": "in data centers batteries and generators briefly keep servers alive",
+      "transcript_match_text": "In data centers, batteries and generators briefly keep servers alive.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 145.94,
+      "end_from_global_voiceover_sec": 150.24,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "209",
+      "chapter": "03_first_day",
+      "expected_narration_phrase": "elsewhere pressure drops when pumps stop",
+      "transcript_match_text": "Elsewhere, pressure drops when pumps stop",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 209.2,
+      "end_from_global_voiceover_sec": 211.82,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "210",
+      "chapter": "04_animals",
+      "expected_narration_phrase": "millions of pets would be trapped inside homes",
+      "transcript_match_text": "Millions of pets would be trapped inside homes.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 246.24,
+      "end_from_global_voiceover_sec": 248.7,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "211",
+      "chapter": "05_first_year",
+      "expected_narration_phrase": "rain enters a building through a damaged roof",
+      "transcript_match_text": "Rain enters a building through a damaged roof.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 306.11,
+      "end_from_global_voiceover_sec": 308.89,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "212",
+      "chapter": "07_hundred_years",
+      "expected_narration_phrase": "even when a city disappears beneath vegetation",
+      "transcript_match_text": "Even when a city disappears beneath vegetation,",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 499.01,
+      "end_from_global_voiceover_sec": 501.47,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "213",
+      "chapter": "04_animals",
+      "expected_narration_phrase": "animals dependent on regular food water or temperature control",
+      "transcript_match_text": "Animals dependent on regular food, water, or temperature control",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 254.76,
+      "end_from_global_voiceover_sec": 259.02,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "214",
+      "chapter": "04_animals",
+      "expected_narration_phrase": "a hardy grazing animal with access to water might survive",
+      "transcript_match_text": "A hardy grazing animal with access to water might survive.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 263.94,
+      "end_from_global_voiceover_sec": 268.58,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "215",
+      "chapter": "04_animals",
+      "expected_narration_phrase": "an animal confined in a barn",
+      "transcript_match_text": "An animal confined in a barn",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 269.52,
+      "end_from_global_voiceover_sec": 271.24,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "216",
+      "chapter": "04_animals",
+      "expected_narration_phrase": "some species might benefit from quieter roads",
+      "transcript_match_text": "some species might benefit from quieter roads",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 278.2,
+      "end_from_global_voiceover_sec": 280.82,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "217",
+      "chapter": "05_first_year",
+      "expected_narration_phrase": "in cold climates freezing and thawing widen them",
+      "transcript_match_text": "In cold climates, freezing and thawing widen them.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 312.17,
+      "end_from_global_voiceover_sec": 316.23,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "218",
+      "chapter": "05_first_year",
+      "expected_narration_phrase": "timber decays where moisture persists",
+      "transcript_match_text": "Timber decays where moisture persists.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 318.61,
+      "end_from_global_voiceover_sec": 320.75,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "219",
+      "chapter": "05_first_year",
+      "expected_narration_phrase": "plants take root in gutters walls and abandoned lots",
+      "transcript_match_text": "Plants take root in gutters, walls, and abandoned lots.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 321.67,
+      "end_from_global_voiceover_sec": 325.51,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "220",
+      "chapter": "05_first_year",
+      "expected_narration_phrase": "drainage systems clog roots expand",
+      "transcript_match_text": "drainage systems clog, roots expand,",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 363.97,
+      "end_from_global_voiceover_sec": 366.79,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "221",
+      "chapter": "06_ten_years",
+      "expected_narration_phrase": "grasses become shrubs shrubs become young trees",
+      "transcript_match_text": "Grasses become shrubs. Shrubs become young trees.",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 388.36,
+      "end_from_global_voiceover_sec": 392.36,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "222",
+      "chapter": "06_ten_years",
+      "expected_narration_phrase": "elsewhere in deserts or harsh polar regions",
+      "transcript_match_text": "Elsewhere, in deserts or harsh polar regions,",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 397.3,
+      "end_from_global_voiceover_sec": 400.48,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "223",
+      "chapter": "07_hundred_years",
+      "expected_narration_phrase": "bridges deteriorate as water corrosion and vegetation attack",
+      "transcript_match_text": "Bridges deteriorate as water, corrosion and vegetation attack",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 455.83,
+      "end_from_global_voiceover_sec": 459.95,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    },
+    {
+      "id": "224",
+      "chapter": "08_thousand_years",
+      "expected_narration_phrase": "human traces would survive in sediments plastics ceramics glass",
+      "transcript_match_text": "Human traces would survive in sediments, plastics, ceramics, glass,",
+      "transcript_match_confidence": 1.0,
+      "start_from_global_voiceover_sec": 529.94,
+      "end_from_global_voiceover_sec": 535.18,
+      "requires_human_motion_and_semantics_check": true,
+      "editing_rule": "Do not place until the scene genuinely illustrates the spoken phrase. Auto trim, select appropriate in/out and maintain original footage speed."
+    }
+  ],
+  "method": "Speech-word local approximate phrase matching",
+  "note": "These align true spoken phrases but DO NOT certify visual quality or footage correctness."
+}
