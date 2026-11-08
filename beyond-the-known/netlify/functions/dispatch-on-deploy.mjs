@@ -16,6 +16,26 @@ path:'kling-video/v3.0/std/text-to-video',
 body:{duration:5,aspect_ratio:'16:9',sound:'off',multi_shots:false,
 prompt:'One uninterrupted realistic cinematic documentary shot inside an unmanned modern electrical grid control room after operators disappear. Rows of illuminated status displays, switches and equipment. Gentle camera push forward as one panel subtly dims, practical industrial lighting, physically plausible technology. No people, explosions, sparks, fantastical graphics, text, logos or cuts.'}}
 ];
+
+async function refreshSubmittedJobs(store, key) {
+ for (const t of tasks) {
+  const name='jobs/EP001/'+t.id;
+  let job=await store.get(name,{type:'json'});
+  if(!job?.request_id || ['completed','failed','nsfw','canceled'].includes(job.state))continue;
+  try {
+    const response=await fetch('https://api.higgsfield.ai/requests/'+encodeURIComponent(job.request_id)+'/status',{
+      headers:{Authorization:'Key '+key,Accept:'application/json'},signal:AbortSignal.timeout(6500)});
+    if(!response.ok)continue;
+    const data=await response.json();
+    const state=data.status||data.request?.status||job.state;
+    const result=data.result||data.output||data;
+    const url=job.kind==='image'?result?.images?.[0]?.url:(result?.video?.url||(typeof result?.video==='string'?result.video:null));
+    job={...job,state,updated_at:new Date().toISOString(),...(state==='completed'&&typeof url==='string'&&url.startsWith('https://')?{result_url:url}:{})};
+    await store.setJSON(name,job);
+  }catch(e){ console.warn('[BTK] Status refresh temporarily unavailable for '+t.id); }
+ }
+}
+
 async function once(){
  const key=Netlify.env.get('HF_KEY');
  if(!key){console.warn('[BTK] HF_KEY missing; no submission');return;}
@@ -23,7 +43,7 @@ async function once(){
  if(reserved>5) throw Error('Budget planning guard rejected batch');
  const store=getStore('btk-production-ep001');
  const got=await store.setJSON('run',{state:'started',started_at:new Date().toISOString(),planned_max_usd:5},{onlyIfNew:true});
- if(!got.modified){console.info('[BTK] One-time batch already claimed');return;}
+ if(!got.modified){console.info('[BTK] One-time batch already claimed; checking completed results');await refreshSubmittedJobs(store,key);return;}
  let n=0;
  for(const t of tasks){
    const k='jobs/EP001/'+t.id;
