@@ -41,6 +41,7 @@ footer{margin-top:54px;color:#778493;font-size:12px}.muted{color:#8793a3}
 <div class="panel"><h3>02 / Generation</h3><div class="cardtitle pending" id="generation-state">In production</div><div class="small">New scenes generated through the QNova-funded Higgsfield API; status refreshes below.</div></div>
 <div class="panel"><h3>03 / Post-production</h3><div class="cardtitle pending">Not started</div><div class="small">Narration, automated FFmpeg assembly, quality review and owner sign-off.</div></div>
 </section>
+<h2>Episode 001 — V3 cinematic rebuild</h2><section class="panel"><h3>Narration-first visual production</h3><p class="small">115 timed visual beats mapped against Fraser's recorded narration. New API-funded cinematic shots are generating and being archived privately. The existing V2 review remains available below; V3 is not yet a completed film.</p><p class="small" id="v3-api-progress">Checking V3 original footage queue…</p><p class="small">New footage spending uses the existing QNova developer API. No YouTube publication without approval.</p></section>
 <h2>Full-length Episode 001 rough cut</h2><section class="panel"><h3>Enhanced V2 review · 11 minutes 09 seconds · 720p</h3><p class="small">Re-edited to match Fraser's narration using 49 distinct visual assets, including 16 additional moving-video generations. The standalone title screens were replaced by subtle in-scene overlays. This is an editorial review cut, not a published YouTube video.</p><p><a href="https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/17fa866a-74c1-4580-80bb-2567937f11fe.mp4" target="_blank" rel="noopener noreferrer">Watch V2 enhanced rough cut</a></p><p class="small">YouTube publication remains disabled until final approval.</p></section>
 <h2>Live production progress</h2><section class="panel"><p class="small">Read-only status from QNova's production backend. Public generation and publication controls are disabled.</p><div id="live-state" class="pill">Loading status...</div><div class="small" id="live-shots"></div></section><h2>Episode 001 full-production batch</h2><section class="panel"><ol>
 <li><strong>Wan 3.0:</strong> deserted Manhattan (5-second video)</li>
@@ -81,4 +82,17 @@ async function updateFullProduction(){
 }
 updateFullProduction();
 setInterval(()=>{updateProduction().then(updateFullProduction)},60000);
+async function updateV3(){
+ try{
+  const r=await fetch('/.netlify/functions/v3-progress',{cache:'no-store'});
+  if(!r.ok)return;
+  const j=await r.json();
+  const c=j.counts||{};
+  const submitted=(c.submitted||0)+(c.in_progress||0)+(c.completed||0);
+  const el=document.getElementById('v3-api-progress');
+  if(el)el.textContent='V3 new video originals: '+submitted+'/'+j.new_video_generation_target+' accepted, '+(c.completed||0)+' finished; '+(c.planned||0)+' awaiting submission. 115 narration visual beats mapped.';
+ }catch(e){}
+}
+updateV3();
+setInterval(updateV3,60000);
 </script></body></html>
