@@ -29,7 +29,12 @@ export default async (req)=>{
    const r=await v3store.get('shot/'+id,{type:'json'});
    return {id,beat:r?.beat||null,kind:'video',state:r?.state||'planned',result_url:r?.result_url||null,request_id:r?.request_id||null};
   }));
-  return Response.json({episode:'EP001',items:[...items,...pilot,...v2,...v3]},
+  const v4store=getStore('btk-ep001-v4');
+  const v4=await Promise.all(Array.from({length:20},(_,i)=>String(301+i)).map(async id=>{
+   const r=await v4store.get('shot/'+id,{type:'json'});
+   return {id,chapter:r?.chapter||null,line:r?.line||null,kind:'video',state:r?.state||'planned',result_url:r?.result_url||null,stored_asset:r?.stored_asset||null};
+  }));
+  return Response.json({episode:'EP001',items:[...items,...pilot,...v2,...v3,...v4]},
     {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}});
 };
 export const config={rateLimit:{action:'rate_limit',aggregateBy:'ip',windowSize:60,windowLimit:10}};
