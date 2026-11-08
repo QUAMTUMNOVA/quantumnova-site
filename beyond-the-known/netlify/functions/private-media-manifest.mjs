@@ -30,7 +30,7 @@ export default async (req)=>{
    return {id,beat:r?.beat||null,kind:'video',state:r?.state||'planned',result_url:r?.result_url||null,request_id:r?.request_id||null};
   }));
   const v4store=getStore('btk-ep001-v4');
-  const v4=await Promise.all(Array.from({length:20},(_,i)=>String(301+i)).map(async id=>{
+  const v4=await Promise.all(Array.from({length:46},(_,i)=>String(301+i)).map(async id=>{
    const r=await v4store.get('shot/'+id,{type:'json'});
    return {id,chapter:r?.chapter||null,line:r?.line||null,kind:'video',state:r?.state||'planned',result_url:r?.result_url||null,stored_asset:r?.stored_asset||null};
   }));
