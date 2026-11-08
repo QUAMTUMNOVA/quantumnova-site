@@ -1,0 +1,46 @@
+{
+  "channel": "Beyond the Known",
+  "owner": "QNova",
+  "episode": "EP001",
+  "title": "What If Every Human Disappeared Tomorrow?",
+  "target_minutes": "11–12",
+  "progress": {
+    "research": "draft",
+    "script": "draft",
+    "shot_plan": "ready",
+    "generation": "not_started",
+    "narration": "not_started",
+    "assembly": "not_started",
+    "approval": "required",
+    "published": false
+  },
+  "total_shot_slots": 71,
+  "initial_test_shots": [
+    {
+      "id": "001",
+      "model": "Wan 3.0",
+      "scene": "Deserted Manhattan avenue",
+      "duration_seconds": 5
+    },
+    {
+      "id": "003",
+      "model": "Marketing Studio Image",
+      "scene": "Unattended passenger aircraft above clouds",
+      "duration_seconds": 0
+    },
+    {
+      "id": "006",
+      "model": "Kling 3.0",
+      "scene": "Unattended electrical grid control room",
+      "duration_seconds": 5
+    }
+  ],
+  "budget": {
+    "approved_generation_spend_usd": 0,
+    "proposal_test_cap_usd": 5
+  },
+  "publication": {
+    "automatic": false,
+    "owner_approval_required": true
+  }
+}
