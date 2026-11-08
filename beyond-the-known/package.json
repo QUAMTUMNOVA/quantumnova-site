@@ -1,0 +1,7 @@
+{
+  "name": "qnova-beyond-the-known-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {"@netlify/blobs": "^11.1.7"}
+}
