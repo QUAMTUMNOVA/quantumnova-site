@@ -10,11 +10,17 @@ export default async function(){
   if(!key)return;
   const store=getStore('btk-production-ep001-v2');
   const lock=await store.setJSON('v2-start',{state:'started',planned_max_usd:maxPlanningUsd,created_at:new Date().toISOString()},{onlyIfNew:true});
-  if(!lock.modified)return;
+  // The initial lock protects the batch identity; each shot has its own once-only reservation.
   let completedSubmissions=0;
   for(const shot of shots){
+    if(completedSubmissions>=2)break;
     const recordKey='jobs/'+shot.id;
-    await store.setJSON(recordKey,{id:shot.id,state:'submitting',description:shot.subject,updated_at:new Date().toISOString()},{onlyIfNew:true});
+    const reservation=await store.setJSON(recordKey,{id:shot.id,state:'submitting',description:shot.subject,updated_at:new Date().toISOString()},{onlyIfNew:true});
+    if(!reservation.modified){
+      const existing=await store.get(recordKey,{type:'json'});
+      if(['rejected','outcome_unknown'].includes(existing?.state))break;
+      continue;
+    }
     try{
       const response=await fetch('https://api.higgsfield.ai/alibaba/wan-3.0/text-to-video',{
         method:'POST',
@@ -34,6 +40,9 @@ export default async function(){
       console.warn('BTK v2 stops on uncertain outcome '+shot.id);break;
     }
   }
-  await store.setJSON('v2-status',{state:completedSubmissions===shots.length?'submitted':'needs_review',submitted:completedSubmissions,total:shots.length,planned_max_usd:maxPlanningUsd,updated_at:new Date().toISOString()});
+  const records=await Promise.all(shots.map(x=>store.get('jobs/'+x.id,{type:'json'})));
+  const submitted=records.filter(x=>x?.request_id).length;
+  const ambiguous=records.some(x=>['rejected','outcome_unknown'].includes(x?.state));
+  await store.setJSON('v2-status',{state:ambiguous?'needs_review':submitted===shots.length?'submitted':'processing',submitted,total:shots.length,planned_max_usd:maxPlanningUsd,updated_at:new Date().toISOString()});
 }
-export const config={schedule:'*/5 * * * *'};
+export const config={schedule:'*/2 * * * *'};
