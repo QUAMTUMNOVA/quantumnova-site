@@ -1,0 +1,982 @@
+1
+00:00:00,080 --> 00:00:03,960
+At seven in the morning, the
+blinds in your apartment open to
+
+2
+00:00:03,960 --> 00:00:07,840
+sunlight. Beyond the window
+is a neighbourhood of trees,
+
+3
+00:00:08,460 --> 00:00:11,000
+balconies, and people walking to work.
+
+4
+00:00:12,220 --> 00:00:13,800
+Then you look up.
+
+5
+00:00:14,900 --> 00:00:18,540
+High above the park, the opposite
+side of your city curves
+
+6
+00:00:18,540 --> 00:00:22,160
+across the sky. Other
+streets hang overhead,
+
+7
+00:00:22,940 --> 00:00:27,460
+kilometres away. And through a
+narrow observation gallery, you
+
+8
+00:00:27,460 --> 00:00:31,280
+can see Earth. Silent and brilliant
+
+9
+00:00:31,280 --> 00:00:35,760
+against black space. You are not on another
+
+10
+00:00:35,760 --> 00:00:40,260
+planet. You are living inside
+an enormous structure built
+
+11
+00:00:40,260 --> 00:00:44,400
+in orbit. This is the first city
+
+12
+00:00:44,400 --> 00:00:48,140
+in space. There is no such city today.
+
+13
+00:00:49,080 --> 00:00:52,480
+What you're seeing is a
+scientifically informed future
+
+14
+00:00:52,480 --> 00:00:56,140
+concept, not a project
+secretly under construction.
+
+15
+00:00:56,140 --> 00:01:00,320
+But the underlying idea
+is surprisingly old.
+
+16
+00:01:01,320 --> 00:01:04,460
+Engineers have studied rotating
+settlements for decades.
+
+17
+00:01:05,640 --> 00:01:08,640
+The question is not whether
+we can draw a beautiful
+
+18
+00:01:08,640 --> 00:01:12,280
+spacecraft. It's whether we
+could build a place where
+
+19
+00:01:12,280 --> 00:01:16,540
+thousands of people might
+wake up, raise families, grow
+
+20
+00:01:16,540 --> 00:01:20,900
+food, and live ordinary
+lives without the ground of a
+
+21
+00:01:20,900 --> 00:01:25,440
+planet beneath them. The
+first challenge is one you
+
+22
+00:01:25,440 --> 00:01:27,200
+feel every second.
+
+23
+00:01:31,389 --> 00:01:33,949
+Stand inside a normal
+spacecraft and you float.
+
+24
+00:01:35,069 --> 00:01:37,749
+It's not because Earth has
+stopped pulling on you.
+
+25
+00:01:38,689 --> 00:01:41,809
+The spacecraft and its occupants
+are falling around Earth
+
+26
+00:01:41,809 --> 00:01:46,029
+together. Now imagine a
+huge ring slowly turning.
+
+27
+00:01:46,749 --> 00:01:49,009
+People stand on the
+inside of its outer wall.
+
+28
+00:01:49,809 --> 00:01:53,409
+As the floor carries them in a
+circle, it continually pushes
+
+29
+00:01:53,409 --> 00:01:57,329
+them inward. And they experience
+something like weight.
+
+30
+00:01:58,149 --> 00:02:01,209
+That's artificial gravity through rotation.
+
+31
+00:02:02,749 --> 00:02:04,849
+It isn't a mysterious gravity generator.
+
+32
+00:02:05,769 --> 00:02:07,769
+It is a consequence of circular motion.
+
+33
+00:02:08,829 --> 00:02:12,969
+But size matters. Spin a tiny
+room quickly enough to make its
+
+34
+00:02:12,969 --> 00:02:14,249
+floor feel like Earth.
+
+35
+00:02:14,969 --> 00:02:17,929
+And moving your head or
+walking around could produce
+
+36
+00:02:17,929 --> 00:02:22,509
+uncomfortable sensations. Large
+rotating habitats can achieve
+
+37
+00:02:22,509 --> 00:02:25,249
+the same acceleration with
+much slower rotation.
+
+38
+00:02:26,509 --> 00:02:30,789
+A classic Stanford Torus design
+from a NASA-sponsored study
+
+39
+00:02:30,789 --> 00:02:34,929
+in the 1970s, imagined a
+ring roughly a mile across,
+
+40
+00:02:35,549 --> 00:02:36,989
+turning about once per minute.
+
+41
+00:02:37,809 --> 00:02:41,009
+A city on its inner rim could
+feel surprisingly familiar.
+
+42
+00:02:41,869 --> 00:02:45,089
+Move toward the central axis
+however, and the apparent gravity
+
+43
+00:02:45,089 --> 00:02:50,849
+would fade. So what
+
+44
+00:02:50,849 --> 00:02:53,029
+shape should the very first city take?
+
+45
+00:02:55,504 --> 00:02:59,844
+Picture three possibilities. The first is a
+
+46
+00:02:59,844 --> 00:03:03,864
+giant wheel. Homes and
+gardens follow the circular
+
+47
+00:03:03,864 --> 00:03:07,764
+rim. Spokes connect the
+neighbourhoods to a central hub
+
+48
+00:03:07,764 --> 00:03:12,084
+where visiting spacecraft can
+arrive without trying to land
+
+49
+00:03:12,084 --> 00:03:13,864
+on a fast-moving street.
+
+50
+00:03:16,184 --> 00:03:18,284
+The second is a long cylinder.
+
+51
+00:03:20,064 --> 00:03:22,884
+Its inside wall becomes a curved landscape.
+
+52
+00:03:23,924 --> 00:03:27,324
+From one village, you could
+look straight across the open
+
+53
+00:03:27,324 --> 00:03:31,044
+interior and see farms and
+houses above your head.
+
+54
+00:03:33,914 --> 00:03:38,014
+The third is a collection of
+smaller modules linked to a
+
+55
+00:03:38,014 --> 00:03:42,474
+rotating structure. It would
+be easier to expand in stages,
+
+56
+00:03:43,474 --> 00:03:47,614
+but a growing network introduces
+more joints, seals, and
+
+57
+00:03:47,614 --> 00:03:51,954
+moving parts. None of these
+
+58
+00:03:51,954 --> 00:03:55,274
+designs is a finished city
+waiting to be ordered.
+
+59
+00:03:56,794 --> 00:04:00,874
+They are engineering
+trade-offs, mass, structural
+
+60
+00:04:00,874 --> 00:04:05,134
+forces, maintenance,
+radiation shielding, human
+
+61
+00:04:05,134 --> 00:04:07,454
+comfort, and construction cost.
+
+62
+00:04:09,034 --> 00:04:11,834
+A rotating habitat must
+be balanced carefully.
+
+63
+00:04:13,394 --> 00:04:17,934
+Streets, water tanks, and even
+new buildings become part of
+
+64
+00:04:17,934 --> 00:04:21,094
+a moving system whose
+dynamics must be controlled.
+
+65
+00:04:22,094 --> 00:04:25,674
+The interior may resemble a garden.
+
+66
+00:04:26,874 --> 00:04:31,034
+Outside, every beam is part
+of an extraordinary machine.
+
+67
+00:04:33,792 --> 00:04:36,872
+Before there are apartments,
+there is construction.
+
+68
+00:04:38,112 --> 00:04:41,932
+Imagine autonomous robotic
+workers positioning metal frames
+
+69
+00:04:41,932 --> 00:04:43,772
+against the blackness of space.
+
+70
+00:04:44,912 --> 00:04:47,512
+Cargo vehicles deliver structural parts.
+
+71
+00:04:48,312 --> 00:04:52,712
+Welding, inspection, and assembly
+happen in a vacuum, with
+
+72
+00:04:52,712 --> 00:04:54,952
+no convenient ground beneath the machines.
+
+73
+00:04:55,912 --> 00:04:59,272
+A conventional approach would
+launch countless pieces from
+
+74
+00:04:59,272 --> 00:05:01,132
+Earth and connect them in orbit.
+
+75
+00:05:01,132 --> 00:05:05,472
+That means extraordinary
+transportation demand, even
+
+76
+00:05:05,472 --> 00:05:08,912
+before adding water, shielding,
+and the first residents.
+
+77
+00:05:10,332 --> 00:05:13,652
+Another approach is to use
+material obtained beyond Earth,
+
+78
+00:05:14,512 --> 00:05:18,932
+perhaps lunar rock for shielding,
+or metal extracted and
+
+79
+00:05:18,932 --> 00:05:20,452
+processed from space resources.
+
+80
+00:05:21,672 --> 00:05:25,632
+Those ideas could reduce some
+launch requirements, but mining,
+
+81
+00:05:26,012 --> 00:05:29,012
+refining, and transporting
+material in space would themselves
+
+82
+00:05:29,012 --> 00:05:32,852
+need industries that do not yet
+exist at the required scale.
+
+83
+00:05:33,652 --> 00:05:37,532
+NASA has also explored the
+possibility of expandable kilometre
+
+84
+00:05:37,532 --> 00:05:40,212
+scale structures that
+could unfold after launch.
+
+85
+00:05:41,172 --> 00:05:45,232
+That remains research, not proof
+that a city can pop open like
+
+86
+00:05:45,232 --> 00:05:49,092
+a camping tent. Before
+the wheel begins turning,
+
+87
+00:05:49,772 --> 00:05:52,872
+thousands of components must work as one.
+
+88
+00:05:54,092 --> 00:05:58,552
+Every attachment matters.
+Every repair procedure
+
+89
+00:05:58,552 --> 00:06:02,612
+needs a backup. And even if
+the structure is perfect,
+
+90
+00:06:03,132 --> 00:06:07,132
+space has a danger that no city
+on Earth can simply ignore.
+
+91
+00:06:09,547 --> 00:06:12,647
+From the outside, a city and
+space might look delicate.
+
+92
+00:06:13,707 --> 00:06:17,567
+In reality, its walls could need
+to be enormously substantial.
+
+93
+00:06:18,747 --> 00:06:22,407
+Beyond Earth's atmosphere, people
+face high-energy radiation
+
+94
+00:06:22,407 --> 00:06:25,927
+from space and occasionally
+from violent solar events.
+
+95
+00:06:26,887 --> 00:06:30,367
+Long-term exposure is a major
+concern for any settlement.
+
+96
+00:06:31,547 --> 00:06:35,707
+One proposed solution is
+mass, water, specially
+
+97
+00:06:35,707 --> 00:06:39,587
+selected materials, or thick
+layers of rock placed around
+
+98
+00:06:39,587 --> 00:06:43,827
+inhabited sections. That means
+the famous science fiction
+
+99
+00:06:43,827 --> 00:06:48,307
+city beneath a transparent glass
+bubble is not necessarily a
+
+100
+00:06:48,307 --> 00:06:51,887
+sensible design. You would want controlled,
+
+101
+00:06:52,687 --> 00:06:56,207
+shielded areas with carefully
+engineered places to look
+
+102
+00:06:56,207 --> 00:07:00,607
+outside. Small debris and micrometeoroids
+
+103
+00:07:00,607 --> 00:07:04,867
+present another risk.
+Pressure boundaries, impact
+
+104
+00:07:04,867 --> 00:07:09,187
+protection, compartment doors,
+and reliable leak detection
+
+105
+00:07:09,187 --> 00:07:11,587
+would matter every day.
+
+106
+00:07:13,607 --> 00:07:16,987
+A puncture would not mean the
+entire city instantly explodes,
+
+107
+00:07:17,887 --> 00:07:22,147
+but a serious leak could be
+lethal without fast isolation and
+
+108
+00:07:22,147 --> 00:07:26,687
+repairs. Fire behaves
+differently in controlled
+
+109
+00:07:26,687 --> 00:07:30,987
+spacecraft environments,
+too. Ventilation and safety
+
+110
+00:07:30,987 --> 00:07:33,347
+systems become part of every building.
+
+111
+00:07:35,817 --> 00:07:37,577
+The city is not simply architecture.
+
+112
+00:07:40,447 --> 00:07:43,067
+It is a machine that must
+protect its inhabitants
+
+113
+00:07:43,067 --> 00:07:48,307
+continuously, without
+ever taking a day off.
+
+114
+00:07:50,817 --> 00:07:55,157
+A terrestrial city turns
+beneath the sun and receives
+
+115
+00:07:55,157 --> 00:07:58,617
+a natural rhythm of morning and night.
+
+116
+00:08:00,487 --> 00:08:04,197
+Inside an orbital settlement,
+the design team would have
+
+117
+00:08:04,197 --> 00:08:08,297
+choices. Large mirrors
+might redirect sunlight
+
+118
+00:08:08,297 --> 00:08:10,917
+into selected interior regions.
+
+119
+00:08:11,897 --> 00:08:15,037
+Shutters and reflectors could
+create a planned day-night
+
+120
+00:08:15,037 --> 00:08:18,537
+cycle, helping people
+maintain familiar routines.
+
+121
+00:08:19,537 --> 00:08:23,737
+Other areas might rely on
+efficient artificial illumination,
+
+122
+00:08:24,617 --> 00:08:28,817
+especially for agriculture. Solar
+
+123
+00:08:28,817 --> 00:08:32,497
+arrays would be an obvious
+power source in many orbital
+
+124
+00:08:32,497 --> 00:08:35,917
+locations. But a city would need storage,
+
+125
+00:08:36,557 --> 00:08:40,957
+distribution networks, and
+redundant systems for times when
+
+126
+00:08:40,957 --> 00:08:43,957
+sunlight was unavailable
+or equipment failed.
+
+127
+00:08:47,307 --> 00:08:51,487
+Imagine a school courtyard
+lit by a warm simulated
+
+128
+00:08:51,487 --> 00:08:55,607
+sunrise, while technicians
+outside repair a mirror panel
+
+129
+00:08:55,607 --> 00:09:00,027
+against the dark. Now
+imagine switching from a
+
+130
+00:09:00,027 --> 00:09:03,767
+residential garden to an industrial
+workshop near the central
+
+131
+00:09:03,767 --> 00:09:07,587
+hub, where near weightlessness
+could be useful for certain
+
+132
+00:09:07,587 --> 00:09:09,687
+kinds of manufacturing and handling.
+
+133
+00:09:10,627 --> 00:09:14,727
+That is the unusual promise
+of a rotating settlement,
+
+134
+00:09:15,067 --> 00:09:19,567
+multiple environments inside
+the same built world.
+
+135
+00:09:20,227 --> 00:09:23,807
+Yet light is only one ingredient.
+
+136
+00:09:23,807 --> 00:09:27,447
+A city also has to feed itself,
+
+137
+00:09:28,147 --> 00:09:30,047
+breathe, and drink.
+
+138
+00:09:32,488 --> 00:09:36,288
+On Earth, a broken water pipe is serious.
+
+139
+00:09:37,768 --> 00:09:41,148
+In a sealed space settlement,
+losing air or wasting water
+
+140
+00:09:41,148 --> 00:09:43,008
+could endanger an entire neighbourhood.
+
+141
+00:09:43,828 --> 00:09:47,448
+Life support would need to
+circulate and clean air, recover
+
+142
+00:09:47,448 --> 00:09:51,668
+water, monitor contaminants,
+and handle waste continuously.
+
+143
+00:09:53,248 --> 00:09:56,928
+Modern spacecraft already use
+sophisticated recycling systems,
+
+144
+00:09:57,588 --> 00:10:01,288
+but 1,000-person city is a very
+different challenge from a
+
+145
+00:10:01,288 --> 00:10:02,748
+small space station crew.
+
+146
+00:10:03,828 --> 00:10:06,668
+Greenhouses could produce
+food and contribute to the
+
+147
+00:10:06,668 --> 00:10:10,468
+environment, with carefully
+controlled humidity, nutrients,
+
+148
+00:10:11,028 --> 00:10:12,748
+light, and pest management.
+
+149
+00:10:13,568 --> 00:10:17,528
+They would also require energy,
+spare parts, expertise, and
+
+150
+00:10:17,528 --> 00:10:19,128
+reserves when harvests failed.
+
+151
+00:10:20,168 --> 00:10:23,348
+A self-sufficient ecosystem
+would be an astonishing
+
+152
+00:10:23,348 --> 00:10:27,288
+engineering achievement. Calling
+it closed-loop would not make
+
+153
+00:10:27,288 --> 00:10:29,648
+it magically independent
+of outside supplies.
+
+154
+00:10:30,868 --> 00:10:34,388
+Some goods would almost certainly
+arrive on ships, at least in
+
+155
+00:10:34,388 --> 00:10:37,668
+the early decades, medicines,
+specialist electronics,
+
+156
+00:10:38,268 --> 00:10:41,248
+replacement machinery, and
+materials that were difficult to
+
+157
+00:10:41,248 --> 00:10:45,768
+manufacture locally. The most
+important facility might not be
+
+158
+00:10:45,768 --> 00:10:48,268
+the tallest tower, or the largest park.
+
+159
+00:10:48,268 --> 00:10:52,448
+It might be the unglamorous
+room that keeps the water
+
+160
+00:10:52,448 --> 00:10:55,268
+clean, while everyone else sleeps.
+
+161
+00:10:58,039 --> 00:10:59,759
+what would life actually feel like?
+
+162
+00:11:01,059 --> 00:11:04,879
+At the outer rim, you could walk
+to a café and watch cyclists
+
+163
+00:11:04,879 --> 00:11:07,219
+travel along a curved avenue.
+
+164
+00:11:08,499 --> 00:11:11,779
+Children might play beneath a
+ceiling that is really the far
+
+165
+00:11:11,779 --> 00:11:13,599
+side of their own neighbourhood.
+
+166
+00:11:15,079 --> 00:11:18,759
+A lift could carry you inward
+toward the rotation axis,
+
+167
+00:11:19,479 --> 00:11:21,659
+where the sensation of
+weight becomes weaker.
+
+168
+00:11:22,659 --> 00:11:26,939
+Near the hub, cargo handlers
+might float as they move supplies
+
+169
+00:11:26,939 --> 00:11:29,119
+between docking craft and the spokes.
+
+170
+00:11:32,479 --> 00:11:33,719
+You would learn new instincts.
+
+171
+00:11:34,839 --> 00:11:38,099
+A thrown ball would not trace
+quite the same path you expect
+
+172
+00:11:38,099 --> 00:11:42,559
+on Earth. Running in the
+direction of the spin could
+
+173
+00:11:42,559 --> 00:11:44,679
+feel different from running against it.
+
+174
+00:11:45,619 --> 00:11:50,099
+Most importantly, you would
+not spend every moment staring
+
+175
+00:11:50,099 --> 00:11:53,559
+at the stars. You would go to work,
+
+176
+00:11:54,199 --> 00:11:58,559
+argue over dinner, wait for the train, grow
+
+177
+00:11:58,559 --> 00:12:01,199
+old, and make plans for the weekend.
+
+178
+00:12:04,219 --> 00:12:07,359
+A functioning city needs
+more than breathable air and
+
+179
+00:12:07,359 --> 00:12:11,359
+artificial gravity. It needs laws, schools,
+
+180
+00:12:12,079 --> 00:12:16,399
+healthcare, trust,
+culture, and the right to
+
+181
+00:12:16,399 --> 00:12:18,059
+disagree about how it is run.
+
+182
+00:12:21,819 --> 00:12:24,499
+Building a settlement is
+not just building hardware.
+
+183
+00:12:24,499 --> 00:12:28,759
+It is building a society.
+
+184
+00:12:31,238 --> 00:12:33,918
+Could humanity really
+build a city in space?
+
+185
+00:12:35,438 --> 00:12:38,578
+There is nothing in the laws
+of physics that rules out a
+
+186
+00:12:38,578 --> 00:12:42,998
+rotating habitat. A spinning
+structure can create gravity-like
+
+187
+00:12:42,998 --> 00:12:44,658
+acceleration for its residents.
+
+188
+00:12:45,618 --> 00:12:46,958
+Water can be recycled.
+
+189
+00:12:48,098 --> 00:12:50,598
+Plants can grow in controlled environments.
+
+190
+00:12:52,018 --> 00:12:54,998
+And robotic construction is
+already an active field of
+
+191
+00:12:54,998 --> 00:12:59,578
+research. But demonstrating
+a component is not the same
+
+192
+00:12:59,578 --> 00:13:03,658
+as delivering a safe, affordable
+settlement for thousands of
+
+193
+00:13:03,658 --> 00:13:07,818
+people. We would need reliable
+construction at enormous
+
+194
+00:13:07,818 --> 00:13:12,318
+scale, practical radiation
+protection, long-duration medical
+
+195
+00:13:12,318 --> 00:13:16,278
+evidence, industrial supply
+chains, and economic reasons to
+
+196
+00:13:16,278 --> 00:13:20,758
+sustain the place. There
+are also questions nobody
+
+197
+00:13:20,758 --> 00:13:22,758
+can answer with a beautiful rendering.
+
+198
+00:13:23,418 --> 00:13:24,878
+Who owns the structure?
+
+199
+00:13:25,798 --> 00:13:27,218
+Who pays for an emergency?
+
+200
+00:13:28,418 --> 00:13:29,538
+Who gets to live there?
+
+201
+00:13:30,218 --> 00:13:32,638
+And who decides what happens
+when something breaks?
+
+202
+00:13:34,158 --> 00:13:38,698
+Perhaps our first true space
+city would look nothing like
+
+203
+00:13:38,698 --> 00:13:41,238
+the grand paintings of the 1970s.
+
+204
+00:13:42,238 --> 00:13:45,718
+Perhaps it would begin with
+a handful of modules and grow
+
+205
+00:13:45,718 --> 00:13:50,258
+slowly over generations.
+But imagine the first
+
+206
+00:13:50,258 --> 00:13:54,338
+child born there, looking
+upward at a curved sky,
+
+207
+00:13:54,338 --> 00:13:58,118
+full of other people's homes,
+and knowing that the entire
+
+208
+00:13:58,118 --> 00:14:00,318
+neighbourhood was made by human hands.
+
+209
+00:14:01,478 --> 00:14:05,218
+The first city in space would
+not be an escape from Earth.
+
+210
+00:14:06,538 --> 00:14:09,678
+It would be proof that the
+idea of home can travel.
+
