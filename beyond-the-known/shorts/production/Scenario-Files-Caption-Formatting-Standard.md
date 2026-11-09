@@ -29,3 +29,16 @@ SF004: remote temporary creative production sandbox `/home/user/qnova_shorts/sf0
 SF005: `/home/user/qnova_shorts/sf005/qa/build_clean_ass_captions.py`; 24 timed cues, 36 seconds, no `\\N` hard breaks. Final QA `beyond-the-known/shorts/scenario-files/sf005/SF005_Final_QA_and_Release_2026-11-09.md`.
 
 For SF006 onward use this standard and preferably a generalised version of SF005's proven no-forced-break caption writer.
+
+
+## Platform-specific audience call to action (owner instruction, 9 November 2026)
+
+Owner expressly wants viewers asked to subscribe on YouTube and like/follow on Facebook, without interrupting science or documentary storytelling. **Implement on ALL FUTURE QNova originals**:
+
+- Every YouTube Short uses a 2–3 second branded outro/overlay: **SUBSCRIBE FOR MORE** and **BEYOND THE KNOWN**; YouTube long videos use a 3–5 second outro: **SUBSCRIBE TO BEYOND THE KNOWN**. Keep normal production audio/visual continuity, avoid mid-narration interruptions, encourage by relevant intrigue rather than generic begging.
+- Every Facebook Reel uses **LIKE & FOLLOW FOR MORE** with **BEYOND THE KNOWN**; Facebook long video: **LIKE & FOLLOW BEYOND THE KNOWN**. These messages are CTA variants of the SAME source video and soundtrack, requiring no additional generated footage or duplicated image/video API calls.
+- Deliver **two distinct fully rendered video files per episode** for correct platform CTA rather than two platforms displaying inappropriate instructions; allow posting descriptions to also encourage relevant channel action.
+- Use legible center-safely positioned text, mindful of YouTube Shorts and Facebook Reels UI overlays; no obstructing primary subject or key final narration line. 2–3 seconds is enough for Shorts. Long form may include gentle short spoken CTA only if it doesn't bloat running time.
+- Avoid platform logos and any misleading 'Subscribe' buttons without real buttons. Do not put literal slash/backslash/hardline \\N in captions. Use dedicated separate ASS End events and per-platform still graphics if needed.
+- When preparing and confirming Metricool uploads, verify **the appropriate platform-specific video file URL** is attached (not just the same generic master). Check complete video playback QA for BOTH master variants. If existing video is already published or scheduled, don't replace blindly; apply to future videos from SF010, SF011 and EP007 onwards.
+- Keep the real story and mystery compelling; CTA is a quiet final beat, not a mid-video interruption or long outro that hurts retention.
