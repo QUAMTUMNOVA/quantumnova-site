@@ -1,7 +1,7 @@
 import {getStore} from '@netlify/blobs';
 import {createHash,timingSafeEqual} from 'node:crypto';
 import {SHOTS} from '../../shorts/scenario-files/sf005/SF005-shot-queue-data.mjs';
-// Temporary bearer-authenticated exact original clip export. DELETE after complete verified transfer.
+// Temporary bearer-authenticated exact original clip export. DELETE after complete verified transfer.\n// Required only for eight already-archived SF005 clips; no new generation.
 const HASH='5cad6db891b14bb9176f473af7f15f67837e60c58d243fbf3df5c270d95aa209';
 const CHUNK=2000000, valid=new Set(SHOTS.map(x=>x.id));
 const headers={'Cache-Control':'private,no-store,max-age=0','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex,nofollow','X-Content-Type-Options':'nosniff'};
