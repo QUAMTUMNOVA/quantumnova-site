@@ -1,0 +1,928 @@
+1
+00:00:00,110 --> 00:00:01,350
+The year is AD
+
+2
+00:00:01,350 --> 00:00:05,390
+110. You are standing on a street in
+
+3
+00:00:05,390 --> 00:00:08,990
+Rome, capital of an empire stretching across the
+
+4
+00:00:08,990 --> 00:00:12,730
+Mediterranean. Beyond the rooftops stands the
+
+5
+00:00:12,730 --> 00:00:16,230
+Colosseum. Aqueducts carry water for
+
+6
+00:00:16,230 --> 00:00:20,450
+miles. Temples, markets, workshops, and crowded
+
+7
+00:00:20,450 --> 00:00:22,510
+apartment blocks fill the
+
+8
+00:00:22,510 --> 00:00:24,770
+city. And you have a
+
+9
+00:00:24,770 --> 00:00:27,650
+problem. You have no money anyone
+
+10
+00:00:27,650 --> 00:00:33,270
+recognizes. No home, no family, nobody to vouch
+
+11
+00:00:33,270 --> 00:00:37,070
+for you. Even if you studied Latin, the
+
+12
+00:00:37,070 --> 00:00:40,290
+voices around you move quickly and many people
+
+13
+00:00:40,290 --> 00:00:44,570
+speak other languages. At first, Rome looks
+
+14
+00:00:44,570 --> 00:00:48,990
+strangely familiar. There are bakeries, traffic,
+
+15
+00:00:50,030 --> 00:00:52,510
+rented rooms, and food sold across
+
+16
+00:00:52,510 --> 00:00:55,790
+counters. But none of the systems you rely
+
+17
+00:00:55,790 --> 00:01:01,570
+on exists here. No telephone, no modern hospital,
+
+18
+00:01:02,530 --> 00:01:07,450
+no card payment, no official identification that
+
+19
+00:01:07,450 --> 00:01:08,330
+makes sense to
+
+20
+00:01:08,330 --> 00:01:11,790
+anyone. You know more about the future than
+
+21
+00:01:11,790 --> 00:01:16,390
+anyone alive. Yet that knowledge will not buy
+
+22
+00:01:16,390 --> 00:01:17,150
+you a loaf of
+
+23
+00:01:17,150 --> 00:01:20,070
+bread. Your first challenge is
+
+24
+00:01:20,070 --> 00:01:22,430
+simple. Survive until
+
+25
+00:01:22,430 --> 00:01:23,050
+nightfall.
+
+26
+00:01:25,480 --> 00:01:27,460
+The heat rises from the paving
+
+27
+00:01:27,460 --> 00:01:31,480
+stones. Smoke from ovens mixes with animal smells
+
+28
+00:01:31,480 --> 00:01:32,840
+and the noise of
+
+29
+00:01:32,840 --> 00:01:37,790
+carts. Before you can work out where you
+
+30
+00:01:37,790 --> 00:01:39,430
+are going, you need
+
+31
+00:01:39,430 --> 00:01:44,960
+water. Rome's aqueducts are an engineering
+
+32
+00:01:44,960 --> 00:01:48,660
+triumph. Gravity carries water from distant
+
+33
+00:01:48,660 --> 00:01:50,120
+sources into the
+
+34
+00:01:50,120 --> 00:01:53,360
+city. Public fountains put some of it within
+
+35
+00:01:53,360 --> 00:01:54,280
+reach of ordinary
+
+36
+00:01:54,280 --> 00:01:57,640
+residents. You may be able to drink without
+
+37
+00:01:57,640 --> 00:02:03,470
+paying. But this is not a modern treatment
+
+38
+00:02:03,470 --> 00:02:07,650
+network. Roman engineers understand water flow,
+
+39
+00:02:08,330 --> 00:02:13,910
+not bacteria. Sewage and waste exist alongside the
+
+40
+00:02:13,910 --> 00:02:18,570
+city's impressive infrastructure. Water quality
+
+41
+00:02:18,570 --> 00:02:21,530
+varies, and a fountain is not a guarantee
+
+42
+00:02:21,530 --> 00:02:25,230
+against illness. Then comes
+
+43
+00:02:25,230 --> 00:02:31,290
+hunger. Bread, olives, cheese, fruit and cooked
+
+44
+00:02:31,290 --> 00:02:33,750
+food are available in markets and street
+
+45
+00:02:33,750 --> 00:02:38,130
+shops. You recognize the ingredients, but you
+
+46
+00:02:38,130 --> 00:02:39,530
+cannot recognize the
+
+47
+00:02:39,530 --> 00:02:42,690
+prices. Your bank notes mean
+
+48
+00:02:42,690 --> 00:02:46,770
+nothing. Your phone has no network, and your
+
+49
+00:02:46,770 --> 00:02:49,250
+bank balance might as well be on another
+
+50
+00:02:49,250 --> 00:02:51,510
+planet. Food is
+
+51
+00:02:51,510 --> 00:02:55,070
+everywhere. Food you can actually obtain is
+
+52
+00:02:55,070 --> 00:02:55,730
+another matter.
+
+53
+00:02:58,412 --> 00:03:02,012
+As daylight fades, you notice the buildings above
+
+54
+00:03:02,012 --> 00:03:05,592
+you. Wealthy households live behind courtyard
+
+55
+00:03:05,592 --> 00:03:09,892
+entrances. Many others rent rooms in multi-story
+
+56
+00:03:09,892 --> 00:03:13,732
+blocks, where space can be cramped, and cooking
+
+57
+00:03:13,732 --> 00:03:15,472
+fires and oil lamps create
+
+58
+00:03:15,472 --> 00:03:19,132
+risks. Rome has experienced catastrophic
+
+59
+00:03:19,132 --> 00:03:23,712
+fires. After the great fire of AD-64,
+
+60
+00:03:24,312 --> 00:03:28,092
+the authorities introduced precautions, but
+
+61
+00:03:28,092 --> 00:03:29,592
+crowded buildings remain
+
+62
+00:03:29,592 --> 00:03:34,712
+vulnerable. The streets sound different after
+
+63
+00:03:34,712 --> 00:03:38,972
+dark. Shops close. People retreat
+
+64
+00:03:38,972 --> 00:03:44,332
+indoors. Wagons, restricted in some busy daytime
+
+65
+00:03:44,332 --> 00:03:46,992
+streets, rumble through the
+
+66
+00:03:46,992 --> 00:03:51,932
+night. You hear wheels, animals, and voices
+
+67
+00:03:51,932 --> 00:03:55,232
+echoing between walls. You could look for a
+
+68
+00:03:55,232 --> 00:03:58,152
+cheap room, if someone will accept you without
+
+69
+00:03:58,152 --> 00:04:01,572
+money. You could try a sheltered
+
+70
+00:04:01,572 --> 00:04:06,072
+doorway. Neither offers the security of a
+
+71
+00:04:06,072 --> 00:04:10,672
+home. And being exhausted in an unfamiliar city
+
+72
+00:04:10,672 --> 00:04:12,352
+makes every decision
+
+73
+00:04:12,352 --> 00:04:16,242
+harder. Less than a day has
+
+74
+00:04:16,242 --> 00:04:20,622
+passed. You are learning something no monument can
+
+75
+00:04:20,622 --> 00:04:24,862
+teach. Surviving here depends on people who know
+
+76
+00:04:24,862 --> 00:04:27,242
+you. And you know
+
+77
+00:04:27,242 --> 00:04:27,762
+nobody.
+
+78
+00:04:30,384 --> 00:04:33,044
+The Rome of Marble Statues is also a
+
+79
+00:04:33,044 --> 00:04:34,204
+city of exhausting
+
+80
+00:04:34,204 --> 00:04:36,464
+work. Bakers rise
+
+81
+00:04:36,464 --> 00:04:38,864
+early. Porters unload
+
+82
+00:04:38,864 --> 00:04:44,224
+sacks. Builders, traders, artisans, cleaners, and
+
+83
+00:04:44,224 --> 00:04:45,604
+sailors keep the capital
+
+84
+00:04:45,604 --> 00:04:49,784
+running. Some workers are free, others are
+
+85
+00:04:49,784 --> 00:04:53,244
+enslaved, and labor without freedom to choose
+
+86
+00:04:53,244 --> 00:04:56,764
+their lives. You approach someone unloading
+
+87
+00:04:56,764 --> 00:05:00,464
+goods. Perhaps you could carry baskets or sweep
+
+88
+00:05:00,464 --> 00:05:02,004
+a shop in exchange for
+
+89
+00:05:02,004 --> 00:05:04,004
+bread. You have the
+
+90
+00:05:04,004 --> 00:05:07,704
+strength. But why should a stranger trust you
+
+91
+00:05:07,704 --> 00:05:10,364
+with their stock? Who can recommend
+
+92
+00:05:10,364 --> 00:05:12,744
+you? What happens if something goes
+
+93
+00:05:12,744 --> 00:05:16,604
+missing? You might find an employer willing to
+
+94
+00:05:16,604 --> 00:05:18,644
+take a chance. You might
+
+95
+00:05:18,644 --> 00:05:20,304
+not. You might
+
+96
+00:05:20,304 --> 00:05:21,904
+not. You might
+
+97
+00:05:21,904 --> 00:05:26,224
+not. The city's grain distributions are not a
+
+98
+00:05:26,224 --> 00:05:28,064
+universal emergency food
+
+99
+00:05:28,064 --> 00:05:32,624
+service. Access depends on eligibility and
+
+100
+00:05:32,624 --> 00:05:37,704
+status. Even receiving grain does not mean someone
+
+101
+00:05:37,704 --> 00:05:38,584
+cooks it for
+
+102
+00:05:38,584 --> 00:05:42,784
+you. For an ordinary Roman, local relationships
+
+103
+00:05:42,784 --> 00:05:44,564
+can turn effort into a
+
+104
+00:05:44,564 --> 00:05:47,964
+living. For you, the absence of those
+
+105
+00:05:47,964 --> 00:05:51,524
+relationships can turn one missed meal into
+
+106
+00:05:51,524 --> 00:05:52,084
+another.
+
+107
+00:05:55,330 --> 00:05:57,170
+And by the third day, the city begins
+
+108
+00:05:57,170 --> 00:05:59,870
+to make sense. You recognize a
+
+109
+00:05:59,870 --> 00:06:02,750
+fountain. You follow the smell of fresh
+
+110
+00:06:02,750 --> 00:06:05,410
+bread. Then you enter a public
+
+111
+00:06:05,410 --> 00:06:09,670
+bath. There are changing areas, heated rooms, and
+
+112
+00:06:09,670 --> 00:06:13,750
+pools. Beneath some floors, hot air circulates
+
+113
+00:06:13,750 --> 00:06:17,390
+through brick supports. Baths are places for
+
+114
+00:06:17,390 --> 00:06:20,130
+washing, exercise, conversation, and
+
+115
+00:06:20,130 --> 00:06:23,210
+business. Some are affordable for ordinary
+
+116
+00:06:23,210 --> 00:06:26,070
+residents. This is not a primitive
+
+117
+00:06:26,070 --> 00:06:29,390
+society. But impressive engineering is not the
+
+118
+00:06:29,390 --> 00:06:30,350
+same as modern health
+
+119
+00:06:30,350 --> 00:06:34,090
+care. Shared surfaces, waste channels, and crowded
+
+120
+00:06:34,090 --> 00:06:36,850
+facilities exist without an understanding of
+
+121
+00:06:36,850 --> 00:06:41,250
+microbes. Roman sanitation is real, but so are
+
+122
+00:06:41,250 --> 00:06:44,670
+parasites and infection. Doctors have practical
+
+123
+00:06:44,670 --> 00:06:47,590
+knowledge and instruments. They can dress wounds
+
+124
+00:06:47,590 --> 00:06:48,450
+and treat some
+
+125
+00:06:48,450 --> 00:06:50,550
+conditions. Yet they have no
+
+126
+00:06:50,550 --> 00:06:54,450
+antibiotics. A small injury that becomes infected
+
+127
+00:06:54,450 --> 00:06:57,070
+can threaten your ability to work, and therefore
+
+128
+00:06:57,070 --> 00:06:58,030
+your ability to
+
+129
+00:06:58,030 --> 00:07:00,830
+eat. The bathhouse reveals Rome's
+
+130
+00:07:00,830 --> 00:07:04,090
+contradiction. Extraordinary public technology
+
+131
+00:07:04,090 --> 00:07:06,790
+alongside vulnerabilities that modern life makes
+
+132
+00:07:06,790 --> 00:07:07,550
+easy to forget.
+
+133
+00:07:09,742 --> 00:07:12,502
+On the fourth day, you notice a different
+
+134
+00:07:12,502 --> 00:07:13,322
+kind of danger,
+
+135
+00:07:13,862 --> 00:07:19,042
+status. Rome is full of citizens, freed people,
+
+136
+00:07:19,322 --> 00:07:21,742
+migrants, visitors, and enslaved
+
+137
+00:07:21,742 --> 00:07:26,562
+people. Wealth, sex, family connections, and legal
+
+138
+00:07:26,562 --> 00:07:30,042
+position shape what someone can own, where they
+
+139
+00:07:30,042 --> 00:07:32,202
+can work, and how disputes are
+
+140
+00:07:32,202 --> 00:07:36,022
+handled. Latin is common, but you may also
+
+141
+00:07:36,022 --> 00:07:38,962
+hear Greek and other languages from across the
+
+142
+00:07:38,962 --> 00:07:42,722
+empire. You cannot simply assume everyone is equal
+
+143
+00:07:42,722 --> 00:07:46,102
+before the law, nor does being an unknown
+
+144
+00:07:46,102 --> 00:07:50,042
+stranger mean someone can automatically enslave
+
+145
+00:07:50,042 --> 00:07:53,682
+you. The rules are more complicated than either
+
+146
+00:07:53,682 --> 00:07:58,762
+story. A patron, household, or employer could give
+
+147
+00:07:58,762 --> 00:08:01,122
+you an introduction and a place in the
+
+148
+00:08:01,122 --> 00:08:04,822
+city's social networks. Without one, even
+
+149
+00:08:04,822 --> 00:08:06,582
+explaining who you are becomes
+
+150
+00:08:06,582 --> 00:08:10,782
+difficult. You came from a world where identity
+
+151
+00:08:10,782 --> 00:08:11,902
+can be checked in
+
+152
+00:08:11,902 --> 00:08:16,322
+seconds. Here, a trusted person's word may matter
+
+153
+00:08:16,322 --> 00:08:18,362
+more than anything you can say about
+
+154
+00:08:18,362 --> 00:08:18,762
+yourself.
+
+155
+00:08:21,069 --> 00:08:23,669
+You wake with a headache, maybe it is
+
+156
+00:08:23,669 --> 00:08:24,829
+heat, hunger, or
+
+157
+00:08:24,829 --> 00:08:28,269
+exhaustion. Maybe the food or water disagreed with
+
+158
+00:08:28,269 --> 00:08:29,429
+you. You cannot
+
+159
+00:08:29,429 --> 00:08:33,949
+know. Rome has physicians and medical traditions
+
+160
+00:08:33,949 --> 00:08:35,949
+shaped by Greek and Roman
+
+161
+00:08:35,949 --> 00:08:37,929
+learning. Some treatments
+
+162
+00:08:37,929 --> 00:08:41,909
+help. But without modern diagnostics, antibiotics,
+
+163
+00:08:42,749 --> 00:08:46,189
+or reliable rehydration treatment, an infection or
+
+164
+00:08:46,189 --> 00:08:48,749
+severe stomach illness can become much more
+
+165
+00:08:48,749 --> 00:08:52,589
+dangerous. Do not misunderstand ancient life
+
+166
+00:08:52,589 --> 00:08:57,849
+expectancy. High infant and childhood mortality
+
+167
+00:08:57,849 --> 00:09:02,349
+lowered the average. It does not mean that
+
+168
+00:09:02,349 --> 00:09:03,869
+every Roman adult died
+
+169
+00:09:03,869 --> 00:09:06,589
+young. Many survived for
+
+170
+00:09:06,589 --> 00:09:10,829
+decades. And you might survive this illness
+
+171
+00:09:10,829 --> 00:09:14,849
+too. But a swollen foot can stop you
+
+172
+00:09:14,849 --> 00:09:19,589
+carrying loads. Missing work can mean missing
+
+173
+00:09:19,589 --> 00:09:24,389
+food. Severe dehydration can make the walk to
+
+174
+00:09:24,389 --> 00:09:25,309
+a fountain feel
+
+175
+00:09:25,309 --> 00:09:30,949
+impossible. The threat is not necessarily a
+
+176
+00:09:30,949 --> 00:09:33,009
+gladiator, an emperor, or a
+
+177
+00:09:33,009 --> 00:09:37,389
+soldier. Sometimes it is a small medical problem
+
+178
+00:09:37,389 --> 00:09:40,669
+arriving when you have no money, no shelter,
+
+179
+00:09:41,309 --> 00:09:42,229
+and nobody to
+
+180
+00:09:42,229 --> 00:09:42,489
+help.
+
+181
+00:09:48,776 --> 00:09:50,956
+You stand near a monumental public
+
+182
+00:09:50,956 --> 00:09:53,536
+building. The crowd moves around
+
+183
+00:09:53,536 --> 00:09:57,296
+you. People arguing, selling, delivering, and
+
+184
+00:09:57,296 --> 00:10:00,416
+hurrying to work. This is the Rome remembered
+
+185
+00:10:00,416 --> 00:10:03,176
+in films, but it survives because of people
+
+186
+00:10:03,176 --> 00:10:04,536
+who rarely appear in those
+
+187
+00:10:04,536 --> 00:10:07,376
+films. Grain arrives by ship and
+
+188
+00:10:07,376 --> 00:10:09,116
+cart. Bakers know
+
+189
+00:10:09,116 --> 00:10:11,276
+suppliers. Porters know
+
+190
+00:10:11,276 --> 00:10:13,216
+employers. Traders know
+
+191
+00:10:13,216 --> 00:10:15,936
+customers. Neighbors know which rooms are
+
+192
+00:10:15,936 --> 00:10:18,936
+available. Families and communities share
+
+193
+00:10:18,936 --> 00:10:20,556
+knowledge, labor, and
+
+194
+00:10:20,556 --> 00:10:24,596
+support. These connections do not erase poverty or
+
+195
+00:10:24,596 --> 00:10:27,716
+exploitation. Some residents have comfortable
+
+196
+00:10:27,716 --> 00:10:31,476
+lives. Others survive with almost no margin for
+
+197
+00:10:31,476 --> 00:10:34,616
+bad luck. But the difference between you and
+
+198
+00:10:34,616 --> 00:10:38,536
+an ordinary worker is not simply physical strength
+
+199
+00:10:38,536 --> 00:10:42,476
+or intelligence. They know how this city works,
+
+200
+00:10:42,556 --> 00:10:44,476
+because they belong to
+
+201
+00:10:44,476 --> 00:10:48,216
+it. You brought modern knowledge with
+
+202
+00:10:48,216 --> 00:10:51,156
+you. You did not bring the relationships that
+
+203
+00:10:51,156 --> 00:10:54,856
+turn knowledge into food, shelter, and a
+
+204
+00:10:54,856 --> 00:10:55,236
+livelihood.
+
+205
+00:10:59,585 --> 00:11:00,925
+A week has
+
+206
+00:11:00,925 --> 00:11:04,765
+passed. The morning sun touches Rome's
+
+207
+00:11:04,765 --> 00:11:07,645
+rooftops. Water runs into a
+
+208
+00:11:07,645 --> 00:11:10,085
+fountain. A baker opens a
+
+209
+00:11:10,085 --> 00:11:12,325
+shop. A family prepares
+
+210
+00:11:12,325 --> 00:11:15,285
+breakfast. The city carries
+
+211
+00:11:15,285 --> 00:11:19,125
+on. And perhaps you are still
+
+212
+00:11:19,125 --> 00:11:24,745
+alive. That matters. It would be wrong to
+
+213
+00:11:24,745 --> 00:11:28,425
+claim that every modern visitor must die within
+
+214
+00:11:28,425 --> 00:11:33,365
+seven days. A healthy person who finds clean
+
+215
+00:11:33,365 --> 00:11:38,105
+enough water, food, shelter, and help could
+
+216
+00:11:38,105 --> 00:11:42,185
+survive much longer. But your smartphone is
+
+217
+00:11:42,185 --> 00:11:45,585
+useless. Your savings do not exist
+
+218
+00:11:45,585 --> 00:11:48,645
+here. Modern medicine cannot follow
+
+219
+00:11:48,645 --> 00:11:51,585
+you. You cannot assume that somebody will
+
+220
+00:11:51,585 --> 00:11:54,625
+recognize your identity or offer emergency
+
+221
+00:11:54,625 --> 00:11:58,225
+assistance. The Romans were not foolish people
+
+222
+00:11:58,225 --> 00:11:59,885
+waiting to be rescued by the
+
+223
+00:11:59,885 --> 00:12:04,125
+future. They built an extraordinary city and they
+
+224
+00:12:04,125 --> 00:12:05,525
+learned to live within
+
+225
+00:12:05,525 --> 00:12:08,625
+it. You are the one without the skills,
+
+226
+00:12:09,225 --> 00:12:13,325
+trusted contacts, or recognized place in
+
+227
+00:12:13,325 --> 00:12:16,825
+society. If you survive the week, it may
+
+228
+00:12:16,825 --> 00:12:18,825
+not be because you were stronger than the
+
+229
+00:12:18,825 --> 00:12:23,145
+Romans. It may be because someone showed you
+
+230
+00:12:23,145 --> 00:12:26,485
+how to belong. So if you woke up
+
+231
+00:12:26,485 --> 00:12:29,285
+in Rome tomorrow, who would help
+
+232
+00:12:29,285 --> 00:12:29,585
+you?
+
