@@ -3,7 +3,7 @@ import {createHash,timingSafeEqual} from 'node:crypto';
 import {SHOTS} from '../../episodes/ep007/EP007-shot-queue-data.mjs';
 // TEMPORARY bearer-authenticated private source transfer for finished 60-shot EP007.
 // Remove this function immediately after verified editor transfer.
-const HASH='cf943fd1b860441ba6b33483220532ab08604b59f9e0458fdc052c6bcece12dc';
+const HASH='20740390c0cb56b2b7e8840e21da1cbebf98a586fe04fefabfcfe6c1ce59db0e';
 const CHUNK=2000000, valid=new Set(SHOTS.map(x=>x.id));
 const headers={'Cache-Control':'private,no-store,max-age=0','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex,nofollow','X-Content-Type-Options':'nosniff'};
 export default async function(request){
