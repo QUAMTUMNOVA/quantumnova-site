@@ -5,7 +5,7 @@ import {SHOTS} from '../../episodes/ep007/EP007-shot-queue-data.mjs';
 // directly FROM Netlify private Blobs TO a temporary Higgsfield API media upload.
 // No source bytes, API key or signed upload URL are returned to the browser.
 // Controlled pilot: first one shot only, full copy after pilot validation.
-const target=SHOTS.slice(0,1);
+const target=SHOTS;
 const SHOT_STORE='btk-ep007-videos',TRANSFER='btk-ep007-handoff';
 async function processOne(shot){
   const dest=getStore(TRANSFER);
@@ -37,16 +37,40 @@ async function processOne(shot){
 }
 export default {
  async deploySucceeded(){
-   const state=getStore(TRANSFER), id=target[0].id;
-   try {const result=await processOne(target[0]);await state.setJSON('pilot',{status:'success',shot:id,size_bytes:result.size_bytes,checked_at:new Date().toISOString()});}
-   catch(e){await state.setJSON('pilot',{status:'failed',shot:id,error:String(e?.message||e).slice(0,200),checked_at:new Date().toISOString()});}
+   const state=getStore(TRANSFER);
+   const already=await state.get('full_done',{type:'json'});
+   if(already?.status==='complete')return;
+   const counts={checked:0,uploaded:0,failed:0,first_errors:[],started_at:new Date().toISOString()};
+   for(let i=0;i<target.length;i+=4){
+     const batch=target.slice(i,i+4);
+     const rows=await Promise.allSettled(batch.map(s=>processOne(s)));
+     for(let j=0;j<rows.length;j++){
+       counts.checked++;
+       if(rows[j].status==='fulfilled')counts.uploaded++;
+       else {counts.failed++;if(counts.first_errors.length<8)counts.first_errors.push({id:batch[j].id,error:String(rows[j].reason?.message||rows[j].reason).slice(0,180)});}
+     }
+     await state.setJSON('full_progress',{...counts,updated_at:new Date().toISOString()});
+   }
+   const done={...counts,status:counts.failed===0&&counts.uploaded===target.length?'complete':'partial',finished_at:new Date().toISOString()};
+   await state.setJSON('full_done',done);
  },
  async fetch(req){
    if(req.method!=='GET')return new Response('Method not allowed',{status:405});
    const state=getStore(TRANSFER);
-   const pilot=await state.get('pilot',{type:'json'});
-   const one=await state.get('transfer/'+target[0].id,{type:'json'});
-   return Response.json({episode:'EP007',pilot:pilot??{status:'waiting'},one:one?{status:one.status,id:one.id,public_url:one.public_url,size_bytes:one.size_bytes}:null},
-    {headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex,nofollow'}});
+   const progress=await state.get('full_progress',{type:'json'});
+   const done=await state.get('full_done',{type:'json'});
+   const rows=await Promise.all(target.map(s=>state.get('transfer/'+s.id,{type:'json'})));
+   return Response.json({
+     episode:'EP007',
+     target:target.length,
+     transferred:rows.filter(x=>x?.status==='uploaded'&&x?.public_url).length,
+     progress:progress??null,
+     done:done??null,
+     assets:target.map((s,i)=>({
+       id:s.id,chapter:s.chapter,status:rows[i]?.status||'waiting',
+       public_url:rows[i]?.status==='uploaded'?rows[i]?.public_url:null,
+       size_bytes:rows[i]?.size_bytes??null
+     }))
+   },{headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex,nofollow','Referrer-Policy':'no-referrer'}});
  }
 };
