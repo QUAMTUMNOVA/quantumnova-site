@@ -1,0 +1,7 @@
+# Episode 002 — Run 10 verified narration gate (9 November 2026)
+
+Higgsfield Seed Audio job `611dfe55-596f-4779-a87c-3e8352420b46` (Chapter 1) is completed; previously verified 83.3 seconds. Job `130e5c98-075e-4bfd-b773-d7a43195a110` (Chapter 2) is now also **completed**, confirmed from live job status. Chapter 2 duration and audible quality remain unverified because the provider CDN cannot be resolved from the working runtime. Chapters 3–9 are not submitted.
+
+The nine-chapter narration is 1,370 words. At Chapter 1's measured ~108 words/minute, full narration extrapolates to ~761 seconds plus 16 seconds of chapter transitions, approximately 12:57, outside the 11–12-minute target. Reaching 12:00 including 16 seconds of transitions requires >=116.8 wpm, and 11:30 requires >=122.0 wpm. Chapter 2 used speech_rate -5 versus Chapter 1's 0; actual duration must be measured before more narration generation.
+
+The 138-shot <=5-second manifest is **not** an audio-locked final timeline. Obtain and QA both audio outputs, then revise pacing/script and shot allocations against actual audio. No credits spent in this run; no footage generated; no upload or publication; Episode 001 untouched; Channel 2 deferred.
