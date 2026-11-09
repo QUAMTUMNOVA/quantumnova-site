@@ -1,0 +1,10 @@
+# Scenario Files #003 — What Happens If You Open a Fizzy Drink in Space?
+
+Original 9:16 short, about 35 seconds. Cinematic physics thought experiment set inside pressurised spacecraft habitat (NEVER vacuum). Unbranded silver soda can, carbonation bubbles coalescing in microgravity, floating fluid spheres, space dispenser and astronaut wet-burp punchline without gross-out or inaccuracies. Important: original carbonated drinks on Space Shuttle were tried in the 1980s; special cans and no violent exploding soda. Without buoyancy gas bubbles do not rise out of beverage; gas/liquid can stay together. The natural carbonation can dispense foam and droplets. Show ordinary cabin environmental physics; avoid implying soda literally couldn't exist.
+
+Draft original Fraser voiceover:
+What happens when you open a fizzy drink in space? Inside a spacecraft, the can doesn't simply explode. Carbon dioxide still comes out of the liquid, but without normal gravity, the bubbles don't rise to the top. Instead, foam and floating blobs can form around the drink. Astronauts even tested special soda dispensers. The really strange part? Gas can stay mixed with what you swallow, making burping a much messier experience. Space soda is real science. Scenario Files. Beyond the Known.
+
+Primary evidence NASA: https://www.nasa.gov/space-science-and-astrobiology-at-ames/interesting-fact-of-the-month-current/interesting-fact-of-the-month-2022/ ; JAXA https://humans-in-space.jaxa.jp/faq/detail/000711.html ; Smithsonian 1985 space cola experiment https://airandspace.si.edu/air-and-space-quarterly/issue-16/coke_vs_pepsi_cola_wars ; https://www.si.edu/object/coca-cola-can-sts-51-f%3Anasm_A19850814000 .
+
+A new short for Beyond the Known's distinct original Scenario Files backlog. User broadly requested more Shorts created and scheduled after SF002; suggested Thursday 12 November 2026 noon AEDT subject to complete QA and duplicate check. Do not publish until video is complete. Public-domain physics information, wholly original AI footage and soundtrack, no logos/trademarked product names.
