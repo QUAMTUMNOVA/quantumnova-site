@@ -1,30 +1,30 @@
-# Beyond the Known — Production slate (draft, 2026-11-09)
+# Beyond the Known — Current production slate, revised 9 November 2026
 
-## Release status and approval gate
-- **EP001:** What If Every Human Disappeared Tomorrow? — user reports **Public** on 2026-11-09. Do not change.
-- **EP002:** You Wouldn't Survive a Week in Ancient Rome — Rome circa AD 110 under Trajan. Script draft and 99-shot unique visual storyboard exist; **not rendered or uploaded**. Narration draft is 1,776 spoken words (the source Markdown file has about 2,085 words including non-narration notes) and must be tightened for the previously approved 125–140 words/minute pace (11–12 min ≈ 1,375–1,680 words, excluding pauses).
-- **EP003 (proposed):** What If the Moon Disappeared Tonight? — tidal changes, night sky, ecology, long-term axial stability. Separate immediate effects from long-term possibilities; avoid exaggerated instant disasters.
-- **EP004 (proposed):** The Last Day of Pompeii — AD 79, eruption sequence, archaeological evidence and uncertainty; original Roman reconstruction distinct from EP002.
-- **EP005 (proposed):** What If Earth Stopped Rotating? — carefully specify a *gradual* slowdown scenario; a sudden stop is physically catastrophic and must be treated separately.
+**This document supersedes the earlier proposed slate.** The previous Pompeii/vanishing Moon slots are postponed, not cancelled. We intentionally alternate subject pillars to avoid repetition of doomsday/ancient/doomsday.
 
-These titles for EP003–005 are proposed, not previously user-approved.
+| Episode | Topic | Category | State | YouTube Australia/Sydney | Facebook Australia/Sydney |
+|---|---|---|---|---|---|
+| EP001 | What If Every Human Disappeared Tomorrow? | Speculative science | YouTube **PUBLISHED**; Facebook **PENDING** | 9 Nov 2026 01:55 (live) | 10 Nov 2026 19:00 |
+| EP002 | You Wouldn't Survive a Week in Ancient Rome | Historical immersion | Full master complete; both platforms auto-scheduled | 11 Nov 2026 16:00 | 17 Nov 2026 12:00 |
+| EP003 | What If Earth Suddenly Stopped Spinning? | High-energy physical catastrophe | Full master complete; both platforms auto-scheduled | 13 Nov 2026 16:00 | 24 Nov 2026 12:00 |
+| **EP004** | **The First City in Space — Could Humanity Actually Build One?** | **Optimistic futuristic science and engineering** | **User approved production; 174 original shots actively generating; private full-film review required before publishing** | Not booked | Not booked |
+| EP005 | Not yet selected, deliberately a DIFFERENT category | To be determined | Do not produce until selected | Not booked | Not booked |
 
-## Production standard
-- 16:9, 11–12 minutes, 9–10 chapters, original non-repeating visuals, restrained original score, consistent neutral English narrator, captions aligned to **actual final audio**.
-- No stock padding or duplicate shots. All historical/scientific claims reviewed against primary or reputable scholarly sources. Distinguish reconstructions, inference, and speculation.
-- Private full-length review first. Public/scheduled publication **only after explicit user approval for each episode**.
+## Short-form — Scenario Files
 
-## Proposed release cadence, not yet scheduled
-- Two releases weekly, Tuesday and Friday at **19:00 Australia/Sydney** (illustrative only; actual analytics may inform timing).
-- No scheduled public visibility change until creator review.
-- Channel 2 only after EP001–EP005 are produced and queued.
+| Short | Concept | State | YouTube Shorts | Facebook Reels |
+|---|---|---|---|---|
+| SF001 | What Happens If You Fire a Bullet Into a Hurricane? | **PUBLISHED on both**, original 32-second vertical documentary | 9 Nov 17:05 live https://www.youtube.com/shorts/xVG9xhLAYiQ | 9 Nov 17:10 live https://facebook.com/reel/2908903189482314 |
+| SF002 | Next weird 20–40-second scientific visual question; provisional: *What Happens When Lightning Strikes Sand?* | **User approved NEXT after EP004 full private master completed** | Target tomorrow, **10 Nov 2026**, if fully QA-ready | Target tomorrow, **10 Nov 2026**, avoid clashing with 19:00 EP001 full film |
 
-## Credit preflight (2026-11-09)
-Higgsfield `kling3_0_turbo`, 16:9, 5 seconds: **7.5 credits per shot** from estimate_video_cost. 99 shots at that quoted setting would be approximately **742.5 credits** *before* retries, audio, music, images, or upscaling. The proposed 99-shot storyboard totals 495 seconds of generated footage at 5 sec/shot, less than an 11–12 minute documentary; the production plan must explicitly cover the remaining duration without duplicating footage. **No paid video generation authorised or submitted in this run.** Choose a viable duration/credit strategy before production.
+### Episode 004 active production assets
+- Fact-checked script **EP004_Narration_Script_v2.md** under `beyond-the-known/episodes/ep004/`; nine Fraser narration chapters recorded, v2 replaced a faulty final-chapter take.
+- Visual library **EP004_216_Original_Futuristic_Visual_Candidates.json**; measured nonrepeating motion queue `EP004-shot-queue-data.mjs` has 174 unique 5s source clips.
+- The exact **182-segment** measured timeline is in `EP004_V1_174_Unique_Shots_Actual_Audio_Timed.csv` (includes eight 2s chapter titles); runtime target ~**849.88 sec = 14m10s**.
+- Final 210 English subtitle cues `EP004_Final_English_Captions.srt` proofread against narration, original 850s hopeful ambient music and voice/music master staged in Higgsfield sandbox `/home/user/qnova_ep004`.
+- Developer API pipeline QNova Netlify scripts named `ep004-api-*`, read-only progress: `https://qnova-beyond-the-known.netlify.app/.netlify/functions/ep004-api-progress`; private Blob stores, US$39.50 estimated cap, default 4 new requests/min. **Never duplicate a submitted generation.**
+- User approval required **after** private master completion and technical review, before scheduling EP004. No auto-publication.
+- Two distinct original final thumbnail candidates uploaded to Higgsfield; exterior and interior orbital city options, to choose at release stage.
 
-## Next execution
-1. Create a fact-checked, spoken-word-optimised EP002 narration master at ~1,450–1,550 words with a chapter-by-chapter word budget.
-2. Estimate the exact narration and shot-generation cost; check available credit balance if connector supports it.
-3. Confirm a sustainable shot-duration plan and non-repeating source coverage for 11–12 minutes.
-4. Generate narration and shots only when spending is within approved limits; save verifiable private outputs and QA reports.
-5. Prepare title/description/thumbnail and English SRT *after* final edit.
+### Editorial quality rules
+Original self-contained 16:9 documentaries with neutral Fraser narration, physically credible illustration, genuine varying shot content, synchronised original score and burned subtitles, owner private review before any full-length public release. Do not imply NASA currently operates an orbital city. Future Shorts are original 9:16 standalone physics visualisations, generally 20–40 seconds; schedule more frequently than full-length Facebook documentaries. No repetition, no copyrighted film footage and no unearned claims.
