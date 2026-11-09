@@ -77,6 +77,6 @@ Discover how Centralia was transformed, and what remains today, in a gripping or
 #Centralia #History #BeyondTheKnown
 
 ## Production and security housekeeping
-- Netlify handoff helper `ep007-handoff-pilot.mjs` was only temporary and must be **removed after success** so source-media URL listings are no longer publicly browsable. The original private Netlify Blobs remain intact.
+- Netlify handoff helper `ep007-handoff-pilot.mjs` was **removed** in Git commit `836f7000fbe93e6a6700577bf766f7450362560c`; deployment `6af1cfadaa25266d12a2058e` is READY and the production endpoint now returns **HTTP 404**. Original private Netlify Blobs remain intact.
 - Total originally quoted video footage generation **US$12.60**; no new source footage generated during final assembly. Fraser narration used previously funded Higgsfield MCP credits. Score was created programmatically without credit expenditure.
-- No Metricool booking for Episode 007 has been made as of this report; confirm this again before any owner-approved scheduling.
+- Metricool brand `7960478` was queried for upcoming posts on 10 November 2026: **no Episode 007 booking** on either platform. Schedule only after owner's approval.
