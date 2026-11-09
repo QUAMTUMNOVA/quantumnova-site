@@ -1,0 +1,18 @@
+# Beyond the Known — Scenario Files Shorts backlog (proposed, 9 Nov 2026)
+
+Short-form series: independent 25–40-second original 9:16 science scenarios with one striking question, 8+ original unique moving visuals, accurate immediate answer, Fraser voice, original music, burned captions, strong separate still-image thumbnail and clean top/bottom YouTube Shorts safe margins. Publish via Metricool to YouTube Shorts and Facebook Reels, explicitly mark realistic AI illustrations, no duplicated post or recycled licensed footage.
+
+| Short | Hook | Content pillar | Visual payoff | Suggested YouTube date (Sydney AEDT) |
+|---|---|---|---|---|
+| **SF002** | **What Happens When Lightning Strikes Sand?** | Earth geology | Sand fuses into a fragile branching hollow natural-glass fulgurite | **Tue 10 Nov 2026, 12:00** (aim; NOT YET BOOKED) |
+| SF003 | What Happens if You Open a Fizzy Drink in Space? | Zero-g everyday physics | Foam and liquid form moving blobs in cabin microgravity | Thu 12 Nov 2026, 12:00 |
+| SF004 | What Happens When Lava Meets the Ocean? | Earth chemistry / geology | Explosive steam, fragmenting basalt, hazardous acidic plume — not magical ocean boiling | Sat 14 Nov 2026, 12:00 |
+| SF005 | What Happens If You Jump on the Moon? | Lunar gravity | One-sixth gravity, long parabolic hops, spacesuit constraints | Mon 16 Nov 2026, 12:00 |
+| SF006 | What Happens When Red-Hot Metal Touches Ice? | Everyday heat transfer | Water / vapour / transient channels inside ice, grounded in material temperature and geometry | Wed 18 Nov 2026, 12:00 |
+| SF007 | What Happens to an Air Bubble in the Deep Ocean? | Deep-ocean pressure | Bubble shrinks/compresses with depth and can dissolve into water, distinction between motion vs pressure | Fri 20 Nov 2026, 12:00 |
+| SF008 | Why Does Ferrofluid Grow Spikes? | Strange materials / magnetism | Ultra-close magnetic-field spikes from black fluid | Sun 22 Nov 2026, 12:00 |
+| SF009 | What Would Rain Look Like on Titan? | Planetary science | Methane clouds, raindrops and lakes under Saturn's moon's cold hazy atmosphere | Tue 24 Nov 2026, 12:00 |
+
+**These are planning ideas and tentative times, not existing approved bookings.** The immediate user-authorized commitment is SF002 tomorrow after actual finished-video QA. Later Shorts can be produced and scheduled as part of the owner-requested buffer; before each booking confirm that the date is in the future, the video has been generated and verified playable, there is no duplicate in Metricool and any cross-network overlap with already booked full documentaries is acceptable. Aim Facebook Reels +10 to +30 minutes after the YouTube Short, never collide with the known EP001 FB 19:00 on Tue 10 Nov. Research and scientifically validate each separate case before narration; do not use fake scientific claims for spectacular visuals.
+
+**Distinct channel plan:** This shorts backlog precedes launch of an original cartoon/anime comedy faceless AI channel; GTA VI owner-recorded clips pipeline needs preparation before 19 Nov launch; children's content remains a later option. Do not start an anime/kids channel under Beyond the Known; treat brands separately.
