@@ -1,0 +1,899 @@
+1
+00:00:00,000 --> 00:00:02,500
+A passenger jet is
+crossing the Indian Ocean.
+
+2
+00:00:03,340 --> 00:00:05,100
+A commuter train approaches a station.
+
+3
+00:00:05,920 --> 00:00:08,880
+Far below, a child is
+walking along a beach.
+
+4
+00:00:10,180 --> 00:00:14,420
+Nothing looks unusual. Yet
+every one of them is moving
+
+5
+00:00:14,420 --> 00:00:18,260
+east with the turning earth,
+even when they appear perfectly
+
+6
+00:00:18,260 --> 00:00:22,620
+still. At the equator,
+that motion is about 1
+
+7
+00:00:22,620 --> 00:00:25,720
+,600 and 70 kilometers per hour.
+
+8
+00:00:26,720 --> 00:00:30,760
+Now imagine that. In a
+single, impossible instant,
+
+9
+00:00:31,400 --> 00:00:33,120
+the solid earth stops rotating.
+
+10
+00:00:34,700 --> 00:00:37,020
+The planet does not stop orbiting the sun.
+
+11
+00:00:37,960 --> 00:00:39,460
+Gravity does not disappear.
+
+12
+00:00:40,420 --> 00:00:43,360
+And this is not something
+nature can simply do without an
+
+13
+00:00:43,360 --> 00:00:47,760
+extraordinary force. We are
+isolating one terrible change
+
+14
+00:00:47,760 --> 00:00:49,640
+to see what physics predicts.
+
+15
+00:01:01,430 --> 00:01:06,020
+The ground halts. But
+the air, the oceans, and
+
+16
+00:01:06,020 --> 00:01:09,460
+objects that were moving
+with it still have momentum.
+
+17
+00:01:10,780 --> 00:01:14,760
+For a fraction of a second,
+everything seems almost normal.
+
+18
+00:01:16,080 --> 00:01:19,080
+Then the world around
+you tries to keep going.
+
+19
+00:01:20,600 --> 00:01:22,820
+And the direction of disaster is east.
+
+20
+00:01:25,138 --> 00:01:26,978
+You are standing on a city pavement.
+
+21
+00:01:28,038 --> 00:01:30,898
+The pavement suddenly
+loses its eastward motion.
+
+22
+00:01:31,798 --> 00:01:36,198
+Your body does not. In this
+thought experiment, you
+
+23
+00:01:36,198 --> 00:01:40,698
+keep the speed you had just
+before the stop, relative to
+
+24
+00:01:40,698 --> 00:01:45,118
+the halted ground. Near
+the equator, that is faster
+
+25
+00:01:45,118 --> 00:01:47,538
+than many passenger aircraft fly.
+
+26
+00:01:48,338 --> 00:01:50,258
+You would not be launched into space.
+
+27
+00:01:51,698 --> 00:01:54,558
+Earth's gravity is still
+far too strong for that.
+
+28
+00:01:55,138 --> 00:01:58,658
+But being hurled across the
+surface at hundreds of meters per
+
+29
+00:01:58,658 --> 00:02:00,478
+second would be catastrophic.
+
+30
+00:02:01,938 --> 00:02:03,898
+Vehicles slide and collide.
+
+31
+00:02:04,858 --> 00:02:06,458
+Loose equipment tears free.
+
+32
+00:02:07,198 --> 00:02:10,338
+Trees and structures encounter
+enormous sideways forces.
+
+33
+00:02:11,478 --> 00:02:15,498
+Near the equator, almost nothing
+exposed would remain safe.
+
+34
+00:02:16,718 --> 00:02:18,638
+The speed is different across the planet.
+
+35
+00:02:19,378 --> 00:02:22,118
+The farther you are from the
+equator, the smaller your
+
+36
+00:02:22,118 --> 00:02:26,118
+eastward speed. At the exact
+geographic poles it approaches
+
+37
+00:02:26,118 --> 00:02:30,318
+zero. That does not make the
+polar regions comfortable havens.
+
+38
+00:02:31,218 --> 00:02:33,878
+It only means their initial
+jolt would be less severe.
+
+39
+00:02:35,098 --> 00:02:36,998
+And this is just the motion of objects.
+
+40
+00:02:37,898 --> 00:02:39,158
+The atmosphere is next.
+
+41
+00:02:41,942 --> 00:02:46,502
+From above the clouds, Earth
+seems unchanged, but the
+
+42
+00:02:46,502 --> 00:02:50,522
+surface below has stopped, while
+an entire moving atmosphere
+
+43
+00:02:50,522 --> 00:02:59,972
+carries on. Near the
+
+44
+00:02:59,972 --> 00:03:03,252
+equator, air initially has
+an eastward speed of roughly
+
+45
+00:03:03,252 --> 00:03:07,812
+1670 kmh relative to the newly stationary
+
+46
+00:03:07,812 --> 00:03:12,212
+ground. That is beyond
+the speed of sound under
+
+47
+00:03:12,212 --> 00:03:16,292
+ordinary conditions. Do not
+picture a normal hurricane.
+
+48
+00:03:16,872 --> 00:03:18,012
+Simply turned up to 11.
+
+49
+00:03:18,012 --> 00:03:21,612
+This would be an unprecedented
+global flow, colliding with
+
+50
+00:03:21,612 --> 00:03:25,372
+mountains, forests, buildings, and terrain.
+
+51
+00:03:26,452 --> 00:03:30,272
+Turbulence, pressure changes,
+and friction would make the
+
+52
+00:03:30,272 --> 00:03:34,032
+details far more complicated
+than any simple number.
+
+53
+00:03:37,372 --> 00:03:39,572
+Dust rises in vast walls.
+
+54
+00:03:41,172 --> 00:03:44,352
+Windows shatter. Roofs peel away.
+
+55
+00:03:45,672 --> 00:03:47,832
+Cities disappear beneath flying debris.
+
+56
+00:03:47,832 --> 00:03:59,472
+The strongest initial effect
+
+57
+00:03:59,472 --> 00:04:01,232
+would be in lower latitudes.
+
+58
+00:04:02,212 --> 00:04:06,152
+Closer to the poles, the
+rotational speed is smaller.
+
+59
+00:04:07,512 --> 00:04:12,072
+But the atmosphere does not
+respect borders or neat rings on
+
+60
+00:04:12,072 --> 00:04:16,112
+a map. The air would lose
+energy as it collided with the
+
+61
+00:04:16,112 --> 00:04:19,592
+landscape, generating heat and destruction.
+
+62
+00:04:20,472 --> 00:04:24,692
+And beneath that air,
+another moving layer covers
+
+63
+00:04:24,692 --> 00:04:26,112
+most of the planet.
+
+64
+00:04:27,392 --> 00:04:27,932
+Water.
+
+65
+00:04:30,541 --> 00:04:32,801
+A cargo ship is crossing calm water.
+
+66
+00:04:33,901 --> 00:04:35,081
+Then its world changes.
+
+67
+00:04:36,401 --> 00:04:39,421
+The solid seafloor has
+lost its rotational speed.
+
+68
+00:04:40,481 --> 00:04:42,241
+The ocean above it has not.
+
+69
+00:04:43,301 --> 00:04:47,641
+Momentum drives immense flows
+across basins toward coastlines
+
+70
+00:04:47,641 --> 00:04:50,021
+and against underwater terrain.
+
+71
+00:04:51,121 --> 00:04:55,541
+Near some shores, the result
+could be catastrophic inundation.
+
+72
+00:04:56,061 --> 00:04:59,941
+In others, the details would
+depend on coastline shape,
+
+73
+00:05:00,621 --> 00:05:04,901
+sea bed depth, local
+geography, and exactly how the
+
+74
+00:05:04,901 --> 00:05:06,721
+fictional stopping force acted.
+
+75
+00:05:07,961 --> 00:05:11,181
+This would not be one perfect
+wall of water circling the
+
+76
+00:05:11,181 --> 00:05:15,701
+planet. Real water
+breaks, reflects, swirls,
+
+77
+00:05:15,861 --> 00:05:17,201
+and collides with itself.
+
+78
+00:05:18,241 --> 00:05:22,641
+Imagine a harbor swept by surging
+water and smashed shipping
+
+79
+00:05:22,641 --> 00:05:27,001
+containers. An airport
+runway vanishing below foam.
+
+80
+00:05:28,141 --> 00:05:31,301
+Bridges overwhelmed by
+currents carrying wreckage.
+
+81
+00:05:32,621 --> 00:05:36,381
+As the initial motion dissipates,
+waves and flooding could
+
+82
+00:05:36,381 --> 00:05:38,601
+continue to transform coastlines.
+
+83
+00:05:39,621 --> 00:05:43,421
+There is another problem waiting
+far beyond the first surge.
+
+84
+00:05:44,461 --> 00:05:48,541
+Earth's rotation helps shape
+its oceans and equatorial bulge.
+
+85
+00:05:48,941 --> 00:05:53,101
+Without that rotation, water
+would tend to redistribute over
+
+86
+00:05:53,101 --> 00:05:58,381
+much longer timescales. The maps we
+know would no longer be reliable.
+
+87
+00:06:01,069 --> 00:06:05,129
+Now step back from the spectacle,
+imagine the morning after,
+
+88
+00:06:05,609 --> 00:06:09,649
+wherever anyone remains. A
+power station has been damaged,
+
+89
+00:06:10,089 --> 00:06:14,529
+transmission lines are down,
+water pumps are silent, roads
+
+90
+00:06:14,529 --> 00:06:18,669
+are blocked by collapsed
+structures and debris, emergency
+
+91
+00:06:18,669 --> 00:06:22,229
+services have lost the very
+networks they need to coordinate.
+
+92
+00:06:23,149 --> 00:06:26,849
+Not every building would fail,
+and not every region would
+
+93
+00:06:26,849 --> 00:06:30,789
+experience the same damage,
+but modern life depends on
+
+94
+00:06:30,789 --> 00:06:32,889
+thousands of systems working together.
+
+95
+00:06:33,709 --> 00:06:37,629
+Electricity keeps hospitals
+functioning, fuel deliveries keep
+
+96
+00:06:37,629 --> 00:06:41,389
+generators running,
+communications connect rescuers,
+
+97
+00:06:41,969 --> 00:06:45,149
+food travels through ports,
+warehouses and roads.
+
+98
+00:06:46,249 --> 00:06:49,949
+Break enough links at once, and
+even a place that escaped the
+
+99
+00:06:49,949 --> 00:06:52,129
+worst winds may face a second disaster.
+
+100
+00:06:53,169 --> 00:06:56,509
+You might have survived the
+initial blast inside a tunnel or
+
+101
+00:06:56,509 --> 00:07:00,389
+strong underground shelter.
+You could emerge into a world
+
+102
+00:07:00,389 --> 00:07:03,889
+where clean water is harder to
+find than a collapsed building.
+
+103
+00:07:05,089 --> 00:07:09,569
+Our civilization can withstand
+storms, earthquakes and floods,
+
+104
+00:07:10,409 --> 00:07:13,709
+but never all of them, almost everywhere,
+
+105
+00:07:14,569 --> 00:07:15,949
+in the same moment.
+
+106
+00:07:18,237 --> 00:07:22,697
+Could anyone survive? The
+honest answer is that we
+
+107
+00:07:22,697 --> 00:07:25,977
+cannot calculate an exact
+number from this impossible
+
+108
+00:07:25,977 --> 00:07:30,237
+scenario, but some locations
+would offer better odds
+
+109
+00:07:30,237 --> 00:07:34,217
+than others. Deep underground
+shelters could shield people
+
+110
+00:07:34,217 --> 00:07:35,997
+from the initial wind and debris.
+
+111
+00:07:36,857 --> 00:07:40,917
+Certain polar locations would
+experience far less immediate
+
+112
+00:07:40,917 --> 00:07:45,217
+eastward momentum. Some
+isolated places might
+
+113
+00:07:45,217 --> 00:07:48,397
+retain usable water, fuel, or food.
+
+114
+00:07:49,437 --> 00:07:52,557
+Yet, a lucky location is not enough.
+
+115
+00:07:53,537 --> 00:07:57,717
+Survival would depend
+on air, warmth, medical
+
+116
+00:07:57,717 --> 00:08:01,897
+care, reliable shelter, and
+a way to produce supplies
+
+117
+00:08:01,897 --> 00:08:04,617
+after the global transport
+network collapsed.
+
+118
+00:08:05,877 --> 00:08:09,757
+Think of a small research
+station or a group inside a
+
+119
+00:08:09,757 --> 00:08:13,487
+reinforced underground facility.
+They might live through the
+
+120
+00:08:13,487 --> 00:08:17,987
+first minutes. Days later,
+every choice becomes difficult.
+
+121
+00:08:19,107 --> 00:08:20,427
+Do they risk traveling outside?
+
+122
+00:08:21,687 --> 00:08:23,327
+Can they repair their power supply?
+
+123
+00:08:24,447 --> 00:08:27,027
+What grows when the
+sunlight pattern changes?
+
+124
+00:08:27,727 --> 00:08:31,427
+We have been describing the
+violence of a single second, but
+
+125
+00:08:31,427 --> 00:08:34,667
+the most profound change may be slower.
+
+126
+00:08:34,667 --> 00:08:39,127
+It begins when someone looks
+at a clock and realizes that
+
+127
+00:08:39,127 --> 00:08:42,407
+mourning is not behaving
+like mourning anymore.
+
+128
+00:08:45,145 --> 00:08:49,245
+Our ordinary day exists
+because Earth rotates
+
+129
+00:08:49,245 --> 00:08:53,725
+beneath the sun. Take
+that rotation away, but
+
+130
+00:08:53,725 --> 00:08:57,585
+let Earth continue its yearly
+orbit, and the sun's position in
+
+131
+00:08:57,585 --> 00:09:01,105
+the sky would change only slowly
+as the planet moves around
+
+132
+00:09:01,105 --> 00:09:05,185
+its star. Instead of a
+sunrise every 24 hours,
+
+133
+00:09:05,725 --> 00:09:10,025
+many places would experience
+extraordinarily long intervals of
+
+134
+00:09:10,025 --> 00:09:14,305
+light and darkness. The
+precise pattern would vary with
+
+135
+00:09:14,305 --> 00:09:17,865
+latitude and season because
+Earth's axis is tilted.
+
+136
+00:09:19,025 --> 00:09:22,285
+You would not get one
+permanently bright side and one
+
+137
+00:09:22,285 --> 00:09:26,285
+permanently dark side. That
+would require the planet to keep
+
+138
+00:09:26,285 --> 00:09:30,065
+exactly the same face toward
+the sun as it orbited.
+
+139
+00:09:30,785 --> 00:09:35,185
+Under our scenario, the sun
+could linger above the horizon
+
+140
+00:09:35,185 --> 00:09:39,425
+for months, followed by prolonged darkness.
+
+141
+00:09:40,375 --> 00:09:44,685
+Daylit regions would absorb heat
+for far longer than before.
+
+142
+00:09:45,725 --> 00:09:47,005
+Dark regions would cool.
+
+143
+00:09:48,065 --> 00:09:52,505
+Agriculture, ecosystems, and
+the rhythms of daily life would
+
+144
+00:09:52,505 --> 00:09:55,345
+face conditions they had
+never evolved to handle.
+
+145
+00:09:56,685 --> 00:10:00,265
+But the absence of ordinary
+days is only the beginning.
+
+146
+00:10:00,265 --> 00:10:05,465
+The winds themselves would eventually
+learn a different pattern.
+
+147
+00:10:07,767 --> 00:10:12,267
+Today, Earth's rotation
+helps steer winds and ocean
+
+148
+00:10:12,267 --> 00:10:15,307
+currents through the Coriolis effect.
+
+149
+00:10:16,247 --> 00:10:19,407
+It contributes to the patterns
+that form familiar weather
+
+150
+00:10:19,407 --> 00:10:23,747
+systems. Without that rotation, the old
+
+151
+00:10:23,747 --> 00:10:26,467
+circulation could not
+simply continue forever.
+
+152
+00:10:27,487 --> 00:10:31,327
+As the first chaos faded, the
+planet would reorganize around
+
+153
+00:10:31,327 --> 00:10:35,707
+slow, solar heating, enormous temperature
+
+154
+00:10:35,707 --> 00:10:39,367
+contrasts, and a changing
+distribution of water.
+
+155
+00:10:40,607 --> 00:10:44,467
+We cannot draw an exact weather
+map for such an Earth from one
+
+156
+00:10:44,467 --> 00:10:48,067
+thought experiment. The
+details would require enormous
+
+157
+00:10:48,067 --> 00:10:52,467
+simulations and assumptions.
+But we can say that the
+
+158
+00:10:52,467 --> 00:10:55,647
+planet's climate would not
+resemble the world outside your
+
+159
+00:10:55,647 --> 00:11:00,167
+window today. And one popular
+claim needs correcting.
+
+160
+00:11:01,247 --> 00:11:04,767
+Stopping the surface rotation
+does not mean Earth's magnetic
+
+161
+00:11:04,767 --> 00:11:07,807
+field automatically switches
+off at that instant.
+
+162
+00:11:08,867 --> 00:11:12,627
+The magnetic field is generated
+by complex motion inside the
+
+163
+00:11:12,627 --> 00:11:17,127
+liquid outer core, not a light
+switch connected to the 24-hour
+
+164
+00:11:17,127 --> 00:11:21,647
+day. The real disaster is
+already vast enough without
+
+165
+00:11:21,647 --> 00:11:26,147
+inventing another one. Earth would still
+
+166
+00:11:26,147 --> 00:11:30,547
+be a planet. The question
+is whether it would
+
+167
+00:11:30,547 --> 00:11:33,787
+remain a planet that humans could inhabit.
+
+168
+00:11:36,392 --> 00:11:38,532
+Imagine the closing image.
+
+169
+00:11:39,752 --> 00:11:42,632
+The camera rises above a damaged coastline.
+
+170
+00:11:43,712 --> 00:11:45,532
+Roads vanish beneath sediment.
+
+171
+00:11:46,752 --> 00:11:50,952
+An empty city lies under a
+sky that refuses to hurry
+
+172
+00:11:50,952 --> 00:11:55,412
+towards sunset. It is tempting to ask where
+
+173
+00:11:55,412 --> 00:11:57,012
+the safest place would be.
+
+174
+00:11:58,372 --> 00:12:00,432
+The poles? A mountain bunker?
+
+175
+00:12:01,492 --> 00:12:03,032
+A sealed research facility?
+
+176
+00:12:03,032 --> 00:12:07,392
+But the better question is, what stopped
+
+177
+00:12:07,392 --> 00:12:11,432
+and what was allowed to keep moving?
+
+178
+00:12:12,512 --> 00:12:16,392
+If the atmosphere and oceans
+somehow stopped with the crust,
+
+179
+00:12:16,852 --> 00:12:20,672
+the first seconds would
+unfold very differently.
+
+180
+00:12:21,712 --> 00:12:26,012
+If the planet slowed over millions
+of years, there would be no
+
+181
+00:12:26,012 --> 00:12:28,252
+single day of global impact.
+
+182
+00:12:28,252 --> 00:12:32,132
+And if a real force
+removed Earth's rotation
+
+183
+00:12:32,132 --> 00:12:36,312
+in an instant, dealing with the energy and
+
+184
+00:12:36,312 --> 00:12:40,812
+angular momentum would create
+problems beyond anything in our
+
+185
+00:12:40,812 --> 00:12:44,472
+simplified story. This is not a prediction.
+
+186
+00:12:45,572 --> 00:12:49,612
+There is no known natural process
+waiting to switch our planet
+
+187
+00:12:49,612 --> 00:12:54,152
+off tomorrow. It is a reminder of something
+
+188
+00:12:54,152 --> 00:12:58,572
+stranger. The ground feels still because
+
+189
+00:12:58,572 --> 00:12:59,852
+we are moving with it.
+
+190
+00:13:01,452 --> 00:13:05,772
+The calmest moment of your
+day is taking place on a world
+
+191
+00:13:05,772 --> 00:13:07,872
+that never stops turning.
+
+192
+00:13:08,932 --> 00:13:13,192
+Until, in our imagination, it
+
+193
+00:13:13,192 --> 00:13:17,052
+does. And then even standing
+
+194
+00:13:17,052 --> 00:13:19,732
+still becomes impossible.
+
