@@ -1,0 +1,2167 @@
+{
+  "episode": "004",
+  "title": "The First City in Space — Could Humanity Actually Build One?",
+  "story_style": "Original cinematic futuristic engineering and ordinary life, varied angles and locations, scientifically plausible rotating torus concept, no doomsday.",
+  "candidate_shots": [
+    {
+      "id": "EP004_C01_B01",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 1,
+      "subject": "Exterior morning portrait of enormous toroidal ring habitat slowly rotating above Earth's bright blue limb",
+      "camera": "low ascending steadicam",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B02",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 2,
+      "subject": "Interior apartment blinds silently opening to warm artificial sunrise in a rotating orbital settlement",
+      "camera": "wide orbiting tracking camera",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B03",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 3,
+      "subject": "Child standing safely inside an airy planted observation gallery looking out through thick shielded window",
+      "camera": "cinematic crane-down",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B04",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 4,
+      "subject": "Long curved residential boulevard with bicycle commuters and lush trees following a giant ring",
+      "camera": "slow intimate handheld push",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B05",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 5,
+      "subject": "Slow low-angle camera from communal park revealing an overhead landscape curving across opposite rim",
+      "camera": "fast but controlled aerial dolly",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B06",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 6,
+      "subject": "Urban tram travelling smoothly along a curved inner rim avenue lined with futuristic homes",
+      "camera": "long-lens parallax reveal",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B07",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 7,
+      "subject": "Close kitchen table breakfast in family apartment where familiar gravity holds coffee still",
+      "camera": "slow lateral slider",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B08",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 8,
+      "subject": "Sunlit community vegetable garden surrounded by pressure-rated interior structures",
+      "camera": "top-down to horizon tilt",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B09",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 9,
+      "subject": "Exterior high-altitude tracking shot revealing spokes leading from green rim to central hub",
+      "camera": "macro rack-focus move",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B10",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 10,
+      "subject": "Schoolchildren walking through spacious sealed village atrium under warm engineered daylight",
+      "camera": "architectural reveal pan",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B11",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 11,
+      "subject": "High architectural view of neighbourhood terraces conforming to torus curvature",
+      "camera": "upward sweeping drone",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B12",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 12,
+      "subject": "Small ferry-like internal transport vehicle gliding through wide residential corridor",
+      "camera": "moving close-up tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B13",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 13,
+      "subject": "Residential rooftop garden facing a high vaulted roof showing part of curved opposite city",
+      "camera": "graceful orbit around subject",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B14",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 14,
+      "subject": "Thick pressure-window panorama overlooking Earth through artificial station gallery",
+      "camera": "wide atmospheric tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B15",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 15,
+      "subject": "Orbital camera flying past docking lights on colossal shielded rotating space city exterior",
+      "camera": "low ascending steadicam",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B16",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 16,
+      "subject": "Macro shot of rotating habitat orientation instrument and orbital navigation readouts without legible text",
+      "camera": "wide orbiting tracking camera",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B17",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 17,
+      "subject": "Close view of ordinary pedestrian shoes walking on broad landscaped ring interior",
+      "camera": "cinematic crane-down",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B18",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 18,
+      "subject": "Resident pulling curtains to reveal Earth appearing far below through protected observation port",
+      "camera": "slow intimate handheld push",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B19",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 19,
+      "subject": "Exterior orbital sunrise illuminating densely engineered spokes and reflective thermal radiators",
+      "camera": "fast but controlled aerial dolly",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B20",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 20,
+      "subject": "Lush city plaza inside cylindrical structure with carefully controlled daylight and water feature",
+      "camera": "long-lens parallax reveal",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B21",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 21,
+      "subject": "Commuter waiting at sleek transport station with greenspace beyond on the curving rim",
+      "camera": "slow lateral slider",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B22",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 22,
+      "subject": "Wide perspective of a compact urban street under an opposite overhead neighbourhood",
+      "camera": "top-down to horizon tilt",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B23",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 23,
+      "subject": "Robotic maintenance drones performing routine work outside station opaque shell",
+      "camera": "macro rack-focus move",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C01_B24",
+      "chapter": 1,
+      "chapter_title": "Wake Up Above Earth",
+      "candidate": 24,
+      "subject": "Ultimate panoramic drone shot rising above tree-lined park showing immense curved city scale",
+      "camera": "architectural reveal pan",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B01",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 1,
+      "subject": "Astronaut floating peacefully in microgravity in a compact laboratory compartment",
+      "camera": "slow intimate handheld push",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B02",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 2,
+      "subject": "Macro of water droplet floating in the hub as astronaut gently catches it",
+      "camera": "fast but controlled aerial dolly",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B03",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 3,
+      "subject": "Exterior wide establishing of enormous habitat ring spinning slowly against stars",
+      "camera": "long-lens parallax reveal",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B04",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 4,
+      "subject": "Cutaway-style photoreal conceptual view of spinning ring with residents on inside outer rim",
+      "camera": "slow lateral slider",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B05",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 5,
+      "subject": "Low-angle walking shoes resting firmly against a bright station floor in outer ring",
+      "camera": "top-down to horizon tilt",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B06",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 6,
+      "subject": "Station engineer demonstrating circular path with spinning small metal ring model",
+      "camera": "macro rack-focus move",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B07",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 7,
+      "subject": "Long tracking shot along outside of rotating torus showing structural ribs",
+      "camera": "architectural reveal pan",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B08",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 8,
+      "subject": "Side-on view of central zero-g docking hub while outer residential rim revolves",
+      "camera": "upward sweeping drone",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B09",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 9,
+      "subject": "Person ascending safely in an enclosed elevator car within a radial support spoke",
+      "camera": "moving close-up tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B10",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 10,
+      "subject": "Interior radial corridor gradually transitioning from planted city rim to neutral zero-gravity hub",
+      "camera": "graceful orbit around subject",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B11",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 11,
+      "subject": "Floating repair technician gripping handrail near center axis as cabin rotates beyond window",
+      "camera": "wide atmospheric tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B12",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 12,
+      "subject": "Large family conservatory inside slow rotating ring with trees and cafe tables",
+      "camera": "low ascending steadicam",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B13",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 13,
+      "subject": "Compact centrifuge research chamber rotating within a laboratory at safe moderate speed",
+      "camera": "wide orbiting tracking camera",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B14",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 14,
+      "subject": "Close technical view of bearings and rotating habitat joints made from heavy engineered metal",
+      "camera": "cinematic crane-down",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B15",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 15,
+      "subject": "Unhurried wide shot of humans walking in rotating ring while hub remains central and quiet",
+      "camera": "slow intimate handheld push",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B16",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 16,
+      "subject": "Dynamic camera following jogger along curved apartment park with gravity at outer wall",
+      "camera": "fast but controlled aerial dolly",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B17",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 17,
+      "subject": "Macro experimental ball released inside a rotating habitat, realistic curved relative trajectory",
+      "camera": "long-lens parallax reveal",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B18",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 18,
+      "subject": "Exterior sunlight glinting along radial spokes of a wheel-shaped station",
+      "camera": "slow lateral slider",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B19",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 19,
+      "subject": "Engineer observing a virtual diagram of torus radius and spin without readable labels",
+      "camera": "top-down to horizon tilt",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B20",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 20,
+      "subject": "Commuter watching floating toolbox inside near-axis microgravity maintenance cabin",
+      "camera": "macro rack-focus move",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B21",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 21,
+      "subject": "Inside view looking across open torus ring with sky-like ceiling and buildings overhead",
+      "camera": "architectural reveal pan",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B22",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 22,
+      "subject": "Engineer balancing heavy mobile water tank with internal counterweights near rotating habitat rim",
+      "camera": "upward sweeping drone",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B23",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 23,
+      "subject": "Motion-accurate orbital fly-by showing slow constant angular velocity with no science fiction propulsion",
+      "camera": "moving close-up tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C02_B24",
+      "chapter": 2,
+      "chapter_title": "How Do You Make Gravity?",
+      "candidate": 24,
+      "subject": "Wide interior city sunrise under ring curvature with ordinary stable gravity",
+      "camera": "graceful orbit around subject",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B01",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 1,
+      "subject": "Vast circular wheel habitat under construction with open central hub and sixteen radial spokes",
+      "camera": "slow lateral slider",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B02",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 2,
+      "subject": "Orbital camera flying alongside transparent cutaway conceptual toroidal ring city showing shielded residential rim",
+      "camera": "top-down to horizon tilt",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B03",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 3,
+      "subject": "Exterior of a monumental cylindrical rotating habitat with massive axial docking structure",
+      "camera": "macro rack-focus move",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B04",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 4,
+      "subject": "Interior of curved O'Neill cylinder with distant farms visible along opposite inner wall",
+      "camera": "architectural reveal pan",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B05",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 5,
+      "subject": "Inside a cylinder, drone traverses between orchards and small suburban clusters along broad curved ground",
+      "camera": "upward sweeping drone",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B06",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 6,
+      "subject": "Deep internal perspective of multiple distinct neighbourhood blocks around a torus rim",
+      "camera": "moving close-up tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B07",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 7,
+      "subject": "Orbital exterior view of three separated pressurised modules connected by long rotating framework",
+      "camera": "graceful orbit around subject",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B08",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 8,
+      "subject": "Robotic camera inspecting precision coupling between two modular habitat sections",
+      "camera": "wide atmospheric tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B09",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 9,
+      "subject": "External maintenance crew anchored in spacesuits beside thick curved pressure hull",
+      "camera": "low ascending steadicam",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B10",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 10,
+      "subject": "Docking craft approaches shielded non-rotating central hub while ring revolves behind",
+      "camera": "wide orbiting tracking camera",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B11",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 11,
+      "subject": "Researcher walking through tunnel of reinforced radial spoke connection",
+      "camera": "cinematic crane-down",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B12",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 12,
+      "subject": "Aerial panorama from within enormous rotating torus showing street grid and gardens",
+      "camera": "slow intimate handheld push",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B13",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 13,
+      "subject": "Exterior spacecraft dodging neither debris nor explosions, approaching stable docking axis",
+      "camera": "fast but controlled aerial dolly",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B14",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 14,
+      "subject": "Structural engineer viewing photoreal model of ring balance on translucent screen without legible writing",
+      "camera": "long-lens parallax reveal",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B15",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 15,
+      "subject": "Cargo lift moving carefully along a spoke through thick pressure sections",
+      "camera": "slow lateral slider",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B16",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 16,
+      "subject": "Interconnected radial trusses under tension stretching from center to ring",
+      "camera": "top-down to horizon tilt",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B17",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 17,
+      "subject": "Cutaway view of shielded shell thickness surrounding landscaped interior city",
+      "camera": "macro rack-focus move",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B18",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 18,
+      "subject": "Photoreal close-up of station rotating joint showing bearings and alignment markers",
+      "camera": "architectural reveal pan",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B19",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 19,
+      "subject": "Large cylindrical interior with agricultural village and naturalistic atmospheric haze",
+      "camera": "upward sweeping drone",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B20",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 20,
+      "subject": "Multiple modular habitats attached to central connecting logistics hub in high orbit",
+      "camera": "moving close-up tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B21",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 21,
+      "subject": "Compact transport vehicle traveling through linked sealed connecting tubes",
+      "camera": "graceful orbit around subject",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B22",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 22,
+      "subject": "A fleet of assembly drones adjusting long structural sections outside rotating module",
+      "camera": "wide atmospheric tracking shot",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B23",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 23,
+      "subject": "Slow crane view revealing wide full diameter of torus against distant Moon",
+      "camera": "low ascending steadicam",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C03_B24",
+      "chapter": 3,
+      "chapter_title": "The Shape of a New World",
+      "candidate": 24,
+      "subject": "Three distinct orbital city concepts side by side as realistic scale models in engineering lab",
+      "camera": "wide orbiting tracking camera",
+      "style": "awe-inspiring future-life cinematic documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B01",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 1,
+      "subject": "Space construction robot unfurling a large structural truss above sunlit Earth",
+      "camera": "architectural reveal pan",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B02",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 2,
+      "subject": "Cargo spacecraft delivering stacked station-frame components to orbital assembly depot",
+      "camera": "upward sweeping drone",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B03",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 3,
+      "subject": "Precision robotic arm bolting load-bearing ring segment in zero gravity",
+      "camera": "moving close-up tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B04",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 4,
+      "subject": "Close industrial orbital welding with controlled electric arc inside pressurised workcell",
+      "camera": "graceful orbit around subject",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B05",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 5,
+      "subject": "Autonomous drone carefully inspecting metallic joint with laser measuring scanner",
+      "camera": "wide atmospheric tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B06",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 6,
+      "subject": "Wide exterior shot of skeletal habitat ring partially built over Earth's limb",
+      "camera": "low ascending steadicam",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B07",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 7,
+      "subject": "Launch vehicle cargo fairing separating to reveal structural panels in stable orbit",
+      "camera": "wide orbiting tracking camera",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B08",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 8,
+      "subject": "Weightless factory bay with astronauts guiding long metallic beam using robotic tethers",
+      "camera": "cinematic crane-down",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B09",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 9,
+      "subject": "Long lattice truss slowly deploying via controlled motorised hinge mechanics",
+      "camera": "slow intimate handheld push",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B10",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 10,
+      "subject": "Robotic multi-arm assembly platform positioning a curved reinforced pressure panel",
+      "camera": "fast but controlled aerial dolly",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B11",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 11,
+      "subject": "Detail of space-rated additive manufacturing printing spare titanium component in shielded workshop",
+      "camera": "long-lens parallax reveal",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B12",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 12,
+      "subject": "Large spacecraft transporting bundles of reflective insulating panels to orbital city frame",
+      "camera": "slow lateral slider",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B13",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 13,
+      "subject": "Interior spacecraft cargo hold filled with sealed pressure vessel components",
+      "camera": "top-down to horizon tilt",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B14",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 14,
+      "subject": "Industrial vision of lunar excavator gathering regolith in airless grey daylight",
+      "camera": "macro rack-focus move",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B15",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 15,
+      "subject": "Solar-powered lunar processing workshop separating useful building material from granular rock",
+      "camera": "architectural reveal pan",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B16",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 16,
+      "subject": "Cargo tug traversing deep space carrying sealed container of processed lunar rock",
+      "camera": "upward sweeping drone",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B17",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 17,
+      "subject": "Robotic crawler on orbital outer hull installing broad shielding sections",
+      "camera": "moving close-up tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B18",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 18,
+      "subject": "Precision robotics aligning multiple radial spokes to hub connection",
+      "camera": "graceful orbit around subject",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B19",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 19,
+      "subject": "Exterior truss-frame inspection around a bright moving Earth under spacecraft",
+      "camera": "wide atmospheric tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B20",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 20,
+      "subject": "Inflatable deployable engineering prototype expanding slowly as structural braces lock in",
+      "camera": "low ascending steadicam",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B21",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 21,
+      "subject": "Engineer monitoring assembly via multiple camera feeds in compact mission control",
+      "camera": "wide orbiting tracking camera",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B22",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 22,
+      "subject": "Massive completed segment begins controlled slow rotation against starfield",
+      "camera": "cinematic crane-down",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B23",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 23,
+      "subject": "Workers in pressurised work bay testing large structural hinge at human scale",
+      "camera": "slow intimate handheld push",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C04_B24",
+      "chapter": 4,
+      "chapter_title": "Building the First Kilometre",
+      "candidate": 24,
+      "subject": "Wide view of developing ring city with dozens of drones and supply vehicles",
+      "camera": "fast but controlled aerial dolly",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B01",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 1,
+      "subject": "Space habitat opaque thick protective hull reflecting sunlight at Earth's orbital altitude",
+      "camera": "graceful orbit around subject",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B02",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 2,
+      "subject": "Cross section of layered station wall with water tanks and mineral shielding around inner walkway",
+      "camera": "wide atmospheric tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B03",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 3,
+      "subject": "Close view of water-filled engineered radiation barrier inside station maintenance bay",
+      "camera": "low ascending steadicam",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B04",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 4,
+      "subject": "Solar activity conceptual view of bright Sun releasing energetic particle streams into space",
+      "camera": "wide orbiting tracking camera",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B05",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 5,
+      "subject": "Astronaut inside thick shielded radiation shelter checking environmental panel",
+      "camera": "cinematic crane-down",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B06",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 6,
+      "subject": "Sensor array in shielded habitat corridor recording background particle environment",
+      "camera": "slow intimate handheld push",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B07",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 7,
+      "subject": "Steady robot installer attaching layers of regolith-filled shielding modules to exterior",
+      "camera": "fast but controlled aerial dolly",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B08",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 8,
+      "subject": "High-detail macro of micrometeoroid mark in sacrificial outer Whipple shield panel",
+      "camera": "long-lens parallax reveal",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B09",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 9,
+      "subject": "Small orbital debris fragment safely deflected by multiple engineered protective hull layers",
+      "camera": "slow lateral slider",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B10",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 10,
+      "subject": "Maintenance engineer inspecting redundant pressure seal in spacious airlock frame",
+      "camera": "top-down to horizon tilt",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B11",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 11,
+      "subject": "Wide reinforced pressure bulkhead with thick rounded compartment safety doors",
+      "camera": "macro rack-focus move",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B12",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 12,
+      "subject": "Space-station technician testing emergency pressure valve in quiet equipment room",
+      "camera": "architectural reveal pan",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B13",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 13,
+      "subject": "Robotic inspector scanning outer hull microfracture with harmless light",
+      "camera": "upward sweeping drone",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B14",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 14,
+      "subject": "Close detail of micrometeoroid detection sensors on large opaque habitat exterior",
+      "camera": "moving close-up tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B15",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 15,
+      "subject": "Futuristic observation room behind thick panoramic shielded window with Earth visible",
+      "camera": "graceful orbit around subject",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B16",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 16,
+      "subject": "Fire detection and suppression cabinet in sealed community hall",
+      "camera": "wide atmospheric tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B17",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 17,
+      "subject": "Ventilation technician inspecting quiet cabin air circulation ducts",
+      "camera": "low ascending steadicam",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B18",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 18,
+      "subject": "Reinforced school classroom surrounded by opaque radiation-resistant walls and windows",
+      "camera": "wide orbiting tracking camera",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B19",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 19,
+      "subject": "Astronaut in hard spacesuit repairing external station protective layer with tether",
+      "camera": "cinematic crane-down",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B20",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 20,
+      "subject": "Safe compartment isolation door closing smoothly as part of emergency drill",
+      "camera": "slow intimate handheld push",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B21",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 21,
+      "subject": "Large water reservoir integrated into city's outer habitable envelope",
+      "camera": "fast but controlled aerial dolly",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B22",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 22,
+      "subject": "Exterior of rotating habitat with shielded residential rim and bright radiators",
+      "camera": "long-lens parallax reveal",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B23",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 23,
+      "subject": "Robust station service hallway with multiple air pressure barriers",
+      "camera": "slow lateral slider",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C05_B24",
+      "chapter": 5,
+      "chapter_title": "The Walls That Keep You Alive",
+      "candidate": 24,
+      "subject": "Confident panoramic view of protected forest neighborhood entirely enclosed within thick engineered shell",
+      "camera": "top-down to horizon tilt",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B01",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 1,
+      "subject": "Large controllable orbital mirror reflecting sunlight into sunlit station intake",
+      "camera": "wide orbiting tracking camera",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B02",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 2,
+      "subject": "Sunrise-like warm light slowly sweeping across an enclosed orbital city park",
+      "camera": "cinematic crane-down",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B03",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 3,
+      "subject": "Close photovoltaic array tracking sunlight against broad black space",
+      "camera": "slow intimate handheld push",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B04",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 4,
+      "subject": "Wide city greenhouse illuminated under spectrum-tuned rows of LED plant lamps",
+      "camera": "fast but controlled aerial dolly",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B05",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 5,
+      "subject": "Engineered shutters opening behind protective shielded roof architecture",
+      "camera": "long-lens parallax reveal",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B06",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 6,
+      "subject": "Macro of controlled daylight reflected by mirror panel into bright interior courtyard",
+      "camera": "slow lateral slider",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B07",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 7,
+      "subject": "Technician in space suit working securely on enormous angled reflective orbital panel",
+      "camera": "top-down to horizon tilt",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B08",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 8,
+      "subject": "Primary power bus inside engineering room with high voltage containment",
+      "camera": "macro rack-focus move",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B09",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 9,
+      "subject": "Large battery storage corridor with thermal management and fire safety systems",
+      "camera": "architectural reveal pan",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B10",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 10,
+      "subject": "Precision robotic arm adjusting slow solar mirror on nonrotating axial structure",
+      "camera": "upward sweeping drone",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B11",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 11,
+      "subject": "School courtyard children walking through soft simulated morning light inside habitat",
+      "camera": "moving close-up tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B12",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 12,
+      "subject": "Community concert stage beneath carefully dimmed artificial night lighting",
+      "camera": "graceful orbit around subject",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B13",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 13,
+      "subject": "Orbital exterior shadow crossing thick settlement hull during partial eclipse",
+      "camera": "wide atmospheric tracking shot",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B14",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 14,
+      "subject": "Station controller overseeing redundant power systems from shielded monitoring room",
+      "camera": "low ascending steadicam",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B15",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 15,
+      "subject": "Exterior panoramic solar farm array mounted independently from spinning habitat ring",
+      "camera": "wide orbiting tracking camera",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B16",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 16,
+      "subject": "Spacecraft passing behind complex mirror-and-radiator structure",
+      "camera": "cinematic crane-down",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B17",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 17,
+      "subject": "Ring interior avenue under daylight while neighboring area glows like evening",
+      "camera": "slow intimate handheld push",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B18",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 18,
+      "subject": "Layered greenhouse growing lettuces under carefully chosen lighting",
+      "camera": "fast but controlled aerial dolly",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B19",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 19,
+      "subject": "Industrial workshop near hub with astronauts moving slowly in low gravity",
+      "camera": "long-lens parallax reveal",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B20",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 20,
+      "subject": "Scientist adjusting experimental crystal growth equipment in weightless lab near spin axis",
+      "camera": "slow lateral slider",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B21",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 21,
+      "subject": "View along station electrical conduits from solar farm to residential ring",
+      "camera": "top-down to horizon tilt",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B22",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 22,
+      "subject": "Wide night scene inside toroidal city with lit homes and star-inspired ceiling art",
+      "camera": "macro rack-focus move",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B23",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 23,
+      "subject": "Macro motorized orbital light-control louver opening as reflective sunlight enters",
+      "camera": "architectural reveal pan",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C06_B24",
+      "chapter": 6,
+      "chapter_title": "A Sun You Can Schedule",
+      "candidate": 24,
+      "subject": "Moon and Earth seen beside luminous station mirror array at orbital sunrise",
+      "camera": "upward sweeping drone",
+      "style": "precision engineering space documentary",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B01",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 1,
+      "subject": "Close clear water droplet joining recycled drinking water stream in sealed station system",
+      "camera": "fast but controlled aerial dolly",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B02",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 2,
+      "subject": "Industrial water recovery unit with pipes and filtration canisters in space habitat",
+      "camera": "long-lens parallax reveal",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B03",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 3,
+      "subject": "Technician testing cabin air chemistry sample with handheld environmental sensor",
+      "camera": "slow lateral slider",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B04",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 4,
+      "subject": "Blue-lit hydroponic lettuce racks growing inside pressurised food production bay",
+      "camera": "top-down to horizon tilt",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B05",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 5,
+      "subject": "Farmer picking ripe tomatoes in enormous artificial-gravity greenhouse",
+      "camera": "macro rack-focus move",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B06",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 6,
+      "subject": "Urban food market filled with locally grown vegetables under high station roof",
+      "camera": "architectural reveal pan",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B07",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 7,
+      "subject": "Automated oxygen generation system with sealed industrial plumbing and meters",
+      "camera": "upward sweeping drone",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B08",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 8,
+      "subject": "Bioreactor tanks in shielded water-reuse service room",
+      "camera": "moving close-up tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B09",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 9,
+      "subject": "Close controlled condensation collection panel recovering clean droplets",
+      "camera": "graceful orbit around subject",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B10",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 10,
+      "subject": "Maintenance specialist repairing high-reliability water pump in cramped service corridor",
+      "camera": "wide atmospheric tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B11",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 11,
+      "subject": "Clean agricultural root beds growing leafy greens in artificial gravity",
+      "camera": "low ascending steadicam",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B12",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 12,
+      "subject": "Automated harvest robots rolling between hydroponic growing beds",
+      "camera": "wide orbiting tracking camera",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B13",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 13,
+      "subject": "Resident filling reusable water bottle from filtered community hydration station",
+      "camera": "cinematic crane-down",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B14",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 14,
+      "subject": "Food logistics worker moving sealed produce trays through pressurised transfer dock",
+      "camera": "slow intimate handheld push",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B15",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 15,
+      "subject": "Inspection robot reading filter pressure in life support utility room",
+      "camera": "fast but controlled aerial dolly",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B16",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 16,
+      "subject": "Cargo shuttle docking at central hub carrying sealed replacement electronics",
+      "camera": "long-lens parallax reveal",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B17",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 17,
+      "subject": "Pharmacist organizing medical supplies in futuristic orbital community clinic",
+      "camera": "slow lateral slider",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B18",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 18,
+      "subject": "Spare oxygen compressor installed by maintenance engineer in vacuum-rated machine room",
+      "camera": "top-down to horizon tilt",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B19",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 19,
+      "subject": "Community dining hall sharing a harvest from local greenhouse",
+      "camera": "macro rack-focus move",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B20",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 20,
+      "subject": "Emergency water reservoir beneath wide habitat corridor",
+      "camera": "architectural reveal pan",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B21",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 21,
+      "subject": "Low gravity supply bundles floating slowly between cargo hub and spoke loading bay",
+      "camera": "upward sweeping drone",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B22",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 22,
+      "subject": "Plant nutrient mixing system with drip irrigation inside controlled agriculture module",
+      "camera": "moving close-up tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B23",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 23,
+      "subject": "Large warehouse of critical spares in secure pressurised station",
+      "camera": "graceful orbit around subject",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C07_B24",
+      "chapter": 7,
+      "chapter_title": "Where Does Everything Come From?",
+      "candidate": 24,
+      "subject": "Beautiful vast greenhouse ribbon under curved city's protective shell, with families walking outside",
+      "camera": "wide atmospheric tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B01",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 1,
+      "subject": "First-person pedestrian walking through shaded orbital city cafe boulevard",
+      "camera": "top-down to horizon tilt",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B02",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 2,
+      "subject": "Outdoor-looking interior plaza where cyclists glide along gently curving thoroughfare",
+      "camera": "macro rack-focus move",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B03",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 3,
+      "subject": "Children playing football in safe enclosed green park with overhead urban arc visible",
+      "camera": "architectural reveal pan",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B04",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 4,
+      "subject": "Commuter tram arriving at curved outer rim transit platform",
+      "camera": "upward sweeping drone",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B05",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 5,
+      "subject": "Family having breakfast on balcony overlooking artificial river inside ring",
+      "camera": "moving close-up tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B06",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 6,
+      "subject": "Architectural drone moving above rooftop gardens along immense toroidal inner rim",
+      "camera": "graceful orbit around subject",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B07",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 7,
+      "subject": "Young engineer taking radial elevator up through structured transparent internal shaft",
+      "camera": "wide atmospheric tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B08",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 8,
+      "subject": "Elevator interior with subtle artificial gravity transition as it approaches the hub",
+      "camera": "low ascending steadicam",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B09",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 9,
+      "subject": "Near-axis microgravity logistics area with floating packaged medical crates",
+      "camera": "wide orbiting tracking camera",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B10",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 10,
+      "subject": "Cargo handler floating calmly using handrails next to central nonrotating docking hub",
+      "camera": "cinematic crane-down",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B11",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 11,
+      "subject": "Scientist carefully releasing ball to demonstrate relative motion in rotating room",
+      "camera": "slow intimate handheld push",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B12",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 12,
+      "subject": "Teenager training in safe gym under normal simulated gravity of rotating rim",
+      "camera": "fast but controlled aerial dolly",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B13",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 13,
+      "subject": "Orbital library with residents reading and Earth hologram displayed as exhibit",
+      "camera": "long-lens parallax reveal",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B14",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 14,
+      "subject": "Futuristic public clinic with medical staff walking along curved interior corridor",
+      "camera": "slow lateral slider",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B15",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 15,
+      "subject": "Local council gathering in transparent-walled but shielded conference chamber",
+      "camera": "top-down to horizon tilt",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B16",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 16,
+      "subject": "Small music performance in central community atrium with gardens",
+      "camera": "macro rack-focus move",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B17",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 17,
+      "subject": "Green cycle lane passing a quiet school entrance on orbital avenue",
+      "camera": "architectural reveal pan",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B18",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 18,
+      "subject": "Solar mirror-lit neighbourhood evening market under curved upper landscape",
+      "camera": "upward sweeping drone",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B19",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 19,
+      "subject": "Professional athlete practicing controlled run in habitat at rim",
+      "camera": "moving close-up tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B20",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 20,
+      "subject": "Parents watching children at science museum with miniature orbit model",
+      "camera": "graceful orbit around subject",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B21",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 21,
+      "subject": "Space city resident observing Earth through heavy protected panoramic window",
+      "camera": "wide atmospheric tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B22",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 22,
+      "subject": "Wide satellite-style flythrough of bright ring habitat turning slowly against Earth",
+      "camera": "low ascending steadicam",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B23",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 23,
+      "subject": "Futuristic maintenance train moving through outer ring infrastructure tunnel",
+      "camera": "wide orbiting tracking camera",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C08_B24",
+      "chapter": 8,
+      "chapter_title": "A Day in the City",
+      "candidate": 24,
+      "subject": "Closing slow push through apartment doorway to living room with ordinary domestic routine",
+      "camera": "cinematic crane-down",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B01",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 1,
+      "subject": "Research team studying immense rotating space habitat scale prototype in engineering laboratory",
+      "camera": "upward sweeping drone",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B02",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 2,
+      "subject": "NASA-style large neutral buoyancy pool technicians testing robotic space construction concepts",
+      "camera": "moving close-up tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B03",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 3,
+      "subject": "Precision space structure manufacturing robot at realistic grounded aerospace factory",
+      "camera": "graceful orbit around subject",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B04",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 4,
+      "subject": "Launch pad below cargo rocket awaiting mission to orbital assembly site",
+      "camera": "wide atmospheric tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B05",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 5,
+      "subject": "Aerospace technicians measuring large pressure seal components on clean factory floor",
+      "camera": "low ascending steadicam",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B06",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 6,
+      "subject": "Robot arm testing deployment of kilometre-scale lattice truss in laboratory",
+      "camera": "wide orbiting tracking camera",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B07",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 7,
+      "subject": "Orbital supply ship approaching completed shielded rotating habitat structure",
+      "camera": "cinematic crane-down",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B08",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 8,
+      "subject": "Radiation shielding demonstration samples arranged on engineering workbench",
+      "camera": "slow intimate handheld push",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B09",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 9,
+      "subject": "University research group reviewing spacecraft medical and human factors simulations",
+      "camera": "fast but controlled aerial dolly",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B10",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 10,
+      "subject": "Space habitat engineer walking slowly along protective exterior hull secured by tether",
+      "camera": "long-lens parallax reveal",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B11",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 11,
+      "subject": "Sealed greenhouse community residents tending crops after months of operation",
+      "camera": "slow lateral slider",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B12",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 12,
+      "subject": "Cargo cooperative meeting in administrative room looking at economic charts without legible text",
+      "camera": "top-down to horizon tilt",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B13",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 13,
+      "subject": "Medical staff practicing emergency pressure-loss drill in simulated settlement corridor",
+      "camera": "macro rack-focus move",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B14",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 14,
+      "subject": "Futuristic city council meeting in green public hall within rotating ring",
+      "camera": "architectural reveal pan",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B15",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 15,
+      "subject": "School lesson about Earth seen through shielded orbital observation port",
+      "camera": "upward sweeping drone",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B16",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 16,
+      "subject": "Small first-generation cluster of pressurized modules assembled around central service hub",
+      "camera": "moving close-up tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B17",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 17,
+      "subject": "Gradual orbital construction sequence of growing city ring with more modules attached",
+      "camera": "graceful orbit around subject",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B18",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 18,
+      "subject": "Robotic spacecraft installing last large outer ring segment with Earth behind",
+      "camera": "wide atmospheric tracking shot",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B19",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 19,
+      "subject": "First generation compact space colony resembling practical engineering more than science fiction",
+      "camera": "low ascending steadicam",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B20",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 20,
+      "subject": "Young child looking up from grassy internal field toward distant overhead neighborhood",
+      "camera": "wide orbiting tracking camera",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B21",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 21,
+      "subject": "Panoramic quiet sunrise illuminating inner surface of giant rotating habitat city",
+      "camera": "cinematic crane-down",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B22",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 22,
+      "subject": "Wide Earth backdrop behind colossal rotating habitat in stable orbital flight",
+      "camera": "slow intimate handheld push",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B23",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 23,
+      "subject": "Slow camera retreat from enclosed community park revealing its immense artificial scale",
+      "camera": "fast but controlled aerial dolly",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    },
+    {
+      "id": "EP004_C09_B24",
+      "chapter": 9,
+      "chapter_title": "Could We Really Build It?",
+      "candidate": 24,
+      "subject": "Closing reflective shot of warm lights in apartment windows while Earth glows outside protected gallery",
+      "camera": "long-lens parallax reveal",
+      "style": "warm near-future human story",
+      "visual_rules": "Photoreal, plausible physics, non-apocalyptic, plausible massive pressure hull with shielding, rotation low rpm, no free-floating people on inhabited rim, no unprotected human exposure to vacuum, no 1970s era text, no NASA logos, no written signage, original design not exact protected artwork, no watermarks."
+    }
+  ]
+}
