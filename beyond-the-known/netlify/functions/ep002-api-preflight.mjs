@@ -27,7 +27,7 @@ export default async function(request){
    model:MODEL,duration_seconds:5,aspect_ratio:"16:9",audio:"off",shots:SCRIPTED_MOVING_SHOTS,
    quote_ready,quote_http_status:response.status,
    five_second_shot_usd:quote_ready?Number(estimate.toFixed(4)):null,
-   153_shot_estimate_usd:quote_ready?Number((estimate*SCRIPTED_MOVING_SHOTS).toFixed(2)):null,
+   shots_153_estimate_usd:quote_ready?Number((estimate*SCRIPTED_MOVING_SHOTS).toFixed(2)):null,
    // Do not reveal request internals or provider diagnostics to site visitors.
    note:quote_ready?"Estimate only. No jobs submitted. Live API balance is not reported by this endpoint.":"Estimate unavailable; no jobs submitted."
   },{status:200,headers:{"Cache-Control":"no-store","X-Robots-Tag":"noindex,nofollow"}});
