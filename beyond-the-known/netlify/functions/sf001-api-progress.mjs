@@ -11,7 +11,7 @@ export default async function(request){
  const quote_total=all.reduce((a,row)=>a+(Number(row?.quote_usd)||0),0);
  return Response.json({
   episode:'SF001',
-  stage:archived===153?'all_raw_shots_archived_final_edit_pending':submitted>=153?'raw_shots_submitted':'raw_shot_generation',
+  stage:archived===SHOTS.length?'all_raw_shots_archived_final_edit_pending':submitted>=SHOTS.length?'raw_shots_submitted':'raw_shot_generation',
   shots_target:SHOTS.length,shots_submitted:submitted,shots_completed:states.completed||0,
   shots_archived_privately:archived,
   pilot:{target:3,submitted:first.filter(x=>x?.request_id).length,completed:first.filter(x=>x?.state==='completed').length,archived:first.filter(x=>x?.stored_asset).length,estimated_spend_usd:pilot?.submitted_estimate_usd??null},
