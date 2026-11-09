@@ -1,7 +1,7 @@
 # Beyond the Known — Episode 007 final private review and QA (10 November 2026)
 
 **Title:** The Town That Burned from Below | Centralia's Underground Fire
-**Status:** Complete original documentary, **unlisted review assets**. USER APPROVAL REQUIRED before scheduling or public release. Do not schedule without owner review. CloudFront URLs are accessible to anyone who possesses them; they are not private-login-protected.
+**Status:** Finished and expressly APPROVED by owner on 10 November 2026. Both automatically scheduled via Metricool and independently verified in the upcoming-post list. Media CDN URLs are accessible to anyone who possesses them.
 
 ## Final complete films
 - **YouTube master**, with final on-screen "SUBSCRIBE TO BEYOND THE KNOWN" CTA:
@@ -80,3 +80,12 @@ Discover how Centralia was transformed, and what remains today, in a gripping or
 - Netlify handoff helper `ep007-handoff-pilot.mjs` was **removed** in Git commit `836f7000fbe93e6a6700577bf766f7450362560c`; deployment `6af1cfadaa25266d12a2058e` is READY and the production endpoint now returns **HTTP 404**. Original private Netlify Blobs remain intact.
 - Total originally quoted video footage generation **US$12.60**; no new source footage generated during final assembly. Fraser narration used previously funded Higgsfield MCP credits. Score was created programmatically without credit expenditure.
 - Metricool brand `7960478` was queried for upcoming posts on 10 November 2026: **no Episode 007 booking** on either platform. Schedule only after owner's approval.
+
+## Owner-approved release bookings (10 November 2026)
+
+The owner approved Episode 007 on 10 November 2026. Both posts were created in QNova's existing Metricool brand `7960478` and re-read in `getScheduledPosts`, confirming one attached video, custom thumbnail, automatic publication enabled, `draft:false` and `PENDING` status.
+
+- **YouTube:** Saturday **21 November 2026 at 4:00 pm AEDT**; Metricool ID `422438234`, publication type `video`, privacy `public`, not made for children, synthetic-content disclosure **true**. [Planner booking](https://app.metricool.com/planner/calendar?blogId=7960478&openWithPostUuid=-2935150519685199229).
+- **Facebook:** Tuesday **22 December 2026 at 12:00 pm AEDT**; Metricool ID `422438541`, publication type `POST`, uses the Facebook-specific like-and-follow master. [Planner booking](https://app.metricool.com/planner/calendar?blogId=7960478&openWithPostUuid=-237321301884189067).
+
+The bookings follow the existing every-two-days YouTube long-form rhythm after EP006 on 19 November and the existing weekly Facebook long-form series after EP006 on 15 December. No duplicate bookings observed at creation. 
