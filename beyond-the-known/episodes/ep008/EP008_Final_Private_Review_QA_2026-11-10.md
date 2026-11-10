@@ -1,7 +1,7 @@
 # QNova Beyond the Known — Episode 008 final private review, 10 November 2026
 
 **Episode:** 008 — The Lake That Released an Invisible Killer | Lake Nyos
-**Status:** **COMPLETE PRIVATE REVIEW MASTER — NOT APPROVED OR SCHEDULED.** Both final cuts and original thumbnail completed. **Owner must watch and expressly approve before publishing or scheduling**.
+**Status:** **OWNER APPROVED 10 NOV 2026 — BOTH PLATFORM RELEASES SCHEDULED AND VERIFIED IN METRICOOL.** Both platform-specific final masters and original thumbnail attached to their individual posts.
 
 ## Complete films and cover
 - YouTube-specific finished 16:9 review: https://d2ol7oe51mr4n9.cloudfront.net/user_3LoAgfAVzliJBEsiNPxeHklv01u/9949e0c6-8713-4da2-ab72-3028a50ef987.mp4
@@ -42,3 +42,12 @@ YouTube flags: `video`, `madeForKids:false`, `isAiGeneratedContent:true`, catego
 **Facebook description:** The Lake Nyos disaster revealed a silent danger beneath calm water. Discover the science behind one of the deadliest gas releases in history in this original five-minute documentary. All reenactments are original AI recreations, not archival recordings. Like and follow Beyond the Known for more original documentaries. #LakeNyos #History #BeyondTheKnown. Use Facebook-specific MP4 and cover.
 
 Provisional staggered dates from prior QNova cadence (only after owner's specific approval and fresh collision check): YouTube 23 November 2026, 4:00pm AEDT; Facebook 29 December 2026, 12:00pm AEDT.
+
+## Verified owner-approved Metricool releases — 10 Nov 2026
+
+Owner expressly approved completed Episode 008 in the QNova video-production conversation. Existing schedule checked: no time collisions or prior EP008 bookings. Both were created and independently re-read from Metricool brand `7960478` with `status:PENDING`, `autoPublish:true`, `draft:false`, one MP4 and one custom cover attached:
+
+- **YouTube:** Monday **23 November 2026 at 4:00 pm AEDT**, post ID `422851773`, title `The Lake That Released an Invisible Killer | Lake Nyos (1986)`, `video`, public, not made for kids, realistic AI-content disclosure TRUE. [Planner](https://app.metricool.com/planner/calendar?blogId=7960478&openWithPostUuid=-7830360075504302816)
+- **Facebook:** Tuesday **29 December 2026 at 12:00 pm AEDT**, post ID `422851850`, `POST`, original Facebook-specific ending. [Planner](https://app.metricool.com/planner/calendar?blogId=7960478&openWithPostUuid=6632986613489158157)
+
+Custom thumbnail exists for both in Metricool. **Actual display on YouTube must still be checked after video processing**, distinct from the booking field.
